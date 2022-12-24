@@ -1,5 +1,6 @@
-import UIKit
 
-let num = 17.0
 
-let name = "W"
+let name: String?
+
+name = "우주형"
+print(name)
