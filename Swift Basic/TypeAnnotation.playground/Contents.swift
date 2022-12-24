@@ -1,6 +1,7 @@
+var name: String? = "우주형"
 
+print(name ?? "There is no Name")
 
-let name: String?
+name = nil
 
-name = "우주형"
-print(name)
+print(name ?? "There is no Name")
