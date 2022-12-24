@@ -1,7 +1,5 @@
-var name: String? = "우주형"
+let a = (name: "우주형", age: 28, work: "편집")
 
-print(name ?? "There is no Name")
-
-name = nil
-
-print(name ?? "There is no Name")
+a.name
+a.age
+a.work
