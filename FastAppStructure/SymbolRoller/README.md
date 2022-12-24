@@ -3,7 +3,7 @@
 ## 1. UI 구성하기!
 ![](https://velog.velcdn.com/images/woojusm/post/8841d67d-76d9-431e-ab5b-f3d37f33ad3f/image.gif)
 
-
+---
 ![](https://velog.velcdn.com/images/woojusm/post/ffd67c49-26ff-40f5-9a4d-087308bd05a0/image.png)
 UIimageView와 UILabel 그리고 UIButton을 스택뷰로 묶고  
 button과 label에는 height 수치를 오토레이아웃으로 넣어 줬다.
