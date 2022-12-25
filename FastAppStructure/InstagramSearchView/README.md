@@ -117,7 +117,7 @@ ___
 
 ### 탭바에서 UILabel을 다른 컨트롤러로 복사해서 넘길 때 autoLayout이 안잡히는 현상?
 
-![](https://velog.velcdn.com/images/woojusm/post/e4f99558-fc52-47ee-83d4-54cad05c39c0/image.png)
+![](https://velog.velcdn.com/images/woojusm/post/e4f99558-fc52-47ee-83d4-54cad05c39c0/image.png)  
 복붙시 Layout 항목에 Autoresizing Mask로 변경되서 그럼!
 Inferred로 변경해주면 된다
 
