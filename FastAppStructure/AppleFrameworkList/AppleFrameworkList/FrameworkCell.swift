@@ -8,12 +8,18 @@
 import UIKit
 
 class FrameworkCell: UICollectionViewCell {
+
+    @IBOutlet weak var iconImage: UIImageView!    
+    @IBOutlet weak var appName: UILabel!
     
-    @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        appName.numberOfLines = 1
+        appName.adjustsFontSizeToFitWidth = true
+    }
     
     func configure(_ framework: AppleFramework) {
-        thumbnailImageView.image = UIImage(named: framework.imageName)
-        nameLabel.text = framework.name
+        iconImage.image = UIImage(named: framework.imageName)
+        appName.text = framework.name
     }
 }

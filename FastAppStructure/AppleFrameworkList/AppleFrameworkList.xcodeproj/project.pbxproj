@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D71165D2957FDAD000D6790 /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71165C2957FDAD000D6790 /* FrameworkCell.swift */; };
 		9D7504AD2957F1100044773A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504AC2957F1100044773A /* AppDelegate.swift */; };
 		9D7504AF2957F1100044773A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504AE2957F1100044773A /* SceneDelegate.swift */; };
 		9D7504B12957F1100044773A /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504B02957F1100044773A /* FrameworkListViewController.swift */; };
@@ -17,7 +18,6 @@
 		9D7504CE2957F1110044773A /* AppleFrameworkListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504CD2957F1110044773A /* AppleFrameworkListUITests.swift */; };
 		9D7504D02957F1110044773A /* AppleFrameworkListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504CF2957F1110044773A /* AppleFrameworkListUITestsLaunchTests.swift */; };
 		9D7504DD2957F1E50044773A /* AppleFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504DC2957F1E50044773A /* AppleFramework.swift */; };
-		9D7504DF2957F5E90044773A /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7504DE2957F5E90044773A /* FrameworkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D71165C2957FDAD000D6790 /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		9D7504A92957F1100044773A /* AppleFrameworkList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFrameworkList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7504AC2957F1100044773A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7504AE2957F1100044773A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		9D7504CD2957F1110044773A /* AppleFrameworkListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkListUITests.swift; sourceTree = "<group>"; };
 		9D7504CF2957F1110044773A /* AppleFrameworkListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D7504DC2957F1E50044773A /* AppleFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFramework.swift; sourceTree = "<group>"; };
-		9D7504DE2957F5E90044773A /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				9D7504AE2957F1100044773A /* SceneDelegate.swift */,
 				9D7504B02957F1100044773A /* FrameworkListViewController.swift */,
 				9D7504DC2957F1E50044773A /* AppleFramework.swift */,
+				9D71165C2957FDAD000D6790 /* FrameworkCell.swift */,
 				9D7504B22957F1100044773A /* Main.storyboard */,
-				9D7504DE2957F5E90044773A /* FrameworkCell.swift */,
 				9D7504B52957F1110044773A /* Assets.xcassets */,
 				9D7504B72957F1110044773A /* LaunchScreen.storyboard */,
 				9D7504BA2957F1110044773A /* Info.plist */,
@@ -267,7 +267,7 @@
 				9D7504B12957F1100044773A /* FrameworkListViewController.swift in Sources */,
 				9D7504DD2957F1E50044773A /* AppleFramework.swift in Sources */,
 				9D7504AD2957F1100044773A /* AppDelegate.swift in Sources */,
-				9D7504DF2957F5E90044773A /* FrameworkCell.swift in Sources */,
+				9D71165D2957FDAD000D6790 /* FrameworkCell.swift in Sources */,
 				9D7504AF2957F1100044773A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
