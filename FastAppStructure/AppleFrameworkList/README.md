@@ -45,8 +45,10 @@ if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlow
 
 ![](https://velog.velcdn.com/images/woojusm/post/e049fb3d-cd40-4ccf-a811-111b11ade6d7/image.png)
 
-콜렉션뷰 기초적인 베이스들 다 만들고 시뮬 돌릴라니까 계속 에러가 떴다...
-![](https://velog.velcdn.com/images/woojusm/post/3088915d-c766-46b5-a985-8af18fcbd4fb/image.png)
+콜렉션뷰 기초적인 베이스들 다 만들고 시뮬 돌릴라니까 계속 에러가 떴다...  
+
+![](https://velog.velcdn.com/images/woojusm/post/3088915d-c766-46b5-a985-8af18fcbd4fb/image.png)  
+
 콜렉션뷰 셀의 모듈이 설정 되어 있지 않다면 내부의 IBOutlet을 읽을 수 없다는 걸 알게 됨
 ___
 ## 네비게이션 컨트롤러
@@ -93,5 +95,6 @@ delegate flow layout에서 아이템당 수치만 잘 조절하면 몇줄이든 
 4줄로 만들었을 때 앱 제목이 안보이는 현상이 발생!
 
 
-![](https://velog.velcdn.com/images/woojusm/post/33adf071-6ba6-4d53-bcb8-a54d926bca55/image.png)
+![](https://velog.velcdn.com/images/woojusm/post/33adf071-6ba6-4d53-bcb8-a54d926bca55/image.png)  
+
 셀이 깨어날 때 폰트 조정해줬다.
