@@ -22,7 +22,7 @@ class FocusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collectionView.delegate = self
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FocusCell", for: indexPath) as? FocusCell else { return nil }
             cell.configure(item)
@@ -71,3 +71,14 @@ class FocusViewController: UIViewController {
     
 }
 
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        
+        let sb = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        vc.title = item.title
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}

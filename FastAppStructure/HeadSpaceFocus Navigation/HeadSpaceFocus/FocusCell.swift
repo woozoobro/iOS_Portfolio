@@ -24,5 +24,4 @@ class FocusCell: UICollectionViewCell {
         descriptionLabel.text = item.description
         thumbnailImageView.image = UIImage(systemName: item.imageName)?.withRenderingMode(.alwaysOriginal)
     }
-    
 }
