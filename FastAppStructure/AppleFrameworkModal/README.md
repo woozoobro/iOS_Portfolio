@@ -38,8 +38,10 @@ Unknown의 형태로 선언한다 -> 이전VC에서 데이터를 받아서 넘�
 ![](https://velog.velcdn.com/images/woojusm/post/2ebc8e83-b1a6-4892-81b2-82f019ac2c14/image.png)
 
 
-![](https://velog.velcdn.com/images/woojusm/post/eb0da3b6-c770-40de-b434-971c76bcbe74/image.png)
+![](https://velog.velcdn.com/images/woojusm/post/eb0da3b6-c770-40de-b434-971c76bcbe74/image.png)  
+
 현재는 pageSheet 형태인데 필요하다면  
+  
 modalPresentationStyle = .fullScreen으로 변경 가능  
 ___
 
