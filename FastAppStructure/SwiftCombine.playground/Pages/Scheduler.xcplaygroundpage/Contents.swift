@@ -14,4 +14,4 @@ let subscription = arrPublisher
     .receive(on: DispatchQueue.main)
     .sink { value in
         print("Receive value: \(value), thread: \(Thread.current)")
-    }
+}

@@ -7,6 +7,9 @@
         <page name='Published'/>
         <page name='Foundation and Combine'/>
         <page name='Scheduler'/>
-        <page name='Untitled Page'/>
+        <page name='Operator - map &amp; filter'/>
+        <page name='Operator - combineLatest'/>
+        <page name='Operator - removeDup &amp; compactMap'/>
+        <page name='DispatchQueue'/>
     </pages>
 </playground>
