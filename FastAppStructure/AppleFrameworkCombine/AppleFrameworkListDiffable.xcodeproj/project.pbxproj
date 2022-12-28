@@ -109,8 +109,8 @@
 			children = (
 				9D7504AC2957F1100044773A /* AppDelegate.swift */,
 				9D7504AE2957F1100044773A /* SceneDelegate.swift */,
-				9D7504DC2957F1E50044773A /* AppleFramework.swift */,
 				9D7504B02957F1100044773A /* FrameworkListViewController.swift */,
+				9D7504DC2957F1E50044773A /* AppleFramework.swift */,
 				9D71165C2957FDAD000D6790 /* FrameworkCell.swift */,
 				9D7504B22957F1100044773A /* Main.storyboard */,
 				9DBC42472959F94100CC68F9 /* Detail.storyboard */,

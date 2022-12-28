@@ -11,15 +11,15 @@ import Combine
 class FrameworkListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-        
-    //Combine
-    var subscriptions = Set<AnyCancellable>()
-    let didSelect = PassthroughSubject<AppleFramework, Never>()
-    let items = CurrentValueSubject<[AppleFramework], Never>(AppleFramework.list)
-    
+
     enum Section { case main }
     typealias Item = AppleFramework
     var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
+    
+    // Combine
+    var subscriptions = Set<AnyCancellable>()
+    let didSelect = PassthroughSubject<AppleFramework, Never>()
+    let items = CurrentValueSubject<[AppleFramework], Never>(AppleFramework.list)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,32 +28,28 @@ class FrameworkListViewController: UIViewController {
         
         configureCollectionView()
         bind()
-
     }
     
     private func bind() {
-        // input: 사용자 인풋을 받아서, 처리해야 할 것
-        // - item 선택 되었을 때 처리
+        //input
         didSelect
             .receive(on: RunLoop.main)
-            .sink { [unowned self] framework in
+            .sink {[unowned self] framework in
             let sb = UIStoryboard(name: "Detail", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
-            vc.framework = framework
+                vc.framework.send(framework)
             self.present(vc, animated: true)
         }.store(in: &subscriptions)
         
-        // output: data, state 변경에 따라서 UI업데이트 할 것
-        // - items 가 세팅이 되었을 때 컬렉션 뷰를 업데이트
+        //output
         items
             .receive(on: RunLoop.main)
-            .sink { [unowned self] list in
-                self.applySectionItems(list)
-        }.store(in: &subscriptions)
+            .sink { [unowned self] items in
+                self.applySectionItems(items)
+            }.store(in: &subscriptions)
     }
     
-    private func applySectionItems(_ items: [Item], to section: Section = .main) {
-        // data
+    private func applySectionItems(_ items: [AppleFramework], to section: Section = .main ) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections([section])
         snapshot.appendItems(items, toSection: section)
@@ -66,8 +62,8 @@ class FrameworkListViewController: UIViewController {
             cell.configure(item)
             return cell
         })
-        // layer
-        collectionView.collectionViewLayout = layout()        
+        
+        collectionView.collectionViewLayout = layout()
         collectionView.delegate = self
     }
     
@@ -85,7 +81,6 @@ class FrameworkListViewController: UIViewController {
 
 extension FrameworkListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let framework = items.value[indexPath.item]
         didSelect.send(framework)
     }
