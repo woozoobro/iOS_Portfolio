@@ -6,6 +6,7 @@
         <page name='Subscription'/>
         <page name='Published'/>
         <page name='Foundation and Combine'/>
+        <page name='Scheduler'/>
         <page name='Untitled Page'/>
     </pages>
 </playground>

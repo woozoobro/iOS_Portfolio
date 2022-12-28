@@ -25,6 +25,5 @@ let subscription2 = variable.sink { value in
 variable.send("More text")
 variable.value
 
-
 let publisher = ["Here", "we", "go"].publisher
 publisher.subscribe(relay)
