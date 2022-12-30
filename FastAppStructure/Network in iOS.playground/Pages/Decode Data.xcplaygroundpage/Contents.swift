@@ -34,7 +34,7 @@ let task = session.dataTask(with: url) { data, response, error in
     guard let safeData = data else { return }
     // data -> GithubProfile
     do {
-        let decoder = JSONDecoder()                   //메타 타입 개념!
+        let decoder = JSONDecoder()                   //메타 타입 개념 상기!
         let profile = try decoder.decode(GithubProfile.self, from: safeData)
         print("profile: \(profile)")
     } catch let error as NSError {
