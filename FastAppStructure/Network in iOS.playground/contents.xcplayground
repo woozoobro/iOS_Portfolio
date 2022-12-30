@@ -5,5 +5,6 @@
         <page name='Decode Data'/>
         <page name='Fetch Method'/>
         <page name='Using Combine'/>
+        <page name='Enum'/>
     </pages>
 </playground>
