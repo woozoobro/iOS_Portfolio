@@ -1,4 +1,7 @@
-# 깃헙 서치 (콜렉션 뷰)
+# 깃헙프로필서치 (collectionView)
+
+![](https://velog.velcdn.com/images/woojusm/post/71340b1c-e8bc-4637-a449-e60ae5627ca3/image.gif)
+
 
 ## 해야할 것들
 
@@ -71,5 +74,4 @@ Resource는 SearchUserResponse 타입이 온다고 명시해줌.
 ![](https://velog.velcdn.com/images/woojusm/post/1d35ad66-4baa-4e8a-a7a9-161f6fc28764/image.png)  
 보면 네트워크 서비스에서는 load메소드가 아래의 코멘트아웃된 decode부분까지만 작성되어 있음  
 그러니까 mpa으로 안에담긴 items를 꺼내오고 에러없애주고 ... 이렇게 진행되는겨  
-
 
