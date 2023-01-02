@@ -1,5 +1,9 @@
 # SwiftUI 네비게이션 뷰
 
+
+
+![](https://velog.velcdn.com/images/woojusm/post/52958799-d4eb-4988-8421-5f6af0e1f546/image.gif)
+
 * `NavigationView` 이용해서 네비게이션 뷰 + 컨트롤러 표현
   * `NavigationView` 가 감싸는 View에 `navigationTitle` 지정하기
 * 네비게이션 push 를 구현하기 위해서 (상세뷰로 들어가기)
@@ -84,4 +88,3 @@ ___
 var id: UUID = UUID() 가 아니라 다른 방법으로 되어 있으면
 order가 이상하게 잡힌다!! 
 Identifiable 프로토콜 준수할 때는 UUID 쓰는 걸로!!  
-
