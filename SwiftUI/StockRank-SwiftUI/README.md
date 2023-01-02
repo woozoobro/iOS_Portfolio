@@ -59,3 +59,14 @@ SwiftUI에서도 이런 매커니즘을 사용할 수 있다.
 셀마다의 구분자를 추가해주는 느낌  
 `var id: UUID = UUID()`로도 가능!  
 
+## 요약
+* 리스트 표현시,`List`사용
+  * 사용시 고려사항
+    * style
+    * seperator
+    * inset
+* 작업 순서
+  * ListCell(Row) 먼저 만들고 -> List 구현
+* 리스트에 사용되는 모델 이용 시 알아두면 좋은 팁
+  * `Identifiable`을 해당 모델이 conform 하고 있으면
+  * `List`, `ForEach` 사용시, id를 따로 지정해주지 않아도 됨  
