@@ -91,6 +91,7 @@ class TaskViewModel {
         
         self.seconds.value = newSeconds
     }
+    
     func getHours() -> Box<Int> {
         return self.hours
     }
