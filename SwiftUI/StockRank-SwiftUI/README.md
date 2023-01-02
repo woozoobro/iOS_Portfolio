@@ -49,5 +49,13 @@ SwiftUI에서도 이런 매커니즘을 사용할 수 있다.
 
 ![](https://velog.velcdn.com/images/woojusm/post/868af75d-cebf-45f5-a5ff-ff02960479e0/image.png)
 
+## Identifiable
 
+![](https://velog.velcdn.com/images/woojusm/post/edd0c7d7-9fa3-4382-93c5-eefedba692fa/image.png)  
+`id: \.self` 이부분을 없앨 수 있는데  
+그러려면 Identifiable을 모델에서 채택해주면 된다  
+
+![](https://velog.velcdn.com/images/woojusm/post/d435793a-b451-4d88-9d66-d6e1f5a3e6ba/image.png)
+셀마다의 구분자를 추가해주는 느낌  
+`var id: UUID = UUID()`로도 가능!  
 

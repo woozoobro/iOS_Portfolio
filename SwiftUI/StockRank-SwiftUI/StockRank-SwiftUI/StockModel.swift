@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct StockModel: Hashable {
+struct StockModel: Hashable, Identifiable {
+    var id: String {
+        return name
+    }
+    
     let rank: Int
     let imageName: String
     let name: String
