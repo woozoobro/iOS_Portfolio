@@ -29,6 +29,8 @@
 		9D26256C2965F0F2004EB75E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26256B2965F0F2004EB75E /* Home.storyboard */; };
 		9D26256E2965F12E004EB75E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26256D2965F12E004EB75E /* HomeViewModel.swift */; };
 		9D2D7A7B296608B100C7BE60 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9D2D7A7A296608B100C7BE60 /* Kingfisher */; };
+		9D2D7A7D29660B0100C7BE60 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D7A7C29660B0100C7BE60 /* DetailViewModel.swift */; };
+		9D2D7A7F29660B4300C7BE60 /* ItemInfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D7A7E29660B4300C7BE60 /* ItemInfoDetails.swift */; };
 		9DFA6BAA2965FDA200736313 /* ItemInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA6BA92965FDA200736313 /* ItemInfoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		9D2625622965E11A004EB75E /* UIBarButtonItem+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomView.swift"; sourceTree = "<group>"; };
 		9D26256B2965F0F2004EB75E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9D26256D2965F12E004EB75E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9D2D7A7C29660B0100C7BE60 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9D2D7A7E29660B4300C7BE60 /* ItemInfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoDetails.swift; sourceTree = "<group>"; };
 		9DFA6BA92965FDA200736313 /* ItemInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				9D2625522965C763004EB75E /* DetailViewController.swift */,
+				9D2D7A7C29660B0100C7BE60 /* DetailViewModel.swift */,
+				9D2D7A7E29660B4300C7BE60 /* ItemInfoDetails.swift */,
 				9D2625582965C86B004EB75E /* Detail.storyboard */,
 			);
 			path = Detail;
@@ -286,9 +292,11 @@
 				9D26255D2965D214004EB75E /* MyProfileViewController.swift in Sources */,
 				9D26254D2965C64A004EB75E /* ItemInfo.swift in Sources */,
 				9D2625512965C744004EB75E /* HomeViewController.swift in Sources */,
+				9D2D7A7F29660B4300C7BE60 /* ItemInfoDetails.swift in Sources */,
 				9D26255F2965D220004EB75E /* ChatViewController.swift in Sources */,
 				9D26255B2965D20B004EB75E /* MyTownViewController.swift in Sources */,
 				9D2625612965D4B2004EB75E /* CustomBarItem.swift in Sources */,
+				9D2D7A7D29660B0100C7BE60 /* DetailViewModel.swift in Sources */,
 				9D2625632965E11A004EB75E /* UIBarButtonItem+CustomView.swift in Sources */,
 				9D2625332965C5C5004EB75E /* SceneDelegate.swift in Sources */,
 				9DFA6BAA2965FDA200736313 /* ItemInfoCell.swift in Sources */,

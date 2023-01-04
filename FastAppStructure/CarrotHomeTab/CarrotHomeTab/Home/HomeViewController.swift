@@ -39,6 +39,8 @@ class HomeViewController: UIViewController {
         snapshot.appendSections([.main])
         snapshot.appendItems([], toSection: .main)
         dataSource.apply(snapshot)
+        
+        collectionView.delegate = self
     }
     
     private func applyItems(_ items: [ItemInfo]) {
@@ -54,10 +56,12 @@ class HomeViewController: UIViewController {
                 print("--> update collection view \(items)")
                 self.applyItems(items)
             }.store(in: &subscriptions)
+        
         viewModel.itemTapped
             .sink { item in
                 let sb = UIStoryboard(name: "Detail", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                vc.viewModel = DetailViewModel(network: NetworkService(configuration: .default), iteminfo: item)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }
@@ -70,5 +74,12 @@ class HomeViewController: UIViewController {
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
         let section = NSCollectionLayoutSection(group: group)
         return UICollectionViewCompositionalLayout(section: section)
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = viewModel.items[indexPath.item]
+        viewModel.itemTapped.send(item)
     }
 }
