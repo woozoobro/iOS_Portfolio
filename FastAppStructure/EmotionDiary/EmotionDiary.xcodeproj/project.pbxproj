@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D76D9CE2966FDA0007F604E /* EmotionDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9CD2966FDA0007F604E /* EmotionDiaryApp.swift */; };
+		9D76D9D22966FDA1007F604E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D76D9D12966FDA1007F604E /* Assets.xcassets */; };
+		9D76D9D52966FDA1007F604E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D76D9D42966FDA1007F604E /* Preview Assets.xcassets */; };
+		9D76D9E12966FE13007F604E /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9E02966FE13007F604E /* DiaryListView.swift */; };
+		9D76D9E32966FE2E007F604E /* DiaryDateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9E22966FE2E007F604E /* DiaryDateInputView.swift */; };
+		9D76D9E52966FE42007F604E /* DiaryMoodInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9E42966FE41007F604E /* DiaryMoodInputView.swift */; };
+		9D76D9E72966FE4C007F604E /* DiaryTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9E62966FE4C007F604E /* DiaryTextInputView.swift */; };
+		9D76D9E92966FE59007F604E /* DiaryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9E82966FE59007F604E /* DiaryDetailsView.swift */; };
+		9D76D9EB2966FE74007F604E /* MoodDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9EA2966FE74007F604E /* MoodDiary.swift */; };
+		9D76D9ED2966FE7C007F604E /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9EC2966FE7C007F604E /* Mood.swift */; };
+		9D76D9EF2966FEA1007F604E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9EE2966FEA1007F604E /* Storage.swift */; };
+		9D76D9F12966FEB0007F604E /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */; };
+		9D76D9F5296708C8007F604E /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D76D9CA2966FDA0007F604E /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D76D9CD2966FDA0007F604E /* EmotionDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDiaryApp.swift; sourceTree = "<group>"; };
+		9D76D9D12966FDA1007F604E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D76D9D42966FDA1007F604E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D76D9E02966FE13007F604E /* DiaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
+		9D76D9E22966FE2E007F604E /* DiaryDateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDateInputView.swift; sourceTree = "<group>"; };
+		9D76D9E42966FE41007F604E /* DiaryMoodInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryMoodInputView.swift; sourceTree = "<group>"; };
+		9D76D9E62966FE4C007F604E /* DiaryTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTextInputView.swift; sourceTree = "<group>"; };
+		9D76D9E82966FE59007F604E /* DiaryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailsView.swift; sourceTree = "<group>"; };
+		9D76D9EA2966FE74007F604E /* MoodDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiary.swift; sourceTree = "<group>"; };
+		9D76D9EC2966FE7C007F604E /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		9D76D9EE2966FEA1007F604E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
+		9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D76D9C72966FDA0007F604E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D76D9C12966FDA0007F604E = {
+			isa = PBXGroup;
+			children = (
+				9D76D9CC2966FDA0007F604E /* EmotionDiary */,
+				9D76D9CB2966FDA0007F604E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D76D9CB2966FDA0007F604E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9CA2966FDA0007F604E /* EmotionDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D76D9CC2966FDA0007F604E /* EmotionDiary */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9CD2966FDA0007F604E /* EmotionDiaryApp.swift */,
+				9D76D9DB2966FDB1007F604E /* Diary List */,
+				9D76D9DC2966FDB9007F604E /* DiaryCreation */,
+				9D76D9DD2966FDBF007F604E /* DiaryDetails */,
+				9D76D9DE2966FDC8007F604E /* Model */,
+				9D76D9DF2966FDD2007F604E /* Storage */,
+				9D76D9D12966FDA1007F604E /* Assets.xcassets */,
+				9D76D9D32966FDA1007F604E /* Preview Content */,
+			);
+			path = EmotionDiary;
+			sourceTree = "<group>";
+		};
+		9D76D9D32966FDA1007F604E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9D42966FDA1007F604E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D76D9DB2966FDB1007F604E /* Diary List */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9E02966FE13007F604E /* DiaryListView.swift */,
+				9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */,
+			);
+			path = "Diary List";
+			sourceTree = "<group>";
+		};
+		9D76D9DC2966FDB9007F604E /* DiaryCreation */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9E22966FE2E007F604E /* DiaryDateInputView.swift */,
+				9D76D9E42966FE41007F604E /* DiaryMoodInputView.swift */,
+				9D76D9E62966FE4C007F604E /* DiaryTextInputView.swift */,
+			);
+			path = DiaryCreation;
+			sourceTree = "<group>";
+		};
+		9D76D9DD2966FDBF007F604E /* DiaryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9E82966FE59007F604E /* DiaryDetailsView.swift */,
+			);
+			path = DiaryDetails;
+			sourceTree = "<group>";
+		};
+		9D76D9DE2966FDC8007F604E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9EA2966FE74007F604E /* MoodDiary.swift */,
+				9D76D9EC2966FE7C007F604E /* Mood.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D76D9DF2966FDD2007F604E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9EE2966FEA1007F604E /* Storage.swift */,
+				9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D76D9C92966FDA0007F604E /* EmotionDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D76D9D82966FDA1007F604E /* Build configuration list for PBXNativeTarget "EmotionDiary" */;
+			buildPhases = (
+				9D76D9C62966FDA0007F604E /* Sources */,
+				9D76D9C72966FDA0007F604E /* Frameworks */,
+				9D76D9C82966FDA0007F604E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionDiary;
+			productName = EmotionDiary;
+			productReference = 9D76D9CA2966FDA0007F604E /* EmotionDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D76D9C22966FDA0007F604E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9D76D9C92966FDA0007F604E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9D76D9C52966FDA0007F604E /* Build configuration list for PBXProject "EmotionDiary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D76D9C12966FDA0007F604E;
+			productRefGroup = 9D76D9CB2966FDA0007F604E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D76D9C92966FDA0007F604E /* EmotionDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D76D9C82966FDA0007F604E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D76D9D52966FDA1007F604E /* Preview Assets.xcassets in Resources */,
+				9D76D9D22966FDA1007F604E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D76D9C62966FDA0007F604E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D76D9F5296708C8007F604E /* MoodDiaryCell.swift in Sources */,
+				9D76D9ED2966FE7C007F604E /* Mood.swift in Sources */,
+				9D76D9E52966FE42007F604E /* DiaryMoodInputView.swift in Sources */,
+				9D76D9EB2966FE74007F604E /* MoodDiary.swift in Sources */,
+				9D76D9E32966FE2E007F604E /* DiaryDateInputView.swift in Sources */,
+				9D76D9E12966FE13007F604E /* DiaryListView.swift in Sources */,
+				9D76D9E92966FE59007F604E /* DiaryDetailsView.swift in Sources */,
+				9D76D9E72966FE4C007F604E /* DiaryTextInputView.swift in Sources */,
+				9D76D9CE2966FDA0007F604E /* EmotionDiaryApp.swift in Sources */,
+				9D76D9EF2966FEA1007F604E /* Storage.swift in Sources */,
+				9D76D9F12966FEB0007F604E /* MoodDiaryStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D76D9D62966FDA1007F604E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D76D9D72966FDA1007F604E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D76D9D92966FDA1007F604E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmotionDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = ZDJ95T6M99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.EmotionDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D76D9DA2966FDA1007F604E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmotionDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = ZDJ95T6M99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.EmotionDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D76D9C52966FDA0007F604E /* Build configuration list for PBXProject "EmotionDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D76D9D62966FDA1007F604E /* Debug */,
+				9D76D9D72966FDA1007F604E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D76D9D82966FDA1007F604E /* Build configuration list for PBXNativeTarget "EmotionDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D76D9D92966FDA1007F604E /* Debug */,
+				9D76D9DA2966FDA1007F604E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D76D9C22966FDA0007F604E /* Project object */;
+}
