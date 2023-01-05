@@ -13,6 +13,7 @@
 		9D262518296563EB004EB75E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D262516296563EB004EB75E /* Main.storyboard */; };
 		9D26251A296563EC004EB75E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D262519296563EC004EB75E /* Assets.xcassets */; };
 		9D26251D296563EC004EB75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26251B296563EC004EB75E /* LaunchScreen.storyboard */; };
+		9D76D9BF2966B685007F604E /* TimePassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9BE2966B685007F604E /* TimePassed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9D262519296563EC004EB75E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D26251C296563EC004EB75E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D26251E296563EC004EB75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D76D9BE2966B685007F604E /* TimePassed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePassed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				9D262510296563EB004EB75E /* AppDelegate.swift */,
 				9D262512296563EB004EB75E /* SceneDelegate.swift */,
 				9D262514296563EB004EB75E /* ViewController.swift */,
+				9D76D9C02966BBCD007F604E /* Model */,
 				9D262516296563EB004EB75E /* Main.storyboard */,
 				9D262519296563EC004EB75E /* Assets.xcassets */,
 				9D26251B296563EC004EB75E /* LaunchScreen.storyboard */,
 				9D26251E296563EC004EB75E /* Info.plist */,
 			);
 			path = TimerCheck;
+			sourceTree = "<group>";
+		};
+		9D76D9C02966BBCD007F604E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D76D9BE2966B685007F604E /* TimePassed.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				9D262515296563EB004EB75E /* ViewController.swift in Sources */,
 				9D262511296563EB004EB75E /* AppDelegate.swift in Sources */,
+				9D76D9BF2966B685007F604E /* TimePassed.swift in Sources */,
 				9D262513296563EB004EB75E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
