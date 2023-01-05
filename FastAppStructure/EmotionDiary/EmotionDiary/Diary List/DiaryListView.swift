@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct DiaryListView: View {
-        
-    @State var list: [MoodDiary] = MoodDiary.list
+    
+    
+    @StateObject var vm: DiaryListViewModel
     
     let layout: [GridItem] = [
         GridItem(.flexible()),
@@ -21,9 +22,19 @@ struct DiaryListView: View {
     
     var body: some View {
         LazyVGrid(columns: layout) {
-            ForEach(list) { item in
-                MoodDiaryCell(diary: item)
-                    .frame(height: 50)
+            ForEach(vm.keys, id:\.self) { key in
+                Section {
+                    let items = vm.dic[key] ?? []
+                    let orderedItems = items.sorted(by: { $0.date < $1.date})
+                    
+                    ForEach(orderedItems) {
+                        item in
+                        MoodDiaryCell(diary: item)
+                            .frame(height: 50)
+                    }
+                } header: {
+                    Text(key)
+                }
             }
         }
     }
@@ -31,6 +42,6 @@ struct DiaryListView: View {
 
 struct DiaryListView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryListView()
+        DiaryListView(vm: DiaryListViewModel())
     }
 }

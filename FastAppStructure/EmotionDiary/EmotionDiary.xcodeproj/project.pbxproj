@@ -20,6 +20,7 @@
 		9D76D9EF2966FEA1007F604E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9EE2966FEA1007F604E /* Storage.swift */; };
 		9D76D9F12966FEB0007F604E /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */; };
 		9D76D9F5296708C8007F604E /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */; };
+		9D76D9F729670A73007F604E /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F629670A73007F604E /* DiaryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		9D76D9EE2966FEA1007F604E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
 		9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
+		9D76D9F629670A73007F604E /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9D76D9E02966FE13007F604E /* DiaryListView.swift */,
+				9D76D9F629670A73007F604E /* DiaryListViewModel.swift */,
 				9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */,
 			);
 			path = "Diary List";
@@ -212,6 +215,7 @@
 				9D76D9E12966FE13007F604E /* DiaryListView.swift in Sources */,
 				9D76D9E92966FE59007F604E /* DiaryDetailsView.swift in Sources */,
 				9D76D9E72966FE4C007F604E /* DiaryTextInputView.swift in Sources */,
+				9D76D9F729670A73007F604E /* DiaryListViewModel.swift in Sources */,
 				9D76D9CE2966FDA0007F604E /* EmotionDiaryApp.swift in Sources */,
 				9D76D9EF2966FEA1007F604E /* Storage.swift in Sources */,
 				9D76D9F12966FEB0007F604E /* MoodDiaryStorage.swift in Sources */,
