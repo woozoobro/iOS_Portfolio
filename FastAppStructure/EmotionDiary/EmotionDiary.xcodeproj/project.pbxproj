@@ -21,6 +21,7 @@
 		9D76D9F12966FEB0007F604E /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */; };
 		9D76D9F5296708C8007F604E /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */; };
 		9D76D9F729670A73007F604E /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F629670A73007F604E /* DiaryListViewModel.swift */; };
+		9D76D9F929673312007F604E /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9F829673312007F604E /* DiaryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		9D76D9F02966FEB0007F604E /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
 		9D76D9F4296708C8007F604E /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
 		9D76D9F629670A73007F604E /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
+		9D76D9F829673312007F604E /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		9D76D9DC2966FDB9007F604E /* DiaryCreation */ = {
 			isa = PBXGroup;
 			children = (
+				9D76D9F829673312007F604E /* DiaryViewModel.swift */,
 				9D76D9E22966FE2E007F604E /* DiaryDateInputView.swift */,
 				9D76D9E42966FE41007F604E /* DiaryMoodInputView.swift */,
 				9D76D9E62966FE4C007F604E /* DiaryTextInputView.swift */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D76D9F929673312007F604E /* DiaryViewModel.swift in Sources */,
 				9D76D9F5296708C8007F604E /* MoodDiaryCell.swift in Sources */,
 				9D76D9ED2966FE7C007F604E /* Mood.swift in Sources */,
 				9D76D9E52966FE42007F604E /* DiaryMoodInputView.swift in Sources */,

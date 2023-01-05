@@ -12,8 +12,7 @@ enum Mood: String, Codable, CaseIterable {
     case notGreat
     case okay
     case good
-    case great
-    
+    case great    
     
     var imageName: String {
         switch self  {
