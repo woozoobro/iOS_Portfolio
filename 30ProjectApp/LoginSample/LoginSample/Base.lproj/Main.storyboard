@@ -217,27 +217,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XF-82-ByQ">
-                                <rect key="frame" x="150" y="527.66666666666663" width="93.333333333333314" height="38"/>
+                                <rect key="frame" x="150" y="522.66666666666663" width="93.333333333333314" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutButtonTapped:" destination="4rC-i3-V4b" eventType="touchUpInside" id="qAk-xt-ARn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmb-kC-WRn">
+                                <rect key="frame" x="138.33333333333334" y="467.66666666666669" width="116.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경"/>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="4rC-i3-V4b" eventType="touchUpInside" id="V6J-tC-RTO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c2z-PN-jbj"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2XF-82-ByQ" firstAttribute="top" secondItem="oZp-V4-2T9" secondAttribute="bottom" constant="80" id="Age-zx-s5D"/>
                             <constraint firstItem="oZp-V4-2T9" firstAttribute="centerX" secondItem="LcV-Va-RzP" secondAttribute="centerX" id="BQb-S6-3y7"/>
+                            <constraint firstItem="Nmb-kC-WRn" firstAttribute="top" secondItem="oZp-V4-2T9" secondAttribute="bottom" constant="20" id="CYh-fs-Dqe"/>
+                            <constraint firstItem="Nmb-kC-WRn" firstAttribute="centerX" secondItem="LcV-Va-RzP" secondAttribute="centerX" id="Ozp-6v-boL"/>
                             <constraint firstItem="oZp-V4-2T9" firstAttribute="centerY" secondItem="LcV-Va-RzP" secondAttribute="centerY" id="W98-v2-p01"/>
                             <constraint firstItem="2XF-82-ByQ" firstAttribute="centerX" secondItem="LcV-Va-RzP" secondAttribute="centerX" id="d6y-Cz-bkv"/>
+                            <constraint firstItem="2XF-82-ByQ" firstAttribute="top" secondItem="Nmb-kC-WRn" secondAttribute="bottom" constant="20" id="gdJ-8D-g0M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9WU-1Q-2Tx"/>
                     <connections>
+                        <outlet property="resetPasswordButton" destination="Nmb-kC-WRn" id="Bml-VF-F6n"/>
                         <outlet property="welcomeLabel" destination="oZp-V4-2T9" id="cDP-gD-Ahn"/>
                     </connections>
                 </viewController>
