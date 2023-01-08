@@ -23,12 +23,13 @@ class CardListCell: UITableViewCell {
     }
     
     override func awakeFromNib() {
-        super.awakeFromNib()
-        
+        super.awakeFromNib()        
+        promotionLabel.layer.cornerRadius = 10
+        promotionLabel.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: true)
         
     }
     

@@ -9,37 +9,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CardListCell" customModule="CardRecommendList" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="CardListCell" customModule="CardRecommendList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="126"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <rect key="frame" x="0.0" y="0.0" width="391" height="126"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tpp-aT-cak">
-                        <rect key="frame" x="0.0" y="0.0" width="365" height="80"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tpp-aT-cak">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="100"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dZz-PE-rkb">
-                                <rect key="frame" x="0.0" y="22" width="80" height="36"/>
+                                <rect key="frame" x="0.0" y="32" width="80" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1lN-yI-lF7"/>
                                     <constraint firstAttribute="height" constant="40" id="NiU-1j-W3V"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nfh-i8-nk6">
-                                <rect key="frame" x="80" y="17" width="265" height="46"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nfh-i8-nk6">
+                                <rect key="frame" x="92" y="23" width="257" height="54"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-zU-Fsk">
-                                        <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="23"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-zU-Fsk">
+                                        <rect key="frame" x="0.0" y="0.0" width="130.66666666666666" height="23"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihV-XJ-p53">
-                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="37.666666666666664" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="34.666666666666664" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0만원 증정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJq-DR-iET">
-                                                <rect key="frame" x="37.666666666666671" y="1.6666666666666679" width="80" height="20"/>
+                                                <rect key="frame" x="50.666666666666657" y="1.6666666666666679" width="80" height="20"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Qnk-1u-9Tk"/>
@@ -52,7 +52,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신용카드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFr-zf-qBu">
-                                        <rect key="frame" x="0.0" y="23" width="66" height="23"/>
+                                        <rect key="frame" x="0.0" y="31" width="66" height="23"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -60,13 +60,17 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6t6-Yz-kao">
-                                <rect key="frame" x="345" y="32" width="20" height="16.333333333333329"/>
+                                <rect key="frame" x="361" y="42" width="20" height="16.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="g43-AV-xaX"/>
                                     <constraint firstAttribute="width" constant="20" id="gd8-SV-YKs"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="dZz-PE-rkb" firstAttribute="top" secondItem="tpp-aT-cak" secondAttribute="top" constant="30" id="Zst-GI-OH2"/>
+                            <constraint firstItem="dZz-PE-rkb" firstAttribute="centerY" secondItem="tpp-aT-cak" secondAttribute="centerY" id="fkt-zy-HJ4"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
@@ -84,7 +88,7 @@
                 <outlet property="promotionLabel" destination="ZJq-DR-iET" id="kH5-fH-cI6"/>
                 <outlet property="rankLabel" destination="ihV-XJ-p53" id="NcC-tf-1ng"/>
             </connections>
-            <point key="canvasLocation" x="-2" y="20"/>
+            <point key="canvasLocation" x="-7.6335877862595414" y="35.211267605633807"/>
         </tableViewCell>
     </objects>
     <resources>

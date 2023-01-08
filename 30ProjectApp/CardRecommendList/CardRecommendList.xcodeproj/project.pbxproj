@@ -18,6 +18,12 @@
 		9DDF6236296A981C004F3300 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6234296A981C004F3300 /* CardListCell.xib */; };
 		9DDF6239296AB56D004F3300 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6238296AB56D004F3300 /* Kingfisher */; };
 		9DDF623B296AB847004F3300 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF623A296AB847004F3300 /* CardDetailViewController.swift */; };
+		9DDF623E296ABAFC004F3300 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF623D296ABAFC004F3300 /* Lottie */; };
+		9DDF6240296ABBDB004F3300 /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF623F296ABBDB004F3300 /* money.json */; };
+		9DDF6242296B0D34004F3300 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6241296B0D34004F3300 /* GoogleService-Info.plist */; };
+		9DDF6245296B0F63004F3300 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6244296B0F63004F3300 /* FirebaseAuth */; };
+		9DDF6247296B0F63004F3300 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6246296B0F63004F3300 /* FirebaseDatabase */; };
+		9DDF6249296B0F63004F3300 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6248296B0F63004F3300 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,8 @@
 		9DDF6233296A981C004F3300 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		9DDF6234296A981C004F3300 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
 		9DDF623A296AB847004F3300 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		9DDF623F296ABBDB004F3300 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
+		9DDF6241296B0D34004F3300 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDF6239296AB56D004F3300 /* Kingfisher in Frameworks */,
+				9DDF6245296B0F63004F3300 /* FirebaseAuth in Frameworks */,
+				9DDF6247296B0F63004F3300 /* FirebaseDatabase in Frameworks */,
+				9DDF6249296B0F63004F3300 /* FirebaseFirestore in Frameworks */,
+				9DDF623E296ABAFC004F3300 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,7 @@
 		9DDF621A296A95B5004F3300 /* CardRecommendList */ = {
 			isa = PBXGroup;
 			children = (
+				9DDF623F296ABBDB004F3300 /* money.json */,
 				9DDF622F296A9634004F3300 /* CardListViewController.swift */,
 				9DDF623A296AB847004F3300 /* CardDetailViewController.swift */,
 				9DDF621B296A95B5004F3300 /* AppDelegate.swift */,
@@ -76,6 +89,7 @@
 				9DDF6234296A981C004F3300 /* CardListCell.xib */,
 				9DDF6224296A95B5004F3300 /* Assets.xcassets */,
 				9DDF6226296A95B5004F3300 /* LaunchScreen.storyboard */,
+				9DDF6241296B0D34004F3300 /* GoogleService-Info.plist */,
 				9DDF6229296A95B5004F3300 /* Info.plist */,
 			);
 			path = CardRecommendList;
@@ -99,6 +113,10 @@
 			name = CardRecommendList;
 			packageProductDependencies = (
 				9DDF6238296AB56D004F3300 /* Kingfisher */,
+				9DDF623D296ABAFC004F3300 /* Lottie */,
+				9DDF6244296B0F63004F3300 /* FirebaseAuth */,
+				9DDF6246296B0F63004F3300 /* FirebaseDatabase */,
+				9DDF6248296B0F63004F3300 /* FirebaseFirestore */,
 			);
 			productName = CardRecommendList;
 			productReference = 9DDF6218296A95B5004F3300 /* CardRecommendList.app */;
@@ -130,6 +148,8 @@
 			mainGroup = 9DDF620F296A95B5004F3300;
 			packageReferences = (
 				9DDF6237296AB56D004F3300 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9DDF623C296ABAFC004F3300 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9DDF6219296A95B5004F3300 /* Products */;
 			projectDirPath = "";
@@ -147,8 +167,10 @@
 			files = (
 				9DDF6228296A95B5004F3300 /* LaunchScreen.storyboard in Resources */,
 				9DDF6225296A95B5004F3300 /* Assets.xcassets in Resources */,
+				9DDF6240296ABBDB004F3300 /* money.json in Resources */,
 				9DDF6223296A95B5004F3300 /* Main.storyboard in Resources */,
 				9DDF6236296A981C004F3300 /* CardListCell.xib in Resources */,
+				9DDF6242296B0D34004F3300 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +414,22 @@
 				version = 7.5.0;
 			};
 		};
+		9DDF623C296ABAFC004F3300 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.1;
+			};
+		};
+		9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -399,6 +437,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DDF6237296AB56D004F3300 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9DDF623D296ABAFC004F3300 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF623C296ABAFC004F3300 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		9DDF6244296B0F63004F3300 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9DDF6246296B0F63004F3300 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9DDF6248296B0F63004F3300 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
