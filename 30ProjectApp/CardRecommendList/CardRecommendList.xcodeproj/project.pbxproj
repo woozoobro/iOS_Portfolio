@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DDF621C296A95B5004F3300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF621B296A95B5004F3300 /* AppDelegate.swift */; };
+		9DDF621E296A95B5004F3300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF621D296A95B5004F3300 /* SceneDelegate.swift */; };
+		9DDF6223296A95B5004F3300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6221296A95B5004F3300 /* Main.storyboard */; };
+		9DDF6225296A95B5004F3300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6224296A95B5004F3300 /* Assets.xcassets */; };
+		9DDF6228296A95B5004F3300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6226296A95B5004F3300 /* LaunchScreen.storyboard */; };
+		9DDF6230296A9634004F3300 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF622F296A9634004F3300 /* CardListViewController.swift */; };
+		9DDF6232296A96C7004F3300 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF6231296A96C7004F3300 /* CreditCard.swift */; };
+		9DDF6235296A981C004F3300 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF6233296A981C004F3300 /* CardListCell.swift */; };
+		9DDF6236296A981C004F3300 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DDF6234296A981C004F3300 /* CardListCell.xib */; };
+		9DDF6239296AB56D004F3300 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6238296AB56D004F3300 /* Kingfisher */; };
+		9DDF623B296AB847004F3300 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF623A296AB847004F3300 /* CardDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9DDF6218296A95B5004F3300 /* CardRecommendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardRecommendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDF621B296A95B5004F3300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DDF621D296A95B5004F3300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9DDF6222296A95B5004F3300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DDF6224296A95B5004F3300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DDF6227296A95B5004F3300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DDF6229296A95B5004F3300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDF622F296A9634004F3300 /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		9DDF6231296A96C7004F3300 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		9DDF6233296A981C004F3300 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		9DDF6234296A981C004F3300 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		9DDF623A296AB847004F3300 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DDF6215296A95B5004F3300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDF6239296AB56D004F3300 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DDF620F296A95B5004F3300 = {
+			isa = PBXGroup;
+			children = (
+				9DDF621A296A95B5004F3300 /* CardRecommendList */,
+				9DDF6219296A95B5004F3300 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DDF6219296A95B5004F3300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DDF6218296A95B5004F3300 /* CardRecommendList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DDF621A296A95B5004F3300 /* CardRecommendList */ = {
+			isa = PBXGroup;
+			children = (
+				9DDF622F296A9634004F3300 /* CardListViewController.swift */,
+				9DDF623A296AB847004F3300 /* CardDetailViewController.swift */,
+				9DDF621B296A95B5004F3300 /* AppDelegate.swift */,
+				9DDF621D296A95B5004F3300 /* SceneDelegate.swift */,
+				9DDF6221296A95B5004F3300 /* Main.storyboard */,
+				9DDF6231296A96C7004F3300 /* CreditCard.swift */,
+				9DDF6233296A981C004F3300 /* CardListCell.swift */,
+				9DDF6234296A981C004F3300 /* CardListCell.xib */,
+				9DDF6224296A95B5004F3300 /* Assets.xcassets */,
+				9DDF6226296A95B5004F3300 /* LaunchScreen.storyboard */,
+				9DDF6229296A95B5004F3300 /* Info.plist */,
+			);
+			path = CardRecommendList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DDF6217296A95B5004F3300 /* CardRecommendList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DDF622C296A95B5004F3300 /* Build configuration list for PBXNativeTarget "CardRecommendList" */;
+			buildPhases = (
+				9DDF6214296A95B5004F3300 /* Sources */,
+				9DDF6215296A95B5004F3300 /* Frameworks */,
+				9DDF6216296A95B5004F3300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardRecommendList;
+			packageProductDependencies = (
+				9DDF6238296AB56D004F3300 /* Kingfisher */,
+			);
+			productName = CardRecommendList;
+			productReference = 9DDF6218296A95B5004F3300 /* CardRecommendList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DDF6210296A95B5004F3300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9DDF6217296A95B5004F3300 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9DDF6213296A95B5004F3300 /* Build configuration list for PBXProject "CardRecommendList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DDF620F296A95B5004F3300;
+			packageReferences = (
+				9DDF6237296AB56D004F3300 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 9DDF6219296A95B5004F3300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DDF6217296A95B5004F3300 /* CardRecommendList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DDF6216296A95B5004F3300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDF6228296A95B5004F3300 /* LaunchScreen.storyboard in Resources */,
+				9DDF6225296A95B5004F3300 /* Assets.xcassets in Resources */,
+				9DDF6223296A95B5004F3300 /* Main.storyboard in Resources */,
+				9DDF6236296A981C004F3300 /* CardListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DDF6214296A95B5004F3300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDF6232296A96C7004F3300 /* CreditCard.swift in Sources */,
+				9DDF623B296AB847004F3300 /* CardDetailViewController.swift in Sources */,
+				9DDF6235296A981C004F3300 /* CardListCell.swift in Sources */,
+				9DDF6230296A9634004F3300 /* CardListViewController.swift in Sources */,
+				9DDF621C296A95B5004F3300 /* AppDelegate.swift in Sources */,
+				9DDF621E296A95B5004F3300 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DDF6221296A95B5004F3300 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DDF6222296A95B5004F3300 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DDF6226296A95B5004F3300 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DDF6227296A95B5004F3300 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DDF622A296A95B5004F3300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DDF622B296A95B5004F3300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DDF622D296A95B5004F3300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDJ95T6M99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardRecommendList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CardRecommendList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DDF622E296A95B5004F3300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZDJ95T6M99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CardRecommendList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CardRecommendList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DDF6213296A95B5004F3300 /* Build configuration list for PBXProject "CardRecommendList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDF622A296A95B5004F3300 /* Debug */,
+				9DDF622B296A95B5004F3300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DDF622C296A95B5004F3300 /* Build configuration list for PBXNativeTarget "CardRecommendList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDF622D296A95B5004F3300 /* Debug */,
+				9DDF622E296A95B5004F3300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DDF6237296AB56D004F3300 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 7.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DDF6238296AB56D004F3300 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF6237296AB56D004F3300 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9DDF6210296A95B5004F3300 /* Project object */;
+}
