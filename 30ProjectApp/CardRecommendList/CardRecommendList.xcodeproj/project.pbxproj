@@ -24,6 +24,8 @@
 		9DDF6245296B0F63004F3300 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6244296B0F63004F3300 /* FirebaseAuth */; };
 		9DDF6247296B0F63004F3300 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6246296B0F63004F3300 /* FirebaseDatabase */; };
 		9DDF6249296B0F63004F3300 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF6248296B0F63004F3300 /* FirebaseFirestore */; };
+		9DDF624C296B2216004F3300 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDF624B296B2216004F3300 /* FirebaseFirestoreSwift */; };
+		9DDF624E296B2443004F3300 /* CreditCardDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF624D296B2443004F3300 /* CreditCardDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		9DDF623A296AB847004F3300 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		9DDF623F296ABBDB004F3300 /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
 		9DDF6241296B0D34004F3300 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9DDF624D296B2443004F3300 /* CreditCardDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 				9DDF6247296B0F63004F3300 /* FirebaseDatabase in Frameworks */,
 				9DDF6249296B0F63004F3300 /* FirebaseFirestore in Frameworks */,
 				9DDF623E296ABAFC004F3300 /* Lottie in Frameworks */,
+				9DDF624C296B2216004F3300 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,7 @@
 			children = (
 				9DDF621A296A95B5004F3300 /* CardRecommendList */,
 				9DDF6219296A95B5004F3300 /* Products */,
+				9DDF624A296B2216004F3300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9DDF623F296ABBDB004F3300 /* money.json */,
+				9DDF624D296B2443004F3300 /* CreditCardDummy.swift */,
 				9DDF622F296A9634004F3300 /* CardListViewController.swift */,
 				9DDF623A296AB847004F3300 /* CardDetailViewController.swift */,
 				9DDF621B296A95B5004F3300 /* AppDelegate.swift */,
@@ -93,6 +99,13 @@
 				9DDF6229296A95B5004F3300 /* Info.plist */,
 			);
 			path = CardRecommendList;
+			sourceTree = "<group>";
+		};
+		9DDF624A296B2216004F3300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +130,7 @@
 				9DDF6244296B0F63004F3300 /* FirebaseAuth */,
 				9DDF6246296B0F63004F3300 /* FirebaseDatabase */,
 				9DDF6248296B0F63004F3300 /* FirebaseFirestore */,
+				9DDF624B296B2216004F3300 /* FirebaseFirestoreSwift */,
 			);
 			productName = CardRecommendList;
 			productReference = 9DDF6218296A95B5004F3300 /* CardRecommendList.app */;
@@ -185,6 +199,7 @@
 				9DDF623B296AB847004F3300 /* CardDetailViewController.swift in Sources */,
 				9DDF6235296A981C004F3300 /* CardListCell.swift in Sources */,
 				9DDF6230296A9634004F3300 /* CardListViewController.swift in Sources */,
+				9DDF624E296B2443004F3300 /* CreditCardDummy.swift in Sources */,
 				9DDF621C296A95B5004F3300 /* AppDelegate.swift in Sources */,
 				9DDF621E296A95B5004F3300 /* SceneDelegate.swift in Sources */,
 			);
@@ -457,6 +472,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		9DDF624B296B2216004F3300 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DDF6243296B0F63004F3300 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

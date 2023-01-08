@@ -50,10 +50,6 @@ class CardListViewController: UITableViewController {
         cell.configure(creditCardList[indexPath.row])
         return cell
     }
-   
-//    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 120
-//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //상세화면 전달
@@ -62,5 +58,39 @@ class CardListViewController: UITableViewController {
         detailVC.promotionDetail = creditCardList[indexPath.row].promotionDetail
         show(detailVC, sender: nil)
         
+        //Option1
+//        let cardID = creditCardList[indexPath.row].id
+//        ref.child("Item\(cardID)/isSelected").setValue(true)
+        
+        //Option2
+//        let cardID = creditCardList[indexPath.row].id
+//        ref.queryOrdered(byChild: "id").queryEqual(toValue: cardID).observe(.value) { [weak self] snapshot in
+//            guard let self = self,
+//                  let value = snapshot.value as? [String: [String: Any]],
+//                  let key = value.keys.first else { return }
+//            self.ref.child("\(key)/isSelected").setValue(self)
+//        }
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+ 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Option1
+            let cardID = creditCardList[indexPath.row].id
+            ref.child("Item\(cardID)").removeValue()
+            
+            // Option2
+//            ref.queryOrdered(byChild: "id").queryEqual(toValue: cardID).observe(.value) { [weak self] snapshot in
+//                guard let self = self,
+//                      let value = snapshot.value as? [String: [String: Any]],
+//                      let key = value.keys.first else { return }
+//                self.ref.child(key).removeValue()
+//            }
+        }
+    }
+    
 }
