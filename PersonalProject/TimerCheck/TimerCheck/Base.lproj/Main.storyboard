@@ -23,13 +23,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs5-Yi-t8h">
-                                <rect key="frame" x="132.66666666666666" y="598" width="127.99999999999997" height="50"/>
+                                <rect key="frame" x="100" y="576" width="193" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8Mu-F5-XAI"/>
+                                    <constraint firstAttribute="height" constant="100" id="9D2-Gh-lof"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="시작하기">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="30"/>
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6Z-Me-QQq"/>
@@ -50,8 +50,9 @@
                             <constraint firstItem="cBn-TC-GpJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35c-Oh-uZo"/>
                             <constraint firstItem="cBn-TC-GpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Df-bP-4kG"/>
                             <constraint firstItem="0ae-PM-QWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="7rT-B9-Xxn"/>
-                            <constraint firstItem="gs5-Yi-t8h" firstAttribute="top" secondItem="cBn-TC-GpJ" secondAttribute="bottom" constant="142" id="blz-D1-QYw"/>
+                            <constraint firstItem="gs5-Yi-t8h" firstAttribute="top" secondItem="cBn-TC-GpJ" secondAttribute="bottom" constant="120" id="blz-D1-QYw"/>
                             <constraint firstItem="gs5-Yi-t8h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jEp-6Z-T5Y"/>
+                            <constraint firstItem="gs5-Yi-t8h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="slJ-PB-Of9"/>
                             <constraint firstItem="0ae-PM-QWc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uP1-Lb-3yZ"/>
                         </constraints>
                     </view>

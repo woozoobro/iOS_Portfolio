@@ -14,11 +14,11 @@ struct TimePassed {
     
     func currentTimetoString(sec: Int, min: Int, hour: Int) -> String {
         if min > 0 {
-            return "\(minutesPassed)분 \(secondsPassed) 초"
+            return "\(minutesPassed)분 \(secondsPassed)초"
         } else if hour > 0 {
-            return "\(houresPassed)시간 \(minutesPassed)분 \(secondsPassed) 초"
+            return "\(houresPassed)시간 \(minutesPassed)분 \(secondsPassed)초"
         } else {
-            return "\(secondsPassed) 초"
+            return "\(secondsPassed)초"
         }
     }
 }

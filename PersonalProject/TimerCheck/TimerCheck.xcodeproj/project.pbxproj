@@ -15,6 +15,7 @@
 		9D26251D296563EC004EB75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26251B296563EC004EB75E /* LaunchScreen.storyboard */; };
 		9D74B79B296C52D100F1857B /* gummyBear.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79A296C52D100F1857B /* gummyBear.json */; };
 		9D74B79E296C52F600F1857B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9D74B79D296C52F600F1857B /* Lottie */; };
+		9D74B7A0296C625B00F1857B /* heartPopUp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79F296C625B00F1857B /* heartPopUp.json */; };
 		9D76D9BF2966B685007F604E /* TimePassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76D9BE2966B685007F604E /* TimePassed.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		9D26251C296563EC004EB75E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D26251E296563EC004EB75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D74B79A296C52D100F1857B /* gummyBear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gummyBear.json; sourceTree = "<group>"; };
+		9D74B79F296C625B00F1857B /* heartPopUp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartPopUp.json; sourceTree = "<group>"; };
 		9D76D9BE2966B685007F604E /* TimePassed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePassed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				9D262510296563EB004EB75E /* AppDelegate.swift */,
 				9D262512296563EB004EB75E /* SceneDelegate.swift */,
 				9D262514296563EB004EB75E /* ViewController.swift */,
+				9D74B79F296C625B00F1857B /* heartPopUp.json */,
 				9D74B79A296C52D100F1857B /* gummyBear.json */,
 				9D76D9C02966BBCD007F604E /* Model */,
 				9D262516296563EB004EB75E /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D26251D296563EC004EB75E /* LaunchScreen.storyboard in Resources */,
+				9D74B7A0296C625B00F1857B /* heartPopUp.json in Resources */,
 				9D26251A296563EC004EB75E /* Assets.xcassets in Resources */,
 				9D262518296563EB004EB75E /* Main.storyboard in Resources */,
 				9D74B79B296C52D100F1857B /* gummyBear.json in Resources */,

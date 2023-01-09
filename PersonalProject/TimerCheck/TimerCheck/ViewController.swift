@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     @IBOutlet weak var lottieView: LottieAnimationView!
-    let animationView = LottieAnimationView(name: "gummyBear")
+    let animationView = LottieAnimationView(name: "heartPopUp")
     
     var timer = Timer()
     var timePassed = TimePassed()
@@ -28,13 +28,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButtonTitle(with: "시작하기")
+        startButton.layer.cornerRadius = 50
+        startButton.layer.masksToBounds = true
+        configureLottieView()
         
-        lottieView.contentMode = .scaleAspectFit
-        lottieView.addSubview(animationView)
-        animationView.frame = lottieView.bounds
-        animationView.loopMode = .loop
-        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
+        startButton.addGestureRecognizer(longPressGesture)
     }
+    
+    @objc func longPress() {
+        timer.invalidate()
+        setButtonTitle(with: "시작하기")
+        timeStatus = .end
+        animationView.stop()
+        timePassed.secondsPassed = 0
+        timePassed.minutesPassed = 0
+        timePassed.houresPassed = 0
+        setTimeLabel()
+    }
+    
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         switch timeStatus {
@@ -42,14 +55,20 @@ class ViewController: UIViewController {
             timeStatus = .start
             animationView.play()
             timeStart()
+            setButtonTitle(with: "일시정지")
+            
         case .start:
             timeStatus = .pause
             timer.invalidate()
             animationView.stop()
+            setButtonTitle(with: "다시시작")
+            
+            
         case .pause:
             timeStatus = .start
             timeStart()
             animationView.play()
+            setButtonTitle(with: "일시정지")
         }
     }
    
@@ -65,10 +84,30 @@ class ViewController: UIViewController {
                     self.timePassed.houresPassed += 1
                 }
             }
-            DispatchQueue.main.async {
-                self.timeLabel.text = self.timePassed.currentTimetoString(sec: self.timePassed.secondsPassed, min: self.timePassed.minutesPassed, hour: self.timePassed.houresPassed)
-            }
+            self.setTimeLabel()
         })
+    }
+    
+    private func setButtonTitle(with titleKey: String) {
+        if let attrFont = UIFont(name: "Helvetica", size: 40) {
+            startButton.titleLabel?.text = titleKey
+            let title = startButton.titleLabel?.text
+            let attrTitle = NSAttributedString(string: title ?? "error", attributes: [NSAttributedString.Key.font: attrFont])
+            startButton.setAttributedTitle(attrTitle, for: .normal)
+        }
+    }
+    
+    private func configureLottieView() {
+        lottieView.contentMode = .scaleAspectFit
+        lottieView.addSubview(animationView)
+        animationView.frame = lottieView.bounds
+        animationView.loopMode = .loop
+    }
+    
+    private func setTimeLabel() {
+        DispatchQueue.main.async {
+            self.timeLabel.text = self.timePassed.currentTimetoString(sec: self.timePassed.secondsPassed, min: self.timePassed.minutesPassed, hour: self.timePassed.houresPassed)
+        }
     }
     
 }
