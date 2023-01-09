@@ -6,21 +6,54 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     
-    var timer: Timer?
+    @IBOutlet weak var lottieView: LottieAnimationView!
+    let animationView = LottieAnimationView(name: "gummyBear")
+    
+    var timer = Timer()
     var timePassed = TimePassed()
+    var timeStatus: TimeStatus = .end
+    
+    enum TimeStatus {
+        case start
+        case pause
+        case end
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lottieView.contentMode = .scaleAspectFit
+        lottieView.addSubview(animationView)
+        animationView.frame = lottieView.bounds
+        animationView.loopMode = .loop
+        
     }
-
+    
     @IBAction func startButtonPressed(_ sender: UIButton) {
-        timer?.invalidate()
+        switch timeStatus {
+        case .end:
+            timeStatus = .start
+            animationView.play()
+            timeStart()
+        case .start:
+            timeStatus = .pause
+            timer.invalidate()
+            animationView.stop()
+        case .pause:
+            timeStatus = .start
+            timeStart()
+            animationView.play()
+        }
+    }
+   
+    private func timeStart() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
             self.timePassed.secondsPassed += 1
             if self.timePassed.secondsPassed == 60 {
@@ -37,7 +70,6 @@ class ViewController: UIViewController {
             }
         })
     }
-   
     
 }
 

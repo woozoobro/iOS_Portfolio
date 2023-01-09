@@ -35,17 +35,29 @@
                                     <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6Z-Me-QQq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-PM-QWc" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="76.666666666666686" y="121" width="240" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="L4r-bb-X8m"/>
+                                    <constraint firstAttribute="width" constant="240" id="c3W-BM-yGl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cBn-TC-GpJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35c-Oh-uZo"/>
                             <constraint firstItem="cBn-TC-GpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Df-bP-4kG"/>
+                            <constraint firstItem="0ae-PM-QWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="7rT-B9-Xxn"/>
                             <constraint firstItem="gs5-Yi-t8h" firstAttribute="top" secondItem="cBn-TC-GpJ" secondAttribute="bottom" constant="142" id="blz-D1-QYw"/>
                             <constraint firstItem="gs5-Yi-t8h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jEp-6Z-T5Y"/>
+                            <constraint firstItem="0ae-PM-QWc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uP1-Lb-3yZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lottieView" destination="0ae-PM-QWc" id="NC8-X9-Wtv"/>
+                        <outlet property="startButton" destination="gs5-Yi-t8h" id="e8m-Y6-6rd"/>
                         <outlet property="timeLabel" destination="cBn-TC-GpJ" id="QRq-3H-sXY"/>
                     </connections>
                 </viewController>
