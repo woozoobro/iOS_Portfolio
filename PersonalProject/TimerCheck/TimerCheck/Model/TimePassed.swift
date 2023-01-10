@@ -11,6 +11,7 @@ struct TimePassed {
     var secondsPassed = 0
     var minutesPassed = 0
     var houresPassed = 0
+    var date = Date()
     
     func currentTimetoString(sec: Int, min: Int, hour: Int) -> String {
         if min > 0 {

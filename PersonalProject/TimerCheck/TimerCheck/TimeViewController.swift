@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TimeViewController.swift
 //  TimerCheck
 //
 //  Created by 우주형 on 2023/01/04.
@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class ViewController: UIViewController {
+class TimeViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         timePassed.minutesPassed = 0
         timePassed.houresPassed = 0
         setTimeLabel()
+        print(timePassed.date)
     }
     
     
