@@ -38,10 +38,11 @@ class TimeViewController: UIViewController {
         startButton.layer.cornerRadius = 50
         startButton.layer.masksToBounds = true
         configureLottieView()
-        
+               
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
         startButton.addGestureRecognizer(longPressGesture)
     }
+    
     
     @objc func longPress(gesture: UIGestureRecognizer) {
         if let longPress = gesture as? UILongPressGestureRecognizer {
@@ -50,7 +51,8 @@ class TimeViewController: UIViewController {
                 setButtonTitle(with: "시작하기")
                 timeStatus = .end
                 animationView.stop()
-                delegate?.didSavedTime(data: timeModel)
+                let data = TimeModel(seconds: timeModel.seconds, minutes: timeModel.minutes, hours: timeModel.hours, date: timeModel.date)
+                delegate?.didSavedTime(data: data)
                 
                 resetTimeModel()
                 setTimeLabel()
@@ -83,14 +85,14 @@ class TimeViewController: UIViewController {
     private func timeStart() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] _ in
             guard let self = self else { return }
-            self.timeModel.secondsPassed += 1
-            if self.timeModel.secondsPassed == 60 {
-                self.timeModel.secondsPassed = 0
-                self.timeModel.minutesPassed += 1
+            self.timeModel.seconds += 1
+            if self.timeModel.seconds == 60 {
+                self.timeModel.seconds = 0
+                self.timeModel.minutes += 1
                 
-                if self.timeModel.minutesPassed == 60 {
-                    self.timeModel.minutesPassed = 0
-                    self.timeModel.houresPassed += 1
+                if self.timeModel.minutes == 60 {
+                    self.timeModel.minutes = 0
+                    self.timeModel.hours += 1
                 }
             }
             self.setTimeLabel()
@@ -115,14 +117,14 @@ class TimeViewController: UIViewController {
     
     private func setTimeLabel() {
         DispatchQueue.main.async {
-            self.timeLabel.text = self.timeModel.currentTimetoString(sec: self.timeModel.secondsPassed, min: self.timeModel.minutesPassed, hour: self.timeModel.houresPassed)
+            self.timeLabel.text = self.timeModel.currentTimetoString(sec: self.timeModel.seconds, min: self.timeModel.minutes, hour: self.timeModel.hours)
         }
     }
     
     private func resetTimeModel() {
-        timeModel.secondsPassed = 0
-        timeModel.minutesPassed = 0
-        timeModel.houresPassed = 0
+        timeModel.seconds = 0
+        timeModel.minutes = 0
+        timeModel.hours = 0
     }
     
 }

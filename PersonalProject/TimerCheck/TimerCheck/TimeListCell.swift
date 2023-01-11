@@ -11,5 +11,8 @@ class TimeListCell: UICollectionViewCell {
     
     @IBOutlet weak var timeLabel: UILabel!
     
+    func configure(_ item: TimeModel) {
+        timeLabel.text = "\(item.seconds)"
+    }
     
 }

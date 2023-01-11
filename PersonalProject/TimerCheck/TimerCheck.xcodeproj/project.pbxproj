@@ -13,6 +13,7 @@
 		9D262518296563EB004EB75E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D262516296563EB004EB75E /* Main.storyboard */; };
 		9D26251A296563EC004EB75E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D262519296563EC004EB75E /* Assets.xcassets */; };
 		9D26251D296563EC004EB75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26251B296563EC004EB75E /* LaunchScreen.storyboard */; };
+		9D49F719296EF07A00FBE031 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49F718296EF07A00FBE031 /* TabBarController.swift */; };
 		9D74B79B296C52D100F1857B /* gummyBear.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79A296C52D100F1857B /* gummyBear.json */; };
 		9D74B79E296C52F600F1857B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9D74B79D296C52F600F1857B /* Lottie */; };
 		9D74B7A0296C625B00F1857B /* heartPopUp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79F296C625B00F1857B /* heartPopUp.json */; };
@@ -30,6 +31,7 @@
 		9D262519296563EC004EB75E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D26251C296563EC004EB75E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D26251E296563EC004EB75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D49F718296EF07A00FBE031 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9D74B79A296C52D100F1857B /* gummyBear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gummyBear.json; sourceTree = "<group>"; };
 		9D74B79F296C625B00F1857B /* heartPopUp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartPopUp.json; sourceTree = "<group>"; };
 		9D76D9BE2966B685007F604E /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				9D262516296563EB004EB75E /* Main.storyboard */,
 				9D7CA37B296E86E2003395EA /* TimeListCell.swift */,
 				9D262514296563EB004EB75E /* TimeViewController.swift */,
+				9D49F718296EF07A00FBE031 /* TabBarController.swift */,
 				9D83A7A3296DCD83004953B4 /* TimeListViewController.swift */,
 				9D74B79F296C625B00F1857B /* heartPopUp.json */,
 				9D74B79A296C52D100F1857B /* gummyBear.json */,
@@ -175,6 +178,7 @@
 				9D262515296563EB004EB75E /* TimeViewController.swift in Sources */,
 				9D7CA37C296E86E2003395EA /* TimeListCell.swift in Sources */,
 				9D262511296563EB004EB75E /* AppDelegate.swift in Sources */,
+				9D49F719296EF07A00FBE031 /* TabBarController.swift in Sources */,
 				9D76D9BF2966B685007F604E /* TimeModel.swift in Sources */,
 				9D262513296563EB004EB75E /* SceneDelegate.swift in Sources */,
 			);
