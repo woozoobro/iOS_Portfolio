@@ -15,6 +15,7 @@
 		9D26251D296563EC004EB75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26251B296563EC004EB75E /* LaunchScreen.storyboard */; };
 		9D49F719296EF07A00FBE031 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49F718296EF07A00FBE031 /* TabBarController.swift */; };
 		9D49F71E296F15D600FBE031 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49F71D296F15D600FBE031 /* CalendarViewController.swift */; };
+		9D49F721296F2CEB00FBE031 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D49F71F296F2CEB00FBE031 /* DataModel.xcdatamodeld */; };
 		9D74B79B296C52D100F1857B /* gummyBear.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79A296C52D100F1857B /* gummyBear.json */; };
 		9D74B79E296C52F600F1857B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9D74B79D296C52F600F1857B /* Lottie */; };
 		9D74B7A0296C625B00F1857B /* heartPopUp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D74B79F296C625B00F1857B /* heartPopUp.json */; };
@@ -34,6 +35,7 @@
 		9D26251E296563EC004EB75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D49F718296EF07A00FBE031 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9D49F71D296F15D600FBE031 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		9D49F720296F2CEB00FBE031 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		9D74B79A296C52D100F1857B /* gummyBear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gummyBear.json; sourceTree = "<group>"; };
 		9D74B79F296C625B00F1857B /* heartPopUp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartPopUp.json; sourceTree = "<group>"; };
 		9D76D9BE2966B685007F604E /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9D262514296563EB004EB75E /* TimeViewController.swift */,
 				9D49F71D296F15D600FBE031 /* CalendarViewController.swift */,
 				9D83A7A3296DCD83004953B4 /* TimeListViewController.swift */,
+				9D49F71F296F2CEB00FBE031 /* DataModel.xcdatamodeld */,
 				9D7CA37B296E86E2003395EA /* TimeListCell.swift */,
 				9D49F718296EF07A00FBE031 /* TabBarController.swift */,
 				9D74B79F296C625B00F1857B /* heartPopUp.json */,
@@ -183,6 +186,7 @@
 				9D7CA37C296E86E2003395EA /* TimeListCell.swift in Sources */,
 				9D262511296563EB004EB75E /* AppDelegate.swift in Sources */,
 				9D49F719296EF07A00FBE031 /* TabBarController.swift in Sources */,
+				9D49F721296F2CEB00FBE031 /* DataModel.xcdatamodeld in Sources */,
 				9D76D9BF2966B685007F604E /* TimeModel.swift in Sources */,
 				9D262513296563EB004EB75E /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +427,19 @@
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9D49F71F296F2CEB00FBE031 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D49F720296F2CEB00FBE031 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 9D49F720296F2CEB00FBE031 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D262505296563EB004EB75E /* Project object */;
 }

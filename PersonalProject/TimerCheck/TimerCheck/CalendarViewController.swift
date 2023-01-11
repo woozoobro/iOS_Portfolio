@@ -32,7 +32,7 @@ extension CalendarViewController: UICalendarSelectionSingleDateDelegate {
     func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let timeListVC = sb.instantiateViewController(withIdentifier: "TimeListViewController") as! TimeListViewController
-        navigationController?.pushViewController(timeListVC, animated: true)        
+        navigationController?.pushViewController(timeListVC, animated: true)
     }
 }
 

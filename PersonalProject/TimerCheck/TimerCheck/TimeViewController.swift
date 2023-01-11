@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import CoreData
 
 protocol TimeViewControllerDelegate: AnyObject {
     func didSavedTime(data: TimeModel)
@@ -19,6 +20,8 @@ class TimeViewController: UIViewController {
     
     @IBOutlet weak var lottieView: LottieAnimationView!
     let animationView = LottieAnimationView(name: "heartPopUp")
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     weak var delegate: TimeViewControllerDelegate?
     
@@ -34,6 +37,7 @@ class TimeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         setButtonTitle(with: "시작하기")
         startButton.layer.cornerRadius = 50
         startButton.layer.masksToBounds = true
@@ -42,7 +46,6 @@ class TimeViewController: UIViewController {
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
         startButton.addGestureRecognizer(longPressGesture)
     }
-    
     
     @objc func longPress(gesture: UIGestureRecognizer) {
         if let longPress = gesture as? UILongPressGestureRecognizer {
@@ -53,7 +56,8 @@ class TimeViewController: UIViewController {
                 animationView.stop()
                 let data = TimeModel(seconds: timeModel.seconds, minutes: timeModel.minutes, hours: timeModel.hours, date: timeModel.date)
                 delegate?.didSavedTime(data: data)
-                
+                                
+                saveTimeModel(with: data)
                 resetTimeModel()
                 setTimeLabel()
             }
@@ -126,5 +130,18 @@ class TimeViewController: UIViewController {
         timeModel.minutes = 0
         timeModel.hours = 0
     }
+    
+    private func saveTimeModel(with data: TimeModel) {
+        let newTime = TimeItem(context: context)
+        newTime.seconds = "\(data.seconds)"
+        newTime.minutes = "\(data.minutes)"
+        newTime.hours = "\(data.hours)"
+        newTime.date = data.date
+        do {
+            try context.save()
+        } catch {
+            print("Error saving context \(error)")
+        }
+    }    
     
 }
