@@ -8,16 +8,22 @@
 import UIKit
 import Lottie
 
-class TimeViewController: UIViewController {
+protocol TimeViewControllerDelegate: AnyObject {
+    func didSavedTime(data: TimeModel)
+}
 
+class TimeViewController: UIViewController {
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
     @IBOutlet weak var lottieView: LottieAnimationView!
     let animationView = LottieAnimationView(name: "heartPopUp")
     
+    weak var delegate: TimeViewControllerDelegate?
+    
     var timer = Timer()
-    var timePassed = TimePassed()
+    var timeModel = TimeModel()
     var timeStatus: TimeStatus = .end
     
     enum TimeStatus {
@@ -37,18 +43,20 @@ class TimeViewController: UIViewController {
         startButton.addGestureRecognizer(longPressGesture)
     }
     
-    @objc func longPress() {
-        timer.invalidate()
-        setButtonTitle(with: "시작하기")
-        timeStatus = .end
-        animationView.stop()
-        timePassed.secondsPassed = 0
-        timePassed.minutesPassed = 0
-        timePassed.houresPassed = 0
-        setTimeLabel()
-        print(timePassed.date)
+    @objc func longPress(gesture: UIGestureRecognizer) {
+        if let longPress = gesture as? UILongPressGestureRecognizer {
+            if longPress.state == UIGestureRecognizer.State.began {
+                timer.invalidate()
+                setButtonTitle(with: "시작하기")
+                timeStatus = .end
+                animationView.stop()
+                delegate?.didSavedTime(data: timeModel)
+                
+                resetTimeModel()
+                setTimeLabel()
+            }
+        }
     }
-    
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         switch timeStatus {
@@ -64,7 +72,6 @@ class TimeViewController: UIViewController {
             animationView.stop()
             setButtonTitle(with: "다시시작")
             
-            
         case .pause:
             timeStatus = .start
             timeStart()
@@ -72,17 +79,18 @@ class TimeViewController: UIViewController {
             setButtonTitle(with: "일시정지")
         }
     }
-   
+    
     private func timeStart() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
-            self.timePassed.secondsPassed += 1
-            if self.timePassed.secondsPassed == 60 {
-                self.timePassed.secondsPassed = 0
-                self.timePassed.minutesPassed += 1
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] _ in
+            guard let self = self else { return }
+            self.timeModel.secondsPassed += 1
+            if self.timeModel.secondsPassed == 60 {
+                self.timeModel.secondsPassed = 0
+                self.timeModel.minutesPassed += 1
                 
-                if self.timePassed.minutesPassed == 60 {
-                    self.timePassed.minutesPassed = 0
-                    self.timePassed.houresPassed += 1
+                if self.timeModel.minutesPassed == 60 {
+                    self.timeModel.minutesPassed = 0
+                    self.timeModel.houresPassed += 1
                 }
             }
             self.setTimeLabel()
@@ -107,9 +115,14 @@ class TimeViewController: UIViewController {
     
     private func setTimeLabel() {
         DispatchQueue.main.async {
-            self.timeLabel.text = self.timePassed.currentTimetoString(sec: self.timePassed.secondsPassed, min: self.timePassed.minutesPassed, hour: self.timePassed.houresPassed)
+            self.timeLabel.text = self.timeModel.currentTimetoString(sec: self.timeModel.secondsPassed, min: self.timeModel.minutesPassed, hour: self.timeModel.houresPassed)
         }
     }
     
+    private func resetTimeModel() {
+        timeModel.secondsPassed = 0
+        timeModel.minutesPassed = 0
+        timeModel.houresPassed = 0
+    }
+    
 }
-

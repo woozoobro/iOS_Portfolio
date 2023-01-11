@@ -1,5 +1,5 @@
 //
-//  TimePassed.swift
+//  TimeModel.swift
 //  TimerCheck
 //
 //  Created by 우주형 on 2023/01/05.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TimePassed {
+struct TimeModel {
     var secondsPassed = 0
     var minutesPassed = 0
     var houresPassed = 0
