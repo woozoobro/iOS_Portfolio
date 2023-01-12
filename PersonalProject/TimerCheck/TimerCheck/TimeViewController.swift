@@ -7,7 +7,6 @@
 
 import UIKit
 import Lottie
-import CoreData
 
 protocol TimeViewControllerDelegate: AnyObject {
     func didSavedTime(data: TimeModel)
@@ -19,15 +18,12 @@ class TimeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     @IBOutlet weak var lottieView: LottieAnimationView!
-    let animationView = LottieAnimationView(name: "heartPopUp")
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let animationView = LottieAnimationView(name: "heartPopUp")    
     
     weak var delegate: TimeViewControllerDelegate?
     
     var timer = Timer()
     var timeModel = TimeModel()
-    var timeItemList = [TimeItem]()
     var timeStatus: TimeStatus = .end
     
     enum TimeStatus {
@@ -57,8 +53,7 @@ class TimeViewController: UIViewController {
                 animationView.stop()
                 let data = TimeModel(seconds: timeModel.seconds, minutes: timeModel.minutes, hours: timeModel.hours, date: timeModel.date)
                 delegate?.didSavedTime(data: data)
-                                
-                saveTimeModel(with: data)
+                                                
                 resetTimeModel()
                 setTimeLabel()
             }
@@ -132,18 +127,5 @@ class TimeViewController: UIViewController {
         timeModel.hours = 0
     }
     
-    private func saveTimeModel(with data: TimeModel) {
-        let newTime = TimeItem(context: context)
-        newTime.seconds = "\(data.seconds)"
-        newTime.minutes = "\(data.minutes)"
-        newTime.hours = "\(data.hours)"
-        newTime.date = data.date
-        timeItemList.append(newTime)
-        do {
-            try context.save()
-        } catch {
-            print("Error saving context \(error)")
-        }
-    }    
     
 }

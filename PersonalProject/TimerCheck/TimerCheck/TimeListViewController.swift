@@ -6,15 +6,16 @@
 //
 
 import UIKit
-import CoreData
 
 class TimeListViewController: UIViewController {
     
-    var list = [TimeModel]()
-    var timeItem = [TimeItem]()
+    private var list = [TimeModel]() {
+        didSet {
+            self.saveTimeList()
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     enum Section { case main }
     typealias Item = TimeModel
@@ -71,10 +72,10 @@ class TimeListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadItems()
+        
+        loadTimeList()
         guard let timeVC = tabBarController?.viewControllers?[0] as? TimeViewController else { return }
-        timeVC.delegate = self
-        tableView.delegate = self
+        timeVC.delegate = self        
         
         tableView.rowHeight = 100
         configureDataSource()
@@ -86,55 +87,49 @@ class TimeListViewController: UIViewController {
             cell.configure(item)
             return cell
         }
-        updateList()
+        updateSnapshot()
     }
     
-    private func updateList() {
+    private func updateSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections([.main])
         snapshot.appendItems(list)
         dataSource.apply(snapshot)
     }
     
-    private func loadItems() {
-        let request: NSFetchRequest<TimeItem> = TimeItem.fetchRequest()
-        do {
-            timeItem = try context.fetch(request)
-            list = timeItem.map { TimeModel(seconds: Int($0.seconds ?? "0") ?? 0, minutes: Int($0.minutes ?? "0") ?? 0, hours: Int($0.hours ?? "0") ?? 0, date: $0.date ?? Date()) }
-        } catch {
-            print("Error fetching data from context \(error)")
+    private func saveTimeList() {
+        let time = self.list.map {
+            [
+                "id" : $0.id,
+                "seconds" : $0.seconds,
+                "minutes" : $0.minutes,
+                "hours" : $0.hours,
+                "date" : $0.date
+            ]
         }
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(time, forKey: "timeList")
     }
     
-    func deleteItems(indexPath: IndexPath) {
-//        let request: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "TimeItem")
-//        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
-//        do {
-//            try context.execute(deleteRequest)
-//        } catch {
-//            print(error.localizedDescription)
-//        }
-//
-        let timeItemToDelete = self.timeItem[indexPath.row]
-        self.context.delete(timeItemToDelete)
-        do {
-            try self.context.save()
-        } catch {
-            print("Error deleting item from context \(error)")
+    private func loadTimeList() {
+        let userDefaults = UserDefaults.standard
+        guard let data =  userDefaults.object(forKey: "timeList") as? [[String: Any]] else { return }
+        self.list = data.compactMap {
+            guard let id = $0["id"] as? UUID else { return nil }
+            guard let seconds = $0["seconds"] as? Int else { return nil }
+            guard let minutes = $0["minutes"] as? Int else { return nil }
+            guard let hours = $0["hours"] as? Int else { return nil }
+            guard let date = $0["date"] as? Date else { return nil }
+            return TimeModel(id: id, seconds: seconds, minutes: minutes, hours: hours, date: date)
         }
     }
+  
 }
 //MARK: - TimeVC Delegate
 extension TimeListViewController: TimeViewControllerDelegate {
     func didSavedTime(data: TimeModel) {
         list.append(data)
-//        loadItems()
-        updateList()
+        updateSnapshot()
     }
 }
 
-extension TimeListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-        deleteItems(indexPath: indexPath)
-    }
-}

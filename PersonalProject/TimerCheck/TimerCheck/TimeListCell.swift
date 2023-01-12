@@ -12,15 +12,11 @@ class TimeListCell: UICollectionViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-//    func configure(_ item: TimeModel) {
-//        timeLabel.text = "\(item.seconds) 초"
-//        dateLabel.text = dateToString(date: item.date)
-//    }
-    
-    func configureCell(with timeItem: TimeItem) {
-        timeLabel.text = timeItem.seconds
-        dateLabel.text = dateToString(date: timeItem.date ?? Date())
+    func configure(_ item: TimeModel) {
+        timeLabel.text = "\(item.seconds) 초"
+        dateLabel.text = dateToString(date: item.date)
     }
+
     
     func dateToString(date: Date) -> String {
         let formatter = DateFormatter()
