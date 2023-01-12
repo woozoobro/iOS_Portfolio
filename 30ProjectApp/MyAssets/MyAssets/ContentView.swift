@@ -24,29 +24,25 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "dollarsign.circle.fill")
                     Text("자산")
-                }
-                .tag(Tab.asset)
-            Color.green
+                }.tag(Tab.asset)
+            Color.green 
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
                     Image(systemName: "hand.thumbsup.fill")
                     Text("추천")
-                }
-                .tag(Tab.asset)
+                }.tag(Tab.recommend)
             Color.yellow
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
                     Image(systemName: "bell.fill")
                     Text("알림")
-                }
-                .tag(Tab.alert)
+                }.tag(Tab.alert)
             Color.brown
                 .edgesIgnoringSafeArea(.all)
                 .tabItem {
                     Image(systemName: "gear")
                     Text("설정")
-                }
-                .tag(Tab.setting)            
+                }.tag(Tab.setting)
         }
     }
 }

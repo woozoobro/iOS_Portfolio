@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D27051429703AC5006E5C33 /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27051329703AC5006E5C33 /* NavigationBarWithButton.swift */; };
 		9D7CA36C296E4714003395EA /* MyAssetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA36B296E4714003395EA /* MyAssetsApp.swift */; };
 		9D7CA36E296E4714003395EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CA36D296E4714003395EA /* ContentView.swift */; };
 		9D7CA370296E4715003395EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7CA36F296E4715003395EA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D27051329703AC5006E5C33 /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
 		9D7CA368296E4714003395EA /* MyAssets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAssets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7CA36B296E4714003395EA /* MyAssetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAssetsApp.swift; sourceTree = "<group>"; };
 		9D7CA36D296E4714003395EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				9D7CA36B296E4714003395EA /* MyAssetsApp.swift */,
 				9D7CA36D296E4714003395EA /* ContentView.swift */,
+				9D27051329703AC5006E5C33 /* NavigationBarWithButton.swift */,
 				9D7CA36F296E4715003395EA /* Assets.xcassets */,
 				9D7CA371296E4715003395EA /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D27051429703AC5006E5C33 /* NavigationBarWithButton.swift in Sources */,
 				9D7CA36E296E4714003395EA /* ContentView.swift in Sources */,
 				9D7CA36C296E4714003395EA /* MyAssetsApp.swift in Sources */,
 			);
