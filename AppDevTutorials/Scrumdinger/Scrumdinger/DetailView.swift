@@ -39,7 +39,7 @@ struct DetailView: View {
                     Label(attendee.name, systemImage: "person")
                 }
             }
-        }
+        }.navigationTitle(scrum.title)
     }
 }
 
