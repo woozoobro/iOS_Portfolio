@@ -27,6 +27,7 @@ class TimeViewController: UIViewController {
     
     var timer = Timer()
     var timeModel = TimeModel()
+    var timeItemList = [TimeItem]()
     var timeStatus: TimeStatus = .end
     
     enum TimeStatus {
@@ -137,6 +138,7 @@ class TimeViewController: UIViewController {
         newTime.minutes = "\(data.minutes)"
         newTime.hours = "\(data.hours)"
         newTime.date = data.date
+        timeItemList.append(newTime)
         do {
             try context.save()
         } catch {

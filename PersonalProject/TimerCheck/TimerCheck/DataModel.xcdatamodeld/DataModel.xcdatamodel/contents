@@ -3,6 +3,7 @@
     <entity name="TimeItem" representedClassName=".TimeItem" syncable="YES" codeGenerationType="class">
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="hours" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="minutes" attributeType="String"/>
         <attribute name="seconds" attributeType="String"/>
     </entity>
