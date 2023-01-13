@@ -20,6 +20,9 @@
 		9D27053F2970C58A006E5C33 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27053E2970C58A006E5C33 /* DetailEditView.swift */; };
 		9D270541297155BE006E5C33 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D270540297155BE006E5C33 /* ThemeView.swift */; };
 		9D270543297157A1006E5C33 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D270542297157A1006E5C33 /* ThemePicker.swift */; };
+		9D2705452971CAE1006E5C33 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2705442971CAE1006E5C33 /* MeetingHeaderView.swift */; };
+		9D2705472971D19A006E5C33 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2705462971D19A006E5C33 /* ScrumProgressViewStyle.swift */; };
+		9D2705492971D791006E5C33 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2705482971D791006E5C33 /* ScrumTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		9D27053E2970C58A006E5C33 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		9D270540297155BE006E5C33 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		9D270542297157A1006E5C33 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		9D2705442971CAE1006E5C33 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		9D2705462971D19A006E5C33 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
+		9D2705482971D791006E5C33 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +78,13 @@
 				9D270521297040CC006E5C33 /* ScrumdingerApp.swift */,
 				9D270538297069A7006E5C33 /* TrailingIconLabelStyle.swift */,
 				9D270523297040CC006E5C33 /* MeetingView.swift */,
+				9D2705442971CAE1006E5C33 /* MeetingHeaderView.swift */,
+				9D2705462971D19A006E5C33 /* ScrumProgressViewStyle.swift */,
 				9D27053A297079CB006E5C33 /* ScrumsView.swift */,
 				9D27053C29708E84006E5C33 /* DetailView.swift */,
 				9D27053E2970C58A006E5C33 /* DetailEditView.swift */,
-				9D270540297155BE006E5C33 /* ThemeView.swift */,
 				9D270542297157A1006E5C33 /* ThemePicker.swift */,
+				9D270540297155BE006E5C33 /* ThemeView.swift */,
 				9D27053429706307006E5C33 /* CardView.swift */,
 				9D27052F29704F01006E5C33 /* Models */,
 				9D270525297040CD006E5C33 /* Assets.xcassets */,
@@ -98,6 +106,7 @@
 			children = (
 				9D27053029704F18006E5C33 /* Theme.swift */,
 				9D270532297057A6006E5C33 /* DailyScrum.swift */,
+				9D2705482971D791006E5C33 /* ScrumTimer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D270543297157A1006E5C33 /* ThemePicker.swift in Sources */,
+				9D2705472971D19A006E5C33 /* ScrumProgressViewStyle.swift in Sources */,
+				9D2705492971D791006E5C33 /* ScrumTimer.swift in Sources */,
 				9D270533297057A6006E5C33 /* DailyScrum.swift in Sources */,
 				9D27053D29708E84006E5C33 /* DetailView.swift in Sources */,
 				9D27053F2970C58A006E5C33 /* DetailEditView.swift in Sources */,
@@ -182,6 +193,7 @@
 				9D270524297040CC006E5C33 /* MeetingView.swift in Sources */,
 				9D270522297040CC006E5C33 /* ScrumdingerApp.swift in Sources */,
 				9D270541297155BE006E5C33 /* ThemeView.swift in Sources */,
+				9D2705452971CAE1006E5C33 /* MeetingHeaderView.swift in Sources */,
 				9D27053529706307006E5C33 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
