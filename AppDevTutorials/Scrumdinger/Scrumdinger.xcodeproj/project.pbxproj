@@ -27,6 +27,7 @@
 		9D27054D2971EEB6006E5C33 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27054C2971EEB6006E5C33 /* AVPlayer+Ding.swift */; };
 		9D2705502971EEE6006E5C33 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D27054F2971EEE6006E5C33 /* ding.wav */; };
 		9D27055229720347006E5C33 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D27055129720347006E5C33 /* History.swift */; };
+		9D2705542972983C006E5C33 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2705532972983C006E5C33 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9D27054C2971EEB6006E5C33 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		9D27054F2971EEE6006E5C33 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		9D27055129720347006E5C33 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		9D2705532972983C006E5C33 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				9D27053029704F18006E5C33 /* Theme.swift */,
 				9D27054C2971EEB6006E5C33 /* AVPlayer+Ding.swift */,
 				9D270532297057A6006E5C33 /* DailyScrum.swift */,
+				9D2705532972983C006E5C33 /* ScrumStore.swift */,
 				9D2705482971D791006E5C33 /* ScrumTimer.swift */,
 				9D27055129720347006E5C33 /* History.swift */,
 			);
@@ -206,6 +209,7 @@
 				9D270543297157A1006E5C33 /* ThemePicker.swift in Sources */,
 				9D2705472971D19A006E5C33 /* ScrumProgressViewStyle.swift in Sources */,
 				9D27054B2971E8A7006E5C33 /* MeetingFooterView.swift in Sources */,
+				9D2705542972983C006E5C33 /* ScrumStore.swift in Sources */,
 				9D2705492971D791006E5C33 /* ScrumTimer.swift in Sources */,
 				9D270533297057A6006E5C33 /* DailyScrum.swift in Sources */,
 				9D27053D29708E84006E5C33 /* DetailView.swift in Sources */,
