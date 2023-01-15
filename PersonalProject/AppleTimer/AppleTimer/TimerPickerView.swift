@@ -6,51 +6,51 @@
 //
 
 import SwiftUI
-
-struct TimerPickerView: View {
-    @State private var hours = 0
-        @State private var minutes = 0
-        @State private var seconds = 0
-        var body: some View {
-            HStack {
-                Picker("Hours", selection: $hours) {
-                    ForEach(0..<24) {
-                        Text("\($0)").tag($0)
-                    }
-                }
-//                .pickerStyle(WheelPickerStyle())
-                .frame(width: 100, height: 100)
-                .clipped()
-                
-                Text(":")
-                .font(.system(size: 40))
-                
-                Picker("Minutes", selection: $minutes) {
-                    ForEach(0..<60) {
-                        Text("\($0)").tag($0)
-                    }
-                }
-//                .pickerStyle(WheelPickerStyle())
-                .frame(width: 100, height: 100)
-                .clipped()
-                
-                Text(":")
-                .font(.system(size: 40))
-                
-                Picker("Seconds", selection: $seconds) {
-                    ForEach(0..<60) {
-                        Text("\($0)").tag($0)
-                    }
-                }
-//                .pickerStyle(WheelPickerStyle())
-                .frame(width: 100, height: 100)
-                .clipped()
-            }.pickerStyle(.wheel)
-        }
+import UIKit
+struct Time {
+    var hour: Int = 0
+    var minute: Int = 0
+    var second: Int = 0
 }
+
+struct TimerPickerView: UIViewRepresentable {
+    
+     var time: Time
+
+        func makeCoordinator() -> TimerPickerView.Coordinator {
+            Coordinator(self)
+        }
+
+        func makeUIView(context: Context) -> UIDatePicker {
+            let datePicker = UIDatePicker()
+            datePicker.datePickerMode = .countDownTimer
+            datePicker.addTarget(context.coordinator, action: #selector(Coordinator.onDateChanged), for: .valueChanged)
+            return datePicker
+        }
+
+        func updateUIView(_ datePicker: UIDatePicker, context: Context) {
+            let date = Calendar.current.date(bySettingHour: time.hour, minute: time.minute, second: time.second, of: datePicker.date)!
+            datePicker.setDate(date, animated: true)
+        }
+
+        class Coordinator: NSObject {
+            var durationPicker: TimerPickerView
+
+            init(_ durationPicker: TimerPickerView) {
+                self.durationPicker = durationPicker
+            }
+
+            @objc func onDateChanged(sender: UIDatePicker) {
+                print(sender.date)
+                let calendar = Calendar.current
+                let date = sender.date
+                durationPicker.time = Time(hour: calendar.component(.hour, from: date), minute: calendar.component(.minute, from: date), second: calendar.component(.second, from: date))
+            }
+        }
+    }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerPickerView()
+        TimerPickerView(time: Time(hour: 0, minute: 0, second: 0))
     }
 }
