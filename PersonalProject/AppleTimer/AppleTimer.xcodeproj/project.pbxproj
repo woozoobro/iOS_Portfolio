@@ -7,34 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DB860362973928200992D59 /* BackgroundAndOverlayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860352973928200992D59 /* BackgroundAndOverlayBootcamp.swift */; };
-		9DBB8D0E2972B21600C6C2D8 /* BasicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D0D2972B21600C6C2D8 /* BasicSwiftUIApp.swift */; };
-		9DBB8D102972B21600C6C2D8 /* SahpesBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D0F2972B21600C6C2D8 /* SahpesBootCamp.swift */; };
-		9DBB8D122972B21700C6C2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D112972B21700C6C2D8 /* Assets.xcassets */; };
-		9DBB8D152972B21700C6C2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D142972B21700C6C2D8 /* Preview Assets.xcassets */; };
-		9DBB8D1C2972B50700C6C2D8 /* ColorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D1B2972B50700C6C2D8 /* ColorsBootcamp.swift */; };
-		9DBB8D1E2972D81900C6C2D8 /* GradientBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D1D2972D81900C6C2D8 /* GradientBootcamp.swift */; };
-		9DBB8D202972DABA00C6C2D8 /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D1F2972DABA00C6C2D8 /* IconsBootcamp.swift */; };
-		9DBB8D222972E3CC00C6C2D8 /* ImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D212972E3CC00C6C2D8 /* ImageBootcamp.swift */; };
-		9DBB8D242972E82B00C6C2D8 /* FrameBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D232972E82B00C6C2D8 /* FrameBootcamp.swift */; };
+		9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */; };
+		9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */; };
+		9DBB8D362972FBE100C6C2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */; };
+		9DBB8D392972FBE100C6C2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9DB860352973928200992D59 /* BackgroundAndOverlayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlayBootcamp.swift; sourceTree = "<group>"; };
-		9DBB8D0A2972B21600C6C2D8 /* BasicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DBB8D0D2972B21600C6C2D8 /* BasicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSwiftUIApp.swift; sourceTree = "<group>"; };
-		9DBB8D0F2972B21600C6C2D8 /* SahpesBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahpesBootCamp.swift; sourceTree = "<group>"; };
-		9DBB8D112972B21700C6C2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DBB8D142972B21700C6C2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9DBB8D1B2972B50700C6C2D8 /* ColorsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsBootcamp.swift; sourceTree = "<group>"; };
-		9DBB8D1D2972D81900C6C2D8 /* GradientBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBootcamp.swift; sourceTree = "<group>"; };
-		9DBB8D1F2972DABA00C6C2D8 /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
-		9DBB8D212972E3CC00C6C2D8 /* ImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootcamp.swift; sourceTree = "<group>"; };
-		9DBB8D232972E82B00C6C2D8 /* FrameBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameBootcamp.swift; sourceTree = "<group>"; };
+		9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimerApp.swift; sourceTree = "<group>"; };
+		9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
+		9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DBB8D072972B21600C6C2D8 /* Frameworks */ = {
+		9DBB8D2B2972FBDF00C6C2D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DBB8D012972B21600C6C2D8 = {
+		9DBB8D252972FBDF00C6C2D8 = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D0C2972B21600C6C2D8 /* BasicSwiftUI */,
-				9DBB8D0B2972B21600C6C2D8 /* Products */,
+				9DBB8D302972FBDF00C6C2D8 /* AppleTimer */,
+				9DBB8D2F2972FBDF00C6C2D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DBB8D0B2972B21600C6C2D8 /* Products */ = {
+		9DBB8D2F2972FBDF00C6C2D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D0A2972B21600C6C2D8 /* BasicSwiftUI.app */,
+				9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DBB8D0C2972B21600C6C2D8 /* BasicSwiftUI */ = {
+		9DBB8D302972FBDF00C6C2D8 /* AppleTimer */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D0D2972B21600C6C2D8 /* BasicSwiftUIApp.swift */,
-				9DBB8D0F2972B21600C6C2D8 /* SahpesBootCamp.swift */,
-				9DBB8D1B2972B50700C6C2D8 /* ColorsBootcamp.swift */,
-				9DBB8D1D2972D81900C6C2D8 /* GradientBootcamp.swift */,
-				9DBB8D1F2972DABA00C6C2D8 /* IconsBootcamp.swift */,
-				9DBB8D212972E3CC00C6C2D8 /* ImageBootcamp.swift */,
-				9DBB8D232972E82B00C6C2D8 /* FrameBootcamp.swift */,
-				9DB860352973928200992D59 /* BackgroundAndOverlayBootcamp.swift */,
-				9DBB8D112972B21700C6C2D8 /* Assets.xcassets */,
-				9DBB8D132972B21700C6C2D8 /* Preview Content */,
+				9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */,
+				9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */,
+				9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */,
+				9DBB8D372972FBE100C6C2D8 /* Preview Content */,
 			);
-			path = BasicSwiftUI;
+			path = AppleTimer;
 			sourceTree = "<group>";
 		};
-		9DBB8D132972B21700C6C2D8 /* Preview Content */ = {
+		9DBB8D372972FBE100C6C2D8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D142972B21700C6C2D8 /* Preview Assets.xcassets */,
+				9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DBB8D092972B21600C6C2D8 /* BasicSwiftUI */ = {
+		9DBB8D2D2972FBDF00C6C2D8 /* AppleTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DBB8D182972B21700C6C2D8 /* Build configuration list for PBXNativeTarget "BasicSwiftUI" */;
+			buildConfigurationList = 9DBB8D3C2972FBE100C6C2D8 /* Build configuration list for PBXNativeTarget "AppleTimer" */;
 			buildPhases = (
-				9DBB8D062972B21600C6C2D8 /* Sources */,
-				9DBB8D072972B21600C6C2D8 /* Frameworks */,
-				9DBB8D082972B21600C6C2D8 /* Resources */,
+				9DBB8D2A2972FBDF00C6C2D8 /* Sources */,
+				9DBB8D2B2972FBDF00C6C2D8 /* Frameworks */,
+				9DBB8D2C2972FBDF00C6C2D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BasicSwiftUI;
-			productName = BasicSwiftUI;
-			productReference = 9DBB8D0A2972B21600C6C2D8 /* BasicSwiftUI.app */;
+			name = AppleTimer;
+			productName = AppleTimer;
+			productReference = 9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DBB8D022972B21600C6C2D8 /* Project object */ = {
+		9DBB8D262972FBDF00C6C2D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					9DBB8D092972B21600C6C2D8 = {
+					9DBB8D2D2972FBDF00C6C2D8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 9DBB8D052972B21600C6C2D8 /* Build configuration list for PBXProject "BasicSwiftUI" */;
+			buildConfigurationList = 9DBB8D292972FBDF00C6C2D8 /* Build configuration list for PBXProject "AppleTimer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DBB8D012972B21600C6C2D8;
-			productRefGroup = 9DBB8D0B2972B21600C6C2D8 /* Products */;
+			mainGroup = 9DBB8D252972FBDF00C6C2D8;
+			productRefGroup = 9DBB8D2F2972FBDF00C6C2D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DBB8D092972B21600C6C2D8 /* BasicSwiftUI */,
+				9DBB8D2D2972FBDF00C6C2D8 /* AppleTimer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DBB8D082972B21600C6C2D8 /* Resources */ = {
+		9DBB8D2C2972FBDF00C6C2D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBB8D152972B21700C6C2D8 /* Preview Assets.xcassets in Resources */,
-				9DBB8D122972B21700C6C2D8 /* Assets.xcassets in Resources */,
+				9DBB8D392972FBE100C6C2D8 /* Preview Assets.xcassets in Resources */,
+				9DBB8D362972FBE100C6C2D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DBB8D062972B21600C6C2D8 /* Sources */ = {
+		9DBB8D2A2972FBDF00C6C2D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBB8D242972E82B00C6C2D8 /* FrameBootcamp.swift in Sources */,
-				9DBB8D1E2972D81900C6C2D8 /* GradientBootcamp.swift in Sources */,
-				9DBB8D202972DABA00C6C2D8 /* IconsBootcamp.swift in Sources */,
-				9DB860362973928200992D59 /* BackgroundAndOverlayBootcamp.swift in Sources */,
-				9DBB8D102972B21600C6C2D8 /* SahpesBootCamp.swift in Sources */,
-				9DBB8D1C2972B50700C6C2D8 /* ColorsBootcamp.swift in Sources */,
-				9DBB8D222972E3CC00C6C2D8 /* ImageBootcamp.swift in Sources */,
-				9DBB8D0E2972B21600C6C2D8 /* BasicSwiftUIApp.swift in Sources */,
+				9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */,
+				9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9DBB8D162972B21700C6C2D8 /* Debug */ = {
+		9DBB8D3A2972FBE100C6C2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		9DBB8D172972B21700C6C2D8 /* Release */ = {
+		9DBB8D3B2972FBE100C6C2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,14 +259,14 @@
 			};
 			name = Release;
 		};
-		9DBB8D192972B21700C6C2D8 /* Debug */ = {
+		9DBB8D3D2972FBE100C6C2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BasicSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.BasicSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		9DBB8D1A2972B21700C6C2D8 /* Release */ = {
+		9DBB8D3E2972FBE100C6C2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BasicSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.BasicSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DBB8D052972B21600C6C2D8 /* Build configuration list for PBXProject "BasicSwiftUI" */ = {
+		9DBB8D292972FBDF00C6C2D8 /* Build configuration list for PBXProject "AppleTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DBB8D162972B21700C6C2D8 /* Debug */,
-				9DBB8D172972B21700C6C2D8 /* Release */,
+				9DBB8D3A2972FBE100C6C2D8 /* Debug */,
+				9DBB8D3B2972FBE100C6C2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DBB8D182972B21700C6C2D8 /* Build configuration list for PBXNativeTarget "BasicSwiftUI" */ = {
+		9DBB8D3C2972FBE100C6C2D8 /* Build configuration list for PBXNativeTarget "AppleTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DBB8D192972B21700C6C2D8 /* Debug */,
-				9DBB8D1A2972B21700C6C2D8 /* Release */,
+				9DBB8D3D2972FBE100C6C2D8 /* Debug */,
+				9DBB8D3E2972FBE100C6C2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DBB8D022972B21600C6C2D8 /* Project object */;
+	rootObject = 9DBB8D262972FBDF00C6C2D8 /* Project object */;
 }
