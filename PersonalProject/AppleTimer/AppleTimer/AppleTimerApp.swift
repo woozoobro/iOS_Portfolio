@@ -11,7 +11,7 @@ import SwiftUI
 struct AppleTimerApp: App {
     var body: some Scene {
         WindowGroup {
-            TimerPickerView(time: Time(hour: 0, minute: 0, second: 0))
+            TimerPickerView()
         }
     }
 }

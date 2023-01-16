@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DB860862975E00400992D59 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860852975E00400992D59 /* PickerView.swift */; };
+		9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860892975E08A00992D59 /* PickerSwiftUI.swift */; };
+		9DB8608D2975F41500992D59 /* PickerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8608C2975F41500992D59 /* PickerPicker.swift */; };
 		9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */; };
 		9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */; };
 		9DBB8D362972FBE100C6C2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DB860852975E00400992D59 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		9DB860892975E08A00992D59 /* PickerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSwiftUI.swift; sourceTree = "<group>"; };
+		9DB8608C2975F41500992D59 /* PickerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPicker.swift; sourceTree = "<group>"; };
 		9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimerApp.swift; sourceTree = "<group>"; };
 		9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DB8608B2975E17A00992D59 /* PickerWithUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9DB860852975E00400992D59 /* PickerView.swift */,
+				9DB860892975E08A00992D59 /* PickerSwiftUI.swift */,
+			);
+			path = PickerWithUIKit;
+			sourceTree = "<group>";
+		};
 		9DBB8D252972FBDF00C6C2D8 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +68,8 @@
 			children = (
 				9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */,
 				9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */,
+				9DB8608C2975F41500992D59 /* PickerPicker.swift */,
+				9DB8608B2975E17A00992D59 /* PickerWithUIKit */,
 				9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */,
 				9DBB8D372972FBE100C6C2D8 /* Preview Content */,
 			);
@@ -139,6 +156,9 @@
 			files = (
 				9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */,
 				9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */,
+				9DB8608D2975F41500992D59 /* PickerPicker.swift in Sources */,
+				9DB860862975E00400992D59 /* PickerView.swift in Sources */,
+				9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
