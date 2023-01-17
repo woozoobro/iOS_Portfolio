@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1A99A929771BE8004E04C3 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99A829771BE8004E04C3 /* TimerData.swift */; };
 		9DB860862975E00400992D59 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860852975E00400992D59 /* PickerView.swift */; };
 		9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860892975E08A00992D59 /* PickerSwiftUI.swift */; };
 		9DB8608D2975F41500992D59 /* PickerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8608C2975F41500992D59 /* PickerPicker.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1A99A829771BE8004E04C3 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
 		9DB860852975E00400992D59 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		9DB860892975E08A00992D59 /* PickerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSwiftUI.swift; sourceTree = "<group>"; };
 		9DB8608C2975F41500992D59 /* PickerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPicker.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */,
 				9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */,
+				9D1A99A829771BE8004E04C3 /* TimerData.swift */,
 				9DB8608C2975F41500992D59 /* PickerPicker.swift */,
 				9DB8608B2975E17A00992D59 /* PickerWithUIKit */,
 				9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				9DB8608D2975F41500992D59 /* PickerPicker.swift in Sources */,
 				9DB860862975E00400992D59 /* PickerView.swift in Sources */,
 				9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */,
+				9D1A99A929771BE8004E04C3 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
