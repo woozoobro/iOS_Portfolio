@@ -23,6 +23,8 @@
 		9D1A99A329770B67004E04C3 /* IfLetGuardBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99A229770B67004E04C3 /* IfLetGuardBootcamp.swift */; };
 		9D1A99A529770E85004E04C3 /* TapGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99A429770E85004E04C3 /* TapGestureBootcamp.swift */; };
 		9D1A99A7297710A7004E04C3 /* ModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99A6297710A7004E04C3 /* ModelBootcamp.swift */; };
+		9D1A99AB297732AB004E04C3 /* ViewModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99AA297732AB004E04C3 /* ViewModelBootcamp.swift */; };
+		9D1A99AF29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99AE29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift */; };
 		9DB860362973928200992D59 /* BackgroundAndOverlayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860352973928200992D59 /* BackgroundAndOverlayBootcamp.swift */; };
 		9DB860382973EDDC00992D59 /* StacksBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860372973EDDC00992D59 /* StacksBootcamp.swift */; };
 		9DB8603A2973EFB600992D59 /* PaddingAndSpacerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860392973EFB600992D59 /* PaddingAndSpacerBootcamp.swift */; };
@@ -76,6 +78,8 @@
 		9D1A99A229770B67004E04C3 /* IfLetGuardBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardBootcamp.swift; sourceTree = "<group>"; };
 		9D1A99A429770E85004E04C3 /* TapGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureBootcamp.swift; sourceTree = "<group>"; };
 		9D1A99A6297710A7004E04C3 /* ModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBootcamp.swift; sourceTree = "<group>"; };
+		9D1A99AA297732AB004E04C3 /* ViewModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBootcamp.swift; sourceTree = "<group>"; };
+		9D1A99AE29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectBootcamp.swift; sourceTree = "<group>"; };
 		9DB860352973928200992D59 /* BackgroundAndOverlayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlayBootcamp.swift; sourceTree = "<group>"; };
 		9DB860372973EDDC00992D59 /* StacksBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksBootcamp.swift; sourceTree = "<group>"; };
 		9DB860392973EFB600992D59 /* PaddingAndSpacerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingAndSpacerBootcamp.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				9D1A99A229770B67004E04C3 /* IfLetGuardBootcamp.swift */,
 				9D1A99A429770E85004E04C3 /* TapGestureBootcamp.swift */,
 				9D1A99A6297710A7004E04C3 /* ModelBootcamp.swift */,
+				9D1A99AA297732AB004E04C3 /* ViewModelBootcamp.swift */,
+				9D1A99AE29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift */,
 				9DBB8D112972B21700C6C2D8 /* Assets.xcassets */,
 				9DBB8D132972B21700C6C2D8 /* Preview Content */,
 			);
@@ -296,6 +302,7 @@
 				9DBB8D102972B21600C6C2D8 /* SahpesBootCamp.swift in Sources */,
 				9DB8603C2973F21B00992D59 /* SpacerBootcamp.swift in Sources */,
 				9DB86044297438D700992D59 /* GridBootcamp.swift in Sources */,
+				9D1A99AB297732AB004E04C3 /* ViewModelBootcamp.swift in Sources */,
 				9D1A999B2976BAB1004E04C3 /* TabViewBootcamp.swift in Sources */,
 				9D1A99872975FFB7004E04C3 /* ContextMenuBootcamp.swift in Sources */,
 				9D1A9989297602AD004E04C3 /* TextFieldBootcamp.swift in Sources */,
@@ -323,6 +330,7 @@
 				9D1A998B29761515004E04C3 /* TextEditorBootcamp.swift in Sources */,
 				9DB860582974AFCE00992D59 /* AnimationTimingBootcamp.swift in Sources */,
 				9DB860562974AAD800992D59 /* AnimationBootcamp.swift in Sources */,
+				9D1A99AF29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
