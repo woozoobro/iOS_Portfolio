@@ -1,23 +1,14 @@
 //
-//  TodoListApp.swift
-//  TodoList
+//  WhatTodoMemoApp.swift
+//  WhatTodoMemo
 //
-//  Created by 우주형 on 2023/01/19.
+//  Created by 우주형 on 2023/01/20.
 //
 
 import SwiftUI
 
-/*
- MVVM Architecture
- 
- Model - data point
- View - UI
- ViewModel - manages Models for View
- 
- */
-
 @main
-struct TodoListApp: App {
+struct WhatTodoMemoApp: App {
     
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
@@ -26,7 +17,6 @@ struct TodoListApp: App {
             NavigationView {
                 ListView()
             }
-            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }

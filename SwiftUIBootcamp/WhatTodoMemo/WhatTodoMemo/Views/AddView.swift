@@ -1,38 +1,37 @@
 //
 //  AddView.swift
-//  TodoList
+//  WhatTodoMemo
 //
-//  Created by 우주형 on 2023/01/19.
+//  Created by 우주형 on 2023/01/20.
 //
 
 import SwiftUI
 
 struct AddView: View {
+    
     @FocusState private var focusedTextField: Bool
-    
-    @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
-    
+    @EnvironmentObject var listViewModel: ListViewModel
+    @Environment(\.dismiss) var dismiss
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
-            
+    
     var body: some View {
         ScrollView {
             VStack {
-                TextField("Type something here", text: $textFieldText)
+                TextField("메모를 입력해주세요", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
+                    .background(Color.gray.opacity(0.3)).cornerRadius(10)
                     .focused($focusedTextField)
                 
                 Button {
                     saveButtonPressed()
                 } label: {
-                    Text("Save".uppercased())
+                    Text("저장")
+                        .font(.title)
+                        .fontWeight(.semibold)
                         .foregroundColor(.white)
-                        .font(.headline)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
                         .background(Color.accentColor).cornerRadius(10)
@@ -40,7 +39,7 @@ struct AddView: View {
             }
             .padding(16)
         }
-        .navigationTitle("Add an Item 🖊️")
+        .navigationTitle("메모 추가")
         .alert(isPresented: $showAlert) {
             getAlert()
         }
@@ -50,24 +49,24 @@ struct AddView: View {
     }
     
     func saveButtonPressed() {
-        if textIsAppropriate() {
+        if textFieldAppropriate() {
             listViewModel.addItem(title: textFieldText)
             dismiss()
         }
     }
     
-    func textIsAppropriate() -> Bool {
+    func getAlert() -> Alert {        
+        return Alert(title: Text(alertTitle))
+    }
+    
+    func textFieldAppropriate() -> Bool {
         if textFieldText.count < 2 {
-            alertTitle = "Your new todo item must be at least 2 characters 🥹"
+            alertTitle = "글자를 더 입력해주세요😉"
             showAlert.toggle()
             return false
         } else {
             return true
         }
-    }
-    
-    func getAlert() -> Alert {
-        return Alert(title: Text(alertTitle))
     }
 }
 

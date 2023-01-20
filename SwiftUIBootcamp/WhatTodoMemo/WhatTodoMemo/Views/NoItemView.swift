@@ -1,42 +1,42 @@
 //
-//  NoItemsView.swift
-//  TodoList
+//  NoItemView.swift
+//  WhatTodoMemo
 //
 //  Created by 우주형 on 2023/01/20.
 //
 
 import SwiftUI
 
-struct NoItemsView: View {
+struct NoItemView: View {
+    
     @State var animate: Bool = false
-    let secondaryAccentColor = Color("SecondaryAccentColor")
+    let secondaryAccent: Color = Color("SecondaryAccentColor")
     
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                Text("There are no items!")
+                Text("메모가 없어요!")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Are you a productive person? I think you should click the add button and  add a bunch of items to your todo list!")
-                    .padding(.bottom, 20)
+                Text("하루를 알차게 보낼 수 있는 계획 \n그것은 바로 메모메모... \n 무엇이든지 기록하고 체크해 볼까요?!")
+                    .padding(.bottom, 30)
                 
                 NavigationLink(destination: AddView()) {
-                    Text("Add Something 🥳")
+                    Text("메모 추가")
                         .foregroundColor(.white)
-                        .font(.headline)
+                        .font(animate ? .title2 : .title3)
+                        .fontWeight(.semibold)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(animate ? secondaryAccentColor : Color.accentColor).cornerRadius(10)
+                        .background(animate ? secondaryAccent : .accentColor).cornerRadius(10)
                 }
                 .padding(.horizontal, animate ? 30 : 50)
-                .shadow(color: animate ? secondaryAccentColor.opacity(0.3) : Color.accentColor.opacity(0.6),
-                        radius: animate ? 30:10,
-                        x: 0,
-                        y: animate ? 50:30)
+                .shadow(color: animate ? secondaryAccent.opacity(0.3) : .accentColor.opacity(0.6),
+                        radius: animate ? 30 : 10 ,
+                        x: 0, y: animate ? 50 : 30)
                 .scaleEffect(animate ? 1.1 : 1.0)
                 .offset(y: animate ? -7 : 0)
             }
-            .frame(maxWidth: 400)
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)
@@ -46,23 +46,21 @@ struct NoItemsView: View {
     
     func addAnimation() {
         guard !animate else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            withAnimation(
-                Animation
-                    .easeInOut(duration: 2.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            withAnimation (
+                Animation.easeInOut(duration: 2.0)
                     .repeatForever()
             ) {
                 animate.toggle()
             }
         }
     }
-    
 }
 
-struct NoItemsView_Previews: PreviewProvider {
+struct NoItemView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            NoItemsView()
+            NoItemView()
                 .navigationTitle("Title")
         }
     }
