@@ -11,8 +11,7 @@ import SwiftUI
 //StateObject
 //EnvironmentObject
 
-class EnvironmentViewModel: ObservableObject {
-    
+class EnvironmentViewModel: ObservableObject {    
     @Published var dataArray: [String] = []
     
     init() {
