@@ -39,8 +39,11 @@ struct DragGestureBootcamp2: View {
                             }
                         }
                 )
-            
-            Text("\(currentDragOffsetY)")
+            VStack {
+                Text("start: \(startingOffsetY)")
+                Text("current: \(currentDragOffsetY)")
+                Text("end: \(endingOffsetY)")
+            }
         }
         .ignoresSafeArea(edges: .bottom)
     }
