@@ -10,6 +10,10 @@
 		9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0C6297DFCE7001481DC /* ScrollViewReaderBootcamp.swift */; };
 		9D30B0CB297E0A3A001481DC /* GeometryReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0CA297E0A3A001481DC /* GeometryReaderBootcamp.swift */; };
 		9D30B0CD297EFC5E001481DC /* MultipleSheetsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0CC297EFC5E001481DC /* MultipleSheetsBootcamp.swift */; };
+		9D30B0CF29800732001481DC /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0CE29800732001481DC /* MaskBootcamp.swift */; };
+		9D30B0D129800EE4001481DC /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0D029800EE4001481DC /* SoundsBootcamp.swift */; };
+		9D30B0D529801172001481DC /* levelUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D30B0D329801172001481DC /* levelUp.mp3 */; };
+		9D30B0D629801172001481DC /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D30B0D429801172001481DC /* tada.mp3 */; };
 		9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */; };
 		9D3A1917297C00060078E63D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1916297C00060078E63D /* ContentView.swift */; };
 		9D3A1919297C00060078E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A1918297C00060078E63D /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 		9D30B0C6297DFCE7001481DC /* ScrollViewReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderBootcamp.swift; sourceTree = "<group>"; };
 		9D30B0CA297E0A3A001481DC /* GeometryReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderBootcamp.swift; sourceTree = "<group>"; };
 		9D30B0CC297EFC5E001481DC /* MultipleSheetsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetsBootcamp.swift; sourceTree = "<group>"; };
+		9D30B0CE29800732001481DC /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
+		9D30B0D029800EE4001481DC /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
+		9D30B0D329801172001481DC /* levelUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelUp.mp3; sourceTree = "<group>"; };
+		9D30B0D429801172001481DC /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		9D3A1911297C00060078E63D /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
 		9D3A1916297C00060078E63D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D30B0D229801161001481DC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9D30B0D429801172001481DC /* tada.mp3 */,
+				9D30B0D329801172001481DC /* levelUp.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		9D3A1908297C00060078E63D = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,9 @@
 				9D30B0C6297DFCE7001481DC /* ScrollViewReaderBootcamp.swift */,
 				9D30B0CA297E0A3A001481DC /* GeometryReaderBootcamp.swift */,
 				9D30B0CC297EFC5E001481DC /* MultipleSheetsBootcamp.swift */,
+				9D30B0CE29800732001481DC /* MaskBootcamp.swift */,
+				9D30B0D029800EE4001481DC /* SoundsBootcamp.swift */,
+				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
 			);
@@ -151,6 +171,8 @@
 			files = (
 				9D3A191C297C00060078E63D /* Preview Assets.xcassets in Resources */,
 				9D3A1919297C00060078E63D /* Assets.xcassets in Resources */,
+				9D30B0D529801172001481DC /* levelUp.mp3 in Resources */,
+				9D30B0D629801172001481DC /* tada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D30B0D129800EE4001481DC /* SoundsBootcamp.swift in Sources */,
 				9D3A192B297CD3410078E63D /* DragGestureBootcamp2.swift in Sources */,
+				9D30B0CF29800732001481DC /* MaskBootcamp.swift in Sources */,
 				9D3A1929297CCE9F0078E63D /* DragGestureBootcamp.swift in Sources */,
 				9D3A1917297C00060078E63D /* ContentView.swift in Sources */,
 				9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */,
