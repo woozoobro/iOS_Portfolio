@@ -15,6 +15,7 @@
 		9D30B0D529801172001481DC /* levelUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D30B0D329801172001481DC /* levelUp.mp3 */; };
 		9D30B0D629801172001481DC /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D30B0D429801172001481DC /* tada.mp3 */; };
 		9D30B0D829802059001481DC /* HapticsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0D729802059001481DC /* HapticsBootcamp.swift */; };
+		9D30B0DA29802D90001481DC /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0D929802D90001481DC /* LocalNotificationBootcamp.swift */; };
 		9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */; };
 		9D3A1917297C00060078E63D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1916297C00060078E63D /* ContentView.swift */; };
 		9D3A1919297C00060078E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A1918297C00060078E63D /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 		9D30B0D329801172001481DC /* levelUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelUp.mp3; sourceTree = "<group>"; };
 		9D30B0D429801172001481DC /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		9D30B0D729802059001481DC /* HapticsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsBootcamp.swift; sourceTree = "<group>"; };
+		9D30B0D929802D90001481DC /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
+		9D30B0DB29803483001481DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9D3A1911297C00060078E63D /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
 		9D3A1916297C00060078E63D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		9D3A1913297C00060078E63D /* SwiftfulThinkingContinuedLearning */ = {
 			isa = PBXGroup;
 			children = (
+				9D30B0DB29803483001481DC /* Info.plist */,
 				9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */,
 				9D3A1916297C00060078E63D /* ContentView.swift */,
 				9D3A1922297C004C0078E63D /* LongPressGestureBootcamp.swift */,
@@ -99,6 +103,7 @@
 				9D30B0CE29800732001481DC /* MaskBootcamp.swift */,
 				9D30B0D029800EE4001481DC /* SoundsBootcamp.swift */,
 				9D30B0D729802059001481DC /* HapticsBootcamp.swift */,
+				9D30B0D929802D90001481DC /* LocalNotificationBootcamp.swift */,
 				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
@@ -191,6 +196,7 @@
 				9D30B0CF29800732001481DC /* MaskBootcamp.swift in Sources */,
 				9D3A1929297CCE9F0078E63D /* DragGestureBootcamp.swift in Sources */,
 				9D3A1917297C00060078E63D /* ContentView.swift in Sources */,
+				9D30B0DA29802D90001481DC /* LocalNotificationBootcamp.swift in Sources */,
 				9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */,
 				9D30B0CD297EFC5E001481DC /* MultipleSheetsBootcamp.swift in Sources */,
 				9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */,
@@ -330,7 +336,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftfulThinkingContinuedLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -359,7 +365,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftfulThinkingContinuedLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
