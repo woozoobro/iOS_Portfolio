@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddView: View {
+    @FocusState private var focusedTextField: Bool
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var listViewModel: ListViewModel
     
@@ -22,7 +23,9 @@ struct AddView: View {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
-                .background(.gray.opacity(0.3)).cornerRadius(10)
+                    .background(.gray.opacity(0.3))
+                    .cornerRadius(10)
+                    .focused($focusedTextField)
                 
                 Button {
                     saveButtonPressed()
@@ -39,6 +42,7 @@ struct AddView: View {
         }
         .navigationTitle("Add an Item 🖊️")
         .alert(isPresented: $showAlert, content: getAlert)
+        .onAppear { focusedTextField = true }
     }
     
     func saveButtonPressed() {
