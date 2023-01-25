@@ -17,6 +17,7 @@ struct MemoTwiceApp: App {
             NavigationView {
                 ListView()
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }

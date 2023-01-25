@@ -15,6 +15,7 @@
 		9D30B0FE29809DD9001481DC /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0FD29809DD9001481DC /* AddView.swift */; };
 		9D30B1012980A389001481DC /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B1002980A389001481DC /* ItemModel.swift */; };
 		9D30B1042980A692001481DC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B1032980A692001481DC /* ListViewModel.swift */; };
+		9D64CB4B2980B94100AFC0CE /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64CB4A2980B94100AFC0CE /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9D30B0FD29809DD9001481DC /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		9D30B1002980A389001481DC /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		9D30B1032980A692001481DC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9D64CB4A2980B94100AFC0CE /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9D30B0F929809BF0001481DC /* ListView.swift */,
+				9D64CB4A2980B94100AFC0CE /* NoItemsView.swift */,
 				9D30B0FD29809DD9001481DC /* AddView.swift */,
 				9D30B0FB29809CCF001481DC /* ListRowView.swift */,
 			);
@@ -178,6 +181,7 @@
 				9D30B1042980A692001481DC /* ListViewModel.swift in Sources */,
 				9D30B0FA29809BF0001481DC /* ListView.swift in Sources */,
 				9D30B0EB29809BA1001481DC /* MemoTwiceApp.swift in Sources */,
+				9D64CB4B2980B94100AFC0CE /* NoItemsView.swift in Sources */,
 				9D30B0FC29809CCF001481DC /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
