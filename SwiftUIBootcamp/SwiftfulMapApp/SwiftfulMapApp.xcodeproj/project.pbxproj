@@ -15,6 +15,7 @@
 		9DD32D8C2981C59B00F79F9C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D8B2981C59B00F79F9C /* LocationsDataService.swift */; };
 		9DD32D8E2981E03600F79F9C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D8D2981E03600F79F9C /* LocationView.swift */; };
 		9DD32D922981E83000F79F9C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D912981E83000F79F9C /* LocationsViewModel.swift */; };
+		9DD32D94298216FE00F79F9C /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D93298216FE00F79F9C /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9DD32D8B2981C59B00F79F9C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationsDataService.swift; path = "../../../SwiftfulMapApp-Downloads/LocationsDataService.swift"; sourceTree = "<group>"; };
 		9DD32D8D2981E03600F79F9C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		9DD32D912981E83000F79F9C /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		9DD32D93298216FE00F79F9C /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9DD32D8D2981E03600F79F9C /* LocationView.swift */,
+				9DD32D93298216FE00F79F9C /* LocationsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DD32D8C2981C59B00F79F9C /* LocationsDataService.swift in Sources */,
+				9DD32D94298216FE00F79F9C /* LocationsListView.swift in Sources */,
 				9DD32D922981E83000F79F9C /* LocationsViewModel.swift in Sources */,
 				9DD32D782981C2C000F79F9C /* ContentView.swift in Sources */,
 				9DD32D8E2981E03600F79F9C /* LocationView.swift in Sources */,
