@@ -16,6 +16,9 @@
 		9DD32D8E2981E03600F79F9C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D8D2981E03600F79F9C /* LocationView.swift */; };
 		9DD32D922981E83000F79F9C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D912981E83000F79F9C /* LocationsViewModel.swift */; };
 		9DD32D94298216FE00F79F9C /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D93298216FE00F79F9C /* LocationsListView.swift */; };
+		9DD32D962982B79600F79F9C /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D952982B79600F79F9C /* LocationPreviewView.swift */; };
+		9DD32D982982DA9300F79F9C /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D972982DA9300F79F9C /* LocationMapAnnotationView.swift */; };
+		9DD32D9A2982DF0000F79F9C /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D992982DF0000F79F9C /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,10 @@
 		9DD32D8D2981E03600F79F9C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		9DD32D912981E83000F79F9C /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		9DD32D93298216FE00F79F9C /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		9DD32D952982B79600F79F9C /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		9DD32D972982DA9300F79F9C /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		9DD32D992982DF0000F79F9C /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		9DD32D9B2982FE6900F79F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 		9DD32D742981C2C000F79F9C /* SwiftfulMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DD32D9B2982FE6900F79F9C /* Info.plist */,
 				9DD32D752981C2C000F79F9C /* SwiftfulMapAppApp.swift */,
 				9DD32D772981C2C000F79F9C /* ContentView.swift */,
 				9DD32D832981C34700F79F9C /* Assets.xcassets */,
@@ -93,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				9DD32D8D2981E03600F79F9C /* LocationView.swift */,
+				9DD32D972982DA9300F79F9C /* LocationMapAnnotationView.swift */,
 				9DD32D93298216FE00F79F9C /* LocationsListView.swift */,
+				9DD32D952982B79600F79F9C /* LocationPreviewView.swift */,
+				9DD32D992982DF0000F79F9C /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,11 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DD32D8C2981C59B00F79F9C /* LocationsDataService.swift in Sources */,
+				9DD32D982982DA9300F79F9C /* LocationMapAnnotationView.swift in Sources */,
 				9DD32D94298216FE00F79F9C /* LocationsListView.swift in Sources */,
+				9DD32D962982B79600F79F9C /* LocationPreviewView.swift in Sources */,
 				9DD32D922981E83000F79F9C /* LocationsViewModel.swift in Sources */,
 				9DD32D782981C2C000F79F9C /* ContentView.swift in Sources */,
 				9DD32D8E2981E03600F79F9C /* LocationView.swift in Sources */,
 				9DD32D892981C43400F79F9C /* Location.swift in Sources */,
+				9DD32D9A2982DF0000F79F9C /* LocationDetailView.swift in Sources */,
 				9DD32D762981C2C000F79F9C /* SwiftfulMapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,11 +336,12 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftfulMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,11 +366,12 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftfulMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
