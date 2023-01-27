@@ -8,7 +8,7 @@
 import Foundation
 
 struct TimeData: Identifiable, Hashable {
-    let id: UUID = UUID()
-    let value: Int
-    let unit: String    
+    var id: UUID = UUID()
+    var value: Int
+    var unit: String
 }

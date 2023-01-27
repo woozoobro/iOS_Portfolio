@@ -9,20 +9,28 @@ import SwiftUI
 
 struct TimerStartView: View {
     
-    @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var timerRunning = false
+    @EnvironmentObject var vm: TimerViewModel
     
     var body: some View {
-        VStack {
-            Text("Hello, World!")            
+        ZStack {
+            Circle()
+                .strokeBorder(lineWidth: 12)
+                .foregroundColor(.yellow)
             
-            Label("Hello", systemImage: "xmark")
+            VStack(spacing: 20) {
+                Text("\(vm.selectedHour):\(vm.selectedMinute):\(vm.selectedSecond)")
+                    .font(.largeTitle)
+                Label("00:00", systemImage: "bell.fill")
+            }
         }
+        .frame(height: 300)
+//        .background(.blue)
     }
 }
 
 struct TimerStartView_Previews: PreviewProvider {
     static var previews: some View {
         TimerStartView()
+            .environmentObject(TimerViewModel())
     }
 }

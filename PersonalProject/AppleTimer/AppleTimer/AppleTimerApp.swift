@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct AppleTimerApp: App {
+    
+    @StateObject var vm = TimerViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            TimerPickerView()
+            TimerView()
+                .environmentObject(vm)
         }
     }
 }
