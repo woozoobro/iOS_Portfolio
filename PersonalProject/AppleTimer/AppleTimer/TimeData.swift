@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TimerData: Identifiable, Hashable {
+struct TimeData: Identifiable, Hashable {
     let id: UUID = UUID()
     let value: Int
     let unit: String    

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TimerPickerView: View {
-    @State var selectedTab: Int = 3
+    @State var selectedTab = 3
     
-    @State private var selectedHour: TimerData = TimerData(value: 0, unit: "시간")
-    @State private var selectedMinute: TimerData = TimerData(value: 0, unit: "분")
-    @State private var selectedSecond: TimerData = TimerData(value: 0, unit: "초")
+    @State private var selectedHour = TimeData(value: 0, unit: "시간")
+    @State private var selectedMinute = TimeData(value: 0, unit: "분")
+    @State private var selectedSecond = TimeData(value: 0, unit: "초")
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -28,11 +28,13 @@ struct TimerPickerView: View {
                 .tabItem {
                     Label("스톱워치", systemImage: "stopwatch.fill")
                 }.tag(2)
+            
             VStack {
-                TimePicker(selectedHour: $selectedHour, selectedMinute: $selectedMinute, selectedSecond: $selectedSecond)
+                TimePicker(hour: $selectedHour, minute: $selectedMinute, second: $selectedSecond)
                 
                 HStack {
                     CtaButton(title: "취소", buttonColor: .gray)
+                        
                     Spacer()
                     CtaButton(title: "시작", buttonColor: .green)
                 }
@@ -79,45 +81,40 @@ struct CtaButton: View {
 }
 
 struct TimePicker: View {
-    @Binding var selectedHour: TimerData
-    @Binding var selectedMinute: TimerData
-    @Binding var selectedSecond: TimerData
+    @Binding var hour: TimeData
+    @Binding var minute: TimeData
+    @Binding var second: TimeData
+    
     var body: some View {
         GeometryReader { geometry in
             HStack(spacing: -5) {
                 Spacer()
-                Picker("Selected Hour", selection: $selectedHour) {
+                Picker("Selected Hour", selection: $hour) {
                     ForEach(0..<24, id: \.self) { hour in
                         Text("\(hour)")
                     }
                 }
-                .pickerStyle(.wheel)
                 .frame(width: geometry.size.width/5, height: 200)
-                .clipped()
                 Text("시간")
                 
-                Picker("Select Period", selection: $selectedMinute) {
+                Picker("Select Period", selection: $minute) {
                     ForEach(0..<60, id: \.self) { minute in
                         Text("\(minute)")
                     }
                 }
-                .pickerStyle(.wheel)
                 .frame(width: geometry.size.width/4, height: 200)
-                .clipped()
                 Text("분")
                 
-                
-                Picker("Select Period", selection: $selectedSecond) {
+                Picker("Select Period", selection: $second) {
                     ForEach(0..<60, id: \.self) { minute in
                         Text("\(minute)")
                     }
                 }
-                .pickerStyle(.wheel)
                 .frame(width: geometry.size.width/4, height: 200)
-                .clipped()
                 Text("초")
                 Spacer()
             }
+            .pickerStyle(.wheel)
         }
         .frame(height: 300)
         .background()

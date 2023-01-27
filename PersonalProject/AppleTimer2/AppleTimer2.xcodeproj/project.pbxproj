@@ -7,30 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D1A99A929771BE8004E04C3 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99A829771BE8004E04C3 /* TimeData.swift */; };
-		9D20CA2929845B5200BC9FF5 /* TimerStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20CA2829845B5200BC9FF5 /* TimerStartView.swift */; };
-		9DB860862975E00400992D59 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860852975E00400992D59 /* PickerView.swift */; };
-		9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860892975E08A00992D59 /* PickerSwiftUI.swift */; };
-		9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */; };
-		9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */; };
-		9DBB8D362972FBE100C6C2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */; };
-		9DBB8D392972FBE100C6C2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */; };
+		9D20CA192983EEB600BC9FF5 /* AppleTimer2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20CA182983EEB600BC9FF5 /* AppleTimer2App.swift */; };
+		9D20CA1B2983EEB600BC9FF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20CA1A2983EEB600BC9FF5 /* ContentView.swift */; };
+		9D20CA1D2983EEB700BC9FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D20CA1C2983EEB700BC9FF5 /* Assets.xcassets */; };
+		9D20CA202983EEB700BC9FF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D20CA1F2983EEB700BC9FF5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D1A99A829771BE8004E04C3 /* TimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
-		9D20CA2829845B5200BC9FF5 /* TimerStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStartView.swift; sourceTree = "<group>"; };
-		9DB860852975E00400992D59 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
-		9DB860892975E08A00992D59 /* PickerSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSwiftUI.swift; sourceTree = "<group>"; };
-		9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimerApp.swift; sourceTree = "<group>"; };
-		9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
-		9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D20CA152983EEB600BC9FF5 /* AppleTimer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTimer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D20CA182983EEB600BC9FF5 /* AppleTimer2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTimer2App.swift; sourceTree = "<group>"; };
+		9D20CA1A2983EEB600BC9FF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D20CA1C2983EEB700BC9FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D20CA1F2983EEB700BC9FF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DBB8D2B2972FBDF00C6C2D8 /* Frameworks */ = {
+		9D20CA122983EEB600BC9FF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,49 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DB8608B2975E17A00992D59 /* PickerWithUIKit */ = {
+		9D20CA0C2983EEB600BC9FF5 = {
 			isa = PBXGroup;
 			children = (
-				9DB860852975E00400992D59 /* PickerView.swift */,
-				9DB860892975E08A00992D59 /* PickerSwiftUI.swift */,
-			);
-			path = PickerWithUIKit;
-			sourceTree = "<group>";
-		};
-		9DBB8D252972FBDF00C6C2D8 = {
-			isa = PBXGroup;
-			children = (
-				9DBB8D302972FBDF00C6C2D8 /* AppleTimer */,
-				9DBB8D2F2972FBDF00C6C2D8 /* Products */,
+				9D20CA172983EEB600BC9FF5 /* AppleTimer2 */,
+				9D20CA162983EEB600BC9FF5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DBB8D2F2972FBDF00C6C2D8 /* Products */ = {
+		9D20CA162983EEB600BC9FF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */,
+				9D20CA152983EEB600BC9FF5 /* AppleTimer2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DBB8D302972FBDF00C6C2D8 /* AppleTimer */ = {
+		9D20CA172983EEB600BC9FF5 /* AppleTimer2 */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D312972FBDF00C6C2D8 /* AppleTimerApp.swift */,
-				9DBB8D332972FBDF00C6C2D8 /* TimerPickerView.swift */,
-				9D20CA2829845B5200BC9FF5 /* TimerStartView.swift */,
-				9D1A99A829771BE8004E04C3 /* TimeData.swift */,
-				9DB8608B2975E17A00992D59 /* PickerWithUIKit */,
-				9DBB8D352972FBE100C6C2D8 /* Assets.xcassets */,
-				9DBB8D372972FBE100C6C2D8 /* Preview Content */,
+				9D20CA182983EEB600BC9FF5 /* AppleTimer2App.swift */,
+				9D20CA1A2983EEB600BC9FF5 /* ContentView.swift */,
+				9D20CA1C2983EEB700BC9FF5 /* Assets.xcassets */,
+				9D20CA1E2983EEB700BC9FF5 /* Preview Content */,
 			);
-			path = AppleTimer;
+			path = AppleTimer2;
 			sourceTree = "<group>";
 		};
-		9DBB8D372972FBE100C6C2D8 /* Preview Content */ = {
+		9D20CA1E2983EEB700BC9FF5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9DBB8D382972FBE100C6C2D8 /* Preview Assets.xcassets */,
+				9D20CA1F2983EEB700BC9FF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -90,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DBB8D2D2972FBDF00C6C2D8 /* AppleTimer */ = {
+		9D20CA142983EEB600BC9FF5 /* AppleTimer2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DBB8D3C2972FBE100C6C2D8 /* Build configuration list for PBXNativeTarget "AppleTimer" */;
+			buildConfigurationList = 9D20CA232983EEB700BC9FF5 /* Build configuration list for PBXNativeTarget "AppleTimer2" */;
 			buildPhases = (
-				9DBB8D2A2972FBDF00C6C2D8 /* Sources */,
-				9DBB8D2B2972FBDF00C6C2D8 /* Frameworks */,
-				9DBB8D2C2972FBDF00C6C2D8 /* Resources */,
+				9D20CA112983EEB600BC9FF5 /* Sources */,
+				9D20CA122983EEB600BC9FF5 /* Frameworks */,
+				9D20CA132983EEB600BC9FF5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AppleTimer;
-			productName = AppleTimer;
-			productReference = 9DBB8D2E2972FBDF00C6C2D8 /* AppleTimer.app */;
+			name = AppleTimer2;
+			productName = AppleTimer2;
+			productReference = 9D20CA152983EEB600BC9FF5 /* AppleTimer2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DBB8D262972FBDF00C6C2D8 /* Project object */ = {
+		9D20CA0D2983EEB600BC9FF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					9DBB8D2D2972FBDF00C6C2D8 = {
+					9D20CA142983EEB600BC9FF5 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 9DBB8D292972FBDF00C6C2D8 /* Build configuration list for PBXProject "AppleTimer" */;
+			buildConfigurationList = 9D20CA102983EEB600BC9FF5 /* Build configuration list for PBXProject "AppleTimer2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,46 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DBB8D252972FBDF00C6C2D8;
-			productRefGroup = 9DBB8D2F2972FBDF00C6C2D8 /* Products */;
+			mainGroup = 9D20CA0C2983EEB600BC9FF5;
+			productRefGroup = 9D20CA162983EEB600BC9FF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DBB8D2D2972FBDF00C6C2D8 /* AppleTimer */,
+				9D20CA142983EEB600BC9FF5 /* AppleTimer2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DBB8D2C2972FBDF00C6C2D8 /* Resources */ = {
+		9D20CA132983EEB600BC9FF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBB8D392972FBE100C6C2D8 /* Preview Assets.xcassets in Resources */,
-				9DBB8D362972FBE100C6C2D8 /* Assets.xcassets in Resources */,
+				9D20CA202983EEB700BC9FF5 /* Preview Assets.xcassets in Resources */,
+				9D20CA1D2983EEB700BC9FF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DBB8D2A2972FBDF00C6C2D8 /* Sources */ = {
+		9D20CA112983EEB600BC9FF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBB8D342972FBDF00C6C2D8 /* TimerPickerView.swift in Sources */,
-				9D20CA2929845B5200BC9FF5 /* TimerStartView.swift in Sources */,
-				9DBB8D322972FBDF00C6C2D8 /* AppleTimerApp.swift in Sources */,
-				9DB860862975E00400992D59 /* PickerView.swift in Sources */,
-				9DB8608A2975E08A00992D59 /* PickerSwiftUI.swift in Sources */,
-				9D1A99A929771BE8004E04C3 /* TimeData.swift in Sources */,
+				9D20CA1B2983EEB600BC9FF5 /* ContentView.swift in Sources */,
+				9D20CA192983EEB600BC9FF5 /* AppleTimer2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9DBB8D3A2972FBE100C6C2D8 /* Debug */ = {
+		9D20CA212983EEB700BC9FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		9DBB8D3B2972FBE100C6C2D8 /* Release */ = {
+		9D20CA222983EEB700BC9FF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,14 +259,14 @@
 			};
 			name = Release;
 		};
-		9DBB8D3D2972FBE100C6C2D8 /* Debug */ = {
+		9D20CA242983EEB700BC9FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer2/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		9DBB8D3E2972FBE100C6C2D8 /* Release */ = {
+		9D20CA252983EEB700BC9FF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleTimer2/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.AppleTimer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DBB8D292972FBDF00C6C2D8 /* Build configuration list for PBXProject "AppleTimer" */ = {
+		9D20CA102983EEB600BC9FF5 /* Build configuration list for PBXProject "AppleTimer2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DBB8D3A2972FBE100C6C2D8 /* Debug */,
-				9DBB8D3B2972FBE100C6C2D8 /* Release */,
+				9D20CA212983EEB700BC9FF5 /* Debug */,
+				9D20CA222983EEB700BC9FF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DBB8D3C2972FBE100C6C2D8 /* Build configuration list for PBXNativeTarget "AppleTimer" */ = {
+		9D20CA232983EEB700BC9FF5 /* Build configuration list for PBXNativeTarget "AppleTimer2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DBB8D3D2972FBE100C6C2D8 /* Debug */,
-				9DBB8D3E2972FBE100C6C2D8 /* Release */,
+				9D20CA242983EEB700BC9FF5 /* Debug */,
+				9D20CA252983EEB700BC9FF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DBB8D262972FBDF00C6C2D8 /* Project object */;
+	rootObject = 9D20CA0D2983EEB600BC9FF5 /* Project object */;
 }
