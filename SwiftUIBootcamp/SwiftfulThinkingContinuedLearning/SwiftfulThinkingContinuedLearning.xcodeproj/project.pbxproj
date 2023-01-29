@@ -31,6 +31,7 @@
 		9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9927382980E5330034685E /* ArrayBootcamp.swift */; };
 		9DD32D652981AFC200F79F9C /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */; };
 		9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D662981B0EC00F79F9C /* FruitsContainer.xcdatamodeld */; };
+		9DF5E61A298687F300012610 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		9D9927382980E5330034685E /* ArrayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D672981B0EC00F79F9C /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				9DD32D662981B0EC00F79F9C /* FruitsContainer.xcdatamodeld */,
 				9D20CA07298360FC00BC9FF5 /* CoreDataRelationshipsBootcamp.swift */,
 				9D20CA092983631600BC9FF5 /* CoreDataContainer.xcdatamodeld */,
+				9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */,
 				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
@@ -212,6 +215,7 @@
 				9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */,
 				9D30B0DD29808E51001481DC /* HashableBootcamp.swift in Sources */,
 				9D30B0D129800EE4001481DC /* SoundsBootcamp.swift in Sources */,
+				9DF5E61A298687F300012610 /* BackgroundThreadBootcamp.swift in Sources */,
 				9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */,
 				9DD32D652981AFC200F79F9C /* CoreDataBootcamp.swift in Sources */,
 				9D3A192B297CD3410078E63D /* DragGestureBootcamp2.swift in Sources */,
