@@ -27,18 +27,26 @@ struct PopoverBootcamp: View {
 //            }
             
             // Method 2 - Transition
-            .sheet(isPresented: $showNewScreen) {
-                NewScreen(showNewScreen: $showNewScreen)
-                    .padding(.top, 100)
-                    .animation(.spring(), value: showNewScreen)
-                    .transition(.move(edge: .leading))
-            }
+//            ZStack {
+//                if showNewScreen {
+//                    NewScreen(showNewScreen: $showNewScreen)
+//                        .padding(.top, 100)
+//                        .transition(.move(edge: .bottom))
+//                        .animation(.spring())
+//                }
+//            }
+            
+            // Method 3 - Animation Offset
+            NewScreen(showNewScreen: $showNewScreen)
+                .padding(.top, 100)
+                .offset(y: showNewScreen ? 0 : UIScreen.main.bounds.height)
+                .animation(.spring())
         }
     }
 }
 
 struct NewScreen: View {
-    @Environment(\.dismiss) var presentationMode
+    @Environment(\.dismiss) var dismiss
     @Binding var showNewScreen: Bool
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -46,7 +54,7 @@ struct NewScreen: View {
                 .edgesIgnoringSafeArea(.all)
             
             Button {
-                //presentationMode()
+//                dismiss()
                 showNewScreen.toggle()
             } label: {
                 Image(systemName: "xmark")
