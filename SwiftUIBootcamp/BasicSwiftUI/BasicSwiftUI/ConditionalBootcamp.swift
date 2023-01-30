@@ -43,7 +43,7 @@ struct ConditionalBootcamp: View {
 //                RoundedRectangle(cornerRadius: 25.0)
 //                    .frame(width: 200, height: 100)
 //            }
-//            Spacer()
+            Spacer()
         }
     }
 }

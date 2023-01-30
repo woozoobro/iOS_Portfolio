@@ -21,27 +21,15 @@ struct TimeListView: View {
                             HStack {
                                 Text(formattedDate(date: date))
                                 Spacer()
-                                Image(systemName: "moon.fill")
+                                Text("2시간 55분")
+                                Image(systemName: "backpack.circle")
                             }
                         }
                     }
                 } header: {
-                    Text("1월의 기록")
+                    Text(formattedSectionDate(date: date))
                 }
             }
-            
-            ForEach(0..<10) { _ in
-                NavigationLink {
-                    Text("hoho")
-                } label: {
-                    HStack {
-                        Text(formattedDate(date: date))
-                        Spacer()
-                        Image(systemName: "moon.fill")
-                    }
-                }
-            }
-            
         }
         .listStyle(.insetGrouped)
         .navigationTitle("얼마나 공부했을까?")
@@ -49,9 +37,17 @@ struct TimeListView: View {
 }
 
 extension TimeListView {
+    
+    private func formattedSectionDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy년 M월의 기록"
+        
+        return formatter.string(from: date)
+    }
+    
     private func formattedDate(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yy년 MM월 dd일"
+        formatter.dateFormat = "dd일 hh시"
         
         return formatter.string(from: date)
     }

@@ -14,8 +14,17 @@ struct CountTimeView: View {
     @State var timeCount = 0
     
     var body: some View {
-        VStack {
-            Text(vm.timeLabel)
+        VStack(spacing: 30) {
+            
+            ForEach(vm.timeList) { item in
+                HStack {
+                    Text(item.date.formatted())
+                    Text(item.timeLabel)
+                }
+            }
+            
+            
+            Text(vm.timeModel.timeLabel)
                 .onReceive(vm.timer) { _ in
                     if vm.timerRunning {
                         vm.currentTimePassed()
