@@ -11,11 +11,10 @@ struct AnimationBootcamp: View {
     @State var isAnimated: Bool = false
     var body: some View {
         VStack {
-            Spacer()
             Button("Button") {
-                withAnimation {
+//                withAnimation(Animation.default.delay(2.0)) {
                     isAnimated.toggle()
-                }
+//                }
             }
             Spacer()
             RoundedRectangle(cornerRadius: isAnimated ? 50:25)
@@ -25,7 +24,7 @@ struct AnimationBootcamp: View {
                     height:isAnimated ? 100 : 300)
                 .rotationEffect(Angle(degrees: isAnimated ? 360 : 0))
                 .offset(y: isAnimated ? 200 : 0)
-                
+                .animation(Animation.default.repeatForever(), value: isAnimated)
             Spacer()
         }
     }
