@@ -12,7 +12,9 @@ struct MyGumiTimerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CountTimeView()
+            NavigationView {
+                CountTimeView()
+            }
         }
     }
 }

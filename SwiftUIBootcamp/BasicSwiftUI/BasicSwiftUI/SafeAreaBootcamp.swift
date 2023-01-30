@@ -13,6 +13,7 @@ struct SafeAreaBootcamp: View {
             Text("Title goes here")
                 .font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .ignoresSafeArea()
             ForEach(0..<10) { index in
                 RoundedRectangle(cornerRadius: 25.0)
                     .fill(.white)

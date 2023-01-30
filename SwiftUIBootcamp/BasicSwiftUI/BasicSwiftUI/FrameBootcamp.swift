@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FrameBootcamp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
             .background(Color.red)
             .frame(height: 100)
             .background(Color.orange)

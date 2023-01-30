@@ -9,12 +9,12 @@ import SwiftUI
 
 struct SahpesBootCamp: View {
     var body: some View {
-//        Circle()
+        Circle()
 //            .fill(Color.blue)
 //            .foregroundColor(.pink)
 //            .stroke()
 //            .stroke(Color.red)
-//            .stroke(Color.blue, lineWidth: 30)
+            .stroke(Color.blue, lineWidth: 30)
 //            .stroke(Color.orange, style: StrokeStyle(lineWidth: 30, lineCap: .round, dash: [30]))
 //            .trim(from: 0.2, to: 1.0)
 //            .stroke(Color.purple, lineWidth: 50)
@@ -22,9 +22,9 @@ struct SahpesBootCamp: View {
 //        Capsule(style: .circular)
 //            .frame(width: 200, height: 100)
 //        Rectangle()
-        RoundedRectangle(cornerRadius: 50)
-            .frame(width: 300, height: 200)
-            .padding()
+//        RoundedRectangle(cornerRadius: 50)
+//            .frame(width: 300, height: 200)
+//            .padding()
     }
 }
 

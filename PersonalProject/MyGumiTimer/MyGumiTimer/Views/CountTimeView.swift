@@ -22,16 +22,19 @@ struct CountTimeView: View {
                     }
                 }            
             HStack {
-                startButton
                 stopButton
+                startButton
             }
         }
+        .navigationTitle("GumiTimer")
     }
 }
 
 struct CountTimeView_Previews: PreviewProvider {
     static var previews: some View {
-        CountTimeView()
+        NavigationView {
+            CountTimeView()
+        }
     }
 }
 

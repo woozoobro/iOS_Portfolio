@@ -13,6 +13,7 @@ struct ButtonsBootcamp: View {
     var body: some View {
         VStack(spacing: 20){
             Text(title)
+            
             Button("Press me!") {
                 self.title = "Button was Pressed"
             }
@@ -31,6 +32,7 @@ struct ButtonsBootcamp: View {
                             .shadow(radius: 10)
                     )
             }
+            
             Button {
                 self.title = "Button #3"
             } label: {
@@ -44,6 +46,7 @@ struct ButtonsBootcamp: View {
                             .foregroundColor(.blue)
                     )
             }
+            
             Button {
                 self.title = "Button #5"
             } label: {

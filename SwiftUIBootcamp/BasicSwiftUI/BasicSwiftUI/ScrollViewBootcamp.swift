@@ -7,14 +7,36 @@
 
 import SwiftUI
 
+//struct ScrollViewBootcamp: View {
+//    var body: some View {
+//        ScrollView {
+//            LazyVStack {
+//                ForEach(0..<100) { index in
+//                    ScrollView(.horizontal, showsIndicators: false) {
+//                        LazyHStack {
+//                            ForEach(0..<5) { index in
+//                                RoundedRectangle(cornerRadius: 25)
+//                                    .fill(.white)
+//                                    .frame(width: 200, height: 150)
+//                                    .shadow(radius: 10)
+//                                    .padding()
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+
 struct ScrollViewBootcamp: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0..<100) { index in
+                ForEach(0..<10) { index in
                     ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack {
-                            ForEach(0..<5) { index in
+                        HStack {
+                            ForEach(0..<12) { index in
                                 RoundedRectangle(cornerRadius: 25)
                                     .fill(.white)
                                     .frame(width: 200, height: 150)
@@ -23,6 +45,7 @@ struct ScrollViewBootcamp: View {
                             }
                         }
                     }
+                    
                 }
             }
         }

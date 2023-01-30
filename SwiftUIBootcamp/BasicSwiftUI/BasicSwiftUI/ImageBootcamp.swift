@@ -20,8 +20,7 @@ struct ImageBootcamp: View {
                 Circle()
 //                RoundedRectangle(cornerRadius: 25.0)
             )
-            .shadow(color: Color.blue, radius: 10, x: 0, y: 0)
-        
+            .shadow(color: Color.blue, radius: 10, x: 0, y: 0)        
     }
 }
 

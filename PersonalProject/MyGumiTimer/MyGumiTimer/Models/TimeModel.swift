@@ -9,7 +9,7 @@ import Foundation
 
 struct TimeModel {
     
-    var currentSeconds = 57
+    var currentSeconds = 0
     var currentMinutes = 0
     var currentHours = 0
     

@@ -33,12 +33,12 @@ struct InitializerBootcamp: View {
         VStack(spacing: 12) {
             Text("\(count)")
                 .font(.largeTitle)
-                .foregroundColor(.white)
                 .underline()
+            
             Text(title)
                 .font(.headline)
-                .foregroundColor(.white)
         }
+        .foregroundColor(.white)
         .frame(width: 150, height: 150)
         .background(backgroundColor)
         .cornerRadius(10)

@@ -18,7 +18,7 @@ struct IconsBootcamp: View {
 //            .scaledToFill()
 //            .foregroundColor(.green)
             .frame(width: 300, height: 300)
-            //.clipped()
+            .clipped()
     }
 }
 
