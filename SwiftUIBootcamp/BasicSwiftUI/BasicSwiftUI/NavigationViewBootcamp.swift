@@ -11,21 +11,31 @@ struct NavigationViewBootcamp: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                NavigationLink("Hello, world!") {
+                NavigationLink("This is Navigation Link!") {
                     MyOtherScreen()
                 }
                 Text("Hello, World!")
                 Text("Hello, World!")
                 Text("Hello, World!")
             }
-            .navigationTitle("All inboxes")
+            .navigationTitle("All Inboxes")
             //.navigationBarTitleDisplayMode(.automatic)
-            //.toolbar(.hidden)
+//            .toolbar(.hidden)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
+                    NavigationLink {
+                        MyOtherScreen()
                     } label: {
                         Image(systemName: "xmark")
+                    }
+                    .tint(.purple)
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink {
+                        Text("Profile")
+                    } label: {
+                        Image(systemName: "person")
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -42,16 +52,17 @@ struct NavigationViewBootcamp: View {
 struct MyOtherScreen: View {
     
     @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack {
             Color.green.ignoresSafeArea()
                 .navigationTitle("Green Screen!")
-                .toolbar(.hidden)
+//                .toolbar(.hidden)
             VStack {
-                
-                Button("Back button") {
+                Button("Back Button") {
                     dismiss()
                 }
+                
                 NavigationLink("Click here") {
                     Text("3rd screen!")
                 }
