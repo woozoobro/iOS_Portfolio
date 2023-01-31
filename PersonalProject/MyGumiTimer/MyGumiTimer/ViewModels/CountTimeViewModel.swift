@@ -11,6 +11,7 @@ class CountTimeViewModel: ObservableObject {
     @Published var timerRunning = false
     @Published var timeModel = TimeModel(date: Date(), currentSeconds: 0, currentMinutes: 0, currentHours: 0)
     @Published var timeList: [TimeModel] = []
+    @Published var fullyStopChecking: Bool = true
     
     @Published var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -29,6 +30,11 @@ class CountTimeViewModel: ObservableObject {
     }
     
     func startButtonPressed() {
+        if fullyStopChecking {
+            let currentDate = Date()
+            timeModel = TimeModel(date: currentDate, currentSeconds: 0, currentMinutes: 0, currentHours: 0)
+            fullyStopChecking = false
+        }
         
         if timerRunning {
             timer.upstream.connect().cancel()
@@ -44,7 +50,7 @@ class CountTimeViewModel: ObservableObject {
         timer.upstream.connect().cancel()
         print("Saved Time is \(timeModel.timeLabel) ")
         saveData()
-        
+        fullyStopChecking = true
     }
     
     func saveData() {
