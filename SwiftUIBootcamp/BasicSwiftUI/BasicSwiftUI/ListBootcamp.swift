@@ -85,14 +85,76 @@ struct ListBootcamp: View {
     @State var fruits: [String] = [
         "apple", "orange", "banana", "peach"
     ]
+    @State var veggies: [String] = [
+        "tomato", "potato", "carrot"
+    ]
     
     var body: some View {
-        List {
-            ForEach(fruits, id: \.self) { fruit in
-                Text(fruit.capitalized)
+        NavigationView {
+            List {
+                Section {
+                    ForEach(fruits, id: \.self) { fruit in
+                        Text(fruit.capitalized)
+                            .foregroundColor(.white)
+                            .padding(.vertical)
+//                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                            .background(.pink)
+                    }
+                    .onDelete(perform: delete)
+                    .onMove(perform: move)
+                    .listRowBackground(Color.green)
+                    
+                } header: {
+                    HStack {
+                        Text("Fruits")
+                        Image(systemName: "flame.fill")
+                    }
+                    .font(.headline)
+                    .foregroundColor(.purple)
+                }
+                
+                Section {
+                    ForEach(veggies, id: \.self) { veggie in
+                        Text(veggie.capitalized)
+                    }
+                } header: {
+                    Text("Veggies")
+                }
+            }
+//            .listStyle(.grouped)
+            .navigationTitle("Grocery List")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    addButton
+                }
             }
         }
+        .tint(.red)
     }
+    
+    var addButton: some View {
+        Button {
+            add()
+        } label: {
+            Text("Add")
+        }
+    }
+    
+    func add() {
+        fruits.append("Coconut")
+    }
+    
+    func delete(indexSet: IndexSet) {
+        fruits.remove(atOffsets: indexSet)
+    }
+    
+    func move(indexSet: IndexSet, newOffset: Int) {
+        fruits.move(fromOffsets: indexSet, toOffset: newOffset)
+    }
+   
 }
 
 struct ListBootcamp_Previews: PreviewProvider {
