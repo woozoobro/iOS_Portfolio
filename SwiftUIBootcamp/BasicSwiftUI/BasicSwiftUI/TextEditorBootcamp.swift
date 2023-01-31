@@ -17,7 +17,7 @@ struct TextEditorBootcamp: View {
             VStack {
                 TextEditor(text: $textEditorText)
                     .frame(height: 250)
-//                    .foregroundColor(.blue)
+                    .foregroundColor(.blue)
                     .colorMultiply(.init(.systemGray4))
                     .cornerRadius(10)
                 Button {

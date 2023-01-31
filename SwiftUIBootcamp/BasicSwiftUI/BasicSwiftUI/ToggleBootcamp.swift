@@ -22,7 +22,7 @@ struct ToggleBootcamp: View {
             Toggle(isOn: $toggleIsOn) {
                 Text("Change status")
             }
-            .toggleStyle(.automatic)
+            .toggleStyle(.switch)
             .tint(.orange)
             
             Spacer()
