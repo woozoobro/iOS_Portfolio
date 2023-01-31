@@ -86,7 +86,7 @@ extension OnboardingView {
             .frame(maxWidth: .infinity)
             .background(.white)
             .cornerRadius(10)
-            .animation(nil)
+//            .animation(nil)
             .onTapGesture {
                 handleNextButtonPressed()
             }

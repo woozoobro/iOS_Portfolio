@@ -11,7 +11,7 @@ import SwiftUI
 struct BasicSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ListBootcamp()
+            ActionsheetBootcamp()
         }
     }
 }
