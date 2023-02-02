@@ -27,7 +27,7 @@ struct IfLetGuardBootcamp: View {
             }
             .navigationTitle("Safe Coding")
             .onAppear {
-                loadData2()
+                loadData()
             }
         }
     }
