@@ -45,7 +45,7 @@ struct SliderBootcamp: View {
             Slider(value: $sliderValue, in: 1...5, step: 1.0)
                 .tint(.red)
         }
-    }    
+    }
 }
 
 
