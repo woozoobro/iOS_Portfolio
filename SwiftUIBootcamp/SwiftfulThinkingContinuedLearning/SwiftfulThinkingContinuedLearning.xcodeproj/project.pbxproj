@@ -20,7 +20,6 @@
 		9D30B0DA29802D90001481DC /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0D929802D90001481DC /* LocalNotificationBootcamp.swift */; };
 		9D30B0DD29808E51001481DC /* HashableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D30B0DC29808E51001481DC /* HashableBootcamp.swift */; };
 		9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */; };
-		9D3A1917297C00060078E63D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1916297C00060078E63D /* ContentView.swift */; };
 		9D3A1919297C00060078E63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A1918297C00060078E63D /* Assets.xcassets */; };
 		9D3A191C297C00060078E63D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A191B297C00060078E63D /* Preview Assets.xcassets */; };
 		9D3A1923297C004C0078E63D /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1922297C004C0078E63D /* LongPressGestureBootcamp.swift */; };
@@ -54,7 +53,6 @@
 		9D30B0DC29808E51001481DC /* HashableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableBootcamp.swift; sourceTree = "<group>"; };
 		9D3A1911297C00060078E63D /* SwiftfulThinkingContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingContinuedLearningApp.swift; sourceTree = "<group>"; };
-		9D3A1916297C00060078E63D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D3A1918297C00060078E63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3A191B297C00060078E63D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3A1922297C004C0078E63D /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			children = (
 				9D30B0DB29803483001481DC /* Info.plist */,
 				9D3A1914297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift */,
-				9D3A1916297C00060078E63D /* ContentView.swift */,
 				9D3A1922297C004C0078E63D /* LongPressGestureBootcamp.swift */,
 				9D3A1924297CC8460078E63D /* MagnificationGestureBootcamp.swift */,
 				9D3A1926297CCCAB0078E63D /* RotationGestureBootcamp.swift */,
@@ -235,7 +232,6 @@
 				9D30B0CF29800732001481DC /* MaskBootcamp.swift in Sources */,
 				9D3A1929297CCE9F0078E63D /* DragGestureBootcamp.swift in Sources */,
 				9D20CA0B2983631600BC9FF5 /* CoreDataContainer.xcdatamodeld in Sources */,
-				9D3A1917297C00060078E63D /* ContentView.swift in Sources */,
 				9D30B0DA29802D90001481DC /* LocalNotificationBootcamp.swift in Sources */,
 				9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */,
 				9DF5E61E298701DB00012610 /* TypealiasBootcamp.swift in Sources */,
