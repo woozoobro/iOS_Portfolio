@@ -13,7 +13,7 @@ struct OnboardingView: View {
     @AppStorage("age") var userAge: Int?
     @AppStorage("gender") var userGender: String?
     
-    @State var onboardingState: Int = 0
+    @State var onboardingState: Int = 3
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     
     @State var name: String = ""
@@ -155,12 +155,17 @@ extension OnboardingView {
                         .frame(height: 3)
                         .offset(y: 10), alignment: .bottom
                 )
-            Picker("성별", selection: $gender) {
+            
+            Picker(selection: $gender) {
                 Text("남자").tag("남자")
                 Text("여자").tag("여자")
                 Text("Non-Binary").tag("Non-Binary")
-            }.pickerStyle(.menu)
-            .tint(.white)
+            } label: {
+                Text("Gender Picker")
+            }
+            .frame(height: .infinity)            
+            .pickerStyle(.segmented)
+            
                 
             Spacer()
             Spacer()

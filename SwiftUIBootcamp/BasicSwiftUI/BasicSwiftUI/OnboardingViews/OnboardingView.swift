@@ -16,7 +16,7 @@ struct OnboardingView: View {
      2 - Add age
      3 - Add gender
      */
-    @State var onboardingState: Int = 0
+    @State var onboardingState: Int = 3
     let transition: AnyTransition = .asymmetric(
         insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     // onboarding inputs

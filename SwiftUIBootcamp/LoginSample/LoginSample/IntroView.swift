@@ -24,7 +24,7 @@ struct IntroView: View {
                             .transition(AnyTransition.asymmetric(insertion: .move(edge: .top), removal: .move(edge: .bottom)))
                     }
                 }
-                .animation(.spring())
+                .animation(.spring(), value: userSignIn)
         }        
     }
 }
