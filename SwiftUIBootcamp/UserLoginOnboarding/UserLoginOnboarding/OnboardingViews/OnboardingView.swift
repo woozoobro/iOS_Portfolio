@@ -13,7 +13,7 @@ struct OnboardingView: View {
      1 - Add name
      2 - Add gender
      */
-    
+    @FocusState private var focusedTextField: Bool
     @State var onboardingState: Int = 0
     let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     // onboarding inputs
@@ -132,10 +132,17 @@ extension OnboardingView {
                 .padding(.horizontal)
                 .background(.white)
                 .cornerRadius(10)
+                .focused($focusedTextField)
             Spacer()
             Spacer()
         }
         .padding(30)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                focusedTextField = true
+            }
+        }
+        
     }
     
     private var addAgeSection: some View {
