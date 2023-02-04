@@ -8,26 +8,39 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @State var loginState: Int = 2
+    
+    @AppStorage("user_signin") var userSignIn: Bool = false
+    @AppStorage("user_email") var userEmail: String?
+    
+    @State var loginState: Int = 0
     @State var toggleCheck: Bool = false
     @State var emailTextField: String = ""
+    @State var passwordTextField: String = ""
+    @State var passwordCheckField: String = ""
+    
+    @State var showAlert: Bool = false
     
     var body: some View {
         ZStack {
             switch loginState {
             case 0:
                 startSection
-                    .transition(.opacity)
+                    
             case 1:
                 selectLoginSection
                     .transition(.opacity)
             case 2:
                 termsAgreeSection
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .trailing)))
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .trailing),
+                        removal: .identity))
             case 3:
                 signInSection
-                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .leading)))
-                    
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .trailing),
+                        removal: .identity))
+            case 4:
+                LoginView()
             default:
                 Text("Hello")
             }
@@ -269,33 +282,64 @@ extension OnboardingView {
             .padding(.horizontal)
             
             Spacer()
-            VStack(spacing: 10) {
+            VStack(alignment: .leading ,spacing: 15) {
+                Text("계정")
+                    .fontWeight(.bold)
                 TextField("이메일 입력", text: $emailTextField)
+                Divider()
+                TextField("비밀번호 입력", text: $passwordTextField)
+                Divider()
+                TextField("비밀번호 확인", text: $passwordCheckField)
             }
+            .padding(.horizontal)
+            .foregroundColor(.orange)
             .padding()
             
+            Spacer()
             Button {
-                withAnimation(.easeInOut(duration: 0.1)) {
-                    loginState += 1
-                }
+                isSignInValid()
             } label: {
-                Text("동의하기")
+                Text("회원가입")
                     .font(.title2)
                     .fontWeight(.black)
                     .foregroundColor(.white)
                     .frame(height: 40)
                     .frame(maxWidth: .infinity)
-                    .background(toggleCheck ? .orange : .gray.opacity(0.3))
+                    .background(.orange)
                     .cornerRadius(20)
                     .padding(.horizontal)
             }
-            .disabled(!toggleCheck)
-
             
             Spacer()
             Spacer()
         }
-        
+        .confirmationDialog("회원가입", isPresented: $showAlert) {
+            Button(role: .cancel) {
+                
+            } label: {
+                Text("확인")
+            }
+        } message: {
+            Text("비밀번호는 영문 대소문자, 숫자, 특수문자 중 2종류 이상을 조합하여 최소 8자리 이상으로 작성해주세요.")
+        }
+
+    }
+}
+
+//MARK: - Functions
+extension OnboardingView {
+    func isSignInValid() {
+        guard emailTextField.count >= 3 else {
+            showAlert.toggle()
+            return
+        }
+        guard passwordTextField.count > 0, passwordTextField == passwordCheckField else {
+            showAlert.toggle()
+            return
+        }
+        userSignIn = true
+        userEmail = emailTextField
+        loginState += 1
     }
 }
 

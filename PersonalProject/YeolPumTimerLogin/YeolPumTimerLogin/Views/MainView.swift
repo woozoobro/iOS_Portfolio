@@ -11,13 +11,15 @@ struct MainView: View {
     @AppStorage("user_signin") var userSignIn: Bool = false
     var body: some View {
         ZStack {
-            
-            if userSignIn {
-                Text("Hello")
-            } else {
-                OnboardingView()
-            }
-            
+            Group {
+                if userSignIn {
+                    LoginView()
+                        .transition(.asymmetric(insertion: .move(edge: .top), removal: .identity))
+                } else {
+                    OnboardingView()
+                        .transition(.opacity)
+                }
+            }.animation(.easeInOut, value: userSignIn)
         }
     }
 }

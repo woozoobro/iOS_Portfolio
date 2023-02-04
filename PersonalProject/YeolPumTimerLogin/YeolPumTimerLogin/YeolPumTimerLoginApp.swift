@@ -12,7 +12,7 @@ struct YeolPumTimerLoginApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                OnboardingView()                
+                MainView()
             }
         }
     }
