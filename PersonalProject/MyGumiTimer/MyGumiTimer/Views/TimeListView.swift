@@ -8,27 +8,26 @@
 import SwiftUI
 
 struct TimeListView: View {
-    let date = Date()
+    
+    @ObservedObject var vm: CountTimeViewModel
     
     var body: some View {
         List {
-            ForEach(0..<5) { _ in
-                Section {
-                    ForEach(0..<10) { _ in
-                        NavigationLink {
-                            Text("hoho")
-                        } label: {
-                            HStack {
-                                Text(formattedDate(date: date))
-                                Spacer()
-                                Text("2시간 55분")
-                                Image(systemName: "backpack.circle")
-                            }
+            Section {
+                ForEach(vm.timeList) { timeModel in
+                    NavigationLink {
+                        Text("hoho")
+                    } label: {
+                        HStack {
+                            Text(formattedDate(date: timeModel.date))
+                            Spacer()
+                            Text(timeModel.timeLabel)
+                            Image(systemName: "backpack.circle")
                         }
                     }
-                } header: {
-                    Text(formattedSectionDate(date: date))
                 }
+            } header: {
+                Text("공부 기록")
             }
         }
         .listStyle(.insetGrouped)
@@ -36,6 +35,7 @@ struct TimeListView: View {
     }
 }
 
+//MARK: - DateFormat Function
 extension TimeListView {
     
     private func formattedSectionDate(date: Date) -> String {
@@ -47,16 +47,17 @@ extension TimeListView {
     
     private func formattedDate(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd일 hh시"
+        formatter.dateFormat = "yy년 M월 dd일 hh시 mm분"
         
         return formatter.string(from: date)
     }
 }
 
 struct TimeListView_Previews: PreviewProvider {
+    
     static var previews: some View {
         NavigationView {
-            TimeListView()
+            TimeListView(vm: CountTimeViewModel())
         }
     }
 }

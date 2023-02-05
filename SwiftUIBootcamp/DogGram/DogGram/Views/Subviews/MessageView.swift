@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct MessageView: View {
+    
+    @State var comment: CommentModel
+    
     var body: some View {
         HStack {
+            //MARK: - Profile Image
             Image("dog1")
                 .resizable()
                 .scaledToFill()
@@ -17,13 +21,15 @@ struct MessageView: View {
                 .cornerRadius(20)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("UserName")
+                //MARK: - User Name
+                Text(comment.username)
                     .font(.caption)
                     .foregroundColor(.gray)
-                Text("This is a new comment here.")
+                //MARK: - Content
+                Text(comment.content)
                     .padding(10)
                     .foregroundColor(.primary)
-                    .background(Color.gray)
+                    .background(Color.gray.opacity(0.3))
                     .cornerRadius(10)
             }
             Spacer(minLength: 0)
@@ -32,8 +38,9 @@ struct MessageView: View {
 }
 
 struct MessageView_Previews: PreviewProvider {
+    static var comment: CommentModel = CommentModel(commentID: "", userID: "", username: "WooZoo", content: "This photo is really cool. haha", dateCreated: Date())
     static var previews: some View {
-        MessageView()
+        MessageView(comment: comment)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -42,7 +42,6 @@ class CountTimeViewModel: ObservableObject {
             timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         }
         timerRunning.toggle()
-        
     }
     
     func stopButtonPressed() {

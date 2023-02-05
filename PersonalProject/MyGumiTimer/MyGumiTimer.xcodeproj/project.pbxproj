@@ -13,6 +13,7 @@
 		9D20C9FA2983375400BC9FF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D20C9F92983375400BC9FF5 /* Preview Assets.xcassets */; };
 		9D20CA0229833EB000BC9FF5 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20CA0129833EB000BC9FF5 /* TimeModel.swift */; };
 		9D20CA0629833F9C00BC9FF5 /* CountTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20CA0529833F9C00BC9FF5 /* CountTimeViewModel.swift */; };
+		9DC13336298FBC7100C466CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC13335298FBC7100C466CD /* ContentView.swift */; };
 		9DF5E6242987DE9900012610 /* TimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E6232987DE9900012610 /* TimeListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		9D20C9F92983375400BC9FF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D20CA0129833EB000BC9FF5 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		9D20CA0529833F9C00BC9FF5 /* CountTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTimeViewModel.swift; sourceTree = "<group>"; };
+		9DC13335298FBC7100C466CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DF5E6232987DE9900012610 /* TimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListView.swift; sourceTree = "<group>"; };
 		9DF5E625298803D300012610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		9D20CA0329833F1F00BC9FF5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9DC13335298FBC7100C466CD /* ContentView.swift */,
 				9D20C9F42983375300BC9FF5 /* CountTimeView.swift */,
 				9DF5E6232987DE9900012610 /* TimeListView.swift */,
 			);
@@ -174,6 +177,7 @@
 			files = (
 				9D20C9F52983375300BC9FF5 /* CountTimeView.swift in Sources */,
 				9D20CA0229833EB000BC9FF5 /* TimeModel.swift in Sources */,
+				9DC13336298FBC7100C466CD /* ContentView.swift in Sources */,
 				9D20C9F32983375300BC9FF5 /* MyGumiTimerApp.swift in Sources */,
 				9DF5E6242987DE9900012610 /* TimeListView.swift in Sources */,
 				9D20CA0629833F9C00BC9FF5 /* CountTimeViewModel.swift in Sources */,

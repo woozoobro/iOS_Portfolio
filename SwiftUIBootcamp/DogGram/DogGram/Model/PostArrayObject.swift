@@ -22,4 +22,9 @@ class PostArrayObject: ObservableObject {
         self.dataArray.append(post3)
         self.dataArray.append(post4)
     }
+    
+    /// USED for single post selection
+    init(post: PostModel) {
+        self.dataArray.append(post)
+    }
 }

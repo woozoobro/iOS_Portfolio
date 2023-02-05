@@ -9,20 +9,19 @@ import SwiftUI
 
 struct CountTimeView: View {
     
-    @StateObject private var vm = CountTimeViewModel()
+    @ObservedObject var vm: CountTimeViewModel
     
     @State var timeCount = 0
     
     var body: some View {
         VStack(spacing: 30) {
             
-            ForEach(vm.timeList) { item in
-                HStack {
-                    Text(item.date.formatted())
-                    Text(item.timeLabel)
-                }
-            }
-            
+//            ForEach(vm.timeList) { item in
+//                HStack {
+//                    Text(item.date.formatted())
+//                    Text(item.timeLabel)
+//                }
+//            }
             
             Text(vm.timeModel.timeLabel)
                 .onReceive(vm.timer) { _ in
@@ -42,7 +41,7 @@ struct CountTimeView: View {
 struct CountTimeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CountTimeView()
+            CountTimeView(vm: CountTimeViewModel())
         }
     }
 }

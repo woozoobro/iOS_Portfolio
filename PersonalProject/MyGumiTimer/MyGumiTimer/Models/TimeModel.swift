@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TimeModel: Identifiable {
-    let id: UUID = UUID()
+struct TimeModel: Identifiable, Hashable {
+    var id = UUID()
     
     let date: Date
     var currentSeconds: Int
@@ -23,5 +23,9 @@ struct TimeModel: Identifiable {
         } else {
             return "\(currentMinutes)분 \(currentSeconds)초"
         }
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
