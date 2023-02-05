@@ -12,7 +12,6 @@ class PostArrayObject: ObservableObject {
     @Published var dataArray = [PostModel]()
     
     init() {
-        
         print("Fetch from Database Here")
         let post1 = PostModel(postID: "", userID: "", username: "WooZoo", caption: "This is a caption" , dateCreated: Date(), likeCount: 0, likedByUser: false)
         let post2 = PostModel(postID: "", userID: "", username: "Jessica", caption: nil , dateCreated: Date(), likeCount: 0, likedByUser: false)
