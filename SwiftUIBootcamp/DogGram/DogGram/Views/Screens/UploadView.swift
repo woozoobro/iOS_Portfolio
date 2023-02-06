@@ -44,6 +44,7 @@ struct UploadView: View {
                 .background(Color.MyTheme.yellowColor)
             }
             .sheet(isPresented: $showImagePicker) {
+                // OnDismiss
                 segueToPostImageView()
             } content: {
                 ImagePicker(imageSelected: $imageSelected, sourceType: $sourceType)
