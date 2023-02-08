@@ -39,9 +39,7 @@ struct ProfileHeaderView: View {
                         .font(.callout)
                         .fontWeight(.medium)
                 }
-            }
-            //MARK: - Likes
-            HStack(alignment: .center, spacing: 20) {
+                //MARK: - Likes                
                 VStack(alignment: .center, spacing: 5) {
                     Text("20")
                         .font(.title2)

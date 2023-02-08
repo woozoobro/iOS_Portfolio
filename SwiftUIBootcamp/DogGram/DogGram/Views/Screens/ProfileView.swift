@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    var posts = PostArrayObject()
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             ProfileHeaderView()
+            Divider()
+            ImageGridView(posts: posts)
         }
         .navigationTitle("Profile")
         .navigationBarTitleDisplayMode(.inline)

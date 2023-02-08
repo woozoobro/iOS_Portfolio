@@ -18,7 +18,7 @@ class HapticManager {
     func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred()
-    }    
+    }
 }
 
 struct HapticsBootcamp: View {
