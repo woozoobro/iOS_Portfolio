@@ -16,6 +16,10 @@
 		9D0094FC298900F800EAB82E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0094FB298900F800EAB82E /* FeedView.swift */; };
 		9D0094FE298901F700EAB82E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0094FD298901F700EAB82E /* PostView.swift */; };
 		9D00F1AC29929612005A0305 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00F1AB29929612005A0305 /* ProfileView.swift */; };
+		9D5354192993D95600BBA781 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5354182993D95600BBA781 /* SettingsView.swift */; };
+		9D53541B2993DACE00BBA781 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */; };
+		9D53541D2993DC6D00BBA781 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */; };
+		9D53541F2993E07200BBA781 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D53541E2993E07200BBA781 /* SettingsEditTextView.swift */; };
 		9D6A3344298F90DC00DD7210 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A3343298F90DC00DD7210 /* CommentsView.swift */; };
 		9D6A3346298F930B00DD7210 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A3345298F930B00DD7210 /* MessageView.swift */; };
 		9DC1332C298F94EF00C466CD /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1332B298F94EF00C466CD /* CommentModel.swift */; };
@@ -41,6 +45,10 @@
 		9D0094FB298900F800EAB82E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9D0094FD298901F700EAB82E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9D00F1AB29929612005A0305 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9D5354182993D95600BBA781 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		9D53541E2993E07200BBA781 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		9D6A3343298F90DC00DD7210 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		9D6A3345298F930B00DD7210 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		9DC1332B298F94EF00C466CD /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
@@ -123,6 +131,8 @@
 				9DC13333298FB49800C466CD /* UploadView.swift */,
 				9DE49365299000AF008CE69E /* PostImageView.swift */,
 				9D00F1AB29929612005A0305 /* ProfileView.swift */,
+				9D5354182993D95600BBA781 /* SettingsView.swift */,
+				9D53541E2993E07200BBA781 /* SettingsEditTextView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -136,6 +146,8 @@
 				9DC13331298FAC3D00C466CD /* ImageGridView.swift */,
 				9DE49363298FD060008CE69E /* ImagePicker.swift */,
 				9DC7C9AF2992973700DFDDB3 /* ProfileHeaderView.swift */,
+				9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */,
+				9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			files = (
 				9D0094FC298900F800EAB82E /* FeedView.swift in Sources */,
 				9DC77677298E72F200D7CFB1 /* PostModel.swift in Sources */,
+				9D53541B2993DACE00BBA781 /* SettingsLabelView.swift in Sources */,
 				9DE49366299000AF008CE69E /* PostImageView.swift in Sources */,
 				9D0094E82988F15300EAB82E /* ContentView.swift in Sources */,
 				9D6A3346298F930B00DD7210 /* MessageView.swift in Sources */,
@@ -247,6 +260,9 @@
 				9DE49364298FD060008CE69E /* ImagePicker.swift in Sources */,
 				9DC13330298FA27000C466CD /* CarouselView.swift in Sources */,
 				9D0094E62988F15300EAB82E /* DogGramApp.swift in Sources */,
+				9D5354192993D95600BBA781 /* SettingsView.swift in Sources */,
+				9D53541F2993E07200BBA781 /* SettingsEditTextView.swift in Sources */,
+				9D53541D2993DC6D00BBA781 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
