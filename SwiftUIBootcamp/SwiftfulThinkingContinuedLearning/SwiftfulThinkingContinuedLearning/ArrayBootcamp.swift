@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+/*
 struct UserModel: Identifiable {
     let id: UUID = UUID()
     let name: String?
@@ -103,9 +103,23 @@ struct ArrayBootcamp: View {
         }
     }
 }
+*/
 
-struct ArrayBootcamp_Previews: PreviewProvider {
+struct UserModel: Identifiable {
+    let id = UUID().uuidString
+    let name: String
+    let point: Int
+    let isVerified: Bool
+}
+
+struct ArraysBootcamp: View {
+    var body: some View {
+        Text("Hello")
+    }
+}
+ 
+struct ArraysBootcamp_Previews: PreviewProvider {
     static var previews: some View {
-        ArrayBootcamp()
+        ArraysBootcamp()
     }
 }
