@@ -28,7 +28,7 @@ struct CountTimeView: View {
                     if vm.timerRunning {
                         vm.currentTimePassed()
                     }
-                }            
+                }
             HStack {
                 stopButton
                 startButton
@@ -38,14 +38,7 @@ struct CountTimeView: View {
     }
 }
 
-struct CountTimeView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CountTimeView(vm: CountTimeViewModel())
-        }
-    }
-}
-
+//MARK: - Components
 extension CountTimeView {
     
     private var startButton: some View {
@@ -61,6 +54,15 @@ extension CountTimeView {
             vm.stopButtonPressed()
         } label: {
             Text("Stop")
+        }
+    }
+}
+
+//MARK: - Previews
+struct CountTimeView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            CountTimeView(vm: CountTimeViewModel())
         }
     }
 }

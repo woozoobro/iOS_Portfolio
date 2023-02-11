@@ -26,12 +26,17 @@ struct TimeListView: View {
                         }
                     }
                 }
+                .onDelete(perform: deleteItem)
             } header: {
                 Text("공부 기록")
             }
         }
         .listStyle(.insetGrouped)
         .navigationTitle("얼마나 공부했을까?")
+    }
+    
+    func deleteItem(indexSet: IndexSet) {
+        vm.timeList.remove(atOffsets: indexSet)
     }
 }
 
@@ -47,12 +52,13 @@ extension TimeListView {
     
     private func formattedDate(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yy년 M월 dd일 hh시 mm분"
+        formatter.dateFormat = "dd일 hh시 mm분"
         
         return formatter.string(from: date)
     }
 }
 
+//MARK: - Preview
 struct TimeListView_Previews: PreviewProvider {
     
     static var previews: some View {

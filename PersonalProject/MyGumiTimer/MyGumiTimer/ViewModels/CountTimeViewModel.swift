@@ -15,6 +15,8 @@ class CountTimeViewModel: ObservableObject {
     
     @Published var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    @Published var sectionArray: [String] = []
+    
     func currentTimePassed() {
         if timeModel.currentSeconds < 59 {
             timeModel.currentSeconds += 1
@@ -55,5 +57,9 @@ class CountTimeViewModel: ObservableObject {
     func saveData() {
         timeList.append(timeModel)
         timeModel = TimeModel(date: Date(), currentSeconds: 0, currentMinutes: 0, currentHours: 0)
+    }
+    
+    func createSectionArray() {
+        
     }
 }

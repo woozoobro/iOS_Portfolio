@@ -13,15 +13,19 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            CountTimeView(vm: vm)
-                .tabItem {
-                    Image(systemName: "timer")
-                }.tag(0)
+            NavigationView {
+                CountTimeView(vm: vm)
+            }
+            .tabItem {
+                Image(systemName: "timer")
+            }.tag(0)
             
-            TimeListView(vm: vm)
-                .tabItem {
-                    Image(systemName: "list.bullet.rectangle")
-                }.tag(1)
+            NavigationView {
+                TimeListView(vm: vm)
+            }
+            .tabItem {
+                Image(systemName: "list.bullet.rectangle")
+            }.tag(1)
         }
     }
 }
