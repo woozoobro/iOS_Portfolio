@@ -13,31 +13,30 @@ struct TimeListView: View {
     
     var body: some View {
         List {
-            Section {
-                ForEach(vm.timeList) { timeModel in
-                    NavigationLink {
-                        Text("hoho")
-                    } label: {
-                        HStack {
-                            Text(formattedDate(date: timeModel.date))
-                            Spacer()
-                            Text(timeModel.timeLabel)
-                            Image(systemName: "backpack.circle")
+            ForEach(vm.timeList) { timeModel in
+                Section {
+                    ForEach(vm.timeList) { timeModel in
+                        NavigationLink {
+                            Text("hoho")
+                        } label: {
+                            HStack {
+                                Text(timeModel.formattedString)
+                                Spacer()
+                                Text(timeModel.timeLabel)
+                                Image(systemName: "backpack.circle")
+                            }
                         }
                     }
+                    .onDelete(perform: vm.deleteItem)
+                } header: {
+                    Text(timeModel.formattedSectionString)
                 }
-                .onDelete(perform: deleteItem)
-            } header: {
-                Text("공부 기록")
             }
         }
         .listStyle(.insetGrouped)
         .navigationTitle("얼마나 공부했을까?")
     }
-    
-    func deleteItem(indexSet: IndexSet) {
-        vm.timeList.remove(atOffsets: indexSet)
-    }
+
 }
 
 //MARK: - DateFormat Function
