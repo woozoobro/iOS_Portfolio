@@ -16,6 +16,7 @@
 		9D0094FC298900F800EAB82E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0094FB298900F800EAB82E /* FeedView.swift */; };
 		9D0094FE298901F700EAB82E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0094FD298901F700EAB82E /* PostView.swift */; };
 		9D00F1AC29929612005A0305 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00F1AB29929612005A0305 /* ProfileView.swift */; };
+		9D02AAD62997739500920188 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02AAD52997739500920188 /* LikeAnimationView.swift */; };
 		9D5354192993D95600BBA781 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5354182993D95600BBA781 /* SettingsView.swift */; };
 		9D53541B2993DACE00BBA781 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */; };
 		9D53541D2993DC6D00BBA781 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */; };
@@ -50,6 +51,7 @@
 		9D0094FB298900F800EAB82E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9D0094FD298901F700EAB82E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9D00F1AB29929612005A0305 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9D02AAD52997739500920188 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
 		9D5354182993D95600BBA781 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				9D53541A2993DACE00BBA781 /* SettingsLabelView.swift */,
 				9D53541C2993DC6D00BBA781 /* SettingsRowView.swift */,
 				9DA3E24B2995168F0005EAA7 /* SignInWithAppleButtonCustom.swift */,
+				9D02AAD52997739500920188 /* LikeAnimationView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				9D0094FE298901F700EAB82E /* PostView.swift in Sources */,
 				9D00F1AC29929612005A0305 /* ProfileView.swift in Sources */,
 				9DC1332E298FA1F700C466CD /* BrowseView.swift in Sources */,
+				9D02AAD62997739500920188 /* LikeAnimationView.swift in Sources */,
 				9DC1332C298F94EF00C466CD /* CommentModel.swift in Sources */,
 				9DA3E246299509110005EAA7 /* SettingsEditImageView.swift in Sources */,
 				9D6A3344298F90DC00DD7210 /* CommentsView.swift in Sources */,

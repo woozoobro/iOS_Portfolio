@@ -107,14 +107,63 @@ struct ArrayBootcamp: View {
 
 struct UserModel: Identifiable {
     let id = UUID().uuidString
-    let name: String
-    let point: Int
+    let name: String?
+    let points: Int
     let isVerified: Bool
 }
 
+class ArrayModificationViewModel: ObservableObject {
+    
+    @Published var dataArray: [UserModel] = []
+    @Published var filteredArray: [UserModel] = []
+    @Published var mappedArray: [String] = []
+    
+    init() {
+        getUsers()
+        updateFilteredArray()
+    }
+    
+    func updateFilteredArray() {
+        // sort
+        // filter
+        // map
+        
+        mappedArray = dataArray
+            .sorted { $0.points > $1.points }
+            .filter { $0.isVerified }
+            .compactMap { $0.name }
+            
+    }
+    
+    func getUsers() {
+        let user1 = UserModel(name: "Nick", points: 5, isVerified: true)
+        let user2 = UserModel(name: "Chris", points: 0, isVerified: false)
+        let user3 = UserModel(name: nil, points: 20, isVerified: true)
+        let user4 = UserModel(name: "Emily", points: 50, isVerified: true)
+        let user5 = UserModel(name: "Samantha", points: 45, isVerified: false)
+        let user6 = UserModel(name: "Jason", points: 23, isVerified: false)
+        let user7 = UserModel(name: "Sarah", points: 76, isVerified: true)
+        let user8 = UserModel(name: nil, points: 45, isVerified: false)
+        let user9 = UserModel(name: "Steve", points: 1, isVerified: true)
+        let user10 = UserModel(name: "Amanda", points: 100, isVerified: false)
+        self.dataArray.append(contentsOf: [
+            user1, user2, user3, user4, user5,
+            user6, user7, user8, user9, user10,
+        ])
+    }
+}
+
 struct ArraysBootcamp: View {
+    @StateObject var vm = ArrayModificationViewModel()
     var body: some View {
-        Text("Hello")
+        ScrollView {
+            VStack(spacing: 20) {
+                ForEach(vm.mappedArray, id: \.self) { name in
+                    Text(name)
+                        .font(.title)
+                }
+            }
+        }
     }
 }
  

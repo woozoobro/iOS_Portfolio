@@ -29,6 +29,7 @@ struct SignUpView: View {
                 .font(.headline)
                 .fontWeight(.medium)
                 .multilineTextAlignment(.center)
+                .foregroundColor(Color.MyTheme.purpleColor)
             
             Button {
                 showOnboarding.toggle()
@@ -60,5 +61,6 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
+            .preferredColorScheme(.dark)
     }
 }
