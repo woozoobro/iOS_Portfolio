@@ -1,6 +1,6 @@
 //
-//  TodoList2App.swift
-//  TodoList2
+//  TodoList3App.swift
+//  TodoList3
 //
 //  Created by 우주형 on 2023/02/12.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TodoList2App: App {
+struct TodoList3App: App {
     
     @StateObject var vm = ListViewModel()
     
