@@ -22,7 +22,7 @@ struct AddView: View {
                     .padding(.horizontal)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
-                    .background(Color.gray.opacity(0.2))
+                    .background(Color.gray.opacity(0.3))
                     .cornerRadius(10)
                 
                 Button {

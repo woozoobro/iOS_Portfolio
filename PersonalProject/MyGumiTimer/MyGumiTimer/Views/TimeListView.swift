@@ -41,14 +41,12 @@ struct TimeListView: View {
 
 //MARK: - DateFormat Function
 extension TimeListView {
-    
     private func formattedSectionDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yy년 M월의 기록"
         
         return formatter.string(from: date)
     }
-    
     private func formattedDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd일 hh시 mm분"
