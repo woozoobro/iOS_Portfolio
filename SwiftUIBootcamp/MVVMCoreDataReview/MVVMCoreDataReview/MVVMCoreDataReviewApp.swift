@@ -11,7 +11,7 @@ import SwiftUI
 struct MVVMCoreDataReviewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoreDataMVVMTestView()
         }
     }
 }

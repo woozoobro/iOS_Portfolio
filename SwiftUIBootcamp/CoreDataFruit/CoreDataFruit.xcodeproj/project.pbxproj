@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DB1FF6C299A7BBB00FA66FC /* MVVMCoreDataReviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF6B299A7BBB00FA66FC /* MVVMCoreDataReviewApp.swift */; };
-		9DB1FF6E299A7BBB00FA66FC /* CoreDataMVVMTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF6D299A7BBB00FA66FC /* CoreDataMVVMTestView.swift */; };
-		9DB1FF70299A7BBB00FA66FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1FF6F299A7BBB00FA66FC /* Assets.xcassets */; };
-		9DB1FF73299A7BBB00FA66FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1FF72299A7BBB00FA66FC /* Preview Assets.xcassets */; };
-		9DB1FF7B299A861800FA66FC /* FruitContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF79299A861800FA66FC /* FruitContainer.xcdatamodeld */; };
+		9DB1FF89299A895400FA66FC /* CoreDataFruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF88299A895400FA66FC /* CoreDataFruitApp.swift */; };
+		9DB1FF8B299A895400FA66FC /* CoreDataFruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF8A299A895400FA66FC /* CoreDataFruitView.swift */; };
+		9DB1FF8D299A895500FA66FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1FF8C299A895500FA66FC /* Assets.xcassets */; };
+		9DB1FF90299A895500FA66FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1FF8F299A895500FA66FC /* Preview Assets.xcassets */; };
+		9DB1FF98299A897500FA66FC /* FruitContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1FF96299A897500FA66FC /* FruitContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9DB1FF68299A7BBB00FA66FC /* MVVMCoreDataReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCoreDataReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DB1FF6B299A7BBB00FA66FC /* MVVMCoreDataReviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoreDataReviewApp.swift; sourceTree = "<group>"; };
-		9DB1FF6D299A7BBB00FA66FC /* CoreDataMVVMTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMVVMTestView.swift; sourceTree = "<group>"; };
-		9DB1FF6F299A7BBB00FA66FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DB1FF72299A7BBB00FA66FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9DB1FF7A299A861800FA66FC /* FruitContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitContainer.xcdatamodel; sourceTree = "<group>"; };
+		9DB1FF85299A895400FA66FC /* CoreDataFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB1FF88299A895400FA66FC /* CoreDataFruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFruitApp.swift; sourceTree = "<group>"; };
+		9DB1FF8A299A895400FA66FC /* CoreDataFruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFruitView.swift; sourceTree = "<group>"; };
+		9DB1FF8C299A895500FA66FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB1FF8F299A895500FA66FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DB1FF97299A897500FA66FC /* FruitContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DB1FF65299A7BBB00FA66FC /* Frameworks */ = {
+		9DB1FF82299A895400FA66FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DB1FF5F299A7BBB00FA66FC = {
+		9DB1FF7C299A895400FA66FC = {
 			isa = PBXGroup;
 			children = (
-				9DB1FF6A299A7BBB00FA66FC /* MVVMCoreDataReview */,
-				9DB1FF69299A7BBB00FA66FC /* Products */,
+				9DB1FF87299A895400FA66FC /* CoreDataFruit */,
+				9DB1FF86299A895400FA66FC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DB1FF69299A7BBB00FA66FC /* Products */ = {
+		9DB1FF86299A895400FA66FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DB1FF68299A7BBB00FA66FC /* MVVMCoreDataReview.app */,
+				9DB1FF85299A895400FA66FC /* CoreDataFruit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DB1FF6A299A7BBB00FA66FC /* MVVMCoreDataReview */ = {
+		9DB1FF87299A895400FA66FC /* CoreDataFruit */ = {
 			isa = PBXGroup;
 			children = (
-				9DB1FF6B299A7BBB00FA66FC /* MVVMCoreDataReviewApp.swift */,
-				9DB1FF6D299A7BBB00FA66FC /* CoreDataMVVMTestView.swift */,
-				9DB1FF79299A861800FA66FC /* FruitContainer.xcdatamodeld */,
-				9DB1FF6F299A7BBB00FA66FC /* Assets.xcassets */,
-				9DB1FF71299A7BBB00FA66FC /* Preview Content */,
+				9DB1FF88299A895400FA66FC /* CoreDataFruitApp.swift */,
+				9DB1FF8A299A895400FA66FC /* CoreDataFruitView.swift */,
+				9DB1FF96299A897500FA66FC /* FruitContainer.xcdatamodeld */,
+				9DB1FF8C299A895500FA66FC /* Assets.xcassets */,
+				9DB1FF8E299A895500FA66FC /* Preview Content */,
 			);
-			path = MVVMCoreDataReview;
+			path = CoreDataFruit;
 			sourceTree = "<group>";
 		};
-		9DB1FF71299A7BBB00FA66FC /* Preview Content */ = {
+		9DB1FF8E299A895500FA66FC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9DB1FF72299A7BBB00FA66FC /* Preview Assets.xcassets */,
+				9DB1FF8F299A895500FA66FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,39 +73,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DB1FF67299A7BBB00FA66FC /* MVVMCoreDataReview */ = {
+		9DB1FF84299A895400FA66FC /* CoreDataFruit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DB1FF76299A7BBB00FA66FC /* Build configuration list for PBXNativeTarget "MVVMCoreDataReview" */;
+			buildConfigurationList = 9DB1FF93299A895500FA66FC /* Build configuration list for PBXNativeTarget "CoreDataFruit" */;
 			buildPhases = (
-				9DB1FF64299A7BBB00FA66FC /* Sources */,
-				9DB1FF65299A7BBB00FA66FC /* Frameworks */,
-				9DB1FF66299A7BBB00FA66FC /* Resources */,
+				9DB1FF81299A895400FA66FC /* Sources */,
+				9DB1FF82299A895400FA66FC /* Frameworks */,
+				9DB1FF83299A895400FA66FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MVVMCoreDataReview;
-			productName = MVVMCoreDataReview;
-			productReference = 9DB1FF68299A7BBB00FA66FC /* MVVMCoreDataReview.app */;
+			name = CoreDataFruit;
+			productName = CoreDataFruit;
+			productReference = 9DB1FF85299A895400FA66FC /* CoreDataFruit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DB1FF60299A7BBB00FA66FC /* Project object */ = {
+		9DB1FF7D299A895400FA66FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					9DB1FF67299A7BBB00FA66FC = {
+					9DB1FF84299A895400FA66FC = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 9DB1FF63299A7BBB00FA66FC /* Build configuration list for PBXProject "MVVMCoreDataReview" */;
+			buildConfigurationList = 9DB1FF80299A895400FA66FC /* Build configuration list for PBXProject "CoreDataFruit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DB1FF5F299A7BBB00FA66FC;
-			productRefGroup = 9DB1FF69299A7BBB00FA66FC /* Products */;
+			mainGroup = 9DB1FF7C299A895400FA66FC;
+			productRefGroup = 9DB1FF86299A895400FA66FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DB1FF67299A7BBB00FA66FC /* MVVMCoreDataReview */,
+				9DB1FF84299A895400FA66FC /* CoreDataFruit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DB1FF66299A7BBB00FA66FC /* Resources */ = {
+		9DB1FF83299A895400FA66FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB1FF73299A7BBB00FA66FC /* Preview Assets.xcassets in Resources */,
-				9DB1FF70299A7BBB00FA66FC /* Assets.xcassets in Resources */,
+				9DB1FF90299A895500FA66FC /* Preview Assets.xcassets in Resources */,
+				9DB1FF8D299A895500FA66FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DB1FF64299A7BBB00FA66FC /* Sources */ = {
+		9DB1FF81299A895400FA66FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB1FF7B299A861800FA66FC /* FruitContainer.xcdatamodeld in Sources */,
-				9DB1FF6E299A7BBB00FA66FC /* CoreDataMVVMTestView.swift in Sources */,
-				9DB1FF6C299A7BBB00FA66FC /* MVVMCoreDataReviewApp.swift in Sources */,
+				9DB1FF98299A897500FA66FC /* FruitContainer.xcdatamodeld in Sources */,
+				9DB1FF8B299A895400FA66FC /* CoreDataFruitView.swift in Sources */,
+				9DB1FF89299A895400FA66FC /* CoreDataFruitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9DB1FF74299A7BBB00FA66FC /* Debug */ = {
+		9DB1FF91299A895500FA66FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		9DB1FF75299A7BBB00FA66FC /* Release */ = {
+		9DB1FF92299A895500FA66FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,14 +263,14 @@
 			};
 			name = Release;
 		};
-		9DB1FF77299A7BBB00FA66FC /* Debug */ = {
+		9DB1FF94299A895500FA66FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreDataReview/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataFruit/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -284,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.MVVMCoreDataReview;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CoreDataFruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,14 +292,14 @@
 			};
 			name = Debug;
 		};
-		9DB1FF78299A7BBB00FA66FC /* Release */ = {
+		9DB1FF95299A895500FA66FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MVVMCoreDataReview/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoreDataFruit/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -313,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.MVVMCoreDataReview;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CoreDataFruit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,20 +324,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DB1FF63299A7BBB00FA66FC /* Build configuration list for PBXProject "MVVMCoreDataReview" */ = {
+		9DB1FF80299A895400FA66FC /* Build configuration list for PBXProject "CoreDataFruit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DB1FF74299A7BBB00FA66FC /* Debug */,
-				9DB1FF75299A7BBB00FA66FC /* Release */,
+				9DB1FF91299A895500FA66FC /* Debug */,
+				9DB1FF92299A895500FA66FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DB1FF76299A7BBB00FA66FC /* Build configuration list for PBXNativeTarget "MVVMCoreDataReview" */ = {
+		9DB1FF93299A895500FA66FC /* Build configuration list for PBXNativeTarget "CoreDataFruit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DB1FF77299A7BBB00FA66FC /* Debug */,
-				9DB1FF78299A7BBB00FA66FC /* Release */,
+				9DB1FF94299A895500FA66FC /* Debug */,
+				9DB1FF95299A895500FA66FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -345,17 +345,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9DB1FF79299A861800FA66FC /* FruitContainer.xcdatamodeld */ = {
+		9DB1FF96299A897500FA66FC /* FruitContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9DB1FF7A299A861800FA66FC /* FruitContainer.xcdatamodel */,
+				9DB1FF97299A897500FA66FC /* FruitContainer.xcdatamodel */,
 			);
-			currentVersion = 9DB1FF7A299A861800FA66FC /* FruitContainer.xcdatamodel */;
+			currentVersion = 9DB1FF97299A897500FA66FC /* FruitContainer.xcdatamodel */;
 			path = FruitContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 9DB1FF60299A7BBB00FA66FC /* Project object */;
+	rootObject = 9DB1FF7D299A895400FA66FC /* Project object */;
 }
