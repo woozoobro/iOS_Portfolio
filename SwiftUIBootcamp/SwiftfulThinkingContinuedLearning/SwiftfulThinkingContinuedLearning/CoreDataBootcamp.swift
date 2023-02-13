@@ -129,10 +129,10 @@ class CoreDataViewModel: ObservableObject {
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Error Loading Core Data. \(error)")
-            } else {
-                print("Successfully loaded core data!")
             }
         }
+        
+        fetchFruits()
     }
     
     func fetchFruits() {
@@ -144,13 +144,56 @@ class CoreDataViewModel: ObservableObject {
         }
     }
     
+    func addFruit(text: String) {
+        let newFruit = FruitEntity(context: container.viewContext)
+        newFruit.name = text
+        saveData()
+    }
+    
+    func saveData() {
+        do {
+            try container.viewContext.save()
+            fetchFruits()
+        } catch let error {
+            print("Error saving. \(error)")
+        }
+    }
 }
 
 struct CoreDataBootcamp: View {
+    
     @StateObject var vm = CoreDataViewModel()
+    @State var textFieldText: String = ""
     
     var body: some View {
-        Text("Hello, World")
+        NavigationView {
+            VStack(spacing: 20) {
+                TextField("Add fruit here...", text: $textFieldText)
+                    .font(.headline)
+                    .padding(.leading)
+                    .frame(height: 55)
+                    .background(.gray.opacity(0.2))
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+                
+                Button {
+                    guard !textFieldText.isEmpty else { return }
+                    vm.addFruit(text: textFieldText)
+                } label: {
+                    Text("Button")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(.pink)
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
+                
+                Spacer()
+            }
+            .navigationTitle("Fruits")
+        }
     }
 }
 
