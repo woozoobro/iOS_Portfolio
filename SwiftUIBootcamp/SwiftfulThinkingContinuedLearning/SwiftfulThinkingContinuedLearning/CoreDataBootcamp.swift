@@ -150,6 +150,20 @@ class CoreDataViewModel: ObservableObject {
         saveData()
     }
     
+    func deleteFruit(indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        let entity = savedEntities[index]
+        container.viewContext.delete(entity)
+        saveData()
+    }
+    
+    func updateFruit(entity: FruitEntity) {
+        let currentName = entity.name ?? ""
+        let newName = currentName + "!"
+        entity.name = newName
+        saveData()
+    }
+    
     func saveData() {
         do {
             try container.viewContext.save()
@@ -179,8 +193,9 @@ struct CoreDataBootcamp: View {
                 Button {
                     guard !textFieldText.isEmpty else { return }
                     vm.addFruit(text: textFieldText)
+                    textFieldText = ""
                 } label: {
-                    Text("Button")
+                    Text("Save")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(height: 55)
@@ -189,6 +204,17 @@ struct CoreDataBootcamp: View {
                         .cornerRadius(10)
                 }
                 .padding(.horizontal)
+                
+                List {
+                    ForEach(vm.savedEntities) { entity in
+                        Text(entity.name ?? "NoName")
+                            .onTapGesture {
+                                vm.updateFruit(entity: entity)
+                            }
+                    }
+                    .onDelete(perform: vm.deleteFruit)
+                }
+                .listStyle(.plain)
                 
                 Spacer()
             }
