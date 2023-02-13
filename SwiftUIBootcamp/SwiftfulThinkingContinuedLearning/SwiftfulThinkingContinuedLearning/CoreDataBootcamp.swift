@@ -12,6 +12,7 @@ import CoreData
 // Model - data point
 // ViewModel - manages the data for a view
 
+/*
 class CoreDataViewModel: ObservableObject {
     
     let container: NSPersistentContainer
@@ -70,7 +71,6 @@ class CoreDataViewModel: ObservableObject {
     
     
 }
-
 struct CoreDataBootcamp: View {
     
     @StateObject var vm = CoreDataViewModel()
@@ -115,6 +115,36 @@ struct CoreDataBootcamp: View {
             }
             .navigationTitle("Fruits")
         }
+    }
+}
+*/
+
+class CoreDataViewModel: ObservableObject {
+    
+    let container: NSPersistentContainer
+    
+    init() {
+        container = NSPersistentContainer(name: "FruitsContainer")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                print("Error Loading Core Data. \(error)")
+            } else {
+                print("Successfully loaded core data!")
+            }
+        }
+    }
+    
+    func fetchFruits() {
+        let request = NSFetchRequest(entityName: "FruitEntity")
+    }
+    
+}
+
+struct CoreDataBootcamp: View {
+    @StateObject var vm = CoreDataViewModel()
+    
+    var body: some View {
+        Text("Hello, World")
     }
 }
 
