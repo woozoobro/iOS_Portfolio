@@ -122,6 +122,7 @@ struct CoreDataBootcamp: View {
 class CoreDataViewModel: ObservableObject {
     
     let container: NSPersistentContainer
+    @Published var savedEntities: [FruitEntity] = []
     
     init() {
         container = NSPersistentContainer(name: "FruitsContainer")
@@ -135,7 +136,12 @@ class CoreDataViewModel: ObservableObject {
     }
     
     func fetchFruits() {
-        let request = NSFetchRequest(entityName: "FruitEntity")
+        let request = NSFetchRequest<FruitEntity>(entityName: "FruitEntity")
+        do {
+            savedEntities = try container.viewContext.fetch(request)
+        } catch let error {
+            print("Error fetching. \(error)")
+        }
     }
     
 }
