@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+/*
 
 // 3 entities
 // BusinessEntity
@@ -213,12 +214,6 @@ struct CoreDataRelationshipsBootcamp: View {
     }
 }
 
-struct CoreDataRelationshipsBootcamp_Previews: PreviewProvider {
-    static var previews: some View {
-        CoreDataRelationshipsBootcamp()
-    }
-}
-
 struct BusinessView: View {
     
     let entity: BusinessEntity
@@ -308,5 +303,18 @@ struct EmployeeView: View {
         .background(Color.blue.opacity(0.5))
         .cornerRadius(10)
         .shadow(radius: 10)
+    }
+}
+*/
+
+struct CoreDataRelationshipsBootcamp: View {
+    var body: some View {
+        Text("Hello")
+    }
+}
+ 
+struct CoreDataRelationshipsBootcamp_Previews: PreviewProvider {
+    static var previews: some View {
+        CoreDataRelationshipsBootcamp()
     }
 }
