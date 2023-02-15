@@ -330,13 +330,16 @@ class CoreDataManager {
             print("Error saving Core Data. \(error.localizedDescription)")
         }
     }
-    
 }
 
 class CoreDataRelationshipsViewModel: ObservableObject {
     
     let manager = CoreDataManager.instance
+    @Published var businesses: [BusinessEntity] = []
     
+    func addBusiness() {
+        let newBusiness = BusinessEntity(context: manager.context)
+    }
     
 }
 
