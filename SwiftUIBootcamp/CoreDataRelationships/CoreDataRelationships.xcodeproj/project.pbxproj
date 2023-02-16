@@ -11,6 +11,7 @@
 		9D0CB869299E63E50005E300 /* CoreDataRelationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB868299E63E50005E300 /* CoreDataRelationships.swift */; };
 		9D0CB86B299E63E60005E300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CB86A299E63E60005E300 /* Assets.xcassets */; };
 		9D0CB86E299E63E60005E300 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CB86D299E63E60005E300 /* Preview Assets.xcassets */; };
+		9D0CB876299E72710005E300 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB874299E72710005E300 /* CoreDataContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		9D0CB868299E63E50005E300 /* CoreDataRelationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationships.swift; sourceTree = "<group>"; };
 		9D0CB86A299E63E60005E300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D0CB86D299E63E60005E300 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D0CB875299E72710005E300 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		9D0CB877299E75560005E300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		9D0CB865299E63E50005E300 /* CoreDataRelationships */ = {
 			isa = PBXGroup;
 			children = (
+				9D0CB877299E75560005E300 /* Info.plist */,
 				9D0CB866299E63E50005E300 /* CoreDataRelationshipsApp.swift */,
 				9D0CB868299E63E50005E300 /* CoreDataRelationships.swift */,
+				9D0CB874299E72710005E300 /* CoreDataContainer.xcdatamodeld */,
 				9D0CB86A299E63E60005E300 /* Assets.xcassets */,
 				9D0CB86C299E63E60005E300 /* Preview Content */,
 			);
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0CB876299E72710005E300 /* CoreDataContainer.xcdatamodeld in Sources */,
 				9D0CB869299E63E50005E300 /* CoreDataRelationships.swift in Sources */,
 				9D0CB867299E63E50005E300 /* CoreDataRelationshipsApp.swift in Sources */,
 			);
@@ -270,7 +276,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CoreDataRelationships/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +305,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CoreDataRelationships/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -339,6 +345,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D0CB874299E72710005E300 /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D0CB875299E72710005E300 /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = 9D0CB875299E72710005E300 /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D0CB85B299E63E50005E300 /* Project object */;
 }
