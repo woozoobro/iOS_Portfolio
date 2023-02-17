@@ -89,6 +89,16 @@ class CoreDataRelationshipsViewModel: ObservableObject {
         save()
     }
     
+    func addEmployee() {
+        let newEmployee = EmployeeEntity(context: manager.context)
+        newEmployee.age = 25
+        newEmployee.dateJoined = Date()
+        newEmployee.name = "Chris"
+        newEmployee.business = businesses[0]
+        newEmployee.department = departments[0]
+        save()
+    }
+    
     func save() {
         businesses.removeAll()
         departments.removeAll()
@@ -110,7 +120,8 @@ struct CoreDataRelationships: View {
                 VStack(spacing: 20) {
                     Button {
 //                        vm.addBusiness()
-                        vm.addDepartment()
+//                        vm.addDepartment()
+                        vm.addEmployee()
                     } label: {
                         Text("Perform Action")
                             .foregroundColor(.white)
@@ -123,6 +134,14 @@ struct CoreDataRelationships: View {
                         HStack(alignment: .top) {
                             ForEach(vm.businesses) { business in
                                 BusinessView(entity: business)
+                            }
+                        }
+                    }
+                    
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(alignment: .top) {
+                            ForEach(vm.departments) { department in
+                                DepartmentView(entity: department)
                             }
                         }
                     }
