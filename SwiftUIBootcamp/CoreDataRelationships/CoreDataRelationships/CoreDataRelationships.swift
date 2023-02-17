@@ -39,14 +39,23 @@ class CoreDataRelationshipsViewModel: ObservableObject {
     let manager = CoreDataManager.instance
     @Published var businesses: [BusinessEntity] = []
     @Published var departments: [DepartmentEntity] = []
+    @Published var employees: [EmployeeEntity] = []
     
     init() {
         getBusiness()
         getDepartments()
+        getEmployees()
     }
     
     func getBusiness() {
         let request = NSFetchRequest<BusinessEntity>(entityName: "BusinessEntity")
+        
+        let sort = NSSortDescriptor(keyPath: \BusinessEntity.name, ascending: true)
+        request.sortDescriptors = [sort]
+        
+//        let filter = NSPredicate(format: "name == %@", "Apple")
+//        request.predicate = filter
+        
         do {
             businesses = try manager.context.fetch(request)
         } catch let error {
@@ -63,15 +72,42 @@ class CoreDataRelationshipsViewModel: ObservableObject {
         }
     }
     
+    func getEmployees() {
+        let request = NSFetchRequest<EmployeeEntity>(entityName: "EmployeeEntity")
+        do {
+            employees = try manager.context.fetch(request)
+        } catch let error {
+            print("Error fetching. \(error.localizedDescription)")
+        }
+    }
+    
+    func getEmployees(forBusiness business: BusinessEntity) {
+        let request = NSFetchRequest<EmployeeEntity>(entityName: "EmployeeEntity")
+        
+        let filter = NSPredicate(format: "business == %@", business)
+        request.predicate = filter
+        do {
+            employees = try manager.context.fetch(request)
+        } catch let error {
+            print("Error fetching. \(error.localizedDescription)")
+        }
+    }
+    
+    func updateBusiness() {
+        let existingBusiness = businesses[2]
+        existingBusiness.addToDepartments(departments[1])
+        save()
+    }
+    
     func addBusiness() {
         let newBusiness = BusinessEntity(context: manager.context)
-        newBusiness.name = "Apple"
+        newBusiness.name = "Facebook"
         
         // add existing departments to the new business
-        //newBusiness.departments = []
+//        newBusiness.departments = [departments[0], departments[1]]
         
         // add existing employees to the new business
-        //newBusiness.employees = []
+//        newBusiness.employees = [employees[1]]
         
         // add new business to existing department
         //newBusiness.addToDepartments(<#T##value: DepartmentEntity##DepartmentEntity#>)
@@ -84,35 +120,45 @@ class CoreDataRelationshipsViewModel: ObservableObject {
     
     func addDepartment() {
         let newDepartment = DepartmentEntity(context: manager.context)
-        newDepartment.name = "Marketing"
-        newDepartment.businesses = [businesses[0]]
+        newDepartment.name = "Finance"
+        newDepartment.businesses = [businesses[0], businesses[1], businesses[2]]
+        newDepartment.addToEmployees(employees[1])
+        //newDepartment.addToEmployees(employees[1])
         save()
     }
     
     func addEmployee() {
         let newEmployee = EmployeeEntity(context: manager.context)
-        newEmployee.age = 25
+        newEmployee.age = 21
         newEmployee.dateJoined = Date()
-        newEmployee.name = "Chris"
-        newEmployee.business = businesses[0]
-        newEmployee.department = departments[0]
+        newEmployee.name = "John"
+        newEmployee.business = businesses[2]
+        newEmployee.department = departments[1]
+        save()
+    }
+    
+    func deleteDepartment() {
+        let department = departments[2]
+        manager.context.delete(department)
         save()
     }
     
     func save() {
         businesses.removeAll()
         departments.removeAll()
+        employees.removeAll()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.manager.save()
             self.getBusiness()
             self.getDepartments()
+            self.getEmployees()
         }
     }
 }
 
 //MARK: - View
 struct CoreDataRelationships: View {
-    @State var vm = CoreDataRelationshipsViewModel()
+    @StateObject var vm = CoreDataRelationshipsViewModel()
     
     var body: some View {
         NavigationView {
@@ -121,7 +167,9 @@ struct CoreDataRelationships: View {
                     Button {
 //                        vm.addBusiness()
 //                        vm.addDepartment()
-                        vm.addEmployee()
+//                        vm.addEmployee()
+//                        vm.updateBusiness()
+//                        vm.getEmployees(forBusiness: vm.businesses[0])
                     } label: {
                         Text("Perform Action")
                             .foregroundColor(.white)
@@ -142,6 +190,14 @@ struct CoreDataRelationships: View {
                         HStack(alignment: .top) {
                             ForEach(vm.departments) { department in
                                 DepartmentView(entity: department)
+                            }
+                        }
+                    }
+                    
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(alignment: .top) {
+                            ForEach(vm.employees) { employee in
+                                EmployeeView(entity: employee)
                             }
                         }
                     }
@@ -218,6 +274,33 @@ struct DepartmentView: View {
     }
 }
 
+struct EmployeeView: View {
+    let entity: EmployeeEntity
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("Name: \(entity.name ?? "")")
+                .bold()
+            
+            Text("Age: \(entity.age)")
+            Text("Date joined: \(entity.dateJoined ?? Date())")
+            
+            Text("Business:")
+                .bold()
+            Text(entity.business?.name ?? "")
+            
+            Text("Department:")
+                .bold()
+            Text(entity.department?.name ?? "")
+
+        }
+        .padding()
+        .frame(maxWidth: 300, alignment: .leading)
+        .background(Color.blue.opacity(0.5))
+        .cornerRadius(10)
+        .shadow(radius: 10)
+    }
+}
 
 struct CoreDataRelationships_Previews: PreviewProvider {
     static var previews: some View {
