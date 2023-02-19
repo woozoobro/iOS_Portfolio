@@ -38,6 +38,7 @@
 		9DF5E6222987310500012610 /* CodableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E6212987310500012610 /* CodableBootcamp.swift */; };
 		9DFBA98E29A1C50B009D69A7 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */; };
 		9DFBA9C529A21F34009D69A7 /* TimerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */; };
+		9DFBA9C729A23890009D69A7 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		9DF5E6212987310500012610 /* CodableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBootcamp.swift; sourceTree = "<group>"; };
 		9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBootcamp.swift; sourceTree = "<group>"; };
+		9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */,
 				9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */,
 				9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */,
+				9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */,
 				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
@@ -246,6 +249,7 @@
 				9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */,
 				9DF5E61E298701DB00012610 /* TypealiasBootcamp.swift in Sources */,
 				9D30B0CD297EFC5E001481DC /* MultipleSheetsBootcamp.swift in Sources */,
+				9DFBA9C729A23890009D69A7 /* SubscriberBootcamp.swift in Sources */,
 				9DF5E6222987310500012610 /* CodableBootcamp.swift in Sources */,
 				9DF5E61C2986E82F00012610 /* WeakSelfBootcamp.swift in Sources */,
 				9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */,
