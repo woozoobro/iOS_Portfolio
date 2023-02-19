@@ -28,6 +28,7 @@
 		9D3A1929297CCE9F0078E63D /* DragGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1928297CCE9F0078E63D /* DragGestureBootcamp.swift */; };
 		9D3A192B297CD3410078E63D /* DragGestureBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A192A297CD3410078E63D /* DragGestureBootcamp2.swift */; };
 		9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9927382980E5330034685E /* ArrayBootcamp.swift */; };
+		9DBE827B29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */; };
 		9DD32D652981AFC200F79F9C /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */; };
 		9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D662981B0EC00F79F9C /* FruitsContainer.xcdatamodeld */; };
 		9DF5E61A298687F300012610 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */; };
@@ -61,6 +62,7 @@
 		9D3A1928297CCE9F0078E63D /* DragGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp.swift; sourceTree = "<group>"; };
 		9D3A192A297CD3410078E63D /* DragGestureBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp2.swift; sourceTree = "<group>"; };
 		9D9927382980E5330034685E /* ArrayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBootcamp.swift; sourceTree = "<group>"; };
+		9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D672981B0EC00F79F9C /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				9DF5E61D298701DB00012610 /* TypealiasBootcamp.swift */,
 				9DF5E61F2987041C00012610 /* EscapingBootcamp.swift */,
 				9DF5E6212987310500012610 /* CodableBootcamp.swift */,
+				9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */,
 				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
@@ -224,6 +227,7 @@
 				9DF5E6202987041C00012610 /* EscapingBootcamp.swift in Sources */,
 				9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */,
 				9D30B0DD29808E51001481DC /* HashableBootcamp.swift in Sources */,
+				9DBE827B29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift in Sources */,
 				9D30B0D129800EE4001481DC /* SoundsBootcamp.swift in Sources */,
 				9DF5E61A298687F300012610 /* BackgroundThreadBootcamp.swift in Sources */,
 				9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */,
