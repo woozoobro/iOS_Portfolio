@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+/*
 
 struct PostModel: Identifiable, Codable {
     let userId: Int
@@ -79,3 +80,4 @@ struct DownloadWithEscapingBootcamp_Previews: PreviewProvider {
         DownloadWithEscapingBootcamp()
     }
 }
+*/
