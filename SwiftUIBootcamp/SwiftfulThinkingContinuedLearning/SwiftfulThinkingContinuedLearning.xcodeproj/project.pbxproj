@@ -131,6 +131,7 @@
 				9D30B0CC297EFC5E001481DC /* MultipleSheetsBootcamp.swift */,
 				9D30B0CE29800732001481DC /* MaskBootcamp.swift */,
 				9D30B0D029800EE4001481DC /* SoundsBootcamp.swift */,
+				9D30B0D229801161001481DC /* Sounds */,
 				9D30B0D729802059001481DC /* HapticsBootcamp.swift */,
 				9D30B0D929802D90001481DC /* LocalNotificationBootcamp.swift */,
 				9D30B0DC29808E51001481DC /* HashableBootcamp.swift */,
@@ -149,7 +150,6 @@
 				9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */,
 				9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */,
 				9DFCB9FC29A37E1500A5AA90 /* FileManagerBootcamp.swift */,
-				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
 			);
