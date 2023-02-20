@@ -39,6 +39,7 @@
 		9DFBA98E29A1C50B009D69A7 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */; };
 		9DFBA9C529A21F34009D69A7 /* TimerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */; };
 		9DFBA9C729A23890009D69A7 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */; };
+		9DFCB9FD29A37E1500A5AA90 /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCB9FC29A37E1500A5AA90 /* FileManagerBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBootcamp.swift; sourceTree = "<group>"; };
 		9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
+		9DFCB9FC29A37E1500A5AA90 /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				9DFBA98D29A1C50B009D69A7 /* DownloadWithCombine.swift */,
 				9DFBA9C429A21F34009D69A7 /* TimerBootcamp.swift */,
 				9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */,
+				9DFCB9FC29A37E1500A5AA90 /* FileManagerBootcamp.swift */,
 				9D30B0D229801161001481DC /* Sounds */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
@@ -235,6 +238,7 @@
 			files = (
 				9DF5E6202987041C00012610 /* EscapingBootcamp.swift in Sources */,
 				9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */,
+				9DFCB9FD29A37E1500A5AA90 /* FileManagerBootcamp.swift in Sources */,
 				9D30B0DD29808E51001481DC /* HashableBootcamp.swift in Sources */,
 				9DBE827B29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift in Sources */,
 				9D30B0D129800EE4001481DC /* SoundsBootcamp.swift in Sources */,
