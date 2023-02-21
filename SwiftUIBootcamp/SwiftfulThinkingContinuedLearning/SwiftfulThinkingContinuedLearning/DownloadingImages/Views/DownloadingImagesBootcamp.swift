@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Codable
 // background threads
 // weak self
 // Combine
@@ -15,8 +16,17 @@ import SwiftUI
 // NSCache
 
 struct DownloadingImagesBootcamp: View {
+    @StateObject var vm = DownloadingImagesViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                ForEach(vm.dataArray) { model in
+                    Text(model.title)
+                }
+            }
+            .navigationTitle("Downloading Images!")
+        }
     }
 }
 
