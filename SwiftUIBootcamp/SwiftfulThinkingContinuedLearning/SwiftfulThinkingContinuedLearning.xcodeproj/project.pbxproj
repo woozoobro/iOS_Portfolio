@@ -30,6 +30,7 @@
 		9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9927382980E5330034685E /* ArrayBootcamp.swift */; };
 		9DBE827B29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */; };
 		9DCFF6C529A4F67C00BF8BBC /* CacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFF6C429A4F67C00BF8BBC /* CacheBootcamp.swift */; };
+		9DCFF6CC29A508B900BF8BBC /* DownloadingImagesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFF6CB29A508B900BF8BBC /* DownloadingImagesBootcamp.swift */; };
 		9DD32D652981AFC200F79F9C /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */; };
 		9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DD32D662981B0EC00F79F9C /* FruitsContainer.xcdatamodeld */; };
 		9DF5E61A298687F300012610 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */; };
@@ -69,6 +70,7 @@
 		9D9927382980E5330034685E /* ArrayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBootcamp.swift; sourceTree = "<group>"; };
 		9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		9DCFF6C429A4F67C00BF8BBC /* CacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBootcamp.swift; sourceTree = "<group>"; };
+		9DCFF6CB29A508B900BF8BBC /* DownloadingImagesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D642981AFC200F79F9C /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		9DD32D672981B0EC00F79F9C /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		9DF5E619298687F300012610 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				9DFBA9C629A23890009D69A7 /* SubscriberBootcamp.swift */,
 				9DFCB9FC29A37E1500A5AA90 /* FileManagerBootcamp.swift */,
 				9DCFF6C429A4F67C00BF8BBC /* CacheBootcamp.swift */,
+				9DCFF6C629A5086600BF8BBC /* DownloadingImages */,
 				9D3A1918297C00060078E63D /* Assets.xcassets */,
 				9D3A191A297C00060078E63D /* Preview Content */,
 			);
@@ -165,6 +168,46 @@
 				9D3A191B297C00060078E63D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DCFF6C629A5086600BF8BBC /* DownloadingImages */ = {
+			isa = PBXGroup;
+			children = (
+				9DCFF6CA29A5088500BF8BBC /* Utilities */,
+				9DCFF6C929A5087B00BF8BBC /* ViewModels */,
+				9DCFF6C829A5087800BF8BBC /* Views */,
+				9DCFF6C729A5087000BF8BBC /* Models */,
+			);
+			path = DownloadingImages;
+			sourceTree = "<group>";
+		};
+		9DCFF6C729A5087000BF8BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DCFF6C829A5087800BF8BBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DCFF6CB29A508B900BF8BBC /* DownloadingImagesBootcamp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DCFF6C929A5087B00BF8BBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9DCFF6CA29A5088500BF8BBC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +284,7 @@
 			files = (
 				9DF5E6202987041C00012610 /* EscapingBootcamp.swift in Sources */,
 				9DD32D682981B0EC00F79F9C /* FruitsContainer.xcdatamodeld in Sources */,
+				9DCFF6CC29A508B900BF8BBC /* DownloadingImagesBootcamp.swift in Sources */,
 				9DFCB9FD29A37E1500A5AA90 /* FileManagerBootcamp.swift in Sources */,
 				9DCFF6C529A4F67C00BF8BBC /* CacheBootcamp.swift in Sources */,
 				9D30B0DD29808E51001481DC /* HashableBootcamp.swift in Sources */,
