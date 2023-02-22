@@ -12,7 +12,7 @@ struct DownloadingImagesRow: View {
     
     var body: some View {
         HStack {
-            Circle()
+            DownloadingImageView(url: model.url)
                 .frame(width: 75,height: 75)
             VStack(alignment: .leading) {
                 Text(model.title)
@@ -28,6 +28,6 @@ struct DownloadingImagesRow: View {
 
 struct DownloadingImagesRow_Previews: PreviewProvider {
     static var previews: some View {
-        DownloadingImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "Title", url: "url here", thumbnailUrl: "thumbnail url here"))
+        DownloadingImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "Title", url: "https://via.placeholder.com/600/92c952", thumbnailUrl: "https://via.placeholder.com/600/92c952"))
     }
 }
