@@ -27,6 +27,8 @@
 		9D3A1927297CCCAB0078E63D /* RotationGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1926297CCCAB0078E63D /* RotationGestureBootcamp.swift */; };
 		9D3A1929297CCE9F0078E63D /* DragGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A1928297CCE9F0078E63D /* DragGestureBootcamp.swift */; };
 		9D3A192B297CD3410078E63D /* DragGestureBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A192A297CD3410078E63D /* DragGestureBootcamp2.swift */; };
+		9D68A81629A6256B009A08C1 /* DownloadingImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A81529A6256B009A08C1 /* DownloadingImagesRow.swift */; };
+		9D68A81829A625E4009A08C1 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A81729A625E4009A08C1 /* DownloadingImageView.swift */; };
 		9D9927392980E5330034685E /* ArrayBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9927382980E5330034685E /* ArrayBootcamp.swift */; };
 		9DBE827B29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */; };
 		9DCFF6C529A4F67C00BF8BBC /* CacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFF6C429A4F67C00BF8BBC /* CacheBootcamp.swift */; };
@@ -70,6 +72,8 @@
 		9D3A1926297CCCAB0078E63D /* RotationGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureBootcamp.swift; sourceTree = "<group>"; };
 		9D3A1928297CCE9F0078E63D /* DragGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp.swift; sourceTree = "<group>"; };
 		9D3A192A297CD3410078E63D /* DragGestureBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp2.swift; sourceTree = "<group>"; };
+		9D68A81529A6256B009A08C1 /* DownloadingImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesRow.swift; sourceTree = "<group>"; };
+		9D68A81729A625E4009A08C1 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
 		9D9927382980E5330034685E /* ArrayBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBootcamp.swift; sourceTree = "<group>"; };
 		9DBE827A29A1030800E4AA33 /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
 		9DCFF6C429A4F67C00BF8BBC /* CacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBootcamp.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				9DCFF6CB29A508B900BF8BBC /* DownloadingImagesBootcamp.swift */,
+				9D68A81529A6256B009A08C1 /* DownloadingImagesRow.swift */,
+				9D68A81729A625E4009A08C1 /* DownloadingImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,9 +318,11 @@
 				9D30B0DA29802D90001481DC /* LocalNotificationBootcamp.swift in Sources */,
 				9D30B0C7297DFCE7001481DC /* ScrollViewReaderBootcamp.swift in Sources */,
 				9DF5E61E298701DB00012610 /* TypealiasBootcamp.swift in Sources */,
+				9D68A81829A625E4009A08C1 /* DownloadingImageView.swift in Sources */,
 				9D30B0CD297EFC5E001481DC /* MultipleSheetsBootcamp.swift in Sources */,
 				9DFBA9C729A23890009D69A7 /* SubscriberBootcamp.swift in Sources */,
 				9DF5E6222987310500012610 /* CodableBootcamp.swift in Sources */,
+				9D68A81629A6256B009A08C1 /* DownloadingImagesRow.swift in Sources */,
 				9DF5E61C2986E82F00012610 /* WeakSelfBootcamp.swift in Sources */,
 				9D3A1915297C00060078E63D /* SwiftfulThinkingContinuedLearningApp.swift in Sources */,
 				9D3A1925297CC8460078E63D /* MagnificationGestureBootcamp.swift in Sources */,
