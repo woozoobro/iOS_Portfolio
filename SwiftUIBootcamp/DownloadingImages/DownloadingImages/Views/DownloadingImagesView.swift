@@ -8,20 +8,13 @@
 import SwiftUI
 
 struct DownloadingImagesView: View {
+    @StateObject var vm = DownloadingImagesViewModel()
+        
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                    VStack(alignment: .leading) {
-                        Text("Hello")
-                            .font(.headline)
-                        
-                        Text("Hello2Hello2Hello2Hello2Hello2Hello2")
-                            .foregroundColor(.gray)
-                            .italic()
-                    }
+                ForEach(vm.dataArray) { model in
+                    DownloadingImagesRow(model: model)
                 }
             }
             .navigationTitle("Downloading Images")

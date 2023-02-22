@@ -13,6 +13,10 @@
 		9D68A83329A666BB009A08C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D68A83229A666BB009A08C1 /* Preview Assets.xcassets */; };
 		9D68A83E29A66737009A08C1 /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */; };
 		9D68A84029A66749009A08C1 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A83F29A66749009A08C1 /* PhotoModel.swift */; };
+		9D68A84229A66918009A08C1 /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */; };
+		9D68A84429A66BE4009A08C1 /* DownloadingImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */; };
+		9D68A84629A66C9B009A08C1 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */; };
+		9D68A84829A66CCA009A08C1 /* DownloadingImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		9D68A83229A666BB009A08C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
 		9D68A83F29A66749009A08C1 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
+		9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesRow.swift; sourceTree = "<group>"; };
+		9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
+		9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */,
+				9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -94,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				9D68A82D29A666BB009A08C1 /* DownloadingImagesView.swift */,
+				9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */,
+				9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 		9D68A83C29A666D2009A08C1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,9 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D68A82E29A666BB009A08C1 /* DownloadingImagesView.swift in Sources */,
+				9D68A84629A66C9B009A08C1 /* DownloadingImageView.swift in Sources */,
+				9D68A84229A66918009A08C1 /* PhotoModelDataService.swift in Sources */,
 				9D68A83E29A66737009A08C1 /* DownloadingImagesViewModel.swift in Sources */,
 				9D68A84029A66749009A08C1 /* PhotoModel.swift in Sources */,
 				9D68A82C29A666BB009A08C1 /* DownloadingImagesApp.swift in Sources */,
+				9D68A84429A66BE4009A08C1 /* DownloadingImagesRow.swift in Sources */,
+				9D68A84829A66CCA009A08C1 /* DownloadingImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
