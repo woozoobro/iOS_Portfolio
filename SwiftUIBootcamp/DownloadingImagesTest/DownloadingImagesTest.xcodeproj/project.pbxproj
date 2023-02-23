@@ -7,34 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D68A82C29A666BB009A08C1 /* DownloadingImagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A82B29A666BB009A08C1 /* DownloadingImagesApp.swift */; };
-		9D68A82E29A666BB009A08C1 /* DownloadingImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A82D29A666BB009A08C1 /* DownloadingImagesView.swift */; };
-		9D68A83029A666BB009A08C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D68A82F29A666BB009A08C1 /* Assets.xcassets */; };
-		9D68A83329A666BB009A08C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D68A83229A666BB009A08C1 /* Preview Assets.xcassets */; };
-		9D68A83E29A66737009A08C1 /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */; };
-		9D68A84029A66749009A08C1 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A83F29A66749009A08C1 /* PhotoModel.swift */; };
-		9D68A84229A66918009A08C1 /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */; };
-		9D68A84429A66BE4009A08C1 /* DownloadingImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */; };
-		9D68A84629A66C9B009A08C1 /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */; };
-		9D68A84829A66CCA009A08C1 /* DownloadingImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */; };
+		9D06662129A7681100EF481D /* DownloadingImagesTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06662029A7681100EF481D /* DownloadingImagesTestApp.swift */; };
+		9D06662329A7681100EF481D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06662229A7681100EF481D /* ContentView.swift */; };
+		9D06662529A7681200EF481D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06662429A7681200EF481D /* Assets.xcassets */; };
+		9D06662829A7681200EF481D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06662729A7681200EF481D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D68A82829A666BB009A08C1 /* DownloadingImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadingImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D68A82B29A666BB009A08C1 /* DownloadingImagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesApp.swift; sourceTree = "<group>"; };
-		9D68A82D29A666BB009A08C1 /* DownloadingImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesView.swift; sourceTree = "<group>"; };
-		9D68A82F29A666BB009A08C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D68A83229A666BB009A08C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
-		9D68A83F29A66749009A08C1 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
-		9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
-		9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesRow.swift; sourceTree = "<group>"; };
-		9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
-		9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageViewModel.swift; sourceTree = "<group>"; };
+		9D06661D29A7681100EF481D /* DownloadingImagesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadingImagesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D06662029A7681100EF481D /* DownloadingImagesTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesTestApp.swift; sourceTree = "<group>"; };
+		9D06662229A7681100EF481D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D06662429A7681200EF481D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D06662729A7681200EF481D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9D68A82529A666BB009A08C1 /* Frameworks */ = {
+		9D06661A29A7681100EF481D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,115 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D68A81F29A666BA009A08C1 = {
+		9D06661429A7681100EF481D = {
 			isa = PBXGroup;
 			children = (
-				9D68A82A29A666BB009A08C1 /* DownloadingImages */,
-				9D68A82929A666BB009A08C1 /* Products */,
+				9D06661F29A7681100EF481D /* DownloadingImagesTest */,
+				9D06661E29A7681100EF481D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9D68A82929A666BB009A08C1 /* Products */ = {
+		9D06661E29A7681100EF481D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D68A82829A666BB009A08C1 /* DownloadingImages.app */,
+				9D06661D29A7681100EF481D /* DownloadingImagesTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D68A82A29A666BB009A08C1 /* DownloadingImages */ = {
+		9D06661F29A7681100EF481D /* DownloadingImagesTest */ = {
 			isa = PBXGroup;
 			children = (
-				9D68A82B29A666BB009A08C1 /* DownloadingImagesApp.swift */,
-				9D68A83C29A666D2009A08C1 /* Utilities */,
-				9D68A83B29A666CD009A08C1 /* Views */,
-				9D68A83A29A666C8009A08C1 /* ViewModels */,
-				9D68A83929A666C3009A08C1 /* Models */,
-				9D68A82F29A666BB009A08C1 /* Assets.xcassets */,
-				9D68A83129A666BB009A08C1 /* Preview Content */,
+				9D06662029A7681100EF481D /* DownloadingImagesTestApp.swift */,
+				9D06662229A7681100EF481D /* ContentView.swift */,
+				9D06662429A7681200EF481D /* Assets.xcassets */,
+				9D06662629A7681200EF481D /* Preview Content */,
 			);
-			path = DownloadingImages;
+			path = DownloadingImagesTest;
 			sourceTree = "<group>";
 		};
-		9D68A83129A666BB009A08C1 /* Preview Content */ = {
+		9D06662629A7681200EF481D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9D68A83229A666BB009A08C1 /* Preview Assets.xcassets */,
+				9D06662729A7681200EF481D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9D68A83929A666C3009A08C1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9D68A83F29A66749009A08C1 /* PhotoModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		9D68A83A29A666C8009A08C1 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				9D68A83D29A66737009A08C1 /* DownloadingImagesViewModel.swift */,
-				9D68A84729A66CCA009A08C1 /* DownloadingImageViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		9D68A83B29A666CD009A08C1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9D68A82D29A666BB009A08C1 /* DownloadingImagesView.swift */,
-				9D68A84329A66BE4009A08C1 /* DownloadingImagesRow.swift */,
-				9D68A84529A66C9B009A08C1 /* DownloadingImageView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9D68A83C29A666D2009A08C1 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				9D68A84129A66918009A08C1 /* PhotoModelDataService.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D68A82729A666BB009A08C1 /* DownloadingImages */ = {
+		9D06661C29A7681100EF481D /* DownloadingImagesTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D68A83629A666BB009A08C1 /* Build configuration list for PBXNativeTarget "DownloadingImages" */;
+			buildConfigurationList = 9D06662B29A7681200EF481D /* Build configuration list for PBXNativeTarget "DownloadingImagesTest" */;
 			buildPhases = (
-				9D68A82429A666BB009A08C1 /* Sources */,
-				9D68A82529A666BB009A08C1 /* Frameworks */,
-				9D68A82629A666BB009A08C1 /* Resources */,
+				9D06661929A7681100EF481D /* Sources */,
+				9D06661A29A7681100EF481D /* Frameworks */,
+				9D06661B29A7681100EF481D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DownloadingImages;
-			productName = DownloadingImages;
-			productReference = 9D68A82829A666BB009A08C1 /* DownloadingImages.app */;
+			name = DownloadingImagesTest;
+			productName = DownloadingImagesTest;
+			productReference = 9D06661D29A7681100EF481D /* DownloadingImagesTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9D68A82029A666BA009A08C1 /* Project object */ = {
+		9D06661529A7681100EF481D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					9D68A82729A666BB009A08C1 = {
+					9D06661C29A7681100EF481D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 9D68A82329A666BA009A08C1 /* Build configuration list for PBXProject "DownloadingImages" */;
+			buildConfigurationList = 9D06661829A7681100EF481D /* Build configuration list for PBXProject "DownloadingImagesTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,48 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 9D68A81F29A666BA009A08C1;
-			productRefGroup = 9D68A82929A666BB009A08C1 /* Products */;
+			mainGroup = 9D06661429A7681100EF481D;
+			productRefGroup = 9D06661E29A7681100EF481D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D68A82729A666BB009A08C1 /* DownloadingImages */,
+				9D06661C29A7681100EF481D /* DownloadingImagesTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9D68A82629A666BB009A08C1 /* Resources */ = {
+		9D06661B29A7681100EF481D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D68A83329A666BB009A08C1 /* Preview Assets.xcassets in Resources */,
-				9D68A83029A666BB009A08C1 /* Assets.xcassets in Resources */,
+				9D06662829A7681200EF481D /* Preview Assets.xcassets in Resources */,
+				9D06662529A7681200EF481D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9D68A82429A666BB009A08C1 /* Sources */ = {
+		9D06661929A7681100EF481D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D68A82E29A666BB009A08C1 /* DownloadingImagesView.swift in Sources */,
-				9D68A84629A66C9B009A08C1 /* DownloadingImageView.swift in Sources */,
-				9D68A84229A66918009A08C1 /* PhotoModelDataService.swift in Sources */,
-				9D68A83E29A66737009A08C1 /* DownloadingImagesViewModel.swift in Sources */,
-				9D68A84029A66749009A08C1 /* PhotoModel.swift in Sources */,
-				9D68A82C29A666BB009A08C1 /* DownloadingImagesApp.swift in Sources */,
-				9D68A84429A66BE4009A08C1 /* DownloadingImagesRow.swift in Sources */,
-				9D68A84829A66CCA009A08C1 /* DownloadingImageViewModel.swift in Sources */,
+				9D06662329A7681100EF481D /* ContentView.swift in Sources */,
+				9D06662129A7681100EF481D /* DownloadingImagesTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9D68A83429A666BB009A08C1 /* Debug */ = {
+		9D06662929A7681200EF481D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		9D68A83529A666BB009A08C1 /* Release */ = {
+		9D06662A29A7681200EF481D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,14 +259,14 @@
 			};
 			name = Release;
 		};
-		9D68A83729A666BB009A08C1 /* Debug */ = {
+		9D06662C29A7681200EF481D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DownloadingImages/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DownloadingImagesTest/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -336,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DownloadingImages;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DownloadingImagesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		9D68A83829A666BB009A08C1 /* Release */ = {
+		9D06662D29A7681200EF481D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DownloadingImages/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DownloadingImagesTest/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -365,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DownloadingImages;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DownloadingImagesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -376,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D68A82329A666BA009A08C1 /* Build configuration list for PBXProject "DownloadingImages" */ = {
+		9D06661829A7681100EF481D /* Build configuration list for PBXProject "DownloadingImagesTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D68A83429A666BB009A08C1 /* Debug */,
-				9D68A83529A666BB009A08C1 /* Release */,
+				9D06662929A7681200EF481D /* Debug */,
+				9D06662A29A7681200EF481D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D68A83629A666BB009A08C1 /* Build configuration list for PBXNativeTarget "DownloadingImages" */ = {
+		9D06662B29A7681200EF481D /* Build configuration list for PBXNativeTarget "DownloadingImagesTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D68A83729A666BB009A08C1 /* Debug */,
-				9D68A83829A666BB009A08C1 /* Release */,
+				9D06662C29A7681200EF481D /* Debug */,
+				9D06662D29A7681200EF481D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9D68A82029A666BA009A08C1 /* Project object */;
+	rootObject = 9D06661529A7681100EF481D /* Project object */;
 }
