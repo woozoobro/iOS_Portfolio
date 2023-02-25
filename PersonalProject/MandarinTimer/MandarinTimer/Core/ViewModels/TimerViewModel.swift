@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class TimerViewModel: ObservableObject {
-    @Published var count: Int = 3657
+    @Published var count: Int = 7200
     @Published var isStarting: Bool = false
     @Published private var checkReset: Bool = false
     @Published var timeList: [TimeModel] = []
@@ -62,6 +62,10 @@ class TimerViewModel: ObservableObject {
         guard let startDate = self.startDate else { return }
         let timeModel = TimeModel(startedDate: startDate, passedTime: countToTimeLabel())
         timeList.append(timeModel)
+    }
+    
+    func deleteTime(indexSet: IndexSet) {
+        timeList.remove(atOffsets: indexSet)
     }
     
     func countToTimeLabel() -> String {

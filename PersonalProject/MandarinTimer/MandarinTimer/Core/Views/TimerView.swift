@@ -67,6 +67,7 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TimerView()
+                
                 .environmentObject(TimerViewModel())
         }
     }

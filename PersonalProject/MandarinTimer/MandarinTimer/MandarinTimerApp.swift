@@ -12,9 +12,7 @@ struct MandarinTimerApp: App {
     @StateObject var vm = TimerViewModel()
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                TimerView()
-            }
+            ContentView()            
             .environmentObject(vm)
         }
     }

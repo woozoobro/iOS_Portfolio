@@ -16,6 +16,7 @@
 		9D82078229A9DD7800448AE4 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82078129A9DD7800448AE4 /* TimerViewModel.swift */; };
 		9D82078529A9DDCA00448AE4 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82078429A9DDCA00448AE4 /* PreviewProvider.swift */; };
 		9D82078729AA037900448AE4 /* TimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82078629AA037900448AE4 /* TimeListView.swift */; };
+		9D82078A29AA0DA200448AE4 /* TimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82078929AA0DA200448AE4 /* TimeListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9D82078129A9DD7800448AE4 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		9D82078429A9DDCA00448AE4 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		9D82078629AA037900448AE4 /* TimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListView.swift; sourceTree = "<group>"; };
+		9D82078929AA0DA200448AE4 /* TimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9D82078129A9DD7800448AE4 /* TimerViewModel.swift */,
+				9D82078929AA0DA200448AE4 /* TimeListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D82078229A9DD7800448AE4 /* TimerViewModel.swift in Sources */,
+				9D82078A29AA0DA200448AE4 /* TimeListViewModel.swift in Sources */,
 				9D82078529A9DDCA00448AE4 /* PreviewProvider.swift in Sources */,
 				9D82078729AA037900448AE4 /* TimeListView.swift in Sources */,
 				9D82077C29A9D9CA00448AE4 /* TimerView.swift in Sources */,

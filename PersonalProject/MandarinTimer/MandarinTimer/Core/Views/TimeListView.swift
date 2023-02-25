@@ -14,12 +14,23 @@ struct TimeListView: View {
         List {
             ForEach(vm.timeList) { model in
                 VStack {
+                    Text(dateFormatter.string(from: model.startedDate))
                     Text(model.passedTime)
-                    Text(model.startedDate.description)
                 }
             }
+            .onDelete(perform: vm.deleteTime)
         }
         .navigationTitle("나의 기록")
+    }
+    
+}
+
+extension TimeListView {
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.locale = Locale(identifier: "kor")
+        return formatter
     }
 }
 
