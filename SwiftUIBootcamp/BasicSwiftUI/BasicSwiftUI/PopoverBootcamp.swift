@@ -15,8 +15,10 @@ struct PopoverBootcamp: View {
             Color.orange.edgesIgnoringSafeArea(.all)
             
             VStack {
-                Button("Button") {                    
-                    showNewScreen.toggle()
+                Button("Button") {
+                    withAnimation {                        
+                        showNewScreen.toggle()
+                    }
                 }
                 .font(.largeTitle)
                 Spacer()

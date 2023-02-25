@@ -45,7 +45,6 @@ struct ScrollViewBootcamp: View {
                             }
                         }
                     }
-                    
                 }
             }
         }

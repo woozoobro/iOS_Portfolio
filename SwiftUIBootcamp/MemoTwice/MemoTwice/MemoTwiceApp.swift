@@ -15,7 +15,7 @@ struct MemoTwiceApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ListView()
+                ListView()                    
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)

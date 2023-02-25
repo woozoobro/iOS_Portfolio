@@ -83,7 +83,7 @@ import SwiftUI
 struct ListBootcamp: View {
     
     @State var fruits: [String] = [
-        "apple", "orange", "banana", "peach"
+        "apple", "apple", "banana", "peach"
     ]
     @State var veggies: [String] = [
         "tomato", "potato", "carrot"
@@ -94,7 +94,7 @@ struct ListBootcamp: View {
             List {
                 Section {
                     ForEach(fruits, id: \.self) { fruit in
-                        Text(fruit.capitalized)
+                        Text(fruit)
                             .foregroundColor(.white)
                             .padding(.vertical)
 //                            .frame(maxWidth: .infinity, maxHeight: .infinity)

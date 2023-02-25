@@ -15,7 +15,7 @@ struct SheetsBootcamp: View {
         ZStack {
             Color.green
                 .ignoresSafeArea()
-            
+                        
             Button {
                 showSheet.toggle()
             } label: {
@@ -25,12 +25,12 @@ struct SheetsBootcamp: View {
                     .padding(20)
                     .background(Color.white.cornerRadius(10))
             }
-//            .sheet(isPresented: $showSheet) {
-//                SecondScreen()
-//            }
-            .fullScreenCover(isPresented: $showSheet) {
+            .sheet(isPresented: $showSheet) {
                 SecondScreen()
             }
+//            .fullScreenCover(isPresented: $showSheet) {
+//                SecondScreen()
+//            }
         }
     }
 }
