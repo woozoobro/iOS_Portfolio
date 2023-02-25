@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct SwiftfulCryptoApp: App {
+    @StateObject private var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                HomeView()                    
+                HomeView()
             }
+            .environmentObject(vm)
         }
     }
 }
