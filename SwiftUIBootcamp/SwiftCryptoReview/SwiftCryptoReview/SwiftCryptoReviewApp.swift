@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftCryptoReviewApp: App {
+    @StateObject var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
-            }
+            }.environmentObject(vm)
         }
     }
 }
