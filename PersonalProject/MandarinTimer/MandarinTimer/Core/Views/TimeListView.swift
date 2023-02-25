@@ -12,13 +12,18 @@ struct TimeListView: View {
     
     var body: some View {
         List {
-            ForEach(vm.timeList) { model in
-                VStack {
-                    Text(dateFormatter.string(from: model.startedDate))
-                    Text(model.passedTime)
+            Section("Hello") {
+                ForEach(vm.timeList) { model in
+                    HStack {
+                        Text(dateFormatter.string(from: model.startedDate))
+                            .font(.title2)
+                            .bold()
+                        Spacer()
+                        Text(model.passedTime)
+                    }
                 }
+                .onDelete(perform: vm.deleteTime)
             }
-            .onDelete(perform: vm.deleteTime)
         }
         .navigationTitle("나의 기록")
     }

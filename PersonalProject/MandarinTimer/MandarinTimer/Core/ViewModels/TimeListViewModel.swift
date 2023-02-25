@@ -7,6 +7,6 @@
 
 import Foundation
 
-class TimeListViewModel {
+class TimeListViewModel: ObservableObject {
     
 }
