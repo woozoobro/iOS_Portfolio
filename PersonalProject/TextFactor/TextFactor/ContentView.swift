@@ -5,6 +5,7 @@
 //  Created by 우주형 on 2023/02/25.
 //
 
+//MARK: - 텍스트의 줄이 넘어갈 때 단어 단위가 아니라 글자 단위로 넘기고 싶을경우? -> 해결
 import SwiftUI
 
 struct ContentView: View {
@@ -18,11 +19,11 @@ struct ContentView: View {
                 
                 Text(text.split(separator: "").joined(separator: "\u{200B}"))
                     .font(.title3)
-//                    .fixedSize(horizontal: false, vertical: true)
             }
+            
             Text(text.splitCharacter())
                 .font(.system(size: 45))
-//                .fixedSize(horizontal: false, vertical: true)
+                
         }
     }
 }
