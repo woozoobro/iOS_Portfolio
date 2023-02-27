@@ -23,7 +23,6 @@ struct ContentView: View {
             
             Text(text.splitCharacter())
                 .font(.system(size: 45))
-                
         }
     }
 }
