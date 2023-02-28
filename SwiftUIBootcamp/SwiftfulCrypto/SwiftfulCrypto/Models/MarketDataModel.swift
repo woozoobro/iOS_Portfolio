@@ -179,4 +179,6 @@ struct MarketDataModel: Codable {
         case marketCapPercentage = "market_cap_percentage"
         case marketCapChangePercentage24HUsd = "market_cap_change_percentage_24h_usd"
     }
+    
+    
 }
