@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
-    @State private var showPortfolio: Bool = false  //animate right
+    @State private var showPortfolio: Bool = false  // animate right
     @State private var showPortfolioView: Bool = false  // new sheet
     
     var body: some View {
@@ -121,4 +121,3 @@ struct HomeView_Previews: PreviewProvider {
         .environmentObject(dev.homeVM)
     }
 }
-

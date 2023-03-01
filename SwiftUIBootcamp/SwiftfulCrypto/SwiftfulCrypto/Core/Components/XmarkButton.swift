@@ -14,6 +14,7 @@ struct XmarkButton: View {
             dismiss()
         } label: {
             Image(systemName: "xmark")
+                .font(.headline)
         }
     }
 }
