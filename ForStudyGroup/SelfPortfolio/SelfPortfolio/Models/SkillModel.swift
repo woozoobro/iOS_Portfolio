@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct SkillModel {
+struct SkillModel: Identifiable {
+    let id = UUID().uuidString
     let imageName: String
     let skillName: String
 }

@@ -60,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				9D4204ED29AFC9CF0058164B /* SelfPortfolioApp.swift */,
-				9D4204FD29AFCA050058164B /* ViewModels */,
 				9D4204FC29AFC9FE0058164B /* Models */,
 				9D4204FB29AFC9F90058164B /* Views */,
 				9D4204F129AFC9CF0058164B /* Assets.xcassets */,
@@ -94,13 +93,6 @@
 				9D22832A29AFD1FD0037700F /* SkillModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		9D4204FD29AFCA050058164B /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

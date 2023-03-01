@@ -31,11 +31,9 @@ struct SkillHeader: View {
             
             LazyVGrid(columns: columns) {
                 if showSkills {
-                    SkillView()
-                    SkillView()
-                    SkillView()
-                    SkillView()
-                    SkillView()
+                    ForEach(SkillModel.list) { skill in
+                        SkillView(skillLogo: skill.imageName, skillName: skill.skillName)
+                    }
                 }
             }
             

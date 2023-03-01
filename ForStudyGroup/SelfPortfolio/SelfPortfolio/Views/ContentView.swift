@@ -15,6 +15,9 @@ struct ContentView: View {
                 
                 SkillHeader()
                 SkillHeader()
+                SkillHeader()
+                SkillHeader()
+                SkillHeader()
             }
         }
     }

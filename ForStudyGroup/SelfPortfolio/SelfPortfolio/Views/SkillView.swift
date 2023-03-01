@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SkillView: View {
-    @State var skillLogo: String = "video.fill"
-    @State var skillName: String = "Edit"
+    @State var skillLogo: String
+    @State var skillName: String
     
     var body: some View {
         VStack {
@@ -34,6 +34,6 @@ struct SkillView: View {
 
 struct SkillView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillView()
+        SkillView(skillLogo: "swift", skillName: "Swift")
     }
 }
