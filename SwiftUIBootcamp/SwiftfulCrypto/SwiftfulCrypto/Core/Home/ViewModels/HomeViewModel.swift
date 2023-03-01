@@ -51,7 +51,7 @@ class HomeViewModel: ObservableObject {
             .map { (coinModels, portfolioEntities) -> [CoinModel] in
                 coinModels
                     .compactMap { coin -> CoinModel? in
-                        guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id}) else {
+                        guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
                             return nil
                         }
                         return coin.updateHoldings(amount: entity.amount)
@@ -62,6 +62,10 @@ class HomeViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
+    }
+    
+    func updatePortfolio(coin: CoinModel, amount: Double) {
+        portfolioDataService.updatePortfolio(coin: coin, amount: amount)
     }
     
     private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {

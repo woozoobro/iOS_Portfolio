@@ -135,7 +135,6 @@
 				9D82073829A982FA00448AE4 /* PreviewProvider.swift */,
 				9D82073A29A9894900448AE4 /* Double.swift */,
 				9D07D40329AB5D38009775C4 /* UIApplication.swift */,
-				9D76C4B629AF2C3500A4BC2D /* PortfolioDataService.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,6 +164,7 @@
 				9D82073F29A9B55000448AE4 /* CoinDataService.swift */,
 				9D07D3FA29AB3117009775C4 /* CoinImageService.swift */,
 				9D76C4AB29AE2ED300A4BC2D /* MarketDataService.swift */,
+				9D76C4B629AF2C3500A4BC2D /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";

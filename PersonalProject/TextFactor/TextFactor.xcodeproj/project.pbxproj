@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D54BBF929AAE40C009F4FB9 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54BBF829AAE40C009F4FB9 /* CustomText.swift */; };
+		9D76C4B929AF548B00A4BC2D /* InstagramLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76C4B829AF548B00A4BC2D /* InstagramLogo.swift */; };
 		9D82079829AA521E00448AE4 /* TextFactorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82079729AA521E00448AE4 /* TextFactorApp.swift */; };
 		9D82079A29AA521E00448AE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82079929AA521E00448AE4 /* ContentView.swift */; };
 		9D82079C29AA521E00448AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D82079B29AA521E00448AE4 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		9D54BBF829AAE40C009F4FB9 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		9D76C4B829AF548B00A4BC2D /* InstagramLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLogo.swift; sourceTree = "<group>"; };
 		9D82079429AA521E00448AE4 /* TextFactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D82079729AA521E00448AE4 /* TextFactorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFactorApp.swift; sourceTree = "<group>"; };
 		9D82079929AA521E00448AE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				9D82079729AA521E00448AE4 /* TextFactorApp.swift */,
 				9D82079929AA521E00448AE4 /* ContentView.swift */,
+				9D76C4B829AF548B00A4BC2D /* InstagramLogo.swift */,
 				9D8207A729AA682500448AE4 /* LineMinusView.swift */,
 				9D54BBF829AAE40C009F4FB9 /* CustomText.swift */,
 				9D82079B29AA521E00448AE4 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				9D82079A29AA521E00448AE4 /* ContentView.swift in Sources */,
 				9D82079829AA521E00448AE4 /* TextFactorApp.swift in Sources */,
 				9D54BBF929AAE40C009F4FB9 /* CustomText.swift in Sources */,
+				9D76C4B929AF548B00A4BC2D /* InstagramLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
