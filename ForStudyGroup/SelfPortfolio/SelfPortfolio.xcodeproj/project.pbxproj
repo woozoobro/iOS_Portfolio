@@ -14,7 +14,9 @@
 		9D4204F529AFC9CF0058164B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4204F429AFC9CF0058164B /* Preview Assets.xcassets */; };
 		9D4204FF29AFCA170058164B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4204FE29AFCA170058164B /* ProfileView.swift */; };
 		9D42050129AFCB2E0058164B /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42050029AFCB2E0058164B /* SkillView.swift */; };
-		9D42050329AFCDBE0058164B /* SkillHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42050229AFCDBE0058164B /* SkillHeader.swift */; };
+		9D42050329AFCDBE0058164B /* SkillListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42050229AFCDBE0058164B /* SkillListHeader.swift */; };
+		9D48A24F29B0F3B300ECB92A /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */; };
+		9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		9D4204F429AFC9CF0058164B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D4204FE29AFCA170058164B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9D42050029AFCB2E0058164B /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
-		9D42050229AFCDBE0058164B /* SkillHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillHeader.swift; sourceTree = "<group>"; };
+		9D42050229AFCDBE0058164B /* SkillListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillListHeader.swift; sourceTree = "<group>"; };
+		9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTapComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				9D4204EF29AFC9CF0058164B /* ContentView.swift */,
+				9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */,
 				9D4204FE29AFCA170058164B /* ProfileView.swift */,
 				9D42050029AFCB2E0058164B /* SkillView.swift */,
-				9D42050229AFCDBE0058164B /* SkillHeader.swift */,
+				9D42050229AFCDBE0058164B /* SkillListHeader.swift */,
+				9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 				9D4204F029AFC9CF0058164B /* ContentView.swift in Sources */,
 				9D4204FF29AFCA170058164B /* ProfileView.swift in Sources */,
 				9D4204EE29AFC9CF0058164B /* SelfPortfolioApp.swift in Sources */,
-				9D42050329AFCDBE0058164B /* SkillHeader.swift in Sources */,
+				9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */,
+				9D48A24F29B0F3B300ECB92A /* ExperiencesView.swift in Sources */,
+				9D42050329AFCDBE0058164B /* SkillListHeader.swift in Sources */,
 				9D22832B29AFD1FD0037700F /* SkillModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

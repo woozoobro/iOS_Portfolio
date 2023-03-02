@@ -13,11 +13,9 @@ struct ContentView: View {
             VStack(spacing: 50) {
                 ProfileView()
                 
-                SkillHeader()
-                SkillHeader()
-                SkillHeader()
-                SkillHeader()
-                SkillHeader()
+                SkillListHeader()
+                SkillListHeader()
+
             }
         }
     }
