@@ -11,11 +11,12 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 50) {
-                ProfileView()
-                
+                ZStack {
+                    Color.blue
+                    ProfileView()
+                }
                 SkillListHeader()
                 SkillListHeader()
-
             }
         }
     }
