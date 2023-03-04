@@ -18,6 +18,8 @@ struct DetailLoadingView: View {
     }
 }
 
+
+
 struct DetailView: View {
     
     @StateObject private var vm: DetailViewModel
@@ -59,6 +61,7 @@ struct DetailView: View {
         }
     }
 }
+
 
 extension DetailView {
     
