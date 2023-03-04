@@ -17,7 +17,6 @@
 		9D42050329AFCDBE0058164B /* SkillListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42050229AFCDBE0058164B /* SkillListHeader.swift */; };
 		9D48A24F29B0F3B300ECB92A /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */; };
 		9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */; };
-		9DB10AFC29B2DACD0093CD53 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB10AFB29B2DACD0093CD53 /* HelloView.swift */; };
 		9DC563CF29B20BA9007C4BFB /* WhatIsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		9D42050229AFCDBE0058164B /* SkillListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillListHeader.swift; sourceTree = "<group>"; };
 		9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 		9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTapComponent.swift; sourceTree = "<group>"; };
-		9DB10AFB29B2DACD0093CD53 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +87,6 @@
 			children = (
 				9D4204EF29AFC9CF0058164B /* ContentView.swift */,
 				9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */,
-				9DB10AFB29B2DACD0093CD53 /* HelloView.swift */,
 				9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */,
 				9D4204FE29AFCA170058164B /* ProfileView.swift */,
 				9D42050029AFCB2E0058164B /* SkillView.swift */,
@@ -180,7 +177,6 @@
 				9D42050129AFCB2E0058164B /* SkillView.swift in Sources */,
 				9D4204F029AFC9CF0058164B /* ContentView.swift in Sources */,
 				9D4204FF29AFCA170058164B /* ProfileView.swift in Sources */,
-				9DB10AFC29B2DACD0093CD53 /* HelloView.swift in Sources */,
 				9D4204EE29AFC9CF0058164B /* SelfPortfolioApp.swift in Sources */,
 				9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */,
 				9D48A24F29B0F3B300ECB92A /* ExperiencesView.swift in Sources */,
