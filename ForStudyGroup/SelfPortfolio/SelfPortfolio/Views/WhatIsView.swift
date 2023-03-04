@@ -9,12 +9,7 @@ import SwiftUI
 
 struct WhatIsView: View {
     var body: some View {
-        HStack {
-            Text("Hello")
-        }
-        .background {
-            Color.blue
-        }
+        Text("Hello world")
     }
 }
 
