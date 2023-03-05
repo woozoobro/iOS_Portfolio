@@ -10,7 +10,17 @@ import SwiftUI
 struct WhatIsView: View {
     
     var body: some View {
-        Text("Hello world!")
+        VStack {
+            Color.green
+                .frame(height: 300)
+            
+            Text("Hello world!")
+                .font(.largeTitle)
+            
+            Circle()
+            
+            Image(systemName: "xmark")
+        }
     }
 }
 

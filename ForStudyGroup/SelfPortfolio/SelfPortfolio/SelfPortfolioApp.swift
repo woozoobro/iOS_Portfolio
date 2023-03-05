@@ -11,7 +11,7 @@ import SwiftUI
 struct SelfPortfolioApp: App {
     var body: some Scene {
         WindowGroup {
-            WhatIsView()
+            HukoView()
         }
     }
 }
