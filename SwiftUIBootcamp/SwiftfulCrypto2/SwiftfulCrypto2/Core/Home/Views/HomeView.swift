@@ -18,7 +18,7 @@ struct HomeView: View {
             VStack {
                 homeHeader
                 
-                Spacer(minLength: 0)
+                SearchBarView(searchText: $vm.searchText)
                 
                 columnTitles
                 

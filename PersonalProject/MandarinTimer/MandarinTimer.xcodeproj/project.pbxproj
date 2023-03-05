@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D363E1729B4B2B90074A05D /* TimerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363E1629B4B2B90074A05D /* TimerCollectionView.swift */; };
 		9D82076C29A9D8EA00448AE4 /* MandarinTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82076B29A9D8EA00448AE4 /* MandarinTimerApp.swift */; };
 		9D82076E29A9D8EA00448AE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D82076D29A9D8EA00448AE4 /* ContentView.swift */; };
 		9D82077029A9D8EB00448AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D82076F29A9D8EB00448AE4 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D363E1629B4B2B90074A05D /* TimerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCollectionView.swift; sourceTree = "<group>"; };
 		9D82076829A9D8EA00448AE4 /* MandarinTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandarinTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D82076B29A9D8EA00448AE4 /* MandarinTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandarinTimerApp.swift; sourceTree = "<group>"; };
 		9D82076D29A9D8EA00448AE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				9D82076D29A9D8EA00448AE4 /* ContentView.swift */,
 				9D82077B29A9D9CA00448AE4 /* TimerView.swift */,
 				9D82078629AA037900448AE4 /* TimeListView.swift */,
+				9D363E1629B4B2B90074A05D /* TimerCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D82078229A9DD7800448AE4 /* TimerViewModel.swift in Sources */,
+				9D363E1729B4B2B90074A05D /* TimerCollectionView.swift in Sources */,
 				9D82078A29AA0DA200448AE4 /* TimeListViewModel.swift in Sources */,
 				9D82078529A9DDCA00448AE4 /* PreviewProvider.swift in Sources */,
 				9D82078729AA037900448AE4 /* TimeListView.swift in Sources */,

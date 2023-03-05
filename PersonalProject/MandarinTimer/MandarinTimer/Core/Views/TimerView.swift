@@ -16,11 +16,6 @@ struct TimerView: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
-            List {
-                ForEach(vm.timeList) { time in
-                    Text(time.passedTime)
-                }
-            }
             
             Spacer()
             allButtons
@@ -67,8 +62,7 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TimerView()
-                
-                .environmentObject(TimerViewModel())
+                .environmentObject(dev.timeVM)
         }
     }
 }

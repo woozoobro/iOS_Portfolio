@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D22832B29AFD1FD0037700F /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22832A29AFD1FD0037700F /* SkillModel.swift */; };
 		9D2BD10829B3768B0039472D /* HukoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2BD10729B3768B0039472D /* HukoView.swift */; };
+		9D363E1929B4C4510074A05D /* TrafficLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363E1829B4C4510074A05D /* TrafficLightView.swift */; };
 		9D4204EE29AFC9CF0058164B /* SelfPortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4204ED29AFC9CF0058164B /* SelfPortfolioApp.swift */; };
 		9D4204F029AFC9CF0058164B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4204EF29AFC9CF0058164B /* ContentView.swift */; };
 		9D4204F229AFC9CF0058164B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4204F129AFC9CF0058164B /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		9D22832A29AFD1FD0037700F /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		9D2BD10729B3768B0039472D /* HukoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HukoView.swift; sourceTree = "<group>"; };
+		9D363E1829B4C4510074A05D /* TrafficLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightView.swift; sourceTree = "<group>"; };
 		9D4204EA29AFC9CF0058164B /* SelfPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4204ED29AFC9CF0058164B /* SelfPortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPortfolioApp.swift; sourceTree = "<group>"; };
 		9D4204EF29AFC9CF0058164B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				9D4204EF29AFC9CF0058164B /* ContentView.swift */,
 				9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */,
+				9D363E1829B4C4510074A05D /* TrafficLightView.swift */,
 				9D2BD10729B3768B0039472D /* HukoView.swift */,
 				9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */,
 				9D4204FE29AFCA170058164B /* ProfileView.swift */,
@@ -180,6 +183,7 @@
 				9D42050129AFCB2E0058164B /* SkillView.swift in Sources */,
 				9D4204F029AFC9CF0058164B /* ContentView.swift in Sources */,
 				9D4204FF29AFCA170058164B /* ProfileView.swift in Sources */,
+				9D363E1929B4C4510074A05D /* TrafficLightView.swift in Sources */,
 				9D2BD10829B3768B0039472D /* HukoView.swift in Sources */,
 				9D4204EE29AFC9CF0058164B /* SelfPortfolioApp.swift in Sources */,
 				9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */,

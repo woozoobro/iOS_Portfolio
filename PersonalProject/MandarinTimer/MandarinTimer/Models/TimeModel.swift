@@ -11,6 +11,16 @@ struct TimeModel: Identifiable {
     let id: String = UUID().uuidString
     let startedDate: Date
     let passedTime: String
-        
+    
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.locale = Locale(identifier: "kor")
+        return formatter
+    }
+    
+    var formattedDate: String {
+        return dateFormatter.string(from: startedDate)
+    }
 }
 

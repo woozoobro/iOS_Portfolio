@@ -14,17 +14,25 @@ class TimerViewModel: ObservableObject {
     @Published private var checkReset: Bool = false
     @Published var timeList: [TimeModel] = []
     @Published var startDate: Date?
+    @Published var timeDictionary: [String : [TimeModel]] = [:]
+    var timer: AnyCancellable?
     
     init() {
         timeList = [
-            TimeModel(startedDate: Date(), passedTime: "Helloo"),
-            TimeModel(startedDate: Date(), passedTime: "Helloo"),
-            TimeModel(startedDate: Date(), passedTime: "Helloo"),
-            TimeModel(startedDate: Date(), passedTime: "Helloo"),
+            TimeModel(startedDate: Date(), passedTime: "3시간 22분"),
+            TimeModel(startedDate: Date(), passedTime: "5시간 22분"),
+            TimeModel(startedDate: Date(timeIntervalSinceReferenceDate: 100), passedTime: "6시간 22분"),
+            TimeModel(startedDate: Date(timeIntervalSinceReferenceDate: 100), passedTime: "4시간 22분"),
+            TimeModel(startedDate: Date(timeIntervalSinceReferenceDate: 100), passedTime: "3시간 22분"),
+            TimeModel(startedDate: Date(), passedTime: "1시간 5분"),
         ]
+        
+        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
-    var timer: AnyCancellable?
+    var keys: [String] {
+        return timeDictionary.keys.sorted { $0 > $1 }
+    }
     
     func setUpTimer() {
         timer = Timer
@@ -62,10 +70,12 @@ class TimerViewModel: ObservableObject {
         guard let startDate = self.startDate else { return }
         let timeModel = TimeModel(startedDate: startDate, passedTime: countToTimeLabel())
         timeList.append(timeModel)
+        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
     func deleteTime(indexSet: IndexSet) {
         timeList.remove(atOffsets: indexSet)
+        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
     func countToTimeLabel() -> String {
