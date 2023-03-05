@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D06668029A7B39F00EF481D /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06667F29A7B39F00EF481D /* SwiftfulCryptoApp.swift */; };
-		9D06668229A7B39F00EF481D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06668129A7B39F00EF481D /* ContentView.swift */; };
 		9D06668429A7B3A000EF481D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06668329A7B3A000EF481D /* Assets.xcassets */; };
 		9D06668729A7B3A000EF481D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D06668629A7B3A000EF481D /* Preview Assets.xcassets */; };
 		9D06668F29A7B69A00EF481D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06668E29A7B69A00EF481D /* Color.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		9D06667C29A7B39F00EF481D /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D06667F29A7B39F00EF481D /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
-		9D06668129A7B39F00EF481D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D06668329A7B3A000EF481D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D06668629A7B3A000EF481D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D06668E29A7B69A00EF481D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				9D54BBFD29AAFB12009F4FB9 /* Info.plist */,
 				9D06667F29A7B39F00EF481D /* SwiftfulCryptoApp.swift */,
-				9D06668129A7B39F00EF481D /* ContentView.swift */,
 				9D54BBFA29AAF197009F4FB9 /* Utilities */,
 				9D06668D29A7B65700EF481D /* Extensions */,
 				9D82073E29A9B52600448AE4 /* Services */,
@@ -404,7 +401,6 @@
 				9DB10AFE29B2E04A0093CD53 /* ChartView.swift in Sources */,
 				9D82073729A9826800448AE4 /* CoinRowView.swift in Sources */,
 				9D82073D29A99C5700448AE4 /* HomeViewModel.swift in Sources */,
-				9D06668229A7B39F00EF481D /* ContentView.swift in Sources */,
 				9DB10B0029B2F38C0093CD53 /* Date.swift in Sources */,
 				9D07D3FF29AB3E19009775C4 /* LocalFileManager.swift in Sources */,
 				9D76C4AA29AE225500A4BC2D /* MarketDataModel.swift in Sources */,
