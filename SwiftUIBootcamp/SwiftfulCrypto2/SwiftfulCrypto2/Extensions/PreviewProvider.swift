@@ -17,7 +17,11 @@ extension PreviewProvider {
 class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() { }
+    let homeVM = HomeViewModel()
     
+    let stat1 = StatisticModel(title: "Market Cap", value: "$12.5Bn", percentageChange: 25.34)
+    let stat2 = StatisticModel(title: "Total Volume", value: "$1.23Tr")
+    let stat3 = StatisticModel(title: "Portfolio Value", value: "$50.4k", percentageChange: -12.34)
     let coin = CoinModel(
         id: "bitcoin", symbol: "btc", name: "Bitcoin",
         image: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
@@ -199,7 +203,6 @@ class DeveloperPreview {
         ]),
         priceChangePercentage24HInCurrency: 0.3986992521246092,
         currentHoldings: 1.5)
-    let homeVM = HomeViewModel()
 }
 
 

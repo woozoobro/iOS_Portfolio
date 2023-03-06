@@ -24,7 +24,6 @@ struct TimerCollectionView: View {
                     Text(key)
                         .font(.headline)
                 }
-                
             }
             .onDelete(perform: vm.deleteTime)
         }

@@ -33,6 +33,5 @@ class CoinImageViewModel: ObservableObject {
                 
             }
             .store(in: &cancellables)
-
     }
 }

@@ -70,3 +70,4 @@ struct CoinRowView_Previews: PreviewProvider {
         CoinRowView(coin: dev.coin, showHoldingsColumn: true)
     }
 }
+
