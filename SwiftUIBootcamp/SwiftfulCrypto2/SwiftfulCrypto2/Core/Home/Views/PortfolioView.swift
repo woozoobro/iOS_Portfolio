@@ -115,6 +115,7 @@ extension PortfolioView {
         .padding()
         .font(.headline)
     }
+    
     private var trailingNavBarButtons: some View {
         HStack(spacing: 10) {
             Image(systemName: "checkmark")
