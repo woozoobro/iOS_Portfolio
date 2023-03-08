@@ -28,6 +28,8 @@
 		9D363E1129B485400074A05D /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363E1029B485400074A05D /* LocalFileManager.swift */; };
 		9D363E1329B4AB380074A05D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363E1229B4AB380074A05D /* SearchBarView.swift */; };
 		9D363E1529B4ADF90074A05D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363E1429B4ADF90074A05D /* UIApplication.swift */; };
+		9D5BBA4429B8AD780032E75C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BBA4329B8AD780032E75C /* HapticManager.swift */; };
+		9D5BBA4929B8C7790032E75C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BBA4829B8C7790032E75C /* DetailView.swift */; };
 		9D63872A29B61A910099136A /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63872929B61A910099136A /* StatisticModel.swift */; };
 		9D63872C29B61B430099136A /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63872B29B61B430099136A /* StatisticView.swift */; };
 		9D63872E29B61D580099136A /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63872D29B61D580099136A /* HomeStatsView.swift */; };
@@ -64,6 +66,8 @@
 		9D363E1029B485400074A05D /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		9D363E1229B4AB380074A05D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		9D363E1429B4ADF90074A05D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		9D5BBA4329B8AD780032E75C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		9D5BBA4829B8C7790032E75C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9D63872929B61A910099136A /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		9D63872B29B61B430099136A /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		9D63872D29B61D580099136A /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			children = (
 				9D363DEA29B44D6B0074A05D /* Components */,
 				9D363DE529B44CD80074A05D /* Home */,
+				9D5BBA4529B8C7560032E75C /* Detail */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				9D363E0629B4749F0074A05D /* NetworkingManager.swift */,
 				9D363E1029B485400074A05D /* LocalFileManager.swift */,
+				9D5BBA4329B8AD780032E75C /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -236,6 +242,30 @@
 				9D84DD8629B7544B005E38C2 /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
+			sourceTree = "<group>";
+		};
+		9D5BBA4529B8C7560032E75C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9D5BBA4629B8C76B0032E75C /* ViewModels */,
+				9D5BBA4729B8C76F0032E75C /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9D5BBA4629B8C76B0032E75C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D5BBA4729B8C76F0032E75C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D5BBA4829B8C7790032E75C /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +354,8 @@
 				9D363E1529B4ADF90074A05D /* UIApplication.swift in Sources */,
 				9D363DF429B4579C0074A05D /* CircleButtonView.swift in Sources */,
 				9D363DE329B44BE40074A05D /* Color.swift in Sources */,
+				9D5BBA4929B8C7790032E75C /* DetailView.swift in Sources */,
+				9D5BBA4429B8AD780032E75C /* HapticManager.swift in Sources */,
 				9D363E1329B4AB380074A05D /* SearchBarView.swift in Sources */,
 				9D363E0729B4749F0074A05D /* NetworkingManager.swift in Sources */,
 				9D84DD8729B7544B005E38C2 /* CoinLogoView.swift in Sources */,

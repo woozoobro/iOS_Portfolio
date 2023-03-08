@@ -19,6 +19,7 @@
 		9D42050329AFCDBE0058164B /* SkillListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42050229AFCDBE0058164B /* SkillListHeader.swift */; };
 		9D48A24F29B0F3B300ECB92A /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */; };
 		9D48A25129B0F3F700ECB92A /* HeaderTapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */; };
+		9D5BBA4B29B8D40E0032E75C /* NavigationInitTwiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BBA4A29B8D40E0032E75C /* NavigationInitTwiceView.swift */; };
 		9DC563CF29B20BA9007C4BFB /* WhatIsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		9D42050229AFCDBE0058164B /* SkillListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillListHeader.swift; sourceTree = "<group>"; };
 		9D48A24E29B0F3B300ECB92A /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 		9D48A25029B0F3F700ECB92A /* HeaderTapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTapComponent.swift; sourceTree = "<group>"; };
+		9D5BBA4A29B8D40E0032E75C /* NavigationInitTwiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationInitTwiceView.swift; sourceTree = "<group>"; };
+		9D5BBA4C29B8D5BD0032E75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +72,7 @@
 		9D4204EC29AFC9CF0058164B /* SelfPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				9D5BBA4C29B8D5BD0032E75C /* Info.plist */,
 				9D4204ED29AFC9CF0058164B /* SelfPortfolioApp.swift */,
 				9D4204FC29AFC9FE0058164B /* Models */,
 				9D4204FB29AFC9F90058164B /* Views */,
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4204EF29AFC9CF0058164B /* ContentView.swift */,
+				9D5BBA4A29B8D40E0032E75C /* NavigationInitTwiceView.swift */,
 				9DC563CE29B20BA9007C4BFB /* WhatIsView.swift */,
 				9D363E1829B4C4510074A05D /* TrafficLightView.swift */,
 				9D2BD10729B3768B0039472D /* HukoView.swift */,
@@ -183,6 +188,7 @@
 				9D42050129AFCB2E0058164B /* SkillView.swift in Sources */,
 				9D4204F029AFC9CF0058164B /* ContentView.swift in Sources */,
 				9D4204FF29AFCA170058164B /* ProfileView.swift in Sources */,
+				9D5BBA4B29B8D40E0032E75C /* NavigationInitTwiceView.swift in Sources */,
 				9D363E1929B4C4510074A05D /* TrafficLightView.swift in Sources */,
 				9D2BD10829B3768B0039472D /* HukoView.swift in Sources */,
 				9D4204EE29AFC9CF0058164B /* SelfPortfolioApp.swift in Sources */,
@@ -322,7 +328,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SelfPortfolio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -351,7 +357,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SelfPortfolio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
