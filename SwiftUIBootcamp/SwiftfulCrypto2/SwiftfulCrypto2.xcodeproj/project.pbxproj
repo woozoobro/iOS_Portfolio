@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9D02B7BB29BB8A490019D868 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02B7BA29BB8A490019D868 /* ChartView.swift */; };
 		9D02B7BD29BB8FC60019D868 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02B7BC29BB8FC60019D868 /* Date.swift */; };
+		9D02B7BF29BC0BDC0019D868 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02B7BE29BC0BDC0019D868 /* String.swift */; };
+		9D02B7C329BC13950019D868 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02B7C229BC13950019D868 /* SettingsView.swift */; };
+		9D02B7C729BC1FDB0019D868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D02B7C629BC1FDB0019D868 /* LaunchScreen.storyboard */; };
+		9D02B7C929BC20DE0019D868 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D02B7C829BC20DE0019D868 /* LaunchView.swift */; };
 		9D363DD429B44AF00074A05D /* SwiftfulCrypto2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363DD329B44AF00074A05D /* SwiftfulCrypto2App.swift */; };
 		9D363DD629B44AF00074A05D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D363DD529B44AF00074A05D /* ContentView.swift */; };
 		9D363DD829B44AF10074A05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D363DD729B44AF10074A05D /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		9D02B7BA29BB8A490019D868 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		9D02B7BC29BB8FC60019D868 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9D02B7BE29BC0BDC0019D868 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9D02B7C229BC13950019D868 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9D02B7C629BC1FDB0019D868 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D02B7C829BC20DE0019D868 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		9D363DD029B44AF00074A05D /* SwiftfulCrypto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D363DD329B44AF00074A05D /* SwiftfulCrypto2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCrypto2App.swift; sourceTree = "<group>"; };
 		9D363DD529B44AF00074A05D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +109,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D02B7C029BC134E0019D868 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9D02B7C129BC137D0019D868 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9D02B7C129BC137D0019D868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D02B7C229BC13950019D868 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D02B7C429BC1FC10019D868 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9D02B7C529BC1FC90019D868 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9D02B7C529BC1FC90019D868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D02B7C629BC1FDB0019D868 /* LaunchScreen.storyboard */,
+				9D02B7C829BC20DE0019D868 /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9D363DC729B44AF00074A05D = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +191,7 @@
 				9D363DFE29B4646E0074A05D /* Double.swift */,
 				9D363E1429B4ADF90074A05D /* UIApplication.swift */,
 				9D02B7BC29BB8FC60019D868 /* Date.swift */,
+				9D02B7BE29BC0BDC0019D868 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,9 +199,11 @@
 		9D363DE429B44CD50074A05D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9D02B7C429BC1FC10019D868 /* Launch */,
 				9D363DEA29B44D6B0074A05D /* Components */,
 				9D363DE529B44CD80074A05D /* Home */,
 				9D5BBA4529B8C7560032E75C /* Detail */,
+				9D02B7C029BC134E0019D868 /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -341,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D02B7C729BC1FDB0019D868 /* LaunchScreen.storyboard in Resources */,
 				9D363DDB29B44AF10074A05D /* Preview Assets.xcassets in Resources */,
 				9D363DD829B44AF10074A05D /* Assets.xcassets in Resources */,
 			);
@@ -369,6 +414,7 @@
 				9D363E0B29B47FEE0074A05D /* CoinImageView.swift in Sources */,
 				9D363DD429B44AF00074A05D /* SwiftfulCrypto2App.swift in Sources */,
 				9D363E1529B4ADF90074A05D /* UIApplication.swift in Sources */,
+				9D02B7C929BC20DE0019D868 /* LaunchView.swift in Sources */,
 				9D363DF429B4579C0074A05D /* CircleButtonView.swift in Sources */,
 				9D363DE329B44BE40074A05D /* Color.swift in Sources */,
 				9D5BBA4929B8C7790032E75C /* DetailView.swift in Sources */,
@@ -380,6 +426,7 @@
 				9D63873229B626CF0099136A /* MarketDataService.swift in Sources */,
 				9D363DF629B459810074A05D /* CircleButtonAnimationView.swift in Sources */,
 				9D363E0F29B481E50074A05D /* CoinImageViewModel.swift in Sources */,
+				9D02B7BF29BC0BDC0019D868 /* String.swift in Sources */,
 				9D363DFD29B4605F0074A05D /* PreviewProvider.swift in Sources */,
 				9D84DD8329B74893005E38C2 /* PortfolioView.swift in Sources */,
 				9D363DFF29B4646E0074A05D /* Double.swift in Sources */,
@@ -389,6 +436,7 @@
 				9DC489DA29BA1F0400D6A0D4 /* CoinDetailDataService.swift in Sources */,
 				9DC489D829BA1ED300D6A0D4 /* DetailViewModel.swift in Sources */,
 				9D84DD8C29B76F22005E38C2 /* PortfolioDataService.swift in Sources */,
+				9D02B7C329BC13950019D868 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +571,7 @@
 				INFOPLIST_FILE = SwiftfulCrypto2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,6 +601,7 @@
 				INFOPLIST_FILE = SwiftfulCrypto2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

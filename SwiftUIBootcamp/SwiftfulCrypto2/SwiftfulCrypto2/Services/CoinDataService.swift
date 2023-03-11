@@ -23,6 +23,7 @@ class CoinDataService {
         
         coinSubscription = NetworkingManager.donwload(url: url)
             .decode(type: [CoinModel].self, decoder: JSONDecoder())
+        
             .sink(receiveCompletion: NetworkingManager.handleCompletion,
                   receiveValue: { [weak self] returnedCoins in
                 self?.allCoins = returnedCoins
