@@ -14,7 +14,7 @@ struct SwiftfulCrypto3App: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                HomeView()
             }
             .environmentObject(vm)
         }

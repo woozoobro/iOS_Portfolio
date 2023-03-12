@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D10396229BDA70F00924E34 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10396129BDA70F00924E34 /* LocalFileManager.swift */; };
 		9D9EFF7829BD8B0E00A07B76 /* SwiftfulCrypto3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9EFF7729BD8B0E00A07B76 /* SwiftfulCrypto3App.swift */; };
-		9D9EFF7A29BD8B0E00A07B76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9EFF7929BD8B0E00A07B76 /* ContentView.swift */; };
 		9D9EFF7C29BD8B0F00A07B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9EFF7B29BD8B0F00A07B76 /* Assets.xcassets */; };
 		9D9EFF7F29BD8B0F00A07B76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9EFF7E29BD8B0F00A07B76 /* Preview Assets.xcassets */; };
 		9DA55D3A29BD947B009159EF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA55D3929BD947B009159EF /* Color.swift */; };
@@ -28,9 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D10396129BDA70F00924E34 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		9D9EFF7429BD8B0E00A07B76 /* SwiftfulCrypto3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9EFF7729BD8B0E00A07B76 /* SwiftfulCrypto3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCrypto3App.swift; sourceTree = "<group>"; };
-		9D9EFF7929BD8B0E00A07B76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D9EFF7B29BD8B0F00A07B76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D9EFF7E29BD8B0F00A07B76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DA55D3929BD947B009159EF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				9D9EFF7729BD8B0E00A07B76 /* SwiftfulCrypto3App.swift */,
-				9D9EFF7929BD8B0E00A07B76 /* ContentView.swift */,
 				9D9EFF8529BD940500A07B76 /* Extensions */,
 				9DA55D5529BDA0CE009159EF /* Utilities */,
 				9DA55D5229BD9EB8009159EF /* Services */,
@@ -184,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA55D5629BDA0D5009159EF /* NetworkingManager.swift */,
+				9D10396129BDA70F00924E34 /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				9DA55D5429BD9EC4009159EF /* CoinDataService.swift in Sources */,
 				9DA55D4B29BD9848009159EF /* CoinRowView.swift in Sources */,
 				9DA55D5129BD9C56009159EF /* HomeViewModel.swift in Sources */,
-				9D9EFF7A29BD8B0E00A07B76 /* ContentView.swift in Sources */,
+				9D10396229BDA70F00924E34 /* LocalFileManager.swift in Sources */,
 				9DA55D4029BD94FA009159EF /* HomeView.swift in Sources */,
 				9DA55D5A29BDA347009159EF /* CoinImageView.swift in Sources */,
 				9D9EFF7829BD8B0E00A07B76 /* SwiftfulCrypto3App.swift in Sources */,
