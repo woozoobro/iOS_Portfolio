@@ -9,25 +9,35 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var vm: HomeViewModel
-    @State var showPortfolio: Bool = false
+    @State var showPortfolio: Bool = false //animate right
+    @State var showPortfloioView: Bool = false // new sheet
     
     var body: some View {
-        VStack {
-            homeHeader
-            HomeStatsView(showPortfolio: $showPortfolio)
-            SearchBarView(searchText: $vm.searchText)
-            columnTitles
+        ZStack {
             
-            if !showPortfolio {
-                allCoinsList
-                    .transition(.move(edge: .leading))
-            }
-            if showPortfolio {
-                portfolioCoinsList
-                    .transition(.move(edge: .trailing))
-            }
+            Color.theme.background
+                .ignoresSafeArea()
+                .sheet(isPresented: $showPortfloioView) {
+                    PortfolioView()
+                }
             
-            Spacer(minLength: 0)
+            VStack {
+                homeHeader
+                HomeStatsView(showPortfolio: $showPortfolio)
+                SearchBarView(searchText: $vm.searchText)
+                columnTitles
+                
+                if !showPortfolio {
+                    allCoinsList
+                        .transition(.move(edge: .leading))
+                }
+                if showPortfolio {
+                    portfolioCoinsList
+                        .transition(.move(edge: .trailing))
+                }
+                
+                Spacer(minLength: 0)
+            }
         }
     }
 }
@@ -37,6 +47,11 @@ extension HomeView {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
                 .animation(.none, value: showPortfolio)
+                .onTapGesture {
+                    if showPortfolio {
+                        showPortfloioView.toggle()
+                    }
+                }
                 .background {
                     CircleButtonAnimationView(animate: $showPortfolio)
                 }
