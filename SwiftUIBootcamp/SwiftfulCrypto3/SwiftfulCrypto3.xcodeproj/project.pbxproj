@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0859CF29C0A18200FE4674 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0859CE29C0A18200FE4674 /* HapticManager.swift */; };
 		9D10396229BDA70F00924E34 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10396129BDA70F00924E34 /* LocalFileManager.swift */; };
 		9D10396429BDCBA800924E34 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10396329BDCBA800924E34 /* SearchBarView.swift */; };
 		9D10396629BDCCC700924E34 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10396529BDCCC700924E34 /* UIApplication.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D0859CE29C0A18200FE4674 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		9D10396129BDA70F00924E34 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		9D10396329BDCBA800924E34 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		9D10396529BDCCC700924E34 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				9DA55D5629BDA0D5009159EF /* NetworkingManager.swift */,
 				9D10396129BDA70F00924E34 /* LocalFileManager.swift */,
+				9D0859CE29C0A18200FE4674 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				9DA55D5729BDA0D5009159EF /* NetworkingManager.swift in Sources */,
 				9DA55D4629BD968A009159EF /* CircleButtonAnimationView.swift in Sources */,
 				9DA55D4D29BD9855009159EF /* PreviewProvider.swift in Sources */,
+				9D0859CF29C0A18200FE4674 /* HapticManager.swift in Sources */,
 				9DA55D4F29BD99D2009159EF /* Double.swift in Sources */,
 				9DA55D5E29BDA370009159EF /* CoinImageService.swift in Sources */,
 				9D10396429BDCBA800924E34 /* SearchBarView.swift in Sources */,
