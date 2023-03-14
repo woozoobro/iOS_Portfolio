@@ -26,7 +26,6 @@ struct PortfolioView: View {
                     if selectedCoin != nil {
                         portfolioInputSection
                     }
-                    
                 }
             }
             .navigationTitle("Edit Portfolio")
