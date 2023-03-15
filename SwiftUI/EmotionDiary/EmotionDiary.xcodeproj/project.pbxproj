@@ -18,6 +18,7 @@
 		9D3A8A0D29C0B10C003AB955 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A0C29C0B10C003AB955 /* Mood.swift */; };
 		9D3A8A0F29C0B645003AB955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A0E29C0B645003AB955 /* Storage.swift */; };
 		9D3A8A1129C0BB52003AB955 /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A1029C0BB52003AB955 /* MoodDiaryStorage.swift */; };
+		9DE396F029C1CEBD00781C6F /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE396EF29C1CEBD00781C6F /* MoodDiaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9D3A8A0C29C0B10C003AB955 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		9D3A8A0E29C0B645003AB955 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		9D3A8A1029C0BB52003AB955 /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
+		9DE396EF29C1CEBD00781C6F /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9D3A8A0829C0B08B003AB955 /* DiaryListView.swift */,
+				9DE396EF29C1CEBD00781C6F /* MoodDiaryCell.swift */,
 			);
 			path = DiaryList;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				9D3A8A1129C0BB52003AB955 /* MoodDiaryStorage.swift in Sources */,
 				9D3A8A0D29C0B10C003AB955 /* Mood.swift in Sources */,
 				9D3A8A0B29C0B0F4003AB955 /* MoodDiary.swift in Sources */,
+				9DE396F029C1CEBD00781C6F /* MoodDiaryCell.swift in Sources */,
 				9D3A8A0929C0B08B003AB955 /* DiaryListView.swift in Sources */,
 				9D3A89DA29C0B008003AB955 /* EmotionDiaryApp.swift in Sources */,
 				9D3A8A0F29C0B645003AB955 /* Storage.swift in Sources */,

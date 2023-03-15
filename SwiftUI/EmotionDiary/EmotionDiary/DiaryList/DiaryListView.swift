@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct DiaryListView: View {
+    @State var list: [MoodDiary] = MoodDiary.list
+    private let layout: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        LazyVGrid(columns: layout) {
+            ForEach(list) { item in
+                MoodDiaryCell(diary: item)
+                    .frame(height: 50)
+            }
+        }
     }
 }
 
