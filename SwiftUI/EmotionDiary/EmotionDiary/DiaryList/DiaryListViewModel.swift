@@ -17,6 +17,6 @@ final class DiaryListViewModel: ObservableObject {
     }
     
     var keys: [String] {
-        return dic.keys.sorted { $0 < $1 }        
+        return dic.keys.sorted { $0 > $1 }
     }
 }

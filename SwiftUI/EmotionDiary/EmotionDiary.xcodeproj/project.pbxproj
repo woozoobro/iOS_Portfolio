@@ -18,6 +18,7 @@
 		9D3A8A0D29C0B10C003AB955 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A0C29C0B10C003AB955 /* Mood.swift */; };
 		9D3A8A0F29C0B645003AB955 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A0E29C0B645003AB955 /* Storage.swift */; };
 		9D3A8A1129C0BB52003AB955 /* MoodDiaryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A8A1029C0BB52003AB955 /* MoodDiaryStorage.swift */; };
+		9DD8405229C31F3C00546E15 /* DiaryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8405129C31F3C00546E15 /* DiaryDetailsView.swift */; };
 		9DE396F029C1CEBD00781C6F /* MoodDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE396EF29C1CEBD00781C6F /* MoodDiaryCell.swift */; };
 		9DE396F229C1D0AA00781C6F /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE396F129C1D0AA00781C6F /* DiaryListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		9D3A8A0C29C0B10C003AB955 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		9D3A8A0E29C0B645003AB955 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		9D3A8A1029C0BB52003AB955 /* MoodDiaryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryStorage.swift; sourceTree = "<group>"; };
+		9DD8405129C31F3C00546E15 /* DiaryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailsView.swift; sourceTree = "<group>"; };
 		9DE396EF29C1CEBD00781C6F /* MoodDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDiaryCell.swift; sourceTree = "<group>"; };
 		9DE396F129C1D0AA00781C6F /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
 		9DE396F329C2102200781C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		9D3A8A0529C0B024003AB955 /* DiaryDetails */ = {
 			isa = PBXGroup;
 			children = (
+				9DD8405129C31F3C00546E15 /* DiaryDetailsView.swift */,
 			);
 			path = DiaryDetails;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD8405229C31F3C00546E15 /* DiaryDetailsView.swift in Sources */,
 				9D3A8A1129C0BB52003AB955 /* MoodDiaryStorage.swift in Sources */,
 				9D3A8A0D29C0B10C003AB955 /* Mood.swift in Sources */,
 				9D3A8A0B29C0B0F4003AB955 /* MoodDiary.swift in Sources */,

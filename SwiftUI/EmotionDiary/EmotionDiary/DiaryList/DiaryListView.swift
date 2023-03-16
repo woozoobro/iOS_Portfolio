@@ -21,7 +21,6 @@ struct DiaryListView: View {
         NavigationView {
             VStack {
                 diaryListScrollView
-                                
                 Button {
                     print("New Button Tapped")
                 } label: {
@@ -33,7 +32,6 @@ struct DiaryListView: View {
                         .frame(width: 80, height: 80)
                         .background {Color.blue.cornerRadius(40)}
                 }
-                
             }
             .navigationTitle("Emotion Diary")
         }
@@ -50,8 +48,12 @@ extension DiaryListView {
                         let items = vm.dic[key] ?? []
                         let orderedItems = items.sorted(by: { $0.date < $1.date })
                         ForEach(orderedItems) { item in
-                            MoodDiaryCell(diary: item)
-                                .frame(height: 50)
+                            NavigationLink {
+                                DiaryDetailsView(diary: item)
+                            } label: {
+                                MoodDiaryCell(diary: item)
+                                    .frame(height: 50)
+                            }
                         }
                     } header: {
                         Text(formattedSectionTitle(key))
@@ -73,7 +75,7 @@ extension DiaryListView {
         
         let calendar = Calendar(identifier: .gregorian)
         let dateComponent = DateComponents(calendar: calendar, year: year, month: month)
-        let date = dateComponent.date!
+        let date = dateComponent.date ?? Date()
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yy년 MMMM"
