@@ -12,7 +12,7 @@ struct EmotionDiaryApp: App {
     let vm = DiaryListViewModel()
     var body: some Scene {
         WindowGroup {
-            DiaryListView(vm: vm)
+            DiaryListView(vm: vm)            
         }
     }
 }

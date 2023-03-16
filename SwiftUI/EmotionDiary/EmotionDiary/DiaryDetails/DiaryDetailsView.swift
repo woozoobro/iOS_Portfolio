@@ -11,22 +11,39 @@ struct DiaryDetailsView: View {
     let diary: MoodDiary
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 40) {
-                Text(diary.date)
-                    .font(.largeTitle)
-                    .bold()
-                
-                Image(systemName: diary.mood.imageName)
-                    .renderingMode(.original)
-                    .resizable().scaledToFit()
-                    .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 0)
-                    .frame(height: 100)
-                
-                Text(diary.text)
-                    .font(.title)
-                    .fontWeight(.semibold)
+        VStack {
+            ScrollView {
+                VStack(spacing: 40) {
+                    Text(formattedDate(dateString: diary.date))
+                        .font(.largeTitle)
+                        .bold()
+                    
+                    Image(systemName: diary.mood.imageName)
+                        .renderingMode(.original)
+                        .resizable().scaledToFit()
+                        .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 0)
+                        .frame(height: 100)
+                        
+                    Text(diary.text)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                }
             }
+            
+            HStack {
+                Button {
+                    print("Delete Button Tapped")
+                } label: {
+                    Image(systemName: "trash")
+                        .renderingMode(.template)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .padding(.leading, 30)
+                }
+                Spacer()
+            }
+            
         }
     }
 }
@@ -37,7 +54,8 @@ extension DiaryDetailsView {
         formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
         let date = formatter.date(from: dateString)
         
-        formatter.dateFormat = "EEE, MMM d, yyyy"
+        formatter.dateFormat = "yy년 MMM d일 EEE"
+        formatter.locale = Locale(identifier: "ko")
         return formatter.string(from: date!)
     }
 }

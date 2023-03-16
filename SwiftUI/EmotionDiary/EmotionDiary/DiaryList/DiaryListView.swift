@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DiaryListView: View {
     @StateObject var vm: DiaryListViewModel
+    @State var isPresented: Bool = false
+    
     private let layout: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -21,8 +23,9 @@ struct DiaryListView: View {
         NavigationView {
             VStack {
                 diaryListScrollView
+                
                 Button {
-                    print("New Button Tapped")
+                    isPresented.toggle()
                 } label: {
                     Image(systemName: "plus")
                         .resizable()
@@ -34,6 +37,9 @@ struct DiaryListView: View {
                 }
             }
             .navigationTitle("Emotion Diary")
+        }
+        .sheet(isPresented: $isPresented) {
+            DiaryDateInputView()
         }
     }
 }

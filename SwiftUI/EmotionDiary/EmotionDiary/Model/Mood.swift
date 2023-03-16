@@ -8,6 +8,7 @@
 import Foundation
 
 enum Mood: String, Codable, CaseIterable {
+    
     case bad
     case notGreat
     case okay
