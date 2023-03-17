@@ -9,7 +9,7 @@ import SwiftUI
 //새로 생성버튼 -> 날짜 입력 -> 감정 입력 -> 일기 내용 입력 -> 저장
 struct DiaryDateInputView: View {
     @Environment(\.dismiss) var dismiss
-    @StateObject var vm: DiaryViewModel = DiaryViewModel()
+    @StateObject var vm: DiaryViewModel
     
     var body: some View {
         NavigationView {
@@ -51,7 +51,7 @@ struct DiaryDateInputView: View {
 struct DiaryDateInputView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DiaryDateInputView()
+            DiaryDateInputView(vm: DiaryViewModel(diaries: .constant(MoodDiary.list)))
         }
     }
 }

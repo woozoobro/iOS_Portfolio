@@ -23,7 +23,6 @@ final class DiaryListViewModel: ObservableObject {
     init(storage: MoodDiaryStorage) {
         self.storage = storage
         bind()
-        //self.dic = Dictionary(grouping: list, by: { $0.monthlyIdentifier })
     }
     
     var keys: [String] {
@@ -32,6 +31,7 @@ final class DiaryListViewModel: ObservableObject {
     
     private func bind() {
         $list.sink { items in
+            print("--> List Changed: \(items)")
             self.dic = Dictionary(grouping: items, by: { $0.monthlyIdentifier })
             self.persist(items: items)
         }

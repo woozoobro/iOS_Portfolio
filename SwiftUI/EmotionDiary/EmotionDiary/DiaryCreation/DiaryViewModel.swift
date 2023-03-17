@@ -10,15 +10,16 @@ import Combine
 import SwiftUI
 
 final class DiaryViewModel: ObservableObject {
-    
+    @Published var diaries: Binding<[MoodDiary]>
     @Published var diary: MoodDiary = MoodDiary(date: "", text: "", mood: .great)
     @Published var date: Date = Date()
     @Published var mood: Mood = .okay
     @Published var text: String = ""
     var cancellables = Set<AnyCancellable>()
     
-    init() {
-        addSubscription()
+    init(diaries: Binding<[MoodDiary]>) {
+        self.diaries = diaries
+        self.addSubscription()
     }
     
     private func addSubscription() {
@@ -57,8 +58,8 @@ final class DiaryViewModel: ObservableObject {
     }
     
     func completed() {
-        guard !diary.date.isEmpty == true else { return }
-        
+        guard !diary.date.isEmpty else { return }        
+        diaries.wrappedValue.append(diary)
         
         print("전체 리스트 추가하기")
         

@@ -44,6 +44,6 @@ struct DiaryTextInputView: View {
 struct DiaryTextInputView_Previews: PreviewProvider {
     @Environment(\.dismiss) static var dismiss2
     static var previews: some View {
-        DiaryTextInputView(parrentDismiss: dismiss2, vm: DiaryViewModel())
+        DiaryTextInputView(parrentDismiss: dismiss2, vm: DiaryViewModel(diaries: .constant(MoodDiary.list)))
     }
 }

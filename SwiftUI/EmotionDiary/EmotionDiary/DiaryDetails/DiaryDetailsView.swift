@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct DiaryDetailsView: View {
-    let diary: MoodDiary
+    @StateObject var vm: DiaryDetailsViewModel
+//    let diary: MoodDiary
     
     var body: some View {
         VStack {
             ScrollView {
-                VStack(spacing: 40) {
-                    Text(formattedDate(dateString: diary.date))
+                LazyVStack(spacing: 40) {
+                    Text(formattedDate(dateString: vm.diary.date))
                         .font(.largeTitle)
                         .bold()
                     
-                    Image(systemName: diary.mood.imageName)
+                    Image(systemName: vm.diary.mood.imageName)
                         .renderingMode(.original)
                         .resizable().scaledToFit()
                         .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 0)
                         .frame(height: 100)
                         
-                    Text(diary.text)
+                    Text(vm.diary.text)
                         .font(.title)
                         .fontWeight(.semibold)
                 }
@@ -33,6 +34,7 @@ struct DiaryDetailsView: View {
             HStack {
                 Button {
                     print("Delete Button Tapped")
+                    vm.delete()
                 } label: {
                     Image(systemName: "trash")
                         .renderingMode(.template)
@@ -62,6 +64,6 @@ extension DiaryDetailsView {
 
 struct DiaryDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryDetailsView(diary: MoodDiary.list[0])
+        DiaryDetailsView(vm: DiaryDetailsViewModel(diaries: .constant(MoodDiary.list), diary: MoodDiary.list[0]))
     }
 }

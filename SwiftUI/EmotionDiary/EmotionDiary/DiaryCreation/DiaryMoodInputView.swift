@@ -61,6 +61,6 @@ struct DiaryMoodInputView: View {
 struct DiaryMoodInputView_Previews: PreviewProvider {
     @Environment(\.dismiss) static var dismiss2
     static var previews: some View {
-        DiaryMoodInputView(parrentDismiss: dismiss2, vm: DiaryViewModel())
+        DiaryMoodInputView(parrentDismiss: dismiss2, vm: DiaryViewModel(diaries: .constant(MoodDiary.list)))
     }
 }
