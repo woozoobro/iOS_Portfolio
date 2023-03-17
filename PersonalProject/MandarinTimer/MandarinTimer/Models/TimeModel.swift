@@ -24,3 +24,12 @@ struct TimeModel: Identifiable {
     }
 }
 
+extension TimeModel {
+//    private var dateComponent: DateComponents {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+//
+//        return
+//    }
+}
+

@@ -14,7 +14,7 @@ class TimerViewModel: ObservableObject {
     @Published private var checkReset: Bool = false
     @Published var timeList: [TimeModel] = []
     @Published var startDate: Date?
-    @Published var timeDictionary: [String : [TimeModel]] = [:]
+    @Published var timeDic: [String : [TimeModel]] = [:]
     var timer: AnyCancellable?
     
     init() {
@@ -27,11 +27,11 @@ class TimerViewModel: ObservableObject {
             TimeModel(startedDate: Date(), passedTime: "1시간 5분"),
         ]
         
-        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
+        timeDic = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
     var keys: [String] {
-        return timeDictionary.keys.sorted { $0 > $1 }
+        return timeDic.keys.sorted { $0 > $1 }
     }
     
     func setUpTimer() {
@@ -70,12 +70,12 @@ class TimerViewModel: ObservableObject {
         guard let startDate = self.startDate else { return }
         let timeModel = TimeModel(startedDate: startDate, passedTime: countToTimeLabel())
         timeList.append(timeModel)
-        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
+        timeDic = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
     func deleteTime(indexSet: IndexSet) {
         timeList.remove(atOffsets: indexSet)
-        timeDictionary = Dictionary(grouping: timeList, by: { $0.formattedDate })
+        timeDic = Dictionary(grouping: timeList, by: { $0.formattedDate })
     }
     
     func countToTimeLabel() -> String {

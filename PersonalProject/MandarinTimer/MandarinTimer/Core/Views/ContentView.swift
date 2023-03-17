@@ -18,7 +18,7 @@ struct ContentView: View {
             }
             
             NavigationView {
-                TimerCollectionView()
+                TimeListView()
             }
             .tabItem {
                 Image(systemName: "list.bullet")

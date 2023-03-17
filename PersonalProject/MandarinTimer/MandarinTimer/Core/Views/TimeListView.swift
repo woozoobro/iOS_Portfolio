@@ -9,20 +9,21 @@ import SwiftUI
 
 struct TimeListView: View {
     @EnvironmentObject var vm: TimerViewModel
+    private let columns: [GridItem] = [
+        GridItem(.flexible()), GridItem(.flexible()),
+    ]
     
     var body: some View {
-        List {
-            Section("Hello") {
-                ForEach(vm.timeList) { model in
-                    HStack {
-                        Text(dateFormatter.string(from: model.startedDate))
-                            .font(.title2)
-                            .bold()
-                        Spacer()
-                        Text(model.passedTime)
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(vm.keys, id: \.self) { key in
+                    
+                    Section {
+                        
+                    } header: {
+                        Text(key)
                     }
-                }
-                .onDelete(perform: vm.deleteTime)
+                }                
             }
         }
         .navigationTitle("나의 기록")
