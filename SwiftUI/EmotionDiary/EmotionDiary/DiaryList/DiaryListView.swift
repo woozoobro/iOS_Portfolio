@@ -41,6 +41,9 @@ struct DiaryListView: View {
         .sheet(isPresented: $isPresented) {
             DiaryDateInputView()
         }
+        .onAppear {
+            vm.fetch()
+        }
     }
 }
 
@@ -92,6 +95,6 @@ extension DiaryListView {
 
 struct DiaryListView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryListView(vm: DiaryListViewModel())
+        DiaryListView(vm: DiaryListViewModel(storage: MoodDiaryStorage()))
     }
 }

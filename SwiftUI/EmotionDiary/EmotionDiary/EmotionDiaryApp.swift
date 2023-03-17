@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct EmotionDiaryApp: App {
-    let vm = DiaryListViewModel()
+    let vm = DiaryListViewModel(storage: MoodDiaryStorage())
     var body: some Scene {
         WindowGroup {
             DiaryListView(vm: vm)            
