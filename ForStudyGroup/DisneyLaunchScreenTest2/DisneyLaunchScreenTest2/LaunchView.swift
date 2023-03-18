@@ -65,7 +65,7 @@ struct LaunchView: View {
                                 Image("disney")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: size.width / 2, height: size.width / 2)
+                                    .frame(width: size.width / 2, height: size.height / 2)
                                     .opacity(bowAnimation ? 1 : 0)
                                 Image("plus")
                                     .resizable()
