@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct DarkModeBootcamp: View {
-    
-    @Environment(\.colorScheme) var colorScheme
+//    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 0) {
                     Text("This color is Primary")
-                        .foregroundColor(.primary)
+                        .foregroundColor(Color("DarkColor"))
                     Text("This color is secondary")
                         .foregroundColor(.secondary)
                     Text("This color is Black")
@@ -28,7 +27,7 @@ struct DarkModeBootcamp: View {
                     Text("This color is globally adaptive!")
                         .foregroundColor(Color("AdaptiveColor"))
                     Text("This color is locally adaptive!")
-                        .foregroundColor(colorScheme == .light ? .green : .yellow)
+//                        .foregroundColor(colorScheme == .light ? .green : .yellow)
                 }
             }
             .navigationTitle("Dark Mode Bootcamp")

@@ -31,10 +31,11 @@ import SwiftUI
 
 struct ScrollViewBootcamp: View {
     var body: some View {
+    
         ScrollView {
             LazyVStack {
                 ForEach(0..<10) { index in
-                    ScrollView(.horizontal, showsIndicators: false) {
+                    ScrollView(.horizontal, showsIndicators: true) {
                         HStack {
                             ForEach(0..<12) { index in
                                 RoundedRectangle(cornerRadius: 25)

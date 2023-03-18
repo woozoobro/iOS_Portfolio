@@ -17,11 +17,18 @@ struct ExtractedFunctionBootcamp: View {
             backgroundColor
                 .ignoresSafeArea()
             
-            //content
             contentLayer
         }
     }
     
+    func buttonPressed() {
+        backgroundColor = .yellow
+    }
+}
+
+
+//MARK: - Components
+extension ExtractedFunctionBootcamp {
     var contentLayer: some View {
         VStack {
             Text("Title")
@@ -38,10 +45,6 @@ struct ExtractedFunctionBootcamp: View {
             }
         }
     }
-    
-    func buttonPressed() {
-        backgroundColor = .yellow
-    }
 }
 
 struct ExtractedFunctionBootcamp_Previews: PreviewProvider {
@@ -49,3 +52,23 @@ struct ExtractedFunctionBootcamp_Previews: PreviewProvider {
         ExtractedFunctionBootcamp()
     }
 }
+
+
+/*
+ var contentLayer: some View {
+ VStack {
+ Text("Title")
+ .font(.largeTitle)
+ Button {
+ buttonPressed()
+ } label: {
+ Text("Press me")
+ .font(.headline)
+ .foregroundColor(.white)
+ .padding()
+ .background(.black)
+ .cornerRadius(10)
+ }
+ }
+ }
+ */

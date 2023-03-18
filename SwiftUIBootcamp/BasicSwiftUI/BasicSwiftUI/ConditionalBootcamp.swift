@@ -19,7 +19,7 @@ struct ConditionalBootcamp: View {
             Button("Is Loading: \(isLoading.description)") {
                 isLoading.toggle()
             }
-            
+                        
             if isLoading {
                 ProgressView()                    
             }

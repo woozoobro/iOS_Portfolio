@@ -34,15 +34,15 @@ struct ForEachBootcamp: View {
     */
     
     let data: [String] = [
-        "Hi", "Hello", "Hey everyone"
+        "Hi", "Hello", "Hey everyone", "Hi"
     ]
     let myString: String = "Hello"
     
     var body: some View {
         VStack {
-//            ForEach(data.indices) { index in
-//                Text("\(data[index]): \(index)")
-//            }
+            ForEach(data.indices, id: \.self) { index in
+                Text("\(data[index]): \(index)")
+            }
         }
     }
 }

@@ -13,13 +13,15 @@ struct NavigationViewBootcamp: View {
             ScrollView {
                 NavigationLink("This is Navigation Link!") {
                     MyOtherScreen()
-                }
+                }                
+                
                 Text("Hello, World!")
                 Text("Hello, World!")
                 Text("Hello, World!")
             }
             .navigationTitle("All Inboxes")
-            //.navigationBarTitleDisplayMode(.automatic)
+//            .navigationBarTitleDisplayMode(.automatic)
+//            .navigationBarTitleDisplayMode(.automatic)
 //            .toolbar(.hidden)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -40,6 +42,7 @@ struct NavigationViewBootcamp: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
+                        
                     } label: {
                         Image(systemName: "gear")
                     }
@@ -73,6 +76,8 @@ struct MyOtherScreen: View {
 
 struct NavigationViewBootcamp_Previews: PreviewProvider {
     static var previews: some View {
+        
         NavigationViewBootcamp()
+        
     }
 }

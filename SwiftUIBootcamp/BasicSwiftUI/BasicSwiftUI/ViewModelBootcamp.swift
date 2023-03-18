@@ -17,6 +17,7 @@ class FruitViewModel: ObservableObject {
     
     @Published var fruitArray: [FruitModel] = []
     @Published var isLoading: Bool = false
+    
     init() {
         getFruits()
     }
@@ -40,14 +41,13 @@ class FruitViewModel: ObservableObject {
     }
 }
 
+
 struct ViewModelBootcamp: View {
-    
     @StateObject var fruitViewModel: FruitViewModel = FruitViewModel()
     
     var body: some View {
         NavigationView {
             List {
-                
                 if fruitViewModel.isLoading {
                     ProgressView()
                 } else {
@@ -103,7 +103,7 @@ struct RandomScreen: View {
 struct ViewModelBootcamp_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ViewModelBootcamp()
+            ViewModelBootcamp()                
         }
     }
 }

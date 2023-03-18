@@ -82,7 +82,7 @@ struct TextFieldBootcamp: View {
                     Text("Save".uppercased())
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(textIsAppropriate() ?  Color.blue : Color.gray)
+                        .background(textIsAppropriate() ? Color.blue : Color.gray)
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .font(.headline)
@@ -101,7 +101,6 @@ struct TextFieldBootcamp: View {
     }
     
     func textIsAppropriate() -> Bool {
-        // check text
         if textFieldText.count >= 3 {
             return true
         }

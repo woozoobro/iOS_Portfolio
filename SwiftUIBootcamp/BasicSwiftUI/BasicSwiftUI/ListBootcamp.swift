@@ -80,6 +80,7 @@ import SwiftUI
 //    }
 //}
 
+
 struct ListBootcamp: View {
     
     @State var fruits: [String] = [
@@ -127,6 +128,7 @@ struct ListBootcamp: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     addButton
                 }
@@ -156,6 +158,10 @@ struct ListBootcamp: View {
     }
    
 }
+
+
+
+
 
 struct ListBootcamp_Previews: PreviewProvider {
     static var previews: some View {

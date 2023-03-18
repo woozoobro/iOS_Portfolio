@@ -24,8 +24,8 @@ struct TransitionBootcamp: View {
             if showView {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(height: 500)
-                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .bottom)))
-//                    .transition(AnyTransition.scale.animation(.easeInOut))
+//                    .transition(.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .bottom)))
+                    .transition(AnyTransition.scale.animation(.easeInOut))
             }
         }
         .background()

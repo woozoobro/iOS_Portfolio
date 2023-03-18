@@ -27,8 +27,11 @@ struct BindingBootcamp: View {
 
 struct ButtonView: View {
     @Binding var backgroundColor: Color
+    
     @State var buttonColor: Color = .blue
+    
     @Binding var title: String
+    
     var body: some View {
         Button {
             backgroundColor = .orange

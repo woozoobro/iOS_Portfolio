@@ -13,8 +13,7 @@ struct PaddingAndSpacerBootcamp: View {
             Text("Hello, World!")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
-                .padding(.bottom, 20)
-            
+                .padding(.bottom)
             Text("This is the description of what we will do on this screen. It is multiple lines and we will align the text to the leading edge.")
         }
         .padding()

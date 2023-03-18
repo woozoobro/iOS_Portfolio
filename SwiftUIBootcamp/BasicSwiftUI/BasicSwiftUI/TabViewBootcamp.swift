@@ -86,7 +86,6 @@ struct TabViewBootcamp: View {
         .background(
             RadialGradient(gradient: Gradient(colors: [.red, .blue]), center: .center, startRadius: 5, endRadius: 300)
         )
-        
         .frame(height: 300)
         .tabViewStyle(.page)
     }

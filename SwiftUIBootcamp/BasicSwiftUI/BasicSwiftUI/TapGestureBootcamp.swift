@@ -25,6 +25,7 @@ struct TapGestureBootcamp: View {
                     .background(.blue)
                     .cornerRadius(25)
             }
+            
             Text("Tap Gesture")
                 .font(.headline)
                 .foregroundColor(.white)
