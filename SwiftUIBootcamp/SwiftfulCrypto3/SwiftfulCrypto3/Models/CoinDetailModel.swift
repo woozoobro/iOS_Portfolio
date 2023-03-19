@@ -120,6 +120,10 @@ struct CoinDetailModel: Codable {
         case blockTimeInMinutes = "block_time_in_minutes"
         case hashingAlgorithm = "hashing_algorithm"
     }
+    
+    var readableDescription: String? {
+        return description?.en?.removingHTMLOccurances
+    }
 }
 
 struct Links: Codable {
@@ -131,7 +135,6 @@ struct Links: Codable {
         case subredditURL = "subreddit_url"
     }
 }
-
 
 struct Description: Codable {
     let en: String?

@@ -44,6 +44,7 @@
 		9DBB436729C361B600007DF2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB436629C361B600007DF2 /* DetailViewModel.swift */; };
 		9DBB436929C361D500007DF2 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB436829C361D500007DF2 /* CoinDetailDataService.swift */; };
 		9DD8405C29C35F1500546E15 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8405B29C35F1500546E15 /* CoinDetailModel.swift */; };
+		9DF41CAF29C679DA0083E1C5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CAE29C679DA0083E1C5 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		9DBB436629C361B600007DF2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9DBB436829C361D500007DF2 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
 		9DD8405B29C35F1500546E15 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
+		9DF41CAE29C679DA0083E1C5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				9DA55D4E29BD99D2009159EF /* Double.swift */,
 				9D10396529BDCCC700924E34 /* UIApplication.swift */,
 				9D323D7F29C5B1D300090136 /* Date.swift */,
+				9DF41CAE29C679DA0083E1C5 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				9DA55D4D29BD9855009159EF /* PreviewProvider.swift in Sources */,
 				9D323D7E29C5ADCA00090136 /* ChartView.swift in Sources */,
 				9D0859CF29C0A18200FE4674 /* HapticManager.swift in Sources */,
+				9DF41CAF29C679DA0083E1C5 /* String.swift in Sources */,
 				9DA55D4F29BD99D2009159EF /* Double.swift in Sources */,
 				9DBB436929C361D500007DF2 /* CoinDetailDataService.swift in Sources */,
 				9DA55D5E29BDA370009159EF /* CoinImageService.swift in Sources */,
