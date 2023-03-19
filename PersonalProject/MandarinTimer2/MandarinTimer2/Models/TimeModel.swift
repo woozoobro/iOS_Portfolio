@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TimeModel: Identifiable {
-    let id = UUID().uuidString
+struct TimeModel: Identifiable, Codable {
+    var id = UUID()
     let fullDate: String
     let passedTime: String
 }
@@ -38,6 +38,12 @@ extension TimeModel {
         return formatter.string(from: stringToDate)
     }
     
+    var allDate: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy년 MM월 dd일"
+        formatter.locale = Locale(identifier: "ko")
+        return formatter.string(from: stringToDate)
+    }
 }
 
 
@@ -49,7 +55,7 @@ extension TimeModel {
         TimeModel(fullDate: "2023-04-05 00:01:01", passedTime: "5시간 20분"),
         TimeModel(fullDate: "2023-03-01 00:01:01", passedTime: "1시간 30분"),
         TimeModel(fullDate: "2023-03-02 00:01:01", passedTime: "25분"),
-        TimeModel(fullDate: "2023-02-01 00:01:01", passedTime: "2시간 36"),
+        TimeModel(fullDate: "2023-02-01 00:01:01", passedTime: "2시간 36분"),
         TimeModel(fullDate: "2023-02-21 00:01:01", passedTime: "7분"),
         TimeModel(fullDate: "2023-01-21 00:01:01", passedTime: "10분"),
         TimeModel(fullDate: "2023-01-22 00:01:01", passedTime: "1분"),

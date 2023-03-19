@@ -12,7 +12,7 @@ struct TimerView: View {
     var body: some View {
         VStack(spacing: 40) {
             Spacer()
-            Text("Hello")
+            Text(vm.countToTimeLabel())
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
@@ -44,10 +44,12 @@ struct TimerView: View {
 extension TimerView {
     private var startButton: some View {
         Button {
-            
+            vm.startButtonPressed()
         } label: {
-            Image(systemName: "play")
-            Text("시작")
+            Image(systemName: vm.isStarting ? "pause" : "play")
+            Text(vm.isStarting ? "일시정지" : "시작")
+                .frame(width: 60)
+                .minimumScaleFactor(0.5)
         }
         .font(.title)
         .fontWeight(.semibold)
@@ -59,6 +61,7 @@ extension TimerView {
     
     private var stopButton: some View {
         Button {
+            vm.stopButtonPressed()
         } label: {
             Image(systemName: "stop")
             Text("종료")
@@ -68,7 +71,8 @@ extension TimerView {
         .tint(Color.white)
         .frame(height: 55)
         .padding(.horizontal)
-        .background(Color.purple.cornerRadius(20))
+        .background(vm.isFinished ? Color.gray : Color.purple)
+        .cornerRadius(20)
     }
 }
 

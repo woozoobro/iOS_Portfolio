@@ -19,21 +19,20 @@ struct TimerListView: View {
                 ForEach(vm.sectionKeys, id: \.self) { key in
                     Section {
                         ForEach(vm.getTimeData(key: key)) { item in
-                            VStack {
-                                Text(item.justDate)
-                                Image(systemName: "doc.append.fill")
-                                    .foregroundColor(.purple)
-                                    .font(.largeTitle)
-                                Text(item.passedTime)
+                            NavigationLink {
+                                TimeDetailView(time: item)
+                            } label: {
+                                TimeCell(time: item)
                             }
+                            .tint(.primary)
                         }
                         .padding(.bottom)
                     } header: {
                         HStack {
                             Text(key.formatSectionTitle())
-                                .font(.title)
+                                .font(.title2)
                                 .padding(.all, 10)
-                                .background { Color.green.opacity(0.3).cornerRadius(20) }
+                                .background { Color.orange.opacity(0.3).cornerRadius(20) }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         Divider()
@@ -41,9 +40,10 @@ struct TimerListView: View {
                 }
             }
         }
-        .navigationTitle("타임 리스트 ㅎㅎ")
+        .navigationTitle("타임 리스트")
     }
 }
+
 
 struct TimerListView_Previews: PreviewProvider {
     static var previews: some View {

@@ -1,8 +1,8 @@
 //
 //  Storage.swift
-//  EmotionDiary
+//  MandarinTimer2
 //
-//  Created by 우주형 on 2023/02/11.
+//  Created by 우주형 on 2023/03/19.
 //
 
 import Foundation
@@ -53,7 +53,7 @@ public class Storage {
     // TODO: 파일은 Data 타입형태로 읽을수 있음
     // TODO: Data 타입은 Codable decode 가능
     
-    static func retrive<T: Decodable>(_ fileName: String, from directory: Directory, as type: T.Type) -> T? {
+    static func retrieve<T: Decodable>(_ fileName: String, from directory: Directory, as type: T.Type) -> T? {
         let url = directory.url.appendingPathComponent(fileName, isDirectory: false)
         guard FileManager.default.fileExists(atPath: url.path) else { return nil }
         guard let data = FileManager.default.contents(atPath: url.path) else { return nil }
@@ -92,3 +92,4 @@ public class Storage {
         }
     }
 }
+

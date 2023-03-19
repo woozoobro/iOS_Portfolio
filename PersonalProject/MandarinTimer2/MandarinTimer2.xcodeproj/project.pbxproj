@@ -16,6 +16,11 @@
 		9D340F5829C4D299008CE71C /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D340F5729C4D299008CE71C /* TimerViewModel.swift */; };
 		9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB029C6860B0083E1C5 /* TimerListView.swift */; };
 		9DF41CB429C68A1E0083E1C5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB329C68A1E0083E1C5 /* String.swift */; };
+		9DF41CB629C6991A0083E1C5 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB529C6991A0083E1C5 /* TimeCell.swift */; };
+		9DF41CB829C699C90083E1C5 /* TimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB729C699C90083E1C5 /* TimeDetailView.swift */; };
+		9DF41CBB29C6B9500083E1C5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CBA29C6B9500083E1C5 /* Date.swift */; };
+		9DF41CBE29C6C2090083E1C5 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CBD29C6C2090083E1C5 /* Storage.swift */; };
+		9DF41CC029C6C2570083E1C5 /* TimeModelStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CBF29C6C2570083E1C5 /* TimeModelStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,12 @@
 		9D340F5729C4D299008CE71C /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		9DF41CB029C6860B0083E1C5 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		9DF41CB329C68A1E0083E1C5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9DF41CB529C6991A0083E1C5 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		9DF41CB729C699C90083E1C5 /* TimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDetailView.swift; sourceTree = "<group>"; };
+		9DF41CB929C69E4D0083E1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DF41CBA29C6B9500083E1C5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9DF41CBD29C6C2090083E1C5 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9DF41CBF29C6C2570083E1C5 /* TimeModelStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModelStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +72,14 @@
 		9D340F4129C4D0A1008CE71C /* MandarinTimer2 */ = {
 			isa = PBXGroup;
 			children = (
+				9DF41CB929C69E4D0083E1C5 /* Info.plist */,
 				9D340F4229C4D0A1008CE71C /* MandarinTimer2App.swift */,
 				9D340F4429C4D0A1008CE71C /* ContentView.swift */,
 				9DF41CB229C68A130083E1C5 /* Extensions */,
-				9D340F5629C4D28C008CE71C /* ViewModels */,
 				9D340F5029C4D0B1008CE71C /* Models */,
+				9D340F5629C4D28C008CE71C /* ViewModels */,
 				9D340F5329C4D251008CE71C /* Views */,
+				9DF41CBC29C6C1FC0083E1C5 /* Storage */,
 				9D340F4629C4D0A2008CE71C /* Assets.xcassets */,
 				9D340F4829C4D0A2008CE71C /* Preview Content */,
 			);
@@ -94,6 +107,8 @@
 			children = (
 				9D340F5429C4D268008CE71C /* TimerView.swift */,
 				9DF41CB029C6860B0083E1C5 /* TimerListView.swift */,
+				9DF41CB529C6991A0083E1C5 /* TimeCell.swift */,
+				9DF41CB729C699C90083E1C5 /* TimeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,8 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				9DF41CB329C68A1E0083E1C5 /* String.swift */,
+				9DF41CBA29C6B9500083E1C5 /* Date.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DF41CBC29C6C1FC0083E1C5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9DF41CBD29C6C2090083E1C5 /* Storage.swift */,
+				9DF41CBF29C6C2570083E1C5 /* TimeModelStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,12 +209,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF41CB629C6991A0083E1C5 /* TimeCell.swift in Sources */,
+				9DF41CBE29C6C2090083E1C5 /* Storage.swift in Sources */,
+				9DF41CBB29C6B9500083E1C5 /* Date.swift in Sources */,
 				9D340F5829C4D299008CE71C /* TimerViewModel.swift in Sources */,
 				9D340F4529C4D0A1008CE71C /* ContentView.swift in Sources */,
 				9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */,
 				9D340F5229C4D0BA008CE71C /* TimeModel.swift in Sources */,
 				9DF41CB429C68A1E0083E1C5 /* String.swift in Sources */,
+				9DF41CB829C699C90083E1C5 /* TimeDetailView.swift in Sources */,
 				9D340F5529C4D268008CE71C /* TimerView.swift in Sources */,
+				9DF41CC029C6C2570083E1C5 /* TimeModelStorage.swift in Sources */,
 				9D340F4329C4D0A1008CE71C /* MandarinTimer2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +352,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MandarinTimer2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -351,7 +381,7 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MandarinTimer2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
