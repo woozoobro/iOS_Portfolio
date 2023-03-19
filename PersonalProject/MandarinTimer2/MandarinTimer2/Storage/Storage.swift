@@ -11,8 +11,6 @@ public class Storage {
     
     private init() { }
     
-    // TODO: directory 설명
-    // TODO: FileManager 설명
     enum Directory {
         case documents
         case caches
@@ -29,10 +27,6 @@ public class Storage {
         }
     }
     
-    // TODO: Codable 설명, JSON 타입 설명
-    // TODO: Codable encode 설명
-    // TODO: Data 타입은 파일 형태로 저장 가능
-    
     static func store<T: Encodable>(_ obj: T, to directory: Directory, as fileName: String) {
         let url = directory.url.appendingPathComponent(fileName, isDirectory: false)
         print("---> save to here: \(url)")
@@ -48,10 +42,7 @@ public class Storage {
         } catch let error {
             print("---> Failed to store msg: \(error.localizedDescription)")
         }
-    }
-    
-    // TODO: 파일은 Data 타입형태로 읽을수 있음
-    // TODO: Data 타입은 Codable decode 가능
+    }    
     
     static func retrieve<T: Decodable>(_ fileName: String, from directory: Directory, as type: T.Type) -> T? {
         let url = directory.url.appendingPathComponent(fileName, isDirectory: false)

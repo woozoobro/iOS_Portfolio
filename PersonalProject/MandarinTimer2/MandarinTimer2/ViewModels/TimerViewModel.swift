@@ -26,7 +26,8 @@ class TimerViewModel: ObservableObject {
     init() {
         //timeList세팅
         addSubscriber()
-        timeList = TimeModel.list
+        
+        timeList = getTimeList()
     }
     
     private func addSubscriber() {
@@ -38,7 +39,7 @@ class TimerViewModel: ObservableObject {
     }
     
     private func getTimeList() -> [TimeModel] {
-        TimeModelStorage.instance.fetch()
+        return TimeModelStorage.instance.fetch()
     }
     
     func getTimeData(key: String) -> [TimeModel] {
@@ -70,6 +71,8 @@ class TimerViewModel: ObservableObject {
         guard !isFinished else { return }
         addTime()
         resetTimer()
+        
+        // Storage
         TimeModelStorage.instance.save(timeList)
     }
     
@@ -92,6 +95,8 @@ class TimerViewModel: ObservableObject {
         if let index = timeList.firstIndex(where: { $0.id == item.id }) {
             timeList.remove(at: index)
             print("Item Deleted")
+            // Storage
+            TimeModelStorage.instance.save(timeList)
         }
     }
     
