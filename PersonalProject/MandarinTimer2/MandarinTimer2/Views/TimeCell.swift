@@ -17,13 +17,13 @@ struct TimeCell: View {
             Image(systemName: "doc.append.fill")
                 .foregroundColor(.purple)
                 .font(.largeTitle)
-            Text(time.passedTime)
-        }
+            Text(time.studySeconds.countToTimeLabel())            
+        }        
     }
 }
 
 struct TimeCell_Previews: PreviewProvider {
     static var previews: some View {
-        TimeCell(time: TimeModel(fullDate: "2023-04-01 00:01:01", passedTime: "2시간"))
+        TimeCell(time: dev.timeModel)
     }
 }

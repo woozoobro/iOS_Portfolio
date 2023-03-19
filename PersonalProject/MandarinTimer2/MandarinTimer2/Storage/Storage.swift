@@ -29,7 +29,7 @@ public class Storage {
     
     static func store<T: Encodable>(_ obj: T, to directory: Directory, as fileName: String) {
         let url = directory.url.appendingPathComponent(fileName, isDirectory: false)
-        print("---> save to here: \(url)")
+//        print("---> save to here: \(url)")
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         

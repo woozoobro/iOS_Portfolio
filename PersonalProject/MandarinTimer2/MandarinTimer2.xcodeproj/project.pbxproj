@@ -14,6 +14,8 @@
 		9D340F5229C4D0BA008CE71C /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D340F5129C4D0BA008CE71C /* TimeModel.swift */; };
 		9D340F5529C4D268008CE71C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D340F5429C4D268008CE71C /* TimerView.swift */; };
 		9D340F5829C4D299008CE71C /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D340F5729C4D299008CE71C /* TimerViewModel.swift */; };
+		9DEFB55729C6D8BF004D14CF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFB55629C6D8BF004D14CF /* Int.swift */; };
+		9DEFB55929C6DFA2004D14CF /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFB55829C6DFA2004D14CF /* PreviewProvider.swift */; };
 		9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB029C6860B0083E1C5 /* TimerListView.swift */; };
 		9DF41CB429C68A1E0083E1C5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB329C68A1E0083E1C5 /* String.swift */; };
 		9DF41CB629C6991A0083E1C5 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB529C6991A0083E1C5 /* TimeCell.swift */; };
@@ -32,6 +34,8 @@
 		9D340F5129C4D0BA008CE71C /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		9D340F5429C4D268008CE71C /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		9D340F5729C4D299008CE71C /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		9DEFB55629C6D8BF004D14CF /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		9DEFB55829C6DFA2004D14CF /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		9DF41CB029C6860B0083E1C5 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		9DF41CB329C68A1E0083E1C5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		9DF41CB529C6991A0083E1C5 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 			children = (
 				9DF41CB329C68A1E0083E1C5 /* String.swift */,
 				9DF41CBA29C6B9500083E1C5 /* Date.swift */,
+				9DEFB55629C6D8BF004D14CF /* Int.swift */,
+				9DEFB55829C6DFA2004D14CF /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,9 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF41CB629C6991A0083E1C5 /* TimeCell.swift in Sources */,
+				9DEFB55729C6D8BF004D14CF /* Int.swift in Sources */,
 				9DF41CBE29C6C2090083E1C5 /* Storage.swift in Sources */,
 				9DF41CBB29C6B9500083E1C5 /* Date.swift in Sources */,
 				9D340F5829C4D299008CE71C /* TimerViewModel.swift in Sources */,
+				9DEFB55929C6DFA2004D14CF /* PreviewProvider.swift in Sources */,
 				9D340F4529C4D0A1008CE71C /* ContentView.swift in Sources */,
 				9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */,
 				9D340F5229C4D0BA008CE71C /* TimeModel.swift in Sources */,
@@ -353,6 +361,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MandarinTimer2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MandarinTimer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -382,6 +391,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MandarinTimer2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MandarinTimer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

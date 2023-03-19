@@ -18,7 +18,7 @@ struct TimerListView: View {
             LazyVGrid(columns: columns) {
                 ForEach(vm.sectionKeys, id: \.self) { key in
                     Section {
-                        ForEach(vm.getTimeData(key: key)) { item in
+                        ForEach(vm.getSectionTimeData(key: key)) { item in
                             NavigationLink {
                                 TimeDetailView(time: item)
                             } label: {
@@ -49,7 +49,7 @@ struct TimerListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TimerListView()
-                .environmentObject(TimerViewModel())
+                .environmentObject(dev.timerVM)
         }
     }
 }

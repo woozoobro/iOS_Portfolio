@@ -12,7 +12,7 @@ struct TimerView: View {
     var body: some View {
         VStack(spacing: 40) {
             Spacer()
-            Text(vm.countToTimeLabel())
+            Text(vm.studyCount.countToTimeLabel())
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
@@ -47,7 +47,7 @@ extension TimerView {
             vm.startButtonPressed()
         } label: {
             Image(systemName: vm.isStarting ? "pause" : "play")
-            Text(vm.isStarting ? "일시정지" : "시작")
+            Text(vm.isStarting ? "휴식" : "시작")
                 .frame(width: 60)
                 .minimumScaleFactor(0.5)
         }
@@ -80,7 +80,7 @@ struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TimerView()
-                .environmentObject(TimerViewModel())
+                .environmentObject(dev.timerVM)
         }
     }
 }

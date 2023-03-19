@@ -9,42 +9,56 @@ import Foundation
 import Combine
 
 class TimerViewModel: ObservableObject {
-    @Published var count: Int = 7200
+    @Published var studyCount: Int = 7200
+    @Published var breakCount: Int = 0
     @Published var isStarting = false
     @Published var isFinished = true
     
+    @Published var studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
     @Published private var timeList: [TimeModel] = []
-    @Published var timeDic: [String : [TimeModel]] = [:]
+    @Published var sectionTimeDic: [String : [TimeModel]] = [:]
+    @Published var dayTimeDic:[String: [TimeModel]] = [:]
     
-    var timer: AnyCancellable?
-    var cancellables = Set<AnyCancellable>()
+    private var timer: AnyCancellable?
+    private var breakTimer: AnyCancellable?
+    private var cancellables = Set<AnyCancellable>()
     
     var sectionKeys: [String] {
-        return timeDic.keys.sorted(by: { $0 > $1 })
+        return sectionTimeDic.keys.sorted(by: { $0 > $1 })
     }
     
     init() {
         //timeList세팅
         addSubscriber()
-        
         timeList = getTimeList()
+//        timeList = DeveloperPreview.list
     }
     
     private func addSubscriber() {
-        // timeDic 세팅
-        $timeList.sink { times in
-            self.timeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
-        }
-        .store(in: &cancellables)
+        // sectionTimeDic 세팅
+        $timeList
+//            .subscribe(on: DispatchQueue.global(qos: .background))
+//            .receive(on: RunLoop.main)
+            .sink { times in
+                self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
+                self.dayTimeDic = Dictionary(grouping: times, by: { $0.dailyIdentifier })
+            }
+            .store(in: &cancellables)
     }
     
     private func getTimeList() -> [TimeModel] {
         return TimeModelStorage.instance.fetch()
     }
     
-    func getTimeData(key: String) -> [TimeModel] {
-        let items = timeDic[key] ?? []
-        let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate})
+    func getSectionTimeData(key: String) -> [TimeModel] {
+        let items = sectionTimeDic[key] ?? []
+        let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate })
+        return orderedItems
+    }
+    
+    func getDayTimeData(key: String) -> [TimeModel] {
+        let items = dayTimeDic[key] ?? []
+        let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate })
         return orderedItems
     }
     
@@ -53,7 +67,17 @@ class TimerViewModel: ObservableObject {
             .publish(every: 1.0, on: .main, in: .common)
             .autoconnect()
             .sink(receiveValue: { _ in
-                self.count += 1
+                self.studyCount += 1
+            })
+    }
+    
+    private func setBreakTimer() {
+        breakTimer = Timer
+            .publish(every: 1.0, on: .main, in: .common)
+            .autoconnect()
+            .sink(receiveValue: { _ in
+                self.breakCount += 1
+                print("\(self.breakCount)")
             })
     }
     
@@ -61,9 +85,14 @@ class TimerViewModel: ObservableObject {
         isStarting.toggle()
         if isStarting {
             setUpTimer()
-            isFinished = false
+            if isFinished {
+                studyTimeModel.fullDate = Date().dateToString()
+                isFinished = false
+            }
+            breakTimer?.cancel()
         } else {
             timer?.cancel()
+            setBreakTimer()
         }
     }
     
@@ -79,16 +108,19 @@ class TimerViewModel: ObservableObject {
     private func resetTimer() {
         timer?.cancel()
         timer = nil
-        count = 0
+        breakTimer?.cancel()
+        breakTimer = nil
+        studyCount = 0
+        breakCount = 0
         isStarting = false
         isFinished = true
+        studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
     }
     
     func addTime() {
-        let newDate = Date()
-        let fullDate = newDate.dateToString()
-        let newTime = TimeModel(fullDate: fullDate, passedTime: countToTimeLabel())
-        timeList.append(newTime)
+        studyTimeModel.studySeconds = studyCount
+        studyTimeModel.breakSeconds = breakCount
+        timeList.append(studyTimeModel)
     }
     
     func deleteTime(item: TimeModel) {
@@ -100,13 +132,4 @@ class TimerViewModel: ObservableObject {
         }
     }
     
-    func countToTimeLabel() -> String {
-        if count/3600 == 0 && count/60 == 0 {
-            return "\(count)초"
-        } else if count/3600 == 0 && count/60 < 60 {
-            return "\(count/60)분 \(count%60)초"
-        } else {
-            return "\(count/3600)시간 \(count%3600/60)분 \(count%3600%60)초"
-        }
-    }
 }

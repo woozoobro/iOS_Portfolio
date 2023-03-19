@@ -14,15 +14,14 @@ struct TimeDetailView: View {
     
     var body: some View {
         VStack {
-            Text(time.allDate)
-                .font(.title)
             HStack {
-                Text(time.passedTime)
+                Text(time.studySeconds.countToTimeLabel())
                 Text("공부함")
             }
             .font(.largeTitle)
+            Text(time.breakSeconds.countToTimeLabel() + "휴식함")
         }
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(time.allDate)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
@@ -39,8 +38,8 @@ struct TimeDetailView: View {
 struct TimeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            TimeDetailView(time: TimeModel(fullDate: "2023-04-01 00:01:01", passedTime: "2시간"))
+            TimeDetailView(time: dev.timeModel)
         }
-        .environmentObject(TimerViewModel())
+        .environmentObject(dev.timerVM)
     }
 }
