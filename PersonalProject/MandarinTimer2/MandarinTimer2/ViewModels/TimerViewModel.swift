@@ -40,8 +40,8 @@ class TimerViewModel: ObservableObject {
 //            .subscribe(on: DispatchQueue.global(qos: .background))
 //            .receive(on: RunLoop.main)
             .sink { times in
-                self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
                 self.dayTimeDic = Dictionary(grouping: times, by: { $0.dailyIdentifier })
+                self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
             }
             .store(in: &cancellables)
     }
@@ -49,6 +49,12 @@ class TimerViewModel: ObservableObject {
     private func getTimeList() -> [TimeModel] {
         return TimeModelStorage.instance.fetch()
     }
+    
+//    func getSectionTimeData(key: String) -> [TimeModel] {
+//        guard let times = sectionTimeDic[key] else { return []}
+//        let groupedByDay = Dictionary(grouping: times, by: { $0.monthlyIdentifier })
+//        return groupedByDay.values.map { $0[0]}
+//    }
     
     func getSectionTimeData(key: String) -> [TimeModel] {
         let items = sectionTimeDic[key] ?? []
