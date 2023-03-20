@@ -19,7 +19,11 @@ struct TimeDetailView: View {
                 Text("공부함")
             }
             .font(.largeTitle)
-            Text(time.breakSeconds.countToTimeLabel() + "휴식함")
+            ZStack {
+                if time.breakSeconds != 0 {
+                    Text(time.breakSeconds.countToTimeLabel() + "휴식함")
+                }
+            }
         }
         .navigationTitle(time.allDate)
         .toolbar {

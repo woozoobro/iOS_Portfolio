@@ -17,7 +17,7 @@ struct TimeCell: View {
             Image(systemName: "doc.append.fill")
                 .foregroundColor(.purple)
                 .font(.largeTitle)
-            Text(time.studySeconds.countToTimeLabel())            
+            Text(time.studySeconds.countToShortTime())
         }        
     }
 }

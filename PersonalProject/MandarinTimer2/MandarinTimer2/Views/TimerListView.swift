@@ -10,7 +10,7 @@ import SwiftUI
 struct TimerListView: View {
     @EnvironmentObject var vm: TimerViewModel
     private let columns: [GridItem] = [
-        GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),
+        GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),
     ]
     
     var body: some View {
