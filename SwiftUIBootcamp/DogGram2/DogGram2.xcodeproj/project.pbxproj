@@ -12,6 +12,7 @@
 		9D1780652998F9A6004019D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1780642998F9A6004019D3 /* Assets.xcassets */; };
 		9D1780682998F9A6004019D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1780672998F9A6004019D3 /* Preview Assets.xcassets */; };
 		9D827DBE2998FE8D00D0BABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D827DBD2998FE8D00D0BABA /* LaunchScreen.storyboard */; };
+		9DAE7D0329C893E300105920 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7D0229C893E300105920 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9D1780642998F9A6004019D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1780672998F9A6004019D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D827DBD2998FE8D00D0BABA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DAE7D0229C893E300105920 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		9D17805F2998F9A4004019D3 /* DogGram2 */ = {
 			isa = PBXGroup;
 			children = (
+				9DAE7D0129C893D400105920 /* Helpers */,
 				9DCEAFD629C891BC00D5EF02 /* Views */,
 				9D1780642998F9A6004019D3 /* Assets.xcassets */,
 				9D827DBD2998FE8D00D0BABA /* LaunchScreen.storyboard */,
@@ -67,6 +70,14 @@
 				9D1780672998F9A6004019D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DAE7D0129C893D400105920 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9DAE7D0229C893E300105920 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9DCEAFD629C891BC00D5EF02 /* Views */ = {
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1780632998F9A4004019D3 /* ContentView.swift in Sources */,
+				9DAE7D0329C893E300105920 /* Extensions.swift in Sources */,
 				9D1780612998F9A4004019D3 /* DogGram2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
