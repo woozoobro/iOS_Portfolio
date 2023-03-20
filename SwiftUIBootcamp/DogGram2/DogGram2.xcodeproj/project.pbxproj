@@ -53,9 +53,9 @@
 		9D17805F2998F9A4004019D3 /* DogGram2 */ = {
 			isa = PBXGroup;
 			children = (
-				9D827DBD2998FE8D00D0BABA /* LaunchScreen.storyboard */,
 				9DCEAFD629C891BC00D5EF02 /* Views */,
 				9D1780642998F9A6004019D3 /* Assets.xcassets */,
+				9D827DBD2998FE8D00D0BABA /* LaunchScreen.storyboard */,
 				9D1780662998F9A6004019D3 /* Preview Content */,
 			);
 			path = DogGram2;
