@@ -15,9 +15,7 @@ struct TimerView: View {
             Text(vm.studyCount.countToTimeLabel())
                 .font(.largeTitle)
                 .fontWeight(.semibold)
-            
             Spacer()
-            
             HStack {
                 startButton
                 stopButton

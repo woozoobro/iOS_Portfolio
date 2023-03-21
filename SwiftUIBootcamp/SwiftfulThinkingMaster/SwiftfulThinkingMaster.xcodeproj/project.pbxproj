@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2DF1FB29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DF1FA29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift */; };
 		9DCEAFC729C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEAFC629C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift */; };
 		9DCEAFCB29C8885200D5EF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */; };
 		9DCEAFCE29C8885200D5EF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCD29C8885200D5EF02 /* Preview Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2DF1FA29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
 		9DCEAFC329C8885100D5EF02 /* SwiftfulThinkingMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCEAFC629C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMasterApp.swift; sourceTree = "<group>"; };
 		9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				9DCEAFC629C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift */,
 				9DCEAFD429C8888700D5EF02 /* ViewModifierBootcamp.swift */,
+				9D2DF1FA29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2DF1FB29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift in Sources */,
 				9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */,
 				9DCEAFC729C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift in Sources */,
 			);
