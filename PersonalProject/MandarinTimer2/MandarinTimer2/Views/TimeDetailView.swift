@@ -10,7 +10,7 @@ import SwiftUI
 struct TimeDetailView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var vm: TimerViewModel
-    let time: TimeModel
+    @State var time: TimeModel
     
     var body: some View {
         VStack {

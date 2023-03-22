@@ -17,6 +17,7 @@ class TimerViewModel: ObservableObject {
     @Published var studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
     @Published private var timeList: [TimeModel] = []
     @Published var sectionTimeDic: [String : [TimeModel]] = [:]
+    @Published var dayTimeModel: [TimeModel] = []
     
     private var timer: AnyCancellable?
     private var breakTimer: AnyCancellable?
@@ -36,8 +37,6 @@ class TimerViewModel: ObservableObject {
     private func addSubscriber() {
         // sectionTimeDic 세팅
         $timeList
-//            .subscribe(on: DispatchQueue.global(qos: .background))
-//            .receive(on: RunLoop.main)
             .sink { times in
                 self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
             }
@@ -50,14 +49,22 @@ class TimerViewModel: ObservableObject {
     
     func getSectionTimeData(key: String) -> [TimeModel] {
         let items = sectionTimeDic[key] ?? []
-        let mergedItems = Dictionary(grouping: items) { $0.dailyIdentifier }
-            .map { (_, models) in
-                models.reduce(TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)) { result, model in
-                    TimeModel(fullDate: model.fullDate,
-                              studySeconds: result.studySeconds + model.studySeconds,
-                              breakSeconds: result.breakSeconds + model.breakSeconds)
-                }
-            }.sorted { $0.fullDate < $1.fullDate }
+        let mergedItems = items.reduce(into: [String: TimeModel]()) { result, timeModel in
+            let dailyIdentifier = timeModel.dailyIdentifier
+            // if the result dictionary already contains a TimeModel with the same dailyIdentifier,
+            // update its studySeconds by adding the current timeModel's studySeconds
+
+            if var existingModel = result[dailyIdentifier] {
+                existingModel.studySeconds += timeModel.studySeconds
+                existingModel.breakSeconds += timeModel.breakSeconds
+                result[dailyIdentifier] = existingModel
+            } else {
+                // otherwise, add the current timeModel to the result dictionary
+                result[dailyIdentifier] = timeModel
+            }
+        }.values.sorted { $0.fullDate < $1.fullDate }
+        // mergedTimeModels will contain an array of TimeModels with unique dailyIdentifiers
+        // and their studySeconds merged if they have the same dailyIdentifier
         return mergedItems
     }
 
@@ -75,7 +82,7 @@ class TimerViewModel: ObservableObject {
             .autoconnect()
             .sink(receiveValue: { _ in
                 self.studyCount += 1
-            })
+            })            
     }
     
     private func setBreakTimer() {
@@ -84,7 +91,7 @@ class TimerViewModel: ObservableObject {
             .autoconnect()
             .sink(receiveValue: { _ in
                 self.breakCount += 1
-                print("\(self.breakCount)")
+                print("Break Count:\(self.breakCount)")
             })
     }
     
@@ -96,9 +103,9 @@ class TimerViewModel: ObservableObject {
                 studyTimeModel.fullDate = Date().dateToString()
                 isFinished = false
             }
-            breakTimer?.cancel()
+            cancelBreakTimer()
         } else {
-            timer?.cancel()
+            cancelStudyTimer()
             setBreakTimer()
         }
     }
@@ -106,23 +113,31 @@ class TimerViewModel: ObservableObject {
     func stopButtonPressed() {
         guard !isFinished else { return }
         addTime()
-        resetTimer()
+        resetToDefault()
         
         // Storage
         TimeModelStorage.instance.save(timeList)
         getTimeList()
     }
     
-    private func resetTimer() {
-        timer?.cancel()
-        timer = nil
-        breakTimer?.cancel()
-        breakTimer = nil
+    private func resetToDefault() {
+        cancelStudyTimer()
+        cancelBreakTimer()
         studyCount = 0
         breakCount = 0
         isStarting = false
         isFinished = true
         studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
+    }
+    
+    private func cancelStudyTimer() {
+        timer?.cancel()
+        timer = nil
+    }
+    
+    private func cancelBreakTimer() {
+        breakTimer?.cancel()
+        breakTimer = nil
     }
     
     func addTime() {
@@ -137,6 +152,8 @@ class TimerViewModel: ObservableObject {
             print("Item Deleted")
             // Storage
             TimeModelStorage.instance.save(timeList)
+        } else {
+            print("Not Found")
         }
     }
     
