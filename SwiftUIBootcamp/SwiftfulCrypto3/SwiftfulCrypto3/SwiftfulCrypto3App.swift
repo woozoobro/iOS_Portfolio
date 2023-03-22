@@ -17,7 +17,6 @@ struct SwiftfulCrypto3App: App {
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
     }
     
-    
     var body: some Scene {
         WindowGroup {
             ZStack {

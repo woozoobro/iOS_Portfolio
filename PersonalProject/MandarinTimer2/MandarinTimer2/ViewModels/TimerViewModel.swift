@@ -17,7 +17,6 @@ class TimerViewModel: ObservableObject {
     @Published var studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
     @Published private var timeList: [TimeModel] = []
     @Published var sectionTimeDic: [String : [TimeModel]] = [:]
-    @Published var dayTimeDic:[String: [TimeModel]] = [:]
     
     private var timer: AnyCancellable?
     private var breakTimer: AnyCancellable?
@@ -30,7 +29,7 @@ class TimerViewModel: ObservableObject {
     init() {
         //timeList세팅
         addSubscriber()
-        timeList = getTimeList()
+        getTimeList()
 //        timeList = DeveloperPreview.list
     }
     
@@ -41,35 +40,34 @@ class TimerViewModel: ObservableObject {
 //            .receive(on: RunLoop.main)
             .sink { times in
                 self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
-                // [SectionKey: [DayKey: [TimeModel]] ]
-                
-                self.dayTimeDic = Dictionary(grouping: times, by: { $0.dailyIdentifier })
             }
             .store(in: &cancellables)
     }
     
-    private func getTimeList() -> [TimeModel] {
-        return TimeModelStorage.instance.fetch()
+    private func getTimeList() {
+        timeList = TimeModelStorage.instance.fetch()
     }
     
-//    func getSectionTimeData(key: String) -> [TimeModel] {
-//        guard let times = sectionTimeDic[key] else { return []}
-//        let groupedByDay = Dictionary(grouping: times, by: { $0.monthlyIdentifier })
-//        return groupedByDay.values.map { $0[0]}
-//    }
-    
+    func getSectionTimeData(key: String) -> [TimeModel] {
+        let items = sectionTimeDic[key] ?? []
+        let mergedItems = Dictionary(grouping: items) { $0.dailyIdentifier }
+            .map { (_, models) in
+                models.reduce(TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)) { result, model in
+                    TimeModel(fullDate: model.fullDate,
+                              studySeconds: result.studySeconds + model.studySeconds,
+                              breakSeconds: result.breakSeconds + model.breakSeconds)
+                }
+            }.sorted { $0.fullDate < $1.fullDate }
+        return mergedItems
+    }
+
+    /* 이게 원래 쓰던거 그냥 섹션별로 나뉜!
     func getSectionTimeData(key: String) -> [TimeModel] {
         let items = sectionTimeDic[key] ?? []
         let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate })
         return orderedItems
     }
-    
-    func getDayTimeData(key: String) -> [TimeModel] {
-        let items = dayTimeDic[key] ?? []
-        let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate })
-        
-        return orderedItems
-    }
+     */
     
     private func setUpTimer() {
         timer = Timer
@@ -112,6 +110,7 @@ class TimerViewModel: ObservableObject {
         
         // Storage
         TimeModelStorage.instance.save(timeList)
+        getTimeList()
     }
     
     private func resetTimer() {
