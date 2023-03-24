@@ -40,7 +40,15 @@ struct PostView: View {
             //MARK: - Footer
             HStack(alignment: .center, spacing: 20) {
                 Image(systemName: "heart")
-                Image(systemName: "bubble.middle.bottom")
+                
+                //MARK: - Comment Icon
+                NavigationLink {
+                    CommentsView()
+                } label: {
+                    Image(systemName: "bubble.middle.bottom")
+                }
+                .tint(.primary)
+                    
                 Image(systemName: "paperplane")
                 Spacer()
             }
@@ -63,7 +71,9 @@ struct PostView_Previews: PreviewProvider {
     static var post: PostModel = PostModel(postID: "", userID: "", username: "Woozoobro", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post)
-            .previewLayout(.sizeThatFits)
+        NavigationView {
+            PostView(post: post)
+                .previewLayout(.sizeThatFits)
+        }
     }
 }

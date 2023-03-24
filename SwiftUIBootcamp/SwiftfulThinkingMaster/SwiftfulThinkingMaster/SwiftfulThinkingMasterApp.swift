@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftfulThinkingMasterApp: App {
     var body: some Scene {
         WindowGroup {
-            MatchedGeometryEffectBootcamp()
+            MatchedGeometryEffectExample2()
         }
     }
 }
