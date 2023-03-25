@@ -28,4 +28,22 @@ extension String {
         formatter.locale = Locale(identifier: "ko")
         return formatter.string(from: date)
     }
+    
+    func formatDayTitle() -> String {
+        let dateComponents = self.components(separatedBy: "-")
+            .compactMap { Int($0) }
+        
+        let year = dateComponents[0]
+        let month = dateComponents[1]
+        let day = dateComponents[2]
+        
+        let calendar = Calendar(identifier: .gregorian)
+        let dateComponent = DateComponents(calendar: calendar, year: year, month: month, day: day)
+        let date = dateComponent.date ?? Date()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy년 MM월 dd일"
+        formatter.locale = Locale(identifier: "ko")
+        return formatter.string(from: date)
+    }
 }

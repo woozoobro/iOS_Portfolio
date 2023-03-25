@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TimeDetailView: View {
-    @Environment(\.dismiss) var dismiss
+struct TimeDetailView: View {    
     @EnvironmentObject var vm: TimerViewModel
+    @State var showAlert: Bool = false
     let dayKey: String
     
     var body: some View {
@@ -30,16 +30,27 @@ struct TimeDetailView: View {
             }
             .onDelete(perform: vm.delteTime)
         }
+        .confirmationDialog("삭제할까요?", isPresented: $showAlert, titleVisibility: .visible, actions: {
+            Button("삭제", role: .destructive) {
+                vm.deleteAllTimes(key: dayKey)
+            }
+            
+            Button("취소", role: .cancel) {
+                showAlert = false
+            }
+        }, message: {
+            Text("해당 날짜의 모든 내용이 삭제될거에요.\n개별적인 내용을 삭제하고 싶다면 스와이프로 지울 수 있어요!")
+        })
         .listStyle(.grouped)
-//        .navigationTitle(time.allDate)
+        .navigationTitle(dayKey.formatDayTitle())
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    vm.deleteAllTimes(key: dayKey)
-                    dismiss()
+                    showAlert.toggle()
                 } label: {
                     Image(systemName: "trash")
                 }
+                .tint(.primary)
             }
         }
         .onAppear {
