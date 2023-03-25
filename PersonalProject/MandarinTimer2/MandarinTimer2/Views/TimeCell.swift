@@ -14,10 +14,12 @@ struct TimeCell: View {
     var body: some View {
         VStack {
             Text(time.justDate)
-            Image(systemName: "doc.append.fill")
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 40, height: 40)
                 .foregroundColor(.purple)
                 .font(.largeTitle)
             Text(time.studySeconds.countToShortTime())
+                .font(.callout)
         }        
     }
 }

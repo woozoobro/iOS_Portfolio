@@ -16,6 +16,10 @@
 		9D340F5829C4D299008CE71C /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D340F5729C4D299008CE71C /* TimerViewModel.swift */; };
 		9DEFB55729C6D8BF004D14CF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFB55629C6D8BF004D14CF /* Int.swift */; };
 		9DEFB55929C6DFA2004D14CF /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFB55829C6DFA2004D14CF /* PreviewProvider.swift */; };
+		9DF121BF29CEBD8500AFB1C8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9DF121BE29CEBD8500AFB1C8 /* Lottie */; };
+		9DF121C729CECAFE00AFB1C8 /* timerProgress.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DF121C629CECAFE00AFB1C8 /* timerProgress.json */; };
+		9DF121C929CED0D500AFB1C8 /* LottiePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121C829CED0D500AFB1C8 /* LottiePlayView.swift */; };
+		9DF121CB29CEF11F00AFB1C8 /* LottieStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121CA29CEF11F00AFB1C8 /* LottieStopView.swift */; };
 		9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB029C6860B0083E1C5 /* TimerListView.swift */; };
 		9DF41CB429C68A1E0083E1C5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB329C68A1E0083E1C5 /* String.swift */; };
 		9DF41CB629C6991A0083E1C5 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF41CB529C6991A0083E1C5 /* TimeCell.swift */; };
@@ -36,6 +40,9 @@
 		9D340F5729C4D299008CE71C /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		9DEFB55629C6D8BF004D14CF /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		9DEFB55829C6DFA2004D14CF /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		9DF121C629CECAFE00AFB1C8 /* timerProgress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timerProgress.json; sourceTree = "<group>"; };
+		9DF121C829CED0D500AFB1C8 /* LottiePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottiePlayView.swift; sourceTree = "<group>"; };
+		9DF121CA29CEF11F00AFB1C8 /* LottieStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieStopView.swift; sourceTree = "<group>"; };
 		9DF41CB029C6860B0083E1C5 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		9DF41CB329C68A1E0083E1C5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		9DF41CB529C6991A0083E1C5 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF121BF29CEBD8500AFB1C8 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +87,7 @@
 				9DF41CB929C69E4D0083E1C5 /* Info.plist */,
 				9D340F4229C4D0A1008CE71C /* MandarinTimer2App.swift */,
 				9D340F4429C4D0A1008CE71C /* ContentView.swift */,
+				9DF121CC29CEF7AF00AFB1C8 /* Utilities */,
 				9DF41CB229C68A130083E1C5 /* Extensions */,
 				9D340F5029C4D0B1008CE71C /* Models */,
 				9D340F5629C4D28C008CE71C /* ViewModels */,
@@ -125,6 +134,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		9DF121CC29CEF7AF00AFB1C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9DF121C629CECAFE00AFB1C8 /* timerProgress.json */,
+				9DF121C829CED0D500AFB1C8 /* LottiePlayView.swift */,
+				9DF121CA29CEF11F00AFB1C8 /* LottieStopView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		9DF41CB229C68A130083E1C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +180,9 @@
 			dependencies = (
 			);
 			name = MandarinTimer2;
+			packageProductDependencies = (
+				9DF121BE29CEBD8500AFB1C8 /* Lottie */,
+			);
 			productName = MandarinTimer2;
 			productReference = 9D340F3F29C4D0A1008CE71C /* MandarinTimer2.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 9D340F3629C4D0A1008CE71C;
+			packageReferences = (
+				9DF121BD29CEBD8500AFB1C8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 9D340F4029C4D0A1008CE71C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF121C729CECAFE00AFB1C8 /* timerProgress.json in Resources */,
 				9D340F4A29C4D0A2008CE71C /* Preview Assets.xcassets in Resources */,
 				9D340F4729C4D0A2008CE71C /* Assets.xcassets in Resources */,
 			);
@@ -223,12 +249,14 @@
 				9DEFB55929C6DFA2004D14CF /* PreviewProvider.swift in Sources */,
 				9D340F4529C4D0A1008CE71C /* ContentView.swift in Sources */,
 				9DF41CB129C6860B0083E1C5 /* TimerListView.swift in Sources */,
+				9DF121CB29CEF11F00AFB1C8 /* LottieStopView.swift in Sources */,
 				9D340F5229C4D0BA008CE71C /* TimeModel.swift in Sources */,
 				9DF41CB429C68A1E0083E1C5 /* String.swift in Sources */,
 				9DF41CB829C699C90083E1C5 /* TimeDetailView.swift in Sources */,
 				9D340F5529C4D268008CE71C /* TimerView.swift in Sources */,
 				9DF41CC029C6C2570083E1C5 /* TimeModelStorage.swift in Sources */,
 				9D340F4329C4D0A1008CE71C /* MandarinTimer2App.swift in Sources */,
+				9DF121C929CED0D500AFB1C8 /* LottiePlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DF121BD29CEBD8500AFB1C8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DF121BE29CEBD8500AFB1C8 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DF121BD29CEBD8500AFB1C8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D340F3729C4D0A1008CE71C /* Project object */;
 }
