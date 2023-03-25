@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimeCell: View {
     
-    @State var time: TimeModel
+    let time: TimeModel
     
     var body: some View {
         VStack {

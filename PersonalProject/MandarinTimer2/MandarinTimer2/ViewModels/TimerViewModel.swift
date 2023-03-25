@@ -15,9 +15,13 @@ class TimerViewModel: ObservableObject {
     @Published var isFinished = true
     
     @Published var studyTimeModel = TimeModel(fullDate: "", studySeconds: 0, breakSeconds: 0)
-    @Published private var timeList: [TimeModel] = []
+    @Published var timeList: [TimeModel] = [] {
+        didSet {
+            TimeModelStorage.instance.save(timeList)
+        }
+    }
     @Published var sectionTimeDic: [String : [TimeModel]] = [:]
-    @Published var dayTimeModel: [TimeModel] = []
+    @Published var dayTimeList: [TimeModel] = []
     
     private var timer: AnyCancellable?
     private var breakTimer: AnyCancellable?
@@ -34,6 +38,10 @@ class TimerViewModel: ObservableObject {
 //        timeList = DeveloperPreview.list
     }
     
+    private func getTimeList() {
+        timeList = TimeModelStorage.instance.fetch()
+    }
+    
     private func addSubscriber() {
         // sectionTimeDic 세팅
         $timeList
@@ -41,10 +49,6 @@ class TimerViewModel: ObservableObject {
                 self.sectionTimeDic = Dictionary(grouping: times, by: {$0.monthlyIdentifier})
             }
             .store(in: &cancellables)
-    }
-    
-    private func getTimeList() {
-        timeList = TimeModelStorage.instance.fetch()
     }
     
     func getSectionTimeData(key: String) -> [TimeModel] {
@@ -67,14 +71,11 @@ class TimerViewModel: ObservableObject {
         // and their studySeconds merged if they have the same dailyIdentifier
         return mergedItems
     }
-
-    /* 이게 원래 쓰던거 그냥 섹션별로 나뉜!
-    func getSectionTimeData(key: String) -> [TimeModel] {
-        let items = sectionTimeDic[key] ?? []
-        let orderedItems = items.sorted(by: { $0.fullDate < $1.fullDate })
-        return orderedItems
+    
+    func getDateTimeList(key: String) {
+        print("item filtered")
+        dayTimeList = timeList.filter { $0.dailyIdentifier == key }
     }
-     */
     
     private func setUpTimer() {
         timer = Timer
@@ -114,10 +115,6 @@ class TimerViewModel: ObservableObject {
         guard !isFinished else { return }
         addTime()
         resetToDefault()
-        
-        // Storage
-        TimeModelStorage.instance.save(timeList)
-        getTimeList()
     }
     
     private func resetToDefault() {
@@ -146,15 +143,19 @@ class TimerViewModel: ObservableObject {
         timeList.append(studyTimeModel)
     }
     
-    func deleteTime(item: TimeModel) {
-        if let index = timeList.firstIndex(where: { $0.id == item.id }) {
-            timeList.remove(at: index)
-            print("Item Deleted")
-            // Storage
-            TimeModelStorage.instance.save(timeList)
-        } else {
-            print("Not Found")
+    func deleteAllTimes(key: String) {
+        timeList.removeAll { $0.dailyIdentifier == key}
+    }
+    
+    func delteTime(atOffsets: IndexSet) {
+        for index in atOffsets {
+            if let realIndex = timeList.firstIndex(where: {$0.id == dayTimeList[index].id }) {
+                timeList.remove(at: realIndex)
+            } else {
+                print("Not Found")
+            }
         }
+        dayTimeList.remove(atOffsets: atOffsets)
     }
     
 }

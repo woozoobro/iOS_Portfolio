@@ -10,39 +10,50 @@ import SwiftUI
 struct TimeDetailView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var vm: TimerViewModel
-    @State var time: TimeModel
+    let dayKey: String
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(time.studySeconds.countToTimeLabel())
-                Text("공부함")
-            }
-            .font(.largeTitle)
-            ZStack {
-                if time.breakSeconds != 0 {
-                    Text(time.breakSeconds.countToTimeLabel() + "휴식함")
+        List {
+            ForEach(vm.dayTimeList) { time in
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(time.studySeconds.countToTimeLabel())
+                        Text("공부함")
+                    }
+                    .font(.title2)
+                    ZStack {
+                        if time.breakSeconds != 0 {
+                            Text(time.breakSeconds.countToTimeLabel() + "휴식함")
+                        }
+                    }
                 }
             }
+            .onDelete(perform: vm.delteTime)
         }
-        .navigationTitle(time.allDate)
+        .listStyle(.grouped)
+//        .navigationTitle(time.allDate)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    vm.deleteTime(item: time)
+                    vm.deleteAllTimes(key: dayKey)
                     dismiss()
                 } label: {
                     Image(systemName: "trash")
                 }
             }
         }
+        .onAppear {
+            print("On Appeared Detail View")
+            vm.getDateTimeList(key: dayKey)
+        }
     }
 }
+
 
 struct TimeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            TimeDetailView(time: dev.timeModel)
+            TimeDetailView(dayKey: dev.timeModel.dailyIdentifier)
         }
         .environmentObject(dev.timerVM)
     }

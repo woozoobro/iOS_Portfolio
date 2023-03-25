@@ -12,15 +12,16 @@ struct TimerListView: View {
     private let columns: [GridItem] = [
         GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),
     ]
+    @State private var showDetail: Bool = false
     
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: columns) {
                 ForEach(vm.sectionKeys, id: \.self) { key in
                     Section {
                         ForEach(vm.getSectionTimeData(key: key)) { item in
                             NavigationLink {
-                                TimeDetailView(time: item)
+                                TimeDetailView(dayKey: item.dailyIdentifier)
                             } label: {
                                 TimeCell(time: item)
                             }
@@ -44,12 +45,11 @@ struct TimerListView: View {
     }
 }
 
-
 struct TimerListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             TimerListView()
-                .environmentObject(dev.timerVM)
         }
+        .environmentObject(dev.timerVM)
     }
 }
