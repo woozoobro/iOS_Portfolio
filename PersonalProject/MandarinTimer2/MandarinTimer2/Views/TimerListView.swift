@@ -12,7 +12,7 @@ struct TimerListView: View {
     private let columns: [GridItem] = [
         GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),
     ]
-    @State private var showDetail: Bool = false
+    @State private var showDetail: Bool = false        
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -31,8 +31,8 @@ struct TimerListView: View {
                     } header: {
                         HStack {
                             Text(key.formatSectionTitle())
-                                .font(.title2)
-                                .padding(.all, 10)
+                                .font(.title)
+                                .padding(7)
                                 .background { Color.orange.opacity(0.3).cornerRadius(20) }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -41,6 +41,7 @@ struct TimerListView: View {
                 }
             }
         }
+        .padding(.horizontal)
         .navigationTitle("타임 리스트")
     }
 }

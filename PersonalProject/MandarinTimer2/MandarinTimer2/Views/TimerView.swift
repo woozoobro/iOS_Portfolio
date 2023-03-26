@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
     @EnvironmentObject var vm: TimerViewModel
-    @State private var play: Bool = false
+    @State private var play: Bool = false        
     
     var body: some View {
         VStack(spacing: 0) {
@@ -25,11 +25,16 @@ struct TimerView: View {
             .frame(height: 260)
 
             Text(vm.studyCount.countToTimeLabel())
-                .font(.largeTitle)
+                .font(.title)
                 .fontWeight(.semibold)
-                .padding(.bottom)
+                .lineLimit(1)
+                .padding(.horizontal)
+                .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.1)
+                .padding(.bottom, 40)
+                .monospaced()
 
-            HStack(spacing: 30) {
+            HStack(spacing: 40) {
                 startButton
                 stopButton
             }
@@ -61,17 +66,14 @@ extension TimerView {
             }
         } label: {
             Image(systemName: vm.isStarting ? "pause" : "play")
-                .bold()
-                .frame(width: 60)
-                .minimumScaleFactor(0.5)
+                .font(.title).bold()
+                .frame(width: 60, height: 55)
+                .foregroundColor(Color.white)
+                .padding(.horizontal)
+                .background { Color.green.cornerRadius(20)}
+                .shadow(color: Color.green.opacity(0.4), radius: 10, x: 0, y: 10)
         }
-        .font(.title)
-        .fontWeight(.semibold)
-        .tint(Color.white)
-        .frame(height: 55)
-        .padding(.horizontal)
-        .background { Color.blue.cornerRadius(20)}
-        .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 10)
+        .withPressableStyle()
     }
     
     private var stopButton: some View {
@@ -82,17 +84,17 @@ extension TimerView {
             }
         } label: {
             Image(systemName: "stop")
-                .frame(width: 60)
+                .font(.title)
                 .bold()
+                .frame(width: 60, height: 55)
+                .foregroundColor(Color.white)
+                .padding(.horizontal)
+                .background(vm.isFinished ? Color.gray.opacity(0.6) : Color.pink.opacity(0.6))
+                .cornerRadius(20)
+                .shadow(color: vm.isFinished ? Color.gray.opacity(0.4) : Color.pink.opacity(0.4), radius: 10, x: 0, y: 10)
         }
-        .font(.title)
-        .fontWeight(.semibold)
-        .tint(Color.white)
-        .frame(height: 55)
-        .padding(.horizontal)
-        .background(vm.isFinished ? Color.gray : Color.purple)
-        .cornerRadius(20)
-        .shadow(color: vm.isFinished ? Color.gray.opacity(0.4) : Color.purple.opacity(0.4), radius: 10, x: 0, y: 10)
+        .withErrorStyle()
+        
     }
 }
 

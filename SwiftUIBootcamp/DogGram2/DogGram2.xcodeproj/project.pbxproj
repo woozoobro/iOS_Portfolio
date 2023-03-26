@@ -22,6 +22,7 @@
 		9DAE7D0329C893E300105920 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7D0229C893E300105920 /* Extensions.swift */; };
 		9DD4C90129C950E30071D633 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90029C950E30071D633 /* FeedView.swift */; };
 		9DD4C90329C951480071D633 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90229C951480071D633 /* PostView.swift */; };
+		9DF121D229CFD8C100AFB1C8 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9DAE7D0229C893E300105920 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9DD4C90029C950E30071D633 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9DD4C90229C951480071D633 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,6 @@
 				9DD4C90029C950E30071D633 /* FeedView.swift */,
 				9D625E8829CBF671003F5477 /* CommentsView.swift */,
 				9D56767729CDB8D50047DBDF /* BrowseView.swift */,
-				9D56767929CDB9A60047DBDF /* CarouselView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -136,6 +137,8 @@
 			children = (
 				9DD4C90229C951480071D633 /* PostView.swift */,
 				9D67DBFF29CC84D3006D0C87 /* MessageView.swift */,
+				9D56767929CDB9A60047DBDF /* CarouselView.swift */,
+				9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				9D67DC0029CC84D3006D0C87 /* MessageView.swift in Sources */,
 				9DAE7D0329C893E300105920 /* Extensions.swift in Sources */,
 				9D32110229CB293F00F8489E /* PostArrayObject.swift in Sources */,
+				9DF121D229CFD8C100AFB1C8 /* ImageGridView.swift in Sources */,
 				9DD4C90329C951480071D633 /* PostView.swift in Sources */,
 				9D56767829CDB8D50047DBDF /* BrowseView.swift in Sources */,
 				9D67DC0229CC85B8006D0C87 /* CommentModel.swift in Sources */,

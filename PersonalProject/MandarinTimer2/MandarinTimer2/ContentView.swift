@@ -11,14 +11,22 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                TimerView()
+                ZStack {
+                    Color.orange.opacity(0.1)
+                        .ignoresSafeArea()
+                    TimerView()
+                }
             }
             .tabItem {
                 Image(systemName: "timer")
             }
             
             NavigationView {
-                TimerListView()
+                ZStack {
+                    Color.orange.opacity(0.1)
+                        .ignoresSafeArea()
+                    TimerListView()
+                }
             }
             .tabItem {
                 Image(systemName: "list.bullet")

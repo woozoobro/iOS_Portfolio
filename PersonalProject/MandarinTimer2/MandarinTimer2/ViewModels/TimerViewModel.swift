@@ -35,6 +35,7 @@ class TimerViewModel: ObservableObject {
         //timeList세팅
         addSubscriber()
         getTimeList()
+//        timeList.append(contentsOf: DeveloperPreview.list)
 //        timeList = DeveloperPreview.list
     }
     

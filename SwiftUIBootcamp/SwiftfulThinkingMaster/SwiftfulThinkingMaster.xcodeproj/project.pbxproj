@@ -15,6 +15,7 @@
 		9DCEAFCB29C8885200D5EF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */; };
 		9DCEAFCE29C8885200D5EF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCD29C8885200D5EF02 /* Preview Assets.xcassets */; };
 		9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEAFD429C8888700D5EF02 /* ViewModifierBootcamp.swift */; };
+		9DF121D029CFD17300AFB1C8 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DCEAFCD29C8885200D5EF02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DCEAFD429C8888700D5EF02 /* ViewModifierBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootcamp.swift; sourceTree = "<group>"; };
+		9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9D3210FC29CB14C300F8489E /* AnyTransitionBootcamp.swift */,
 				9DC62D3129CC7C3700BAA9CD /* MatchedGeometryEffectBootcamp.swift */,
 				9D56767529CD99CF0047DBDF /* CustomShapesBootcamp.swift */,
+				9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 				9DCEAFC729C8885100D5EF02 /* SwiftfulThinkingMasterApp.swift in Sources */,
 				9DC62D3229CC7C3700BAA9CD /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				9D56767629CD99CF0047DBDF /* CustomShapesBootcamp.swift in Sources */,
+				9DF121D029CFD17300AFB1C8 /* CustomCurvesBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

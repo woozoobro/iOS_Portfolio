@@ -21,5 +21,10 @@ class PostArrayObject: ObservableObject {
         self.dataArray.append(post2)
         self.dataArray.append(post3)
         self.dataArray.append(post4)
-    }    
+    }
+    
+    /// Used for Single Post Selection
+    init(post: PostModel) {
+        self.dataArray.append(post)
+    }
 }

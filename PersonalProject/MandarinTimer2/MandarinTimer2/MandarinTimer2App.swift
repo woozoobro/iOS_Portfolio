@@ -10,6 +10,11 @@ import SwiftUI
 @main
 struct MandarinTimer2App: App {
     @StateObject var vm = TimerViewModel()
+    
+//    init() {
+//        UITabBar.appearance().backgroundColor = UIColor.orange
+//    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

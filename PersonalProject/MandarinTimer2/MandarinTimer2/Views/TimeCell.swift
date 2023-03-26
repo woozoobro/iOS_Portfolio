@@ -14,13 +14,15 @@ struct TimeCell: View {
     var body: some View {
         VStack {
             Text(time.justDate)
-            RoundedRectangle(cornerRadius: 10)
-                .frame(width: 40, height: 40)
-                .foregroundColor(.purple)
+            RoundedRectangle(cornerRadius: 15)
                 .font(.largeTitle)
+                .frame(width: 40, height: 40)
+                .foregroundStyle(time.timeGradientColor)
+                .shadow(color: time.timeColor, radius: time.shadowAmount, x: 0, y: 1)
+                
             Text(time.studySeconds.countToShortTime())
                 .font(.callout)
-        }        
+        }
     }
 }
 
