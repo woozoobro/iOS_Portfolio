@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             NavigationView {
                 ZStack {
-                    Color.orange.opacity(0.1)
+                    Color.orange.opacity(0.14)
                         .ignoresSafeArea()
                     TimerView()
                 }
@@ -20,10 +20,12 @@ struct ContentView: View {
             .tabItem {
                 Image(systemName: "timer")
             }
+//            .toolbar(.visible, for: .tabBar)
+//            .toolbarBackground(Color.orange, for: .tabBar)
             
             NavigationView {
                 ZStack {
-                    Color.orange.opacity(0.1)
+                    Color.orange.opacity(0.14)
                         .ignoresSafeArea()
                     TimerListView()
                 }
@@ -31,6 +33,9 @@ struct ContentView: View {
             .tabItem {
                 Image(systemName: "list.bullet")
             }
+            .toolbar(.visible, for: .tabBar)
+            .toolbarBackground(Color.orange.opacity(0.1), for: .tabBar)
+            
         }
     }
 }

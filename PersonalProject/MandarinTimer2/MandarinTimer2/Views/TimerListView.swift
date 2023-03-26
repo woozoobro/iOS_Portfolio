@@ -32,9 +32,15 @@ struct TimerListView: View {
                         HStack {
                             Text(key.formatSectionTitle())
                                 .font(.title)
+                                .fontWeight(.semibold)
                                 .padding(7)
-                                .background { Color.orange.opacity(0.3).cornerRadius(20) }
+                            Spacer()
+                            Text("총 시간:")
+                                .font(.callout)
+                            Text(vm.getMergedTimes(key: key))
+                                .font(.callout)
                         }
+                        
                         .frame(maxWidth: .infinity, alignment: .leading)
                         Divider()
                     }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct TimerView: View {
     @EnvironmentObject var vm: TimerViewModel
     @State private var play: Bool = false        
@@ -54,6 +55,7 @@ struct TimerView: View {
                     .padding(.trailing)
             }
         }
+        
     }
 }
 

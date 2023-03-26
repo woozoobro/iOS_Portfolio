@@ -73,6 +73,13 @@ class TimerViewModel: ObservableObject {
         return mergedItems
     }
     
+    func getMergedTimes(key: String) -> String {
+        let mergedCount = getSectionTimeData(key: key)
+            .map { $0.studySeconds }
+            .reduce(0, +)
+        return mergedCount.countToShortTime()
+    }
+    
     func getDateTimeList(key: String) {
         print("item filtered")
         dayTimeList = timeList.filter { $0.dailyIdentifier == key }

@@ -11,9 +11,17 @@ import SwiftUI
 struct MandarinTimer2App: App {
     @StateObject var vm = TimerViewModel()
     
-//    init() {
-//        UITabBar.appearance().backgroundColor = UIColor.orange
-//    }
+    init() {
+        let tabBarAppearnce: UITabBarAppearance = UITabBarAppearance()
+        tabBarAppearnce.configureWithTransparentBackground()
+        UITabBar.appearance().standardAppearance = tabBarAppearnce
+//        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearnce
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithTransparentBackground()
+//        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+    }
     
     var body: some Scene {
         WindowGroup {
