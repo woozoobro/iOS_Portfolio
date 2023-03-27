@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0421F3B629CEE66900A07909 /* NavigationTitleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421F3B529CEE66900A07909 /* NavigationTitleType.swift */; };
+		0421F3BD29CF0C2C00A07909 /* AdjustTeameeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421F3BC29CF0C2C00A07909 /* AdjustTeameeView.swift */; };
+		0426418329CDFEF600F8DA7D /* TeameeMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426418229CDFEF600F8DA7D /* TeameeMakerApp.swift */; };
+		0426418529CDFEF600F8DA7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426418429CDFEF600F8DA7D /* ContentView.swift */; };
+		0426418729CDFEF700F8DA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0426418629CDFEF700F8DA7D /* Assets.xcassets */; };
+		0426418A29CDFEF700F8DA7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0426418929CDFEF700F8DA7D /* Preview Assets.xcassets */; };
+		0426419629CE015F00F8DA7D /* TeameeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426419529CE015F00F8DA7D /* TeameeModel.swift */; };
+		0426419A29CE105A00F8DA7D /* TeameeMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426419929CE105A00F8DA7D /* TeameeMakerViewModel.swift */; };
+		0426419C29CE11ED00F8DA7D /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426419B29CE11ED00F8DA7D /* TaskListView.swift */; };
+		0426419E29CE12DC00F8DA7D /* TeameeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426419D29CE12DC00F8DA7D /* TeameeListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0421F3B529CEE66900A07909 /* NavigationTitleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleType.swift; sourceTree = "<group>"; };
+		0421F3BC29CF0C2C00A07909 /* AdjustTeameeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustTeameeView.swift; sourceTree = "<group>"; };
+		0426417F29CDFEF600F8DA7D /* TeameeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeameeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0426418229CDFEF600F8DA7D /* TeameeMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeameeMakerApp.swift; sourceTree = "<group>"; };
+		0426418429CDFEF600F8DA7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0426418629CDFEF700F8DA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0426418929CDFEF700F8DA7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0426419529CE015F00F8DA7D /* TeameeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeameeModel.swift; sourceTree = "<group>"; };
+		0426419929CE105A00F8DA7D /* TeameeMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeameeMakerViewModel.swift; sourceTree = "<group>"; };
+		0426419B29CE11ED00F8DA7D /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		0426419D29CE12DC00F8DA7D /* TeameeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeameeListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0426417C29CDFEF600F8DA7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0421F3B729CEE98900A07909 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0421F3B529CEE66900A07909 /* NavigationTitleType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0421F3BE29CFE7E500A07909 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0426417629CDFEF600F8DA7D = {
+			isa = PBXGroup;
+			children = (
+				0426418129CDFEF600F8DA7D /* TeameeMaker */,
+				0426418029CDFEF600F8DA7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0426418029CDFEF600F8DA7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0426417F29CDFEF600F8DA7D /* TeameeMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0426418129CDFEF600F8DA7D /* TeameeMaker */ = {
+			isa = PBXGroup;
+			children = (
+				0426418229CDFEF600F8DA7D /* TeameeMakerApp.swift */,
+				0426418429CDFEF600F8DA7D /* ContentView.swift */,
+				0426419129CE005000F8DA7D /* Models */,
+				0426419229CE005700F8DA7D /* ViewModels */,
+				0426419029CE004A00F8DA7D /* Views */,
+				0421F3B729CEE98900A07909 /* Utilities */,
+				0421F3BE29CFE7E500A07909 /* Extension */,
+				0426418629CDFEF700F8DA7D /* Assets.xcassets */,
+				0426418829CDFEF700F8DA7D /* Preview Content */,
+			);
+			path = TeameeMaker;
+			sourceTree = "<group>";
+		};
+		0426418829CDFEF700F8DA7D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0426418929CDFEF700F8DA7D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0426419029CE004A00F8DA7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0426419D29CE12DC00F8DA7D /* TeameeListView.swift */,
+				0421F3BC29CF0C2C00A07909 /* AdjustTeameeView.swift */,
+				0426419B29CE11ED00F8DA7D /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0426419129CE005000F8DA7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0426419529CE015F00F8DA7D /* TeameeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0426419229CE005700F8DA7D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0426419929CE105A00F8DA7D /* TeameeMakerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0426417E29CDFEF600F8DA7D /* TeameeMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0426418D29CDFEF700F8DA7D /* Build configuration list for PBXNativeTarget "TeameeMaker" */;
+			buildPhases = (
+				0426417B29CDFEF600F8DA7D /* Sources */,
+				0426417C29CDFEF600F8DA7D /* Frameworks */,
+				0426417D29CDFEF600F8DA7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeameeMaker;
+			productName = TeameeMaker;
+			productReference = 0426417F29CDFEF600F8DA7D /* TeameeMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0426417729CDFEF600F8DA7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0426417E29CDFEF600F8DA7D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0426417A29CDFEF600F8DA7D /* Build configuration list for PBXProject "TeameeMaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0426417629CDFEF600F8DA7D;
+			productRefGroup = 0426418029CDFEF600F8DA7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0426417E29CDFEF600F8DA7D /* TeameeMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0426417D29CDFEF600F8DA7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0426418A29CDFEF700F8DA7D /* Preview Assets.xcassets in Resources */,
+				0426418729CDFEF700F8DA7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0426417B29CDFEF600F8DA7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0426418529CDFEF600F8DA7D /* ContentView.swift in Sources */,
+				0426419E29CE12DC00F8DA7D /* TeameeListView.swift in Sources */,
+				0426419A29CE105A00F8DA7D /* TeameeMakerViewModel.swift in Sources */,
+				0426419C29CE11ED00F8DA7D /* TaskListView.swift in Sources */,
+				0426419629CE015F00F8DA7D /* TeameeModel.swift in Sources */,
+				0426418329CDFEF600F8DA7D /* TeameeMakerApp.swift in Sources */,
+				0421F3B629CEE66900A07909 /* NavigationTitleType.swift in Sources */,
+				0421F3BD29CF0C2C00A07909 /* AdjustTeameeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0426418B29CDFEF700F8DA7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0426418C29CDFEF700F8DA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0426418E29CDFEF700F8DA7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeameeMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = P85DW78LYM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SwainYun.TeameeMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0426418F29CDFEF700F8DA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeameeMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = P85DW78LYM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SwainYun.TeameeMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0426417A29CDFEF600F8DA7D /* Build configuration list for PBXProject "TeameeMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0426418B29CDFEF700F8DA7D /* Debug */,
+				0426418C29CDFEF700F8DA7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0426418D29CDFEF700F8DA7D /* Build configuration list for PBXNativeTarget "TeameeMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0426418E29CDFEF700F8DA7D /* Debug */,
+				0426418F29CDFEF700F8DA7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0426417729CDFEF600F8DA7D /* Project object */;
+}
