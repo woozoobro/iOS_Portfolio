@@ -17,6 +17,7 @@ struct MandarinTimer2App: App {
         UITabBar.appearance().standardAppearance = tabBarAppearnce
 //        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearnce
         
+        
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithTransparentBackground()
 //        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
