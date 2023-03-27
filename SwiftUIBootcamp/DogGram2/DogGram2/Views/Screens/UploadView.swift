@@ -9,31 +9,35 @@ import SwiftUI
 
 struct UploadView: View {
     var body: some View {
-        VStack(spacing: 0) {
-            
-            Button {
+        ZStack {
+            VStack(spacing: 0) {
+                Button {
+                    
+                } label: {
+                    Text("Take photo".uppercased())
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.MyTheme.yellowColor)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.MyTheme.purpleColor)
                 
-            } label: {
-                Text("Take photo".uppercased())
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.MyTheme.yellowColor)
+                Button {
+                    
+                } label: {
+                    Text("Import photo".uppercased())
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.MyTheme.purpleColor)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.MyTheme.yellowColor)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.MyTheme.purpleColor)
             
-            Button {
-                
-            } label: {
-                Text("Import photo".uppercased())
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.MyTheme.purpleColor)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.MyTheme.yellowColor)
+            Image("logo.transparent")
+                .resizable().scaledToFit().frame(width: 100, height: 100)
+                .shadow(radius: 12)
         }
-
     }
 }
 
