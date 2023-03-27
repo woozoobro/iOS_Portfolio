@@ -20,7 +20,7 @@ final class ViewModel: ObservableObject {
     
     func send(text: String, completion: @escaping (String) -> Void ) {
         client?.sendCompletion(
-            with: text,
+            with: text, model: .gpt3(.davinci),
             maxTokens: 500,
             completionHandler: { result in
                 switch result {

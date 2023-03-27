@@ -10,6 +10,8 @@ import SwiftUI
 struct CustomCurvesBootcamp: View {
     var body: some View {
         WaterShape()
+//        ArcSample()
+//        QuadSample()
             //.stroke(lineWidth: 5)
             .fill(
                 LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .leading, endPoint: .trailing)
