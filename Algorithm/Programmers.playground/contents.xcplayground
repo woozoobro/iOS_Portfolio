@@ -3,5 +3,10 @@
     <pages>
         <page name='NumCheck'/>
         <page name='Untitled Page'/>
+        <page name='Untitled Page 2'/>
+        <page name='ChangeIndex'/>
+        <page name='ArrayTrun'/>
+        <page name='JinryoSunsu'/>
+        <page name='OnlyOneText'/>
     </pages>
 </playground>
