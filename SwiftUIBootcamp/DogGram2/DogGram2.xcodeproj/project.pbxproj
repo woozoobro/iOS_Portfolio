@@ -23,6 +23,7 @@
 		9DAE7D0329C893E300105920 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7D0229C893E300105920 /* Extensions.swift */; };
 		9DD4C90129C950E30071D633 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90029C950E30071D633 /* FeedView.swift */; };
 		9DD4C90329C951480071D633 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90229C951480071D633 /* PostView.swift */; };
+		9DE3918829D48CEE003DA6D0 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918729D48CEE003DA6D0 /* PostImageView.swift */; };
 		9DE8A1F829D32F0E006D09C8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8A1F729D32F0E006D09C8 /* ImagePicker.swift */; };
 		9DF121D229CFD8C100AFB1C8 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		9DAE7D0229C893E300105920 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9DD4C90029C950E30071D633 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9DD4C90229C951480071D633 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		9DE3918729D48CEE003DA6D0 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		9DE8A1F729D32F0E006D09C8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				9DD4C90029C950E30071D633 /* FeedView.swift */,
 				9D625E8829CBF671003F5477 /* CommentsView.swift */,
 				9D56767729CDB8D50047DBDF /* BrowseView.swift */,
+				9DE3918729D48CEE003DA6D0 /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				9DD4C90129C950E30071D633 /* FeedView.swift in Sources */,
 				9D32110029CB270200F8489E /* PostModel.swift in Sources */,
+				9DE3918829D48CEE003DA6D0 /* PostImageView.swift in Sources */,
 				9D1780632998F9A4004019D3 /* ContentView.swift in Sources */,
 				9D67DC0029CC84D3006D0C87 /* MessageView.swift in Sources */,
 				9DAE7D0329C893E300105920 /* Extensions.swift in Sources */,
