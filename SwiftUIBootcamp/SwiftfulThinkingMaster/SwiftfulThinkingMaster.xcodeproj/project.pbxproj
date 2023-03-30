@@ -84,6 +84,7 @@
 				9D4CB2BD29D1B4740045C479 /* GenericsBootcamp.swift */,
 				9DD3D90C29D2896D0036DF04 /* ViewBuilderBootcamp.swift */,
 				9DE3918229D46A7E003DA6D0 /* PreferenceKeyBootcamp */,
+				9DFA6A1729D598B500D5A505 /* CustomTabBar */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -106,6 +107,13 @@
 				9DE3918529D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
 			);
 			path = PreferenceKeyBootcamp;
+			sourceTree = "<group>";
+		};
+		9DFA6A1729D598B500D5A505 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
