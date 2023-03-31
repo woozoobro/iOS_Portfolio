@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct CustomNavBarView: View {
+    @Environment(\.dismiss) var dismiss
+    let showBackButton: Bool
+    let title: String
+    let subtitle: String?
+    
     var body: some View {
         HStack {
-            backButton
+            if showBackButton {
+                backButton
+            }
             Spacer()
-            
+            titleSection
             Spacer()
-            backButton
-            .opacity(0)
+            if showBackButton {
+                backButton
+                    .opacity(0)
+            }
         }
         .padding()
         .tint(.white)
@@ -28,7 +37,7 @@ struct CustomNavBarView: View {
 extension CustomNavBarView {
     private var backButton: some View {
         Button {
-            
+            dismiss()
         } label: {
             Image(systemName: "chevron.left")
         }
@@ -36,10 +45,12 @@ extension CustomNavBarView {
     
     private var titleSection: some View {
         VStack(spacing: 4) {
-            Text("Title")
+            Text(title)
                 .font(.title)
                 .fontWeight(.semibold)
-            Text("Subtitle goes here")
+            if let subtitle = subtitle {
+                Text(subtitle)
+            }
         }
     }
 }
@@ -48,7 +59,7 @@ extension CustomNavBarView {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            CustomNavBarView()
+            CustomNavBarView(showBackButton: true, title: "Title here", subtitle: "SubTitle goes here")
             Spacer()
         }
     }

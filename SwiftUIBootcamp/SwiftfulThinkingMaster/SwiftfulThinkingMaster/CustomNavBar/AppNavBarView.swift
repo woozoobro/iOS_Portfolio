@@ -9,6 +9,26 @@ import SwiftUI
 
 struct AppNavBarView: View {
     var body: some View {
+        CustomNavView {
+            ZStack {
+                Color.orange.ignoresSafeArea()
+                
+                CustomNavLink {
+                    Text("Desti custom")
+                        .customNavigationTitle("Second Screen")
+                        .customNavigationSubTitle("Showing!!")
+                } label: {
+                    Text("Navigate")
+                }
+            }
+            .customNavBarItems(title: "NewTitle", subtitle: nil, backButtonHidden: true)
+        }
+    }
+}
+
+extension AppNavBarView {
+    
+    private var defaultNavView: some View {
         NavigationView {
             ZStack {
                 Color.green.ignoresSafeArea()
@@ -25,6 +45,7 @@ struct AppNavBarView: View {
             .navigationTitle("Nav title here")
         }
     }
+    
 }
 
 struct AppNavBarView_Previews: PreviewProvider {
