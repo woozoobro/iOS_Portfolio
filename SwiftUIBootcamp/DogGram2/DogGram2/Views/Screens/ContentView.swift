@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
+    var currentUserId: String? = "user"
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -31,15 +34,22 @@ struct ContentView: View {
                     Image(systemName: "square.and.arrow.up.fill")
                     Text("Upload")
                 }
-            NavigationView {
-                ProfileView(isMyProfile: true, profileDisplayName: "My Profile", profileUserID: "")
+            
+            ZStack {
+                if currentUserId != nil {
+                    NavigationView {
+                        ProfileView(isMyProfile: true, profileDisplayName: "My Profile", profileUserID: "")
+                    }
+                } else {
+                    SignUpView()
+                }
             }
             .tabItem {
                 Image(systemName: "person.fill")
                 Text("Profile")
             }
         }
-        .tint(Color.MyTheme.purpleColor)
+        .tint(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
     }
 }
 

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.colorScheme) var colorScheme
     var isMyProfile: Bool
     @State var profileDisplayName: String
     var profileUserID: String
     
     var posts = PostArrayObject()
+    
+    @State var showSettings: Bool = false
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -25,13 +28,16 @@ struct ProfileView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    
+                    showSettings.toggle()
                 } label: {
                     Image(systemName: "line.horizontal.3")
                 }
-                .tint(Color.MyTheme.purpleColor)
+                .tint(colorScheme == .light ? Color.MyTheme.purpleColor : Color.MyTheme.yellowColor)
                 .opacity(isMyProfile ? 1 : 0)
             }
+        }
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
         }
     }
 }
