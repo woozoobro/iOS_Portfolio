@@ -12,6 +12,9 @@
 		9D1780652998F9A6004019D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1780642998F9A6004019D3 /* Assets.xcassets */; };
 		9D1780682998F9A6004019D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1780672998F9A6004019D3 /* Preview Assets.xcassets */; };
 		9D1837DD29D1CB67007E5952 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1837DC29D1CB67007E5952 /* UploadView.swift */; };
+		9D260D9A29D7BD7700ACBE84 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D260D9929D7BD7700ACBE84 /* SettingsView.swift */; };
+		9D260D9C29D7BF2D00ACBE84 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D260D9B29D7BF2D00ACBE84 /* SettingsLabelView.swift */; };
+		9D260D9E29D7C0B600ACBE84 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D260D9D29D7C0B600ACBE84 /* SettingsRowView.swift */; };
 		9D32110029CB270200F8489E /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3210FF29CB270200F8489E /* PostModel.swift */; };
 		9D32110229CB293F00F8489E /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32110129CB293F00F8489E /* PostArrayObject.swift */; };
 		9D3B385629D742F9005B293A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B385529D742F9005B293A /* ProfileView.swift */; };
@@ -37,6 +40,9 @@
 		9D1780642998F9A6004019D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1780672998F9A6004019D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D1837DC29D1CB67007E5952 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		9D260D9929D7BD7700ACBE84 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9D260D9B29D7BF2D00ACBE84 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		9D260D9D29D7C0B600ACBE84 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		9D3210FF29CB270200F8489E /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		9D32110129CB293F00F8489E /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 		9D3B385529D742F9005B293A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 				9D56767729CDB8D50047DBDF /* BrowseView.swift */,
 				9DE3918729D48CEE003DA6D0 /* PostImageView.swift */,
 				9D3B385529D742F9005B293A /* ProfileView.swift */,
+				9D260D9929D7BD7700ACBE84 /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 				9DF121D129CFD8C100AFB1C8 /* ImageGridView.swift */,
 				9DE8A1F729D32F0E006D09C8 /* ImagePicker.swift */,
 				9D3B385729D743BD005B293A /* ProfileHeaderView.swift */,
+				9D260D9B29D7BF2D00ACBE84 /* SettingsLabelView.swift */,
+				9D260D9D29D7C0B600ACBE84 /* SettingsRowView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			files = (
 				9DD4C90129C950E30071D633 /* FeedView.swift in Sources */,
 				9D32110029CB270200F8489E /* PostModel.swift in Sources */,
+				9D260D9C29D7BF2D00ACBE84 /* SettingsLabelView.swift in Sources */,
 				9DE3918829D48CEE003DA6D0 /* PostImageView.swift in Sources */,
 				9D1780632998F9A4004019D3 /* ContentView.swift in Sources */,
 				9D67DC0029CC84D3006D0C87 /* MessageView.swift in Sources */,
@@ -247,6 +257,8 @@
 				9DE8A1F829D32F0E006D09C8 /* ImagePicker.swift in Sources */,
 				9D56767A29CDB9A60047DBDF /* CarouselView.swift in Sources */,
 				9D1780612998F9A4004019D3 /* DogGram2App.swift in Sources */,
+				9D260D9A29D7BD7700ACBE84 /* SettingsView.swift in Sources */,
+				9D260D9E29D7C0B600ACBE84 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
