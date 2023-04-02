@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var currentUserID: String? = "user"
     @Environment(\.colorScheme) var colorScheme
+    var currentUserID: String? = nil
     
     var body: some View {
         TabView {

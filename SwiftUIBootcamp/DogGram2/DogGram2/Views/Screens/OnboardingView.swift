@@ -118,6 +118,8 @@ struct OnboardingView: View {
             return Alert(title: Text("Error signing in 😭"))
         }
     }
+        
+    
 }
 
 struct OnboardingView_Previews: PreviewProvider {

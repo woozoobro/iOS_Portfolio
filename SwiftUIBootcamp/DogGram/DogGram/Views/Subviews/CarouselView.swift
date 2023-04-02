@@ -13,7 +13,7 @@ struct CarouselView: View {
     @State var timerAdded: Bool = false
     var body: some View {
         TabView(selection: $selection) {
-            ForEach(1..<maxCount) { count in
+            ForEach(1..<maxCount, id: \.self) { count in
                 Image("dog\(count)")
                     .resizable()
                     .scaledToFill()
