@@ -58,6 +58,7 @@ struct OnboardingView: View {
                         showOnboardingPart2.toggle()
                     } catch {
                         print(error)
+                        showError.toggle()
                     }
                 }
             } label: {

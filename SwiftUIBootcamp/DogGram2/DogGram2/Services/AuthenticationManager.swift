@@ -108,8 +108,6 @@ extension AuthenticationManager {
     func signInWithApple(tokens: SignInWithAppleResult) async throws -> AuthDataResultModel {
         let credential = OAuthProvider.credential(withProviderID: AuthProviderOption.apple.rawValue, idToken: tokens.token, rawNonce: tokens.nonce)
         
-//        let credential = OAuthProvider.appleCredential(withIDToken: idTokenString, rawNonce: nonce, fullName: appleIDCredential.fullName)
-        
         return try await signIn(credential: credential)
     }
     
