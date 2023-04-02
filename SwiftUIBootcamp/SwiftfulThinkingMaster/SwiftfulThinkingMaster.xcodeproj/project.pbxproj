@@ -28,6 +28,7 @@
 		9DCEAFCB29C8885200D5EF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */; };
 		9DCEAFCE29C8885200D5EF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCEAFCD29C8885200D5EF02 /* Preview Assets.xcassets */; };
 		9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCEAFD429C8888700D5EF02 /* ViewModifierBootcamp.swift */; };
+		9DCFCA6A29D99ACD0098813A /* UIViewRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFCA6929D99ACD0098813A /* UIViewRepresentableBootcamp.swift */; };
 		9DD3D90D29D2896D0036DF04 /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3D90C29D2896D0036DF04 /* ViewBuilderBootcamp.swift */; };
 		9DE3918129D459C7003DA6D0 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918029D459C7003DA6D0 /* PreferenceKeyBootcamp.swift */; };
 		9DE3918429D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */; };
@@ -58,6 +59,7 @@
 		9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DCEAFCD29C8885200D5EF02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DCEAFD429C8888700D5EF02 /* ViewModifierBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootcamp.swift; sourceTree = "<group>"; };
+		9DCFCA6929D99ACD0098813A /* UIViewRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBootcamp.swift; sourceTree = "<group>"; };
 		9DD3D90C29D2896D0036DF04 /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		9DE3918029D459C7003DA6D0 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				9DE3918229D46A7E003DA6D0 /* PreferenceKeyBootcamp */,
 				9DFA6A1729D598B500D5A505 /* CustomTabBar */,
 				9DCB507A29D6DF1600615796 /* CustomNavBar */,
+				9DCFCA6929D99ACD0098813A /* UIViewRepresentableBootcamp.swift */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -230,6 +233,7 @@
 				9DCB507C29D6DF2900615796 /* AppNavBarView.swift in Sources */,
 				9D4B830629D65C2300ED121F /* TabBarItemsPreferenceKey.swift in Sources */,
 				9D4B830029D5A08B00ED121F /* AppTabBarView.swift in Sources */,
+				9DCFCA6A29D99ACD0098813A /* UIViewRepresentableBootcamp.swift in Sources */,
 				9D2DF1FB29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift in Sources */,
 				9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */,
 				9D4CB2BC29D1AD720045C479 /* AnimateableDataBootcamp.swift in Sources */,
