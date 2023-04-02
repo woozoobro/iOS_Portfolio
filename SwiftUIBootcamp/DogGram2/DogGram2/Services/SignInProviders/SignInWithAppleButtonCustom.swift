@@ -10,8 +10,12 @@ import SwiftUI
 import AuthenticationServices
 
 struct SignInWithAppleButtonCustom: UIViewRepresentable {
+    
+    let type: ASAuthorizationAppleIDButton.ButtonType
+    let style: ASAuthorizationAppleIDButton.Style
+    
     func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        return ASAuthorizationAppleIDButton(type: .default, style: .black)
+        ASAuthorizationAppleIDButton(type: type, style: style)
     }
     
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) { }

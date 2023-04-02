@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import GoogleSignInSwift
+import AuthenticationServices
+
+
+@MainActor
+final class AuthenticationViewModel: ObservableObject {
+    
+    func signInGoogle() async throws {
+        let helper = SignInGoogleHelper()
+        let tokens = try await helper.signIn()
+        try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
+    }
+}
 
 struct OnboardingView: View {
+    @StateObject private var viewModel = AuthenticationViewModel()
     @Environment(\.dismiss) var dismiss
     @State var showOnboardingPart2: Bool = false
+    @State var showError: Bool = false
     
     var body: some View {
         VStack(spacing: 10) {
@@ -29,12 +45,27 @@ struct OnboardingView: View {
                 .foregroundColor(Color.MyTheme.purpleColor)
                 .padding()
             
+            //MARK: - Sign In with Apple
             Button {
-                showOnboardingPart2.toggle()
+                SignInWithApple.instance.startSignInWithAppleFlow(view: self)
             } label: {
-                SignInWithAppleButtonCustom()
+                SignInWithAppleButtonCustom(type: .default, style: .black)
+                    .allowsHitTesting(false)
                     .frame(height: 60)
                     .frame(maxWidth: .infinity)
+            }
+            
+            //MARK: - Sign In with Google
+            
+            GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .dark, style: .wide, state: .normal)) {
+                Task {
+                    do {
+                        try await viewModel.signInGoogle()
+                        showOnboardingPart2.toggle()
+                    } catch {
+                        print(error)
+                    }
+                }
             }
             
             Button {
@@ -69,6 +100,9 @@ struct OnboardingView: View {
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $showOnboardingPart2) {
             OnboardingViewPart2()
+        }
+        .alert(isPresented: $showError) {
+            return Alert(title: Text("Error signing in 😭"))
         }
     }
 }
