@@ -46,6 +46,7 @@
 		9DA57FB429D9464B0047B5EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57FB329D9464B0047B5EC /* Utilities.swift */; };
 		9DA57FB629D948E40047B5EC /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57FB529D948E40047B5EC /* AuthenticationManager.swift */; };
 		9DA57FB829D958CF0047B5EC /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57FB729D958CF0047B5EC /* SignInGoogleHelper.swift */; };
+		9DA57FBA29D96BBF0047B5EC /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57FB929D96BBF0047B5EC /* SignInAppleHelper.swift */; };
 		9DAE7D0329C893E300105920 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE7D0229C893E300105920 /* Extensions.swift */; };
 		9DD4C90129C950E30071D633 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90029C950E30071D633 /* FeedView.swift */; };
 		9DD4C90329C951480071D633 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4C90229C951480071D633 /* PostView.swift */; };
@@ -88,6 +89,7 @@
 		9DA57FB329D9464B0047B5EC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9DA57FB529D948E40047B5EC /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		9DA57FB729D958CF0047B5EC /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		9DA57FB929D96BBF0047B5EC /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		9DAE7D0229C893E300105920 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9DD4C90029C950E30071D633 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9DD4C90229C951480071D633 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				9D260DA729D7D75D00ACBE84 /* SignInWithAppleButtonCustom.swift */,
 				9DA57FAA29D92F210047B5EC /* SignInWithApple.swift */,
 				9DA57FB729D958CF0047B5EC /* SignInGoogleHelper.swift */,
+				9DA57FB929D96BBF0047B5EC /* SignInAppleHelper.swift */,
 			);
 			path = SignInProviders;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				9D260DA229D7C88B00ACBE84 /* SettingsEditImageView.swift in Sources */,
 				9DA57FB429D9464B0047B5EC /* Utilities.swift in Sources */,
 				9D625E8929CBF671003F5477 /* CommentsView.swift in Sources */,
+				9DA57FBA29D96BBF0047B5EC /* SignInAppleHelper.swift in Sources */,
 				9D3B385829D743BD005B293A /* ProfileHeaderView.swift in Sources */,
 				9D1837DD29D1CB67007E5952 /* UploadView.swift in Sources */,
 				9D260DA629D7D63400ACBE84 /* OnboardingView.swift in Sources */,

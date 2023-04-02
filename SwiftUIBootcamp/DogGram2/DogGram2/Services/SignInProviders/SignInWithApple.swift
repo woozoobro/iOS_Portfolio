@@ -103,6 +103,7 @@ class SignInWithApple: NSObject, ASAuthorizationControllerDelegate {
             let credential = OAuthProvider.appleCredential(withIDToken: idTokenString,
                                                            rawNonce: nonce,
                                                            fullName: appleIDCredential.fullName)
+              
             
             print("Sign In to Firebase now: witheamil: \(email) and with name: \(name)")
         }

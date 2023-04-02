@@ -8,16 +8,21 @@
 import SwiftUI
 import GoogleSignIn
 import GoogleSignInSwift
-import AuthenticationServices
-
 
 @MainActor
 final class AuthenticationViewModel: ObservableObject {
+    let signInAppleHelper = SignInAppleHelper()
     
     func signInGoogle() async throws {
         let helper = SignInGoogleHelper()
         let tokens = try await helper.signIn()
         try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
+    }
+    
+    func signInApple() async throws {
+        let helper = SignInAppleHelper()
+        let tokens = try await helper.startSignInWithAppleFlow()
+        try await AuthenticationManager.shared.signInWithApple(tokens: tokens)
     }
 }
 
@@ -47,13 +52,20 @@ struct OnboardingView: View {
             
             //MARK: - Sign In with Apple
             Button {
-                SignInWithApple.instance.startSignInWithAppleFlow(view: self)
+                Task {
+                    do {
+                        try await viewModel.signInApple()
+                        showOnboardingPart2.toggle()
+                    } catch {
+                        print(error)
+                    }
+                }
             } label: {
-                SignInWithAppleButtonCustom(type: .default, style: .black)
+                SignInWithAppleViewRepresentable(type: .default, style: .black)
                     .allowsHitTesting(false)
-                    .frame(height: 60)
-                    .frame(maxWidth: .infinity)
             }
+            .frame(height: 60)
+            
             
             //MARK: - Sign In with Google
             
