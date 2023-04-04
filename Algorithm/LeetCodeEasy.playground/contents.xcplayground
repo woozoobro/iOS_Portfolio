@@ -3,5 +3,6 @@
     <pages>
         <page name='TwoSum'/>
         <page name='Untitled Page 2'/>
+        <page name='RomanNumber'/>
     </pages>
 </playground>
