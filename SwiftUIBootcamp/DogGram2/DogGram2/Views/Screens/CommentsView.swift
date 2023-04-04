@@ -66,7 +66,7 @@ struct CommentsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             CommentsView()
-                .preferredColorScheme(.dark)
+//                .preferredColorScheme(.dark)
         }
     }
 }

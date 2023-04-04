@@ -22,7 +22,6 @@ struct SignInWithAppleViewRepresentable: UIViewRepresentable {
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) { }
 }
 
-
 struct SignInWithAppleResult {
     let token: String
     let nonce: String
