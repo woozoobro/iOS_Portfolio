@@ -36,6 +36,7 @@
 		9DE3918429D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */; };
 		9DE3918629D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918529D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
 		9DF121D029CFD17300AFB1C8 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */; };
+		9DFE384D29DD96C80072A247 /* DependencyInjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE384C29DD96C80072A247 /* DependencyInjectionBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9DE3918529D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
+		9DFE384C29DD96C80072A247 /* DependencyInjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				9DCFCA6929D99ACD0098813A /* UIViewRepresentableBootcamp.swift */,
 				9D830F6D29DAEEAB00833A70 /* UIViewControllerRepresentableBootcamp.swift */,
 				9DC081D329DC472E0029BCDF /* ProtocolsBootcamp.swift */,
+				9DFE384C29DD96C80072A247 /* DependencyInjectionBootcamp.swift */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 				9DC62D3229CC7C3700BAA9CD /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				9D4B830829D65FC900ED121F /* TabBarItem.swift in Sources */,
 				9D56767629CD99CF0047DBDF /* CustomShapesBootcamp.swift in Sources */,
+				9DFE384D29DD96C80072A247 /* DependencyInjectionBootcamp.swift in Sources */,
 				9DE3918129D459C7003DA6D0 /* PreferenceKeyBootcamp.swift in Sources */,
 				9DCB508029D6E1F400615796 /* CustomNavBarContainerView.swift in Sources */,
 				9DC081D429DC472E0029BCDF /* ProtocolsBootcamp.swift in Sources */,
