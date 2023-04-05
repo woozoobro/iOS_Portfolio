@@ -50,6 +50,7 @@
 		9DC7C9B02992973700DFDDB3 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C9AF2992973700DFDDB3 /* ProfileHeaderView.swift */; };
 		9DE49364298FD060008CE69E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE49363298FD060008CE69E /* ImagePicker.swift */; };
 		9DE49366299000AF008CE69E /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE49365299000AF008CE69E /* PostImageView.swift */; };
+		9DFE385029DDAD030072A247 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE384F29DDAD030072A247 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		9DC7C9AF2992973700DFDDB3 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		9DE49363298FD060008CE69E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9DE49365299000AF008CE69E /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
+		9DFE384F29DDAD030072A247 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9D0BDAAA29D9BA5B0085E880 /* Info.plist */,
+				9DFE384E29DDACB40072A247 /* Utilities */,
 				9D0BDAA629D9B38F0085E880 /* Services */,
 				9D0BDAA529D9B33B0085E880 /* DogGram.entitlements */,
 				9D0BDA9329D9B1470085E880 /* GoogleService-Info.plist */,
@@ -245,6 +248,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9DFE384E29DDACB40072A247 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9DFE384F29DDAD030072A247 /* ImageManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +350,7 @@
 				9DA3E24829950DD30005EAA7 /* SignUpView.swift in Sources */,
 				9D0094E82988F15300EAB82E /* ContentView.swift in Sources */,
 				9D6A3346298F930B00DD7210 /* MessageView.swift in Sources */,
+				9DFE385029DDAD030072A247 /* ImageManager.swift in Sources */,
 				9D0094FA2988F65800EAB82E /* Extensions.swift in Sources */,
 				9DC77679298E75F800D7CFB1 /* PostArrayObject.swift in Sources */,
 				9DC13332298FAC3D00C466CD /* ImageGridView.swift in Sources */,

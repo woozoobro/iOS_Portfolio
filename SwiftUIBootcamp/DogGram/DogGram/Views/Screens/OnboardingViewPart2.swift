@@ -75,6 +75,7 @@ struct OnboardingViewPart2: View {
         AuthService.instance.createNewUserInDatabase(name: displayName, email: email, providerID: providerID, provider: provider, profileImage: imageSelected) { returnedUserID in
             if let userID = returnedUserID {
                 // Success
+                print("Successfully created new user in database.")                
                 
             } else {
                 // Error
