@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardingViewPart2: View {
+    @Environment(\.dismiss) var dismiss
     @Binding var displayName: String
     @Binding var email: String
     @Binding var providerID: String
@@ -75,7 +76,19 @@ struct OnboardingViewPart2: View {
         AuthService.instance.createNewUserInDatabase(name: displayName, email: email, providerID: providerID, provider: provider, profileImage: imageSelected) { returnedUserID in
             if let userID = returnedUserID {
                 // Success
-                print("Successfully created new user in database.")                
+                print("Successfully created new user in database.")
+                AuthService.instance.logInUserToApp(userID: userID) { success in
+                    if success {
+                        print("User logged in!")
+                        // return to app
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            dismiss()
+                        }
+                    } else {
+                        print("Error logging in")
+                        self.showError.toggle()
+                    }
+                }
                 
             } else {
                 // Error
