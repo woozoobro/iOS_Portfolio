@@ -16,6 +16,8 @@
 		9D4C50BC29DE854E00FB1E3E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4C50BB29DE854E00FB1E3E /* FirebaseFirestoreSwift */; };
 		9D4C50C029DE865D00FB1E3E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C50BF29DE865D00FB1E3E /* SettingsViewModel.swift */; };
 		9D4C50C329DE86B500FB1E3E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C50C229DE86B500FB1E3E /* AuthenticationViewModel.swift */; };
+		9D4EB63529DFF96500492A2F /* ProductsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EB63429DFF96500492A2F /* ProductsDatabase.swift */; };
+		9D4EB63829DFFA4D00492A2F /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EB63729DFFA4D00492A2F /* ProductsView.swift */; };
 		9D5B71E629DBD524002BC7B6 /* SwiftfulFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B71E529DBD524002BC7B6 /* SwiftfulFirebaseApp.swift */; };
 		9D5B71E829DBD524002BC7B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B71E729DBD524002BC7B6 /* ContentView.swift */; };
 		9D5B71EA29DBD525002BC7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B71E929DBD525002BC7B6 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		9D39C9A329DD658200808402 /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		9D4C50BF29DE865D00FB1E3E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		9D4C50C229DE86B500FB1E3E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		9D4EB63429DFF96500492A2F /* ProductsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDatabase.swift; sourceTree = "<group>"; };
+		9D4EB63729DFFA4D00492A2F /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		9D5B71E229DBD524002BC7B6 /* SwiftfulFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B71E529DBD524002BC7B6 /* SwiftfulFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebaseApp.swift; sourceTree = "<group>"; };
 		9D5B71E729DBD524002BC7B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9D39C99E29DD413400808402 /* Utilities.swift */,
+				9D4EB63429DFF96500492A2F /* ProductsDatabase.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9D5B720629DBEC5A002BC7B6 /* RootView.swift */,
+				9D4EB63629DFFA3900492A2F /* Products */,
 				9DDB59CC29DE875B008E2E45 /* Profile */,
 				9D4C50BE29DE864E00FB1E3E /* Settings */,
 				9D4C50C129DE869000FB1E3E /* Authentication */,
@@ -121,6 +127,14 @@
 				9DDB59CA29DE8728008E2E45 /* SignInEmailViewModel.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		9D4EB63629DFFA3900492A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4EB63729DFFA4D00492A2F /* ProductsView.swift */,
+			);
+			path = Products;
 			sourceTree = "<group>";
 		};
 		9D5B71D929DBD524002BC7B6 = {
@@ -293,7 +307,9 @@
 				9D39C9A129DD4B5B00808402 /* SignInGoogleHelper.swift in Sources */,
 				9D5B71FF29DBE1E6002BC7B6 /* AuthenticationView.swift in Sources */,
 				9D5B720329DBE42C002BC7B6 /* AuthenticationManager.swift in Sources */,
+				9D4EB63529DFF96500492A2F /* ProductsDatabase.swift in Sources */,
 				9D39C99F29DD413400808402 /* Utilities.swift in Sources */,
+				9D4EB63829DFFA4D00492A2F /* ProductsView.swift in Sources */,
 				9D4C50C029DE865D00FB1E3E /* SettingsViewModel.swift in Sources */,
 				9D39C9A429DD658200808402 /* SignInAppleHelper.swift in Sources */,
 				9DDB59CE29DE8775008E2E45 /* ProfileView.swift in Sources */,
