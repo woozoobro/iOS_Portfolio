@@ -18,6 +18,7 @@
 		9D4C50C329DE86B500FB1E3E /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C50C229DE86B500FB1E3E /* AuthenticationViewModel.swift */; };
 		9D4EB63529DFF96500492A2F /* ProductsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EB63429DFF96500492A2F /* ProductsDatabase.swift */; };
 		9D4EB63829DFFA4D00492A2F /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EB63729DFFA4D00492A2F /* ProductsView.swift */; };
+		9D4EB63A29DFFD3600492A2F /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EB63929DFFD3600492A2F /* ProductsManager.swift */; };
 		9D5B71E629DBD524002BC7B6 /* SwiftfulFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B71E529DBD524002BC7B6 /* SwiftfulFirebaseApp.swift */; };
 		9D5B71E829DBD524002BC7B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B71E729DBD524002BC7B6 /* ContentView.swift */; };
 		9D5B71EA29DBD525002BC7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B71E929DBD525002BC7B6 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		9D4C50C229DE86B500FB1E3E /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		9D4EB63429DFF96500492A2F /* ProductsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDatabase.swift; sourceTree = "<group>"; };
 		9D4EB63729DFFA4D00492A2F /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		9D4EB63929DFFD3600492A2F /* ProductsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsManager.swift; sourceTree = "<group>"; };
 		9D5B71E229DBD524002BC7B6 /* SwiftfulFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B71E529DBD524002BC7B6 /* SwiftfulFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebaseApp.swift; sourceTree = "<group>"; };
 		9D5B71E729DBD524002BC7B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				9DDB59D029DE8F64008E2E45 /* UserManager.swift */,
+				9D4EB63929DFFD3600492A2F /* ProductsManager.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9D5B71E629DBD524002BC7B6 /* SwiftfulFirebaseApp.swift in Sources */,
 				9D5B720729DBEC5A002BC7B6 /* RootView.swift in Sources */,
 				9DDB59CB29DE8728008E2E45 /* SignInEmailViewModel.swift in Sources */,
+				9D4EB63A29DFFD3600492A2F /* ProductsManager.swift in Sources */,
 				9D39C9A129DD4B5B00808402 /* SignInGoogleHelper.swift in Sources */,
 				9D5B71FF29DBE1E6002BC7B6 /* AuthenticationView.swift in Sources */,
 				9D5B720329DBE42C002BC7B6 /* AuthenticationManager.swift in Sources */,
