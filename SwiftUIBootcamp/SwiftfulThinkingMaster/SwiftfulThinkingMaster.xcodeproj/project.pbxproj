@@ -18,6 +18,8 @@
 		9D4CB2BE29D1B4740045C479 /* GenericsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4CB2BD29D1B4740045C479 /* GenericsBootcamp.swift */; };
 		9D56767629CD99CF0047DBDF /* CustomShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56767529CD99CF0047DBDF /* CustomShapesBootcamp.swift */; };
 		9D830F6E29DAEEAB00833A70 /* UIViewControllerRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D830F6D29DAEEAB00833A70 /* UIViewControllerRepresentableBootcamp.swift */; };
+		9D90490029E103CE00C39EDF /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9048FF29E103CE00C39EDF /* NewMockDataService.swift */; };
+		9D90490229E103F100C39EDF /* NewMockDataService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490129E103F100C39EDF /* NewMockDataService_Tests.swift */; };
 		9DB415EC29DEEE6000C82A18 /* UnitTestingBootcampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */; };
 		9DB415F029DEF02000C82A18 /* UnitTestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415EF29DEF02000C82A18 /* UnitTestingBootcampViewModel.swift */; };
 		9DB415F829DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415F729DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift */; };
@@ -65,6 +67,8 @@
 		9D4CB2BD29D1B4740045C479 /* GenericsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootcamp.swift; sourceTree = "<group>"; };
 		9D56767529CD99CF0047DBDF /* CustomShapesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesBootcamp.swift; sourceTree = "<group>"; };
 		9D830F6D29DAEEAB00833A70 /* UIViewControllerRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentableBootcamp.swift; sourceTree = "<group>"; };
+		9D9048FF29E103CE00C39EDF /* NewMockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
+		9D90490129E103F100C39EDF /* NewMockDataService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Tests.swift; sourceTree = "<group>"; };
 		9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampView.swift; sourceTree = "<group>"; };
 		9DB415EF29DEF02000C82A18 /* UnitTestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel.swift; sourceTree = "<group>"; };
 		9DB415F529DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulThinkingMaster_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,7 @@
 			children = (
 				9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */,
 				9DB415EF29DEF02000C82A18 /* UnitTestingBootcampViewModel.swift */,
+				9D9048FF29E103CE00C39EDF /* NewMockDataService.swift */,
 			);
 			path = UnitTestingBootcamp;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			children = (
 				9DB415F729DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift */,
 				9DB415FE29DEF2E500C82A18 /* UnitTestingBootcampViewModel_Tests.swift */,
+				9D90490129E103F100C39EDF /* NewMockDataService_Tests.swift */,
 			);
 			path = SwiftfulThinkingMaster_Tests;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			files = (
 				9DB415FF29DEF2E500C82A18 /* UnitTestingBootcampViewModel_Tests.swift in Sources */,
 				9DB415F829DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift in Sources */,
+				9D90490229E103F100C39EDF /* NewMockDataService_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB415F029DEF02000C82A18 /* UnitTestingBootcampViewModel.swift in Sources */,
+				9D90490029E103CE00C39EDF /* NewMockDataService.swift in Sources */,
 				9DCB507C29D6DF2900615796 /* AppNavBarView.swift in Sources */,
 				9D4B830629D65C2300ED121F /* TabBarItemsPreferenceKey.swift in Sources */,
 				9DB415EC29DEEE6000C82A18 /* UnitTestingBootcampView.swift in Sources */,
