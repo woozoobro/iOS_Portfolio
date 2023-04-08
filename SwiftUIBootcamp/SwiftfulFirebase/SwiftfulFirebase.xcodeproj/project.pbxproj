@@ -35,6 +35,7 @@
 		9DDB59CB29DE8728008E2E45 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB59CA29DE8728008E2E45 /* SignInEmailViewModel.swift */; };
 		9DDB59CE29DE8775008E2E45 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB59CD29DE8775008E2E45 /* ProfileView.swift */; };
 		9DDB59D129DE8F64008E2E45 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDB59D029DE8F64008E2E45 /* UserManager.swift */; };
+		9DE31AAE29E17638009A2198 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE31AAD29E17638009A2198 /* ProductCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		9DDB59CA29DE8728008E2E45 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		9DDB59CD29DE8775008E2E45 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9DDB59D029DE8F64008E2E45 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		9DE31AAD29E17638009A2198 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4EB63729DFFA4D00492A2F /* ProductsView.swift */,
+				9DE31AAC29E1761C009A2198 /* Subviews */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -214,6 +217,14 @@
 				9D4EB63929DFFD3600492A2F /* ProductsManager.swift */,
 			);
 			path = Firestore;
+			sourceTree = "<group>";
+		};
+		9DE31AAC29E1761C009A2198 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				9DE31AAD29E17638009A2198 /* ProductCellView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 			files = (
 				9D4C50C329DE86B500FB1E3E /* AuthenticationViewModel.swift in Sources */,
 				9D6A48FD29DBF2360012DD04 /* SettingsView.swift in Sources */,
+				9DE31AAE29E17638009A2198 /* ProductCellView.swift in Sources */,
 				9D5B71E829DBD524002BC7B6 /* ContentView.swift in Sources */,
 				9DDB59D129DE8F64008E2E45 /* UserManager.swift in Sources */,
 				9D5B71E629DBD524002BC7B6 /* SwiftfulFirebaseApp.swift in Sources */,
