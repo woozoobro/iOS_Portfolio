@@ -34,6 +34,7 @@ struct OnboardingViewPart2: View {
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
                 .background(Color.MyTheme.beigeColor)
+                .foregroundColor(.black)
                 .cornerRadius(12)
                 .font(.headline)
                 .autocapitalization(.sentences)
