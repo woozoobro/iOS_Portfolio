@@ -10,19 +10,23 @@ import Combine
 
 class AdvancedCombineDataService {
     //@Published var basicPublisher: String = "first publish"
-    let currentValuePublisher = CurrentValueSubject<String, Error>("first publish")
-    let passThroughPublisher = PassthroughSubject<String, Error>()
+//    let currentValuePublisher = CurrentValueSubject<Int, Error>("first publish")
+    let passThroughPublisher = PassthroughSubject<Int, Error>()
     
     init() {
         publishFakeData()
     }
     
     private func publishFakeData() {
-        let items = ["one", "two", "three"]
+        let items: [Int] = Array(1..<11)
         
         for x in items.indices {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
-                self.currentValuePublisher.send(items[x])
+                self.passThroughPublisher.send(items[x])
+                
+                if x == items.indices.last {
+                    self.passThroughPublisher.send(completion: .finished)
+                }
             }
         }
     }
@@ -31,6 +35,8 @@ class AdvancedCombineDataService {
 class AdvancedCombineBootcampViewModel: ObservableObject {
     
     @Published var data: [String] = []
+    @Published var error: String = ""
+    
     let dataService = AdvancedCombineDataService()
     
     var cancellables = Set<AnyCancellable>()
@@ -40,12 +46,61 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
     }
     
     private func addSubscribers() {
-        dataService.currentValuePublisher
+        dataService.passThroughPublisher
+        
+            // Sequence Operations
+        /*
+            //.first()
+            //.first(where: { $0 > 4})
+            //.tryFirst(where: { int in
+            //    if int == 3 {
+            //        throw URLError(.badServerResponse)
+            //    }
+            //    return int > 1
+            //})
+            //.last()
+            //.last(where: { $0 > 4 })
+            //.tryLast(where: { int in
+            //    if int == 13 {
+            //        throw URLError(.badServerResponse)
+            //    }
+            //    return int > 1
+            //})
+            //.dropFirst()
+            //.dropFirst(3)
+            //.drop(while: { $0 < 5 })
+            //.tryDrop(while: { int in
+            //    if int == 15 {
+            //        throw URLError(.badServerResponse)
+            //    }
+            //    return int < 6
+            //})
+            //.prefix(4)
+            //.prefix(while: { $0 < 5 })
+            //.output(at: 3)
+            //.output(in: 2..<4)
+        */
+        
+            // Mathematic Operations
+        /*
+            //.max()
+            //.max(by: { int1, int2 in
+            //    return int1 < int2
+            //})
+            //.tryMax(by: )
+            //.min(by: )
+            //.tryMin(by: )
+        */
+        
+            // Filter / Reducing Operations
+        
+            .map({ String($0) })
             .sink { completion in
                 switch completion {
                 case .finished:
                     break
                 case .failure(let error):
+                    self.error = "Error: \(error.localizedDescription)"
                     print("Error: \(error.localizedDescription)")
                     break
                 }
@@ -68,6 +123,10 @@ struct AdvancedCombineBootcamp: View {
                     Text($0)
                         .font(.largeTitle)
                         .fontWeight(.black)
+                }
+                
+                if !vm.error.isEmpty {
+                    Text(vm.error)
                 }
             }
         }
