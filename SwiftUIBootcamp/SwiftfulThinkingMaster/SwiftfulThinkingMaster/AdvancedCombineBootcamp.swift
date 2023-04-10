@@ -11,6 +11,7 @@ import Combine
 class AdvancedCombineDataService {
     //@Published var basicPublisher: String = "first publish"
     let currentValuePublisher = CurrentValueSubject<String, Error>("first publish")
+    let passThroughPublisher = PassthroughSubject<String, Error>()
     
     init() {
         publishFakeData()
