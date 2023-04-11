@@ -11,7 +11,7 @@ import Combine
 class AdvancedCombineDataService {
     //@Published var basicPublisher: String = "first publish"
 //    let currentValuePublisher = CurrentValueSubject<Int, Error>("first publish")
-    let passThroughPublisher = PassthroughSubject<Int?, Error>()
+    let passThroughPublisher = PassthroughSubject<Int, Error>()
     
     init() {
         publishFakeData()
@@ -23,12 +23,24 @@ class AdvancedCombineDataService {
         for x in items.indices {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
                 self.passThroughPublisher.send(items[x])
-                
+
                 if x == items.indices.last {
                     self.passThroughPublisher.send(completion: .finished)
                 }
             }
         }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
+//            self.passThroughPublisher.send(1)
+//        }
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//            self.passThroughPublisher.send(2)
+//        }
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+//            self.passThroughPublisher.send(3)
+//        }
     }
 }
 
@@ -49,73 +61,104 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
         dataService.passThroughPublisher
         
             // Sequence Operations
-        /*
-            //.first()
-            //.first(where: { $0 > 4})
-            //.tryFirst(where: { int in
-            //    if int == 3 {
-            //        throw URLError(.badServerResponse)
-            //    }
-            //    return int > 1
-            //})
-            //.last()
-            //.last(where: { $0 > 4 })
-            //.tryLast(where: { int in
-            //    if int == 13 {
-            //        throw URLError(.badServerResponse)
-            //    }
-            //    return int > 1
-            //})
-            //.dropFirst()
-            //.dropFirst(3)
-            //.drop(while: { $0 < 5 })
-            //.tryDrop(while: { int in
-            //    if int == 15 {
-            //        throw URLError(.badServerResponse)
-            //    }
-            //    return int < 6
-            //})
-            //.prefix(4)
-            //.prefix(while: { $0 < 5 })
-            //.output(at: 3)
-            //.output(in: 2..<4)
-        */
+            /*
+                //.first()
+                //.first(where: { $0 > 4})
+                //.tryFirst(where: { int in
+                //    if int == 3 {
+                //        throw URLError(.badServerResponse)
+                //    }
+                //    return int > 1
+                //})
+                //.last()
+                //.last(where: { $0 > 4 })
+                //.tryLast(where: { int in
+                //    if int == 13 {
+                //        throw URLError(.badServerResponse)
+                //    }
+                //    return int > 1
+                //})
+                //.dropFirst()
+                //.dropFirst(3)
+                //.drop(while: { $0 < 5 })
+                //.tryDrop(while: { int in
+                //    if int == 15 {
+                //        throw URLError(.badServerResponse)
+                //    }
+                //    return int < 6
+                //})
+                //.prefix(4)
+                //.prefix(while: { $0 < 5 })
+                //.output(at: 3)
+                //.output(in: 2..<4)
+            */
         
             // Mathematic Operations
-        /*
-            //.max()
-            //.max(by: { int1, int2 in
-            //    return int1 < int2
-            //})
-            //.tryMax(by: )
-            //.min(by: )
-            //.tryMin(by: )
-        */
+            /*
+                //.max()
+                //.max(by: { int1, int2 in
+                //    return int1 < int2
+                //})
+                //.tryMax(by: )
+                //.min(by: )
+                //.tryMin(by: )
+            */
         
             // Filter / Reducing Operations
-            //.tryMap({ int in
-            //    if int == 5 {
-            //        throw URLError(.badServerResponse)
-            //    }
-            //    return String(int)
-            //})
-            //.compactMap({ int in
-            //    if int == 5 {
-            //        return nil
-            //    }
-            //    return String(int)
-            //})
-            //.tryCompactMap()
-            
-            //.filter{ ($0 > 3)  && ($0 < 7 ) }
-            //.tryFilter()
-            //.removeDuplicates()
-            //.removeDuplicates(by: { int1, int2 in
-            //    return int1 == int2
-            //})
-            //.tryRemoveDuplicates(by: )
-            
-            .replaceNil(with: 5)
+            /*
+    //            .tryMap({ int in
+    //                if int == 5 {
+    //                    throw URLError(.badServerResponse)
+    //                }
+    //                return String(int)
+    //            })
+                //.compactMap({ int in
+                //    if int == 5 {
+                //        return nil
+                //    }
+                //    return String(int)
+                //})
+                //.tryCompactMap()
+                
+                //.filter{ ($0 > 3)  && ($0 < 7 ) }
+                //.tryFilter()
+                //.removeDuplicates()
+                //.removeDuplicates(by: { int1, int2 in
+                //    return int1 == int2
+                //})
+                //.tryRemoveDuplicates(by: )
+                
+                //.replaceNil(with: 5)
+                //.replaceEmpty(with: 5)
+                //.replaceError(with: "Default Value")
+                //.scan(0, { existingValue, newValue in
+                //    return existingValue + newValue
+                //})
+                //.scan(0, +)
+                //.tryScan(, )
+                //.reduce(0, { existingValue, newValue in
+                //    return existingValue + newValue
+                //})
+                //.reduce(0, +)
+                //.collect()
+                //.collect(3)
+                //.allSatisfy({ $0 < 50 })
+            */
+        
+            // Timing Operations
+            /*
+                //.debounce(for: 0.75, scheduler: DispatchQueue.main)
+                //.delay(for: 2, scheduler: DispatchQueue.main)
+                //.measureInterval(using: DispatchQueue.main)
+                //.map({ stride in
+                //    return "\(stride.timeInterval)"
+                //})
+                //.throttle(for: 10, scheduler: DispatchQueue.main, latest: true)
+                //.retry(3)
+                //.timeout(0.75, scheduler: DispatchQueue.main)
+            */
+        
+            // Multiple Publishers / Subscribers
         
             .map({ String($0) })
             .sink { completion in
@@ -128,6 +171,7 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
                     break
                 }
             } receiveValue: { [weak self] returnedValue in
+//                self?.data.append(contentsOf: returnedValue)
                 self?.data.append(returnedValue)
             }
             .store(in: &cancellables)
