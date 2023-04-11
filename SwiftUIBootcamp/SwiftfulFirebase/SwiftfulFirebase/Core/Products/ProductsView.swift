@@ -34,14 +34,6 @@ final class ProductsViewModel: ObservableObject {
     func filterSelected(option: FilterOption) async throws {
         self.selectedFilter = option
         self.getProducts()
-//        switch option {
-//        case .noFilter:
-//            self.products = try await ProductsManager.shared.getAllProducts()
-//        case .priceHigh:
-//            self.products = try await ProductsManager.shared.getAllProductsSortedByPrice(descending: true)
-//        case .priceLow:
-//            self.products = try await ProductsManager.shared.getAllProductsSortedByPrice(descending: false)
-//        }
     }
     
     enum CategoryOption: String, CaseIterable {
@@ -61,17 +53,18 @@ final class ProductsViewModel: ObservableObject {
     func categorySelected(option: CategoryOption) async throws {
         self.selectedCategory = option
         self.getProducts()
-//        switch option {
-//        case .noCategory:
-//            self.products = try await ProductsManager.shared.getAllProducts()
-//        case .smartphones , .laptops, .fragrances:
-//            self.products = try await ProductsManager.shared.getAllProductsCategory(category: option.rawValue)
-//        }
     }
     
     func getProducts() {
         Task {
             self.products = try await ProductsManager.shared.getAllProducts(priceDescending: selectedFilter?.priceDescending, forCategory: selectedCategory?.categoryKey)
+        }
+    }
+    
+    func getProductsByRating() {
+        Task {
+            let newProducts = try await ProductsManager.shared.getProductsByRating(count: 3, lastRating: self.products.last?.rating)
+            self.products.append(contentsOf: newProducts)
         }
     }
     
@@ -82,6 +75,10 @@ struct ProductsView: View {
     
     var body: some View {
         List {
+            Button("Fetch More Objects") {
+                viewModel.getProductsByRating()
+            }
+            
             ForEach(viewModel.products) { product in
                 ProductCellView(product: product)
             }
@@ -113,7 +110,7 @@ struct ProductsView: View {
             }
         }
         .onAppear {
-            viewModel.getProducts()
+//            viewModel.getProducts()
         }
     }
 }

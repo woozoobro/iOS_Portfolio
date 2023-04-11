@@ -28,12 +28,13 @@ final class ProductsManager {
     }
     
     private func getAllProducts() async throws -> [Product] {
-        try await productsCollection.getDocuments(as: Product.self)
+        try await productsCollection
+            .getDocuments(as: Product.self)
     }
     
     private func getAllProductsSortedByPrice(descending: Bool) async throws -> [Product] {
         try await productsCollection
-            .order(by: Product.CodingKeys.price.rawValue, descending: descending)
+            .order(by: Product.CodingKeys.price.rawValue, descending: descending)            
             .getDocuments(as: Product.self)
     }
     
@@ -60,6 +61,14 @@ final class ProductsManager {
         }
         
         return try await getAllProducts()
+    }
+    
+    func getProductsByRating(count: Int, lastRating: Double?) async throws -> [Product] {
+        try await productsCollection
+            .order(by: Product.CodingKeys.rating.rawValue, descending: true)
+            .limit(to: count)
+            .start(after: [lastRating ?? 999999])
+            .getDocuments(as: Product.self)
     }
     
 }
