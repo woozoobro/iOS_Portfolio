@@ -11,7 +11,7 @@ import Combine
 class AdvancedCombineDataService {
     //@Published var basicPublisher: String = "first publish"
 //    let currentValuePublisher = CurrentValueSubject<Int, Error>("first publish")
-    let passThroughPublisher = PassthroughSubject<Int, Error>()
+    let passThroughPublisher = PassthroughSubject<Int?, Error>()
     
     init() {
         publishFakeData()
@@ -93,6 +93,29 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
         */
         
             // Filter / Reducing Operations
+            //.tryMap({ int in
+            //    if int == 5 {
+            //        throw URLError(.badServerResponse)
+            //    }
+            //    return String(int)
+            //})
+            //.compactMap({ int in
+            //    if int == 5 {
+            //        return nil
+            //    }
+            //    return String(int)
+            //})
+            //.tryCompactMap()
+            
+            //.filter{ ($0 > 3)  && ($0 < 7 ) }
+            //.tryFilter()
+            //.removeDuplicates()
+            //.removeDuplicates(by: { int1, int2 in
+            //    return int1 == int2
+            //})
+            //.tryRemoveDuplicates(by: )
+            
+            .replaceNil(with: 5)
         
             .map({ String($0) })
             .sink { completion in
