@@ -36,6 +36,8 @@ final class ProductsViewModel: ObservableObject {
     
     func filterSelected(option: FilterOption) async throws {
         self.selectedFilter = option
+        self.products = []
+        self.lastDocument = nil
         self.getProducts()
     }
     
@@ -55,15 +57,27 @@ final class ProductsViewModel: ObservableObject {
     
     func categorySelected(option: CategoryOption) async throws {
         self.selectedCategory = option
+        self.products = []
+        self.lastDocument = nil
         self.getProducts()
     }
     
     func getProducts() {
+        
         Task {
-            let (newProducts, lastDocument) = try await ProductsManager.shared.getAllProducts(priceDescending: selectedFilter?.priceDescending, forCategory: selectedCategory?.categoryKey, count: 10, lastDocument: lastDocument)
+            let (newProducts, lastDocument) = try await ProductsManager.shared.getAllProducts(priceDescending: selectedFilter?.priceDescending, forCategory: selectedCategory?.categoryKey, count: 8, lastDocument: lastDocument)
             
             self.products.append(contentsOf: newProducts)
-            self.lastDocument = lastDocument
+            if let lastDocument {
+                self.lastDocument = lastDocument
+            }
+        }
+    }
+    
+    func getProductsCount() {
+        Task {
+            let count = try await ProductsManager.shared.getAllProductsCount()
+            print("ALL PRODUCT COUNT: \(count)")
         }
     }
     
@@ -88,6 +102,9 @@ struct ProductsView: View {
                 
                 if product == viewModel.products.last {
                     ProgressView()
+                        .onAppear {
+                            viewModel.getProducts()
+                        }
                 }
             }
         }
@@ -118,6 +135,7 @@ struct ProductsView: View {
             }
         }
         .onAppear {
+            viewModel.getProductsCount()
             viewModel.getProducts()
         }
     }

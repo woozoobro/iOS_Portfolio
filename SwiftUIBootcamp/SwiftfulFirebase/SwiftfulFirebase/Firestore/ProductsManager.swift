@@ -82,16 +82,10 @@ final class ProductsManager {
             query = getAllProductsCategoryQuery(category: category)
         }
         
-        if let lastDocument {
-            return try await query
-                .limit(to: count)
-                .start(afterDocument: lastDocument)
-                .getDocumentsWithSnapshot(as: Product.self)
-        } else {
-            return try await query
-                .limit(to: count)                
-                .getDocumentsWithSnapshot(as: Product.self)
-        }
+        return try await query
+            .limit(to: count)
+            .startOptionally(afterDocument: lastDocument)
+            .getDocumentsWithSnapshot(as: Product.self)
     }
     
     func getProductsByRating(count: Int, lastRating: Double?) async throws -> [Product] {
@@ -115,6 +109,10 @@ final class ProductsManager {
                 .limit(to: count)
                 .getDocumentsWithSnapshot(as: Product.self)
         }
+    }
+    
+    func getAllProductsCount() async throws -> Int {
+        try await productsCollection.aggregateCount()
     }
     
 }
@@ -142,4 +140,27 @@ extension Query {
         return (products, snapshot.documents.last)
     }
     
+    func startOptionally(afterDocument lastDocument: DocumentSnapshot?) -> Query {
+        guard let lastDocument else { return self }
+        return self.start(afterDocument: lastDocument)
+    }
+    
+    func aggregateCount() async throws ->  Int {
+        let snapshot = try await self.count.getAggregation(source: .server)
+        return Int(truncating: snapshot.count)
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

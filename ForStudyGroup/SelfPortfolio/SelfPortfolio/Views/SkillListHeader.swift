@@ -20,9 +20,7 @@ struct SkillListHeader: View {
                 withAnimation(.spring()) {
                     showSkills.toggle()
                 }
-            }
-
-            
+            }            
             
             LazyVGrid(columns: columns) {
                 if showSkills {
