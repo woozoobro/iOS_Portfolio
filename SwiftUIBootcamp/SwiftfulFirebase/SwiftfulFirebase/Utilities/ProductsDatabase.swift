@@ -12,7 +12,7 @@ struct ProductArray: Codable {
     let total, skip, limit: Int
 }
 
-struct Product: Identifiable, Codable {
+struct Product: Identifiable, Codable, Equatable {
     let id: Int
     let title: String?
     let description: String?
@@ -36,6 +36,10 @@ struct Product: Identifiable, Codable {
         case category
         case thumbnail
         case images
+    }
+    
+    static func ==(lhs: Product, rhs: Product) -> Bool {
+        return lhs.id == rhs.id         
     }
 }
 

@@ -12,6 +12,7 @@ class AdvancedCombineDataService {
     //@Published var basicPublisher: String = "first publish"
 //    let currentValuePublisher = CurrentValueSubject<Int, Error>("first publish")
     let passThroughPublisher = PassthroughSubject<Int, Error>()
+    let boolPublisher = PassthroughSubject<Bool, Error>()
     
     init() {
         publishFakeData()
@@ -23,7 +24,13 @@ class AdvancedCombineDataService {
         for x in items.indices {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
                 self.passThroughPublisher.send(items[x])
-
+                
+                if (x > 4 && x < 8) {
+                    self.boolPublisher.send(true)
+                } else {
+                    self.boolPublisher.send(false)
+                }
+                
                 if x == items.indices.last {
                     self.passThroughPublisher.send(completion: .finished)
                 }
@@ -159,8 +166,16 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
             */
         
             // Multiple Publishers / Subscribers
-        
-            .map({ String($0) })
+            .combineLatest(dataService.boolPublisher)
+            //.compactMap({ (int, bool) in
+            //    if bool {
+            //        return String(int)
+            //    }
+            //    return nil
+            //})
+            .compactMap({ $1 ? String($0) : nil})
+            .removeDuplicates()
+            //.map({ String($0) })
             .sink { completion in
                 switch completion {
                 case .finished:
