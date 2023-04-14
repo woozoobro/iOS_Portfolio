@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
+    @State var showSignOutError: Bool = false
     
     var body: some View {
         NavigationView {
@@ -50,7 +51,15 @@ struct SettingsView: View {
                         SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.purpleColor)
                     }
                     
-                    SettingsRowView(leftIcon: "figure.walk", text: "Sign out", color: Color.MyTheme.purpleColor)
+                    Button {
+                        signOut()
+                    } label: {
+                        SettingsRowView(leftIcon: "figure.walk", text: "Sign out", color: Color.MyTheme.purpleColor)
+                    }
+                    .alert(isPresented: $showSignOutError) {
+                        return Alert(title: Text("Error signing out 🥹"))
+                    }
+
                 } label: {
                     SettingsLabelView(labelText: "Profile", labelImage: "person.fill")
                 }
@@ -118,6 +127,22 @@ struct SettingsView: View {
             UIApplication.shared.open(url)
         }
     }
+    
+    func signOut() {
+        AuthService.instance.logOutUser { success in
+            if success {
+                print("Successfully logged out")
+                // Dismiss settings view
+                dismiss()
+                // Update UserDefaults                
+            } else {
+                print("Error logging out")
+                self.showSignOutError.toggle()
+            }
+        }
+    }
+    
+    
 }
 
 struct SettingsView_Previews: PreviewProvider {

@@ -13,8 +13,5 @@ import FirebaseAuth
 class SignInWithGoogle: NSObject {
     
     static let instance = SignInWithGoogle()
-    
-//    func startSignInWithGoogleFlow() {
-//        GIDSignIn.sharedInstance().delegate = self
-//    }
+
 }

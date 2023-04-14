@@ -93,20 +93,52 @@ struct OnboardingView: View {
     //MARK: - Functions
     
     func connectToFirebase(name: String, email: String, provider: String, credential: AuthCredential) {
-        AuthService.instance.logInUserToFirebase(credential: credential) { returnedProviderID, isError in
+        AuthService.instance.logInUserToFirebase(credential: credential) { returnedProviderID, isError, isNewUser, returnedUserID  in
             
-            if let providerID = returnedProviderID, !isError {
-                // Success
-                self.displayName = name
-                self.email = email
-                self.providerID = providerID
-                self.provider = provider
-                self.showOnboardingPart2.toggle()
+            if let newUser = isNewUser {
+                if newUser {
+                    // NEW USER
+                    if let providerID = returnedProviderID, !isError {
+                        // Success
+                        
+                        // New User, continue to the onboarding part 2
+                        self.displayName = name
+                        self.email = email
+                        self.providerID = providerID
+                        self.provider = provider
+                        self.showOnboardingPart2.toggle()
+                    } else {
+                        // Error
+                        print("Error getting provider ID from log in user to Firebase")
+                        self.showError.toggle()
+                    }
+                } else {
+                    // EXISTING USER
+                    if let userID = returnedUserID {
+                        // SUCCESS, LOG IN TO APP
+                        AuthService.instance.logInUserToApp(userID: userID) { success in
+                            if success {
+                                print("Successful log in existing user")
+                                dismiss()
+                            } else {
+                                print("Error loggin existing user into our app")
+                                self.showError.toggle()
+                            }
+                        }
+                    } else {
+                        print("Error getting USER ID from log in user to Firebase")
+                        self.showError.toggle()
+                    }
+                    
+                }
+                
             } else {
                 // Error
                 print("Error getting into from log in user to Firebase")
                 self.showError.toggle()
             }
+            
+            
         }
     }
 }
