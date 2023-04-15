@@ -24,6 +24,7 @@
 		9D90490C29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */; };
 		9D90490E29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */; };
 		9D90491529E10FCF00C39EDF /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */; };
+		9DA84FE329EA404F00CB63B7 /* FuturesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */; };
 		9DB415EC29DEEE6000C82A18 /* UnitTestingBootcampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */; };
 		9DB415F029DEF02000C82A18 /* UnitTestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415EF29DEF02000C82A18 /* UnitTestingBootcampViewModel.swift */; };
 		9DB415F829DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415F729DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.swift */; };
@@ -86,6 +87,7 @@
 		9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITests.swift; sourceTree = "<group>"; };
 		9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
+		9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesBootcamp.swift; sourceTree = "<group>"; };
 		9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampView.swift; sourceTree = "<group>"; };
 		9DB415EF29DEF02000C82A18 /* UnitTestingBootcampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel.swift; sourceTree = "<group>"; };
 		9DB415F529DEF15300C82A18 /* SwiftfulThinkingMaster_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulThinkingMaster_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +227,7 @@
 				9DB415EA29DEEE4700C82A18 /* UnitTestingBootcamp */,
 				9D90490329E10A3C00C39EDF /* UITestingBootcampView.swift */,
 				9DE1407729E312A8003A1C29 /* AdvancedCombineBootcamp.swift */,
+				9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */,
 				9DCEAFCA29C8885200D5EF02 /* Assets.xcassets */,
 				9DCEAFCC29C8885200D5EF02 /* Preview Content */,
 			);
@@ -430,6 +433,7 @@
 				9DCB507E29D6E01C00615796 /* CustomNavBarView.swift in Sources */,
 				9DD3D90D29D2896D0036DF04 /* ViewBuilderBootcamp.swift in Sources */,
 				9D4CB2BE29D1B4740045C479 /* GenericsBootcamp.swift in Sources */,
+				9DA84FE329EA404F00CB63B7 /* FuturesBootcamp.swift in Sources */,
 				9D830F6E29DAEEAB00833A70 /* UIViewControllerRepresentableBootcamp.swift in Sources */,
 				9DCB508429D702DE00615796 /* CustomNavLink.swift in Sources */,
 				9DCB508629D7066900615796 /* CustomNavBarPreferenceKeys.swift in Sources */,
