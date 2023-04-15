@@ -25,8 +25,8 @@ struct SmallNumber {
         number = min(wrappedValue, maximum)
     }
 }
-//MARK: - Zero
 
+//MARK: - Zero
 struct ZeroRectangle {
     @SmallNumber var height: Int
     @SmallNumber var width: Int

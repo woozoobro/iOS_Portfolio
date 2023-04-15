@@ -77,7 +77,6 @@ final class ProductsViewModel: ObservableObject {
     func getProductsCount() {
         Task {
             let count = try await ProductsManager.shared.getAllProductsCount()
-            print("ALL PRODUCT COUNT: \(count)")
         }
     }
     
