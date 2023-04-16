@@ -220,9 +220,9 @@
 				9D1A99AA297732AB004E04C3 /* ViewModelBootcamp.swift */,
 				9D1A99AE29787CF5004E04C3 /* EnvironmentObjectBootcamp.swift */,
 				9D1A99B02978959E004E04C3 /* AppStorageBootcamp.swift */,
-				9D30B0C8297E0201001481DC /* BackgroundMaterialsBootcamp.swift */,
 				9D1A99B22978A693004E04C3 /* OnboardingViews */,
 				9DA8500029EA5F8600CB63B7 /* AsyncImageBootcamp.swift */,
+				9D30B0C8297E0201001481DC /* BackgroundMaterialsBootcamp.swift */,
 				9DBB8D112972B21700C6C2D8 /* Assets.xcassets */,
 				9DBB8D132972B21700C6C2D8 /* Preview Content */,
 			);

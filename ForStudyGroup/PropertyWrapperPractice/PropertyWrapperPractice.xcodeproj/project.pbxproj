@@ -12,6 +12,7 @@
 		9DA8501329EA674600CB63B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8501229EA674600CB63B7 /* Assets.xcassets */; };
 		9DA8501629EA674600CB63B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8501529EA674600CB63B7 /* Preview Assets.xcassets */; };
 		9DA8501D29EA675E00CB63B7 /* PropertyWrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8501C29EA675E00CB63B7 /* PropertyWrapperTest.swift */; };
+		9DA8502D29EAB32600CB63B7 /* AppStorageTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8502C29EAB32600CB63B7 /* AppStorageTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9DA8501229EA674600CB63B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA8501529EA674600CB63B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DA8501C29EA675E00CB63B7 /* PropertyWrapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperTest.swift; sourceTree = "<group>"; };
+		9DA8502C29EAB32600CB63B7 /* AppStorageTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				9DA8500E29EA674500CB63B7 /* PropertyWrapperPracticeApp.swift */,
 				9DA8501029EA674500CB63B7 /* ContentView.swift */,
 				9DA8501C29EA675E00CB63B7 /* PropertyWrapperTest.swift */,
+				9DA8502C29EAB32600CB63B7 /* AppStorageTestView.swift */,
 				9DA8501229EA674600CB63B7 /* Assets.xcassets */,
 				9DA8501429EA674600CB63B7 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA8502D29EAB32600CB63B7 /* AppStorageTestView.swift in Sources */,
 				9DA8501D29EA675E00CB63B7 /* PropertyWrapperTest.swift in Sources */,
 				9DA8501129EA674500CB63B7 /* ContentView.swift in Sources */,
 				9DA8500F29EA674500CB63B7 /* PropertyWrapperPracticeApp.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct PropertyWrapperPracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppStorageTestView()
         }
     }
 }
