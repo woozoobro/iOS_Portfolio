@@ -7,30 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D6559C829EE1F1200E987A2 /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6559C729EE1F1200E987A2 /* AsyncAwaitBootcamp.swift */; };
-		9DA84FF129EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FF029EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift */; };
-		9DA84FF329EA4BC700CB63B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FF229EA4BC700CB63B7 /* ContentView.swift */; };
-		9DA84FF529EA4BC800CB63B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA84FF429EA4BC800CB63B7 /* Assets.xcassets */; };
-		9DA84FF829EA4BC800CB63B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA84FF729EA4BC800CB63B7 /* Preview Assets.xcassets */; };
-		9DA84FFF29EA4BEF00CB63B7 /* DoCatchTryThrowsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FFE29EA4BEF00CB63B7 /* DoCatchTryThrowsBootcamp.swift */; };
-		9DB10B4629EC22760019118A /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB10B4529EC22760019118A /* DownloadImageAsync.swift */; };
-		9DE5A17E29EFD10900DDAA73 /* TaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5A17D29EFD10900DDAA73 /* TaskBootcamp.swift */; };
+		9DE5A16D29EFAC6400DDAA73 /* InternetProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5A16C29EFAC6400DDAA73 /* InternetProjectApp.swift */; };
+		9DE5A16F29EFAC6400DDAA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5A16E29EFAC6400DDAA73 /* ContentView.swift */; };
+		9DE5A17129EFAC6500DDAA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5A17029EFAC6500DDAA73 /* Assets.xcassets */; };
+		9DE5A17429EFAC6500DDAA73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5A17329EFAC6500DDAA73 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D6559C729EE1F1200E987A2 /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
-		9DA84FED29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DA84FF029EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyBootcampApp.swift; sourceTree = "<group>"; };
-		9DA84FF229EA4BC700CB63B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9DA84FF429EA4BC800CB63B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DA84FF729EA4BC800CB63B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9DA84FFE29EA4BEF00CB63B7 /* DoCatchTryThrowsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchTryThrowsBootcamp.swift; sourceTree = "<group>"; };
-		9DB10B4529EC22760019118A /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
-		9DE5A17D29EFD10900DDAA73 /* TaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBootcamp.swift; sourceTree = "<group>"; };
+		9DE5A16929EFAC6400DDAA73 /* InternetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE5A16C29EFAC6400DDAA73 /* InternetProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetProjectApp.swift; sourceTree = "<group>"; };
+		9DE5A16E29EFAC6400DDAA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DE5A17029EFAC6500DDAA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DE5A17329EFAC6500DDAA73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DA84FEA29EA4BC700CB63B7 /* Frameworks */ = {
+		9DE5A16629EFAC6400DDAA73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,41 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DA84FE429EA4BC700CB63B7 = {
+		9DE5A16029EFAC6400DDAA73 = {
 			isa = PBXGroup;
 			children = (
-				9DA84FEF29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp */,
-				9DA84FEE29EA4BC700CB63B7 /* Products */,
+				9DE5A16B29EFAC6400DDAA73 /* InternetProject */,
+				9DE5A16A29EFAC6400DDAA73 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DA84FEE29EA4BC700CB63B7 /* Products */ = {
+		9DE5A16A29EFAC6400DDAA73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DA84FED29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp.app */,
+				9DE5A16929EFAC6400DDAA73 /* InternetProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DA84FEF29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp */ = {
+		9DE5A16B29EFAC6400DDAA73 /* InternetProject */ = {
 			isa = PBXGroup;
 			children = (
-				9DA84FF029EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift */,
-				9DA84FF229EA4BC700CB63B7 /* ContentView.swift */,
-				9DA84FFE29EA4BEF00CB63B7 /* DoCatchTryThrowsBootcamp.swift */,
-				9DB10B4529EC22760019118A /* DownloadImageAsync.swift */,
-				9D6559C729EE1F1200E987A2 /* AsyncAwaitBootcamp.swift */,
-				9DE5A17D29EFD10900DDAA73 /* TaskBootcamp.swift */,
-				9DA84FF429EA4BC800CB63B7 /* Assets.xcassets */,
-				9DA84FF629EA4BC800CB63B7 /* Preview Content */,
+				9DE5A16C29EFAC6400DDAA73 /* InternetProjectApp.swift */,
+				9DE5A16E29EFAC6400DDAA73 /* ContentView.swift */,
+				9DE5A17029EFAC6500DDAA73 /* Assets.xcassets */,
+				9DE5A17229EFAC6500DDAA73 /* Preview Content */,
 			);
-			path = SwiftConcurrencyBootcamp;
+			path = InternetProject;
 			sourceTree = "<group>";
 		};
-		9DA84FF629EA4BC800CB63B7 /* Preview Content */ = {
+		9DE5A17229EFAC6500DDAA73 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9DA84FF729EA4BC800CB63B7 /* Preview Assets.xcassets */,
+				9DE5A17329EFAC6500DDAA73 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -82,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DA84FEC29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp */ = {
+		9DE5A16829EFAC6400DDAA73 /* InternetProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DA84FFB29EA4BC800CB63B7 /* Build configuration list for PBXNativeTarget "SwiftConcurrencyBootcamp" */;
+			buildConfigurationList = 9DE5A17729EFAC6500DDAA73 /* Build configuration list for PBXNativeTarget "InternetProject" */;
 			buildPhases = (
-				9DA84FE929EA4BC700CB63B7 /* Sources */,
-				9DA84FEA29EA4BC700CB63B7 /* Frameworks */,
-				9DA84FEB29EA4BC700CB63B7 /* Resources */,
+				9DE5A16529EFAC6400DDAA73 /* Sources */,
+				9DE5A16629EFAC6400DDAA73 /* Frameworks */,
+				9DE5A16729EFAC6400DDAA73 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftConcurrencyBootcamp;
-			productName = SwiftConcurrencyBootcamp;
-			productReference = 9DA84FED29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp.app */;
+			name = InternetProject;
+			productName = InternetProject;
+			productReference = 9DE5A16929EFAC6400DDAA73 /* InternetProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DA84FE529EA4BC700CB63B7 /* Project object */ = {
+		9DE5A16129EFAC6400DDAA73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					9DA84FEC29EA4BC700CB63B7 = {
+					9DE5A16829EFAC6400DDAA73 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 9DA84FE829EA4BC700CB63B7 /* Build configuration list for PBXProject "SwiftConcurrencyBootcamp" */;
+			buildConfigurationList = 9DE5A16429EFAC6400DDAA73 /* Build configuration list for PBXProject "InternetProject" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,46 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DA84FE429EA4BC700CB63B7;
-			productRefGroup = 9DA84FEE29EA4BC700CB63B7 /* Products */;
+			mainGroup = 9DE5A16029EFAC6400DDAA73;
+			productRefGroup = 9DE5A16A29EFAC6400DDAA73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DA84FEC29EA4BC700CB63B7 /* SwiftConcurrencyBootcamp */,
+				9DE5A16829EFAC6400DDAA73 /* InternetProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DA84FEB29EA4BC700CB63B7 /* Resources */ = {
+		9DE5A16729EFAC6400DDAA73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA84FF829EA4BC800CB63B7 /* Preview Assets.xcassets in Resources */,
-				9DA84FF529EA4BC800CB63B7 /* Assets.xcassets in Resources */,
+				9DE5A17429EFAC6500DDAA73 /* Preview Assets.xcassets in Resources */,
+				9DE5A17129EFAC6500DDAA73 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DA84FE929EA4BC700CB63B7 /* Sources */ = {
+		9DE5A16529EFAC6400DDAA73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB10B4629EC22760019118A /* DownloadImageAsync.swift in Sources */,
-				9DA84FFF29EA4BEF00CB63B7 /* DoCatchTryThrowsBootcamp.swift in Sources */,
-				9DA84FF329EA4BC700CB63B7 /* ContentView.swift in Sources */,
-				9DE5A17E29EFD10900DDAA73 /* TaskBootcamp.swift in Sources */,
-				9D6559C829EE1F1200E987A2 /* AsyncAwaitBootcamp.swift in Sources */,
-				9DA84FF129EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift in Sources */,
+				9DE5A16F29EFAC6400DDAA73 /* ContentView.swift in Sources */,
+				9DE5A16D29EFAC6400DDAA73 /* InternetProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9DA84FF929EA4BC800CB63B7 /* Debug */ = {
+		9DE5A17529EFAC6500DDAA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		9DA84FFA29EA4BC800CB63B7 /* Release */ = {
+		9DE5A17629EFAC6500DDAA73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,14 +259,14 @@
 			};
 			name = Release;
 		};
-		9DA84FFC29EA4BC800CB63B7 /* Debug */ = {
+		9DE5A17829EFAC6500DDAA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftConcurrencyBootcamp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"InternetProject/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.SwiftConcurrencyBootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.InternetProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		9DA84FFD29EA4BC800CB63B7 /* Release */ = {
+		9DE5A17929EFAC6500DDAA73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftConcurrencyBootcamp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"InternetProject/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.SwiftConcurrencyBootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.InternetProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DA84FE829EA4BC700CB63B7 /* Build configuration list for PBXProject "SwiftConcurrencyBootcamp" */ = {
+		9DE5A16429EFAC6400DDAA73 /* Build configuration list for PBXProject "InternetProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DA84FF929EA4BC800CB63B7 /* Debug */,
-				9DA84FFA29EA4BC800CB63B7 /* Release */,
+				9DE5A17529EFAC6500DDAA73 /* Debug */,
+				9DE5A17629EFAC6500DDAA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DA84FFB29EA4BC800CB63B7 /* Build configuration list for PBXNativeTarget "SwiftConcurrencyBootcamp" */ = {
+		9DE5A17729EFAC6500DDAA73 /* Build configuration list for PBXNativeTarget "InternetProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DA84FFC29EA4BC800CB63B7 /* Debug */,
-				9DA84FFD29EA4BC800CB63B7 /* Release */,
+				9DE5A17829EFAC6500DDAA73 /* Debug */,
+				9DE5A17929EFAC6500DDAA73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DA84FE529EA4BC700CB63B7 /* Project object */;
+	rootObject = 9DE5A16129EFAC6400DDAA73 /* Project object */;
 }
