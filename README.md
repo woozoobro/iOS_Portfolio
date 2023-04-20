@@ -3,6 +3,7 @@
 ## 📱 [SwiftUI]
 
 [Swiftful Thinking!](https://github.com/woozoobro/iOS_Portfolio/tree/main/SwiftUIBootcamp)
+(->No ReadMe) 정리는 [velog에서](https://velog.io/@woojusm/series/SwiftUI-Review)
 
 [SwiftUI Project](https://github.com/woozoobro/iOS_Portfolio/tree/main/SwiftUI)
 
