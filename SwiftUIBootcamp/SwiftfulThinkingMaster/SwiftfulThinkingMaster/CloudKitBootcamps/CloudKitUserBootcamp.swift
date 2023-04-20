@@ -88,7 +88,7 @@ struct CloudKitUserBootcamp: View {
             Text(vm.error)
             Text("Permission: \(vm.permissionStatus.description)")
             Text("Name: \(vm.userName)")
-        }
+        }        
     }
 }
 

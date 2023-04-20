@@ -48,6 +48,7 @@
 		9DE3918129D459C7003DA6D0 /* PreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918029D459C7003DA6D0 /* PreferenceKeyBootcamp.swift */; };
 		9DE3918429D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */; };
 		9DE3918629D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3918529D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
+		9DEDB9D029F1236000AA37F3 /* CloudKitCrudBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEDB9CF29F1236000AA37F3 /* CloudKitCrudBootcamp.swift */; };
 		9DF121D029CFD17300AFB1C8 /* CustomCurvesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */; };
 		9DFE384D29DD96C80072A247 /* DependencyInjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE384C29DD96C80072A247 /* DependencyInjectionBootcamp.swift */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		9DE3918029D459C7003DA6D0 /* PreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9DE3918329D46A9B003DA6D0 /* GeometryPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		9DE3918529D47399003DA6D0 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
+		9DEDB9CF29F1236000AA37F3 /* CloudKitCrudBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrudBootcamp.swift; sourceTree = "<group>"; };
 		9DF121CF29CFD17300AFB1C8 /* CustomCurvesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurvesBootcamp.swift; sourceTree = "<group>"; };
 		9DFE384C29DD96C80072A247 /* DependencyInjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */,
+				9DEDB9CF29F1236000AA37F3 /* CloudKitCrudBootcamp.swift */,
 			);
 			path = CloudKitBootcamps;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				9D4B830629D65C2300ED121F /* TabBarItemsPreferenceKey.swift in Sources */,
 				9DB415EC29DEEE6000C82A18 /* UnitTestingBootcampView.swift in Sources */,
 				9D4B830029D5A08B00ED121F /* AppTabBarView.swift in Sources */,
+				9DEDB9D029F1236000AA37F3 /* CloudKitCrudBootcamp.swift in Sources */,
 				9DCFCA6A29D99ACD0098813A /* UIViewRepresentableBootcamp.swift in Sources */,
 				9D2DF1FB29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift in Sources */,
 				9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */,
