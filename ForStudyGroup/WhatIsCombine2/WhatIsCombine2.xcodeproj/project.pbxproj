@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D9044B129F3E920001101CC /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9044B029F3E920001101CC /* SubscriberView.swift */; };
 		9DB1446129F390E7004122A6 /* WhatIsCombine2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1446029F390E7004122A6 /* WhatIsCombine2App.swift */; };
 		9DB1446329F390E7004122A6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1446229F390E7004122A6 /* TimerView.swift */; };
 		9DB1446529F390E9004122A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1446429F390E9004122A6 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D9044B029F3E920001101CC /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
 		9DB1445D29F390E7004122A6 /* WhatIsCombine2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsCombine2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB1446029F390E7004122A6 /* WhatIsCombine2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsCombine2App.swift; sourceTree = "<group>"; };
 		9DB1446229F390E7004122A6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				9DB1446029F390E7004122A6 /* WhatIsCombine2App.swift */,
 				9DB1446229F390E7004122A6 /* TimerView.swift */,
+				9D9044B029F3E920001101CC /* SubscriberView.swift */,
 				9DB1446429F390E9004122A6 /* Assets.xcassets */,
 				9DB1446629F390E9004122A6 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9044B129F3E920001101CC /* SubscriberView.swift in Sources */,
 				9DB1446329F390E7004122A6 /* TimerView.swift in Sources */,
 				9DB1446129F390E7004122A6 /* WhatIsCombine2App.swift in Sources */,
 			);

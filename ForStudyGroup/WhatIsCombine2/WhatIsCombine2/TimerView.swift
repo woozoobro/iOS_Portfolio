@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import Combine
 
 struct TimerView: View {
+    let timer = Timer
+        .publish(every: 1, on: .main, in: .common)
+        .autoconnect()
+    
+    @State var publishedDate: Date = Date()
     
     var body: some View {
-        Text("Hello Joy, Swain!")
+        Text(publishedDate.description)
+            .font(.title)
+            .onReceive(timer) { time in
+                publishedDate = time
+            }
     }
 }
 
