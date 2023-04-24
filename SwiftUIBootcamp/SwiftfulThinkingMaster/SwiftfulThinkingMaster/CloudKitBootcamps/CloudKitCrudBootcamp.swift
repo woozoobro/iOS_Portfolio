@@ -10,6 +10,7 @@ import CloudKit
 
 struct FruitModel: Hashable {
     let name: String
+    let imageURL: URL?
     let record: CKRecord
 }
 
@@ -29,7 +30,21 @@ class CloudKitCrudBootcampViewModel: ObservableObject {
     private func addItem(name: String) {
         let newFruit = CKRecord(recordType: "Fruits")
         newFruit["name"] = name
-        saveItem(record: newFruit)
+        
+        guard
+            let image = UIImage(named: "cordcable"),
+            let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("cordcable.jpg"),
+            let data = image.jpegData(compressionQuality: 1.0) else { return }
+        
+        do {
+            try data.write(to: url)
+            let asset = CKAsset(fileURL: url)
+            newFruit["image"] = asset
+            saveItem(record: newFruit)
+        } catch let error {
+            print(error)
+        }
+
     }
     
     private func saveItem(record: CKRecord) {
@@ -37,7 +52,7 @@ class CloudKitCrudBootcampViewModel: ObservableObject {
             print("Record: \(returnedRecord)")
             print("Error: \(returnedError)")
             
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self?.text = ""
                 self?.fetchItems()
             }
@@ -59,8 +74,10 @@ class CloudKitCrudBootcampViewModel: ObservableObject {
             switch returnedResult {
             case .success(let record):
                 guard let name = record["name"] as? String else { return }
-                returnedItems.append(FruitModel(name: name, record: record))
-                
+                let imageAsset = record["image"] as? CKAsset
+                let imageURL = imageAsset?.fileURL
+                print(record)
+                returnedItems.append(FruitModel(name: name, imageURL: imageURL, record: record))
             case .failure(let error):
                 print("Error recordMatchedBlock: \(error)")
             }
@@ -111,10 +128,18 @@ struct CloudKitCrudBootcamp: View {
                 
                 List {
                     ForEach(vm.fruits, id: \.self) { fruit in
-                        Text(fruit.name)
-                            .onTapGesture {
-                                vm.updateItem(fruit: fruit)
+                        HStack {
+                            Text(fruit.name)
+                            
+                            if let url = fruit.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
                             }
+                        }
+                        .onTapGesture {
+                            vm.updateItem(fruit: fruit)
+                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                 }
