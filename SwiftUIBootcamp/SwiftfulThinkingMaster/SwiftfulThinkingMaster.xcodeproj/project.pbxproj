@@ -24,6 +24,7 @@
 		9D90490C29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */; };
 		9D90490E29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */; };
 		9D90491529E10FCF00C39EDF /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */; };
+		9DA68ABB29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */; };
 		9DA84FE329EA404F00CB63B7 /* FuturesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */; };
 		9DA8503029EB955600CB63B7 /* CloudKitUserBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */; };
 		9DB415EC29DEEE6000C82A18 /* UnitTestingBootcampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB415EB29DEEE6000C82A18 /* UnitTestingBootcampView.swift */; };
@@ -89,6 +90,7 @@
 		9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITests.swift; sourceTree = "<group>"; };
 		9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
+		9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationBootcamp.swift; sourceTree = "<group>"; };
 		9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesBootcamp.swift; sourceTree = "<group>"; };
 		9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBootcamp.swift; sourceTree = "<group>"; };
 		9DA8503129EB95A900CB63B7 /* SwiftfulThinkingMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftfulThinkingMaster.entitlements; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */,
 				9DEDB9CF29F1236000AA37F3 /* CloudKitCrudBootcamp.swift */,
+				9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */,
 			);
 			path = CloudKitBootcamps;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				9DC62D3229CC7C3700BAA9CD /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				9D4B830829D65FC900ED121F /* TabBarItem.swift in Sources */,
 				9D56767629CD99CF0047DBDF /* CustomShapesBootcamp.swift in Sources */,
+				9DA68ABB29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift in Sources */,
 				9DFE384D29DD96C80072A247 /* DependencyInjectionBootcamp.swift in Sources */,
 				9DE3918129D459C7003DA6D0 /* PreferenceKeyBootcamp.swift in Sources */,
 				9DA8503029EB955600CB63B7 /* CloudKitUserBootcamp.swift in Sources */,
