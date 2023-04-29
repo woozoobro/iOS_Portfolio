@@ -11,7 +11,7 @@ import SwiftUI
 struct HowToUserEscapingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CodableBootcamp()
         }
     }
 }
