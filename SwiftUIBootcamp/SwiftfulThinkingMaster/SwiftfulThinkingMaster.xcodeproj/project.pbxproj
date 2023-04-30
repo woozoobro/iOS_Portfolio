@@ -24,6 +24,7 @@
 		9D90490C29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */; };
 		9D90490E29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */; };
 		9D90491529E10FCF00C39EDF /* UITestingBootcampView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */; };
+		9D9A535029FE13370042B6BC /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9A534F29FE13370042B6BC /* CloudKitUtility.swift */; };
 		9DA68ABB29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */; };
 		9DA84FE329EA404F00CB63B7 /* FuturesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */; };
 		9DA8503029EB955600CB63B7 /* CloudKitUserBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */; };
@@ -90,6 +91,7 @@
 		9D90490B29E10E8200C39EDF /* SwiftfulThinkingMaster_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITests.swift; sourceTree = "<group>"; };
 		9D90490D29E10E8200C39EDF /* SwiftfulThinkingMaster_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingMaster_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D90491429E10FCF00C39EDF /* UITestingBootcampView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingBootcampView_UITests.swift; sourceTree = "<group>"; };
+		9D9A534F29FE13370042B6BC /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
 		9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPushNotificationBootcamp.swift; sourceTree = "<group>"; };
 		9DA84FE229EA404F00CB63B7 /* FuturesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesBootcamp.swift; sourceTree = "<group>"; };
 		9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserBootcamp.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				9DA8502F29EB955600CB63B7 /* CloudKitUserBootcamp.swift */,
 				9DEDB9CF29F1236000AA37F3 /* CloudKitCrudBootcamp.swift */,
 				9DA68ABA29F8070E0031971D /* CloudKitPushNotificationBootcamp.swift */,
+				9D9A534F29FE13370042B6BC /* CloudKitUtility.swift */,
 			);
 			path = CloudKitBootcamps;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				9D4B830029D5A08B00ED121F /* AppTabBarView.swift in Sources */,
 				9DEDB9D029F1236000AA37F3 /* CloudKitCrudBootcamp.swift in Sources */,
 				9DCFCA6A29D99ACD0098813A /* UIViewRepresentableBootcamp.swift in Sources */,
+				9D9A535029FE13370042B6BC /* CloudKitUtility.swift in Sources */,
 				9D2DF1FB29C9C6FC004B6A77 /* ButtonStyleBootcamp.swift in Sources */,
 				9DCEAFD529C8888700D5EF02 /* ViewModifierBootcamp.swift in Sources */,
 				9D4CB2BC29D1AD720045C479 /* AnimateableDataBootcamp.swift in Sources */,
