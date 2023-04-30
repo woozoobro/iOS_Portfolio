@@ -70,7 +70,7 @@ class CheckedContinuationBootcampViewModel: ObservableObject {
         }
     }
     
-    func getHeartImage() async {        
+    func getHeartImage() async {
         self.image = await networkManager.getHeartImageFromDatabase()
     }
     
