@@ -31,7 +31,7 @@ class CloudKitUtility {
 //MARK: - USER FUNCTIONS
 extension CloudKitUtility {
     static private func getiCloudStatus(completion: @escaping (Result<Bool, Error>) -> Void) {
-        CKContainer.default().accountStatus {  returnedStatus, returnedError in
+        CKContainer.default().accountStatus { returnedStatus, returnedError in
             switch returnedStatus {
             case .available:
                 completion(.success(true))
