@@ -5,6 +5,19 @@
 //  Created by 우주형 on 2023/05/03.
 //
 
+
+/*
+ VALUE TYPES:
+ - Struct, Enum, String, Int, etc.
+ - stored in the Stack
+ - Faster
+ - Thread safe!
+ - When you assign or pass value type a new copy of data is created
+ 
+ REFERENCY TYPES:
+ 
+ */
+
 import SwiftUI
 
 struct StructClassActorBootcamp: View {
@@ -12,28 +25,21 @@ struct StructClassActorBootcamp: View {
         Text("Hello, World!")
             .onAppear {
                 runTest()
-                
             }
-    }
-}
-
-
-
-class MyClass {
-    var title: String
-    
-    init(title: String) {
-        self.title = title
     }
 }
 
 extension StructClassActorBootcamp {
     private func runTest() {
         print("Test started!")
-//        structTest1()
+        structTest1()
+        printDivider()
+        classTest1()
+        printDivider()
+        actorTest1()
+//        structTest2()
 //        printDivider()
-//        classTest1()
-        structTest2()
+//        classTest2()
     }
     
     private func printDivider() {
@@ -74,6 +80,24 @@ extension StructClassActorBootcamp {
         
         print("ObjectA: ", objectA.title)
         print("ObjectB: ", objectB.title)
+    }
+    
+    private func actorTest1() {
+        Task {
+            print("classTest1")
+            let objectA = MyActor(title: "Starting title!")
+            await print("ObjectA: ", objectA.title)
+            
+            print("Pass the REFERENCE of objectA to objectB.")
+            let objectB = objectA
+            await print("ObjectB: ", objectB.title)
+            
+            await objectB.updateTitle(newTitle: "Second title! ")
+            print("ObjectB title changed.")
+            
+            await print("ObjectA: ", objectA.title)
+            await print("ObjectB: ", objectB.title)
+        }
     }
 }
 
@@ -130,5 +154,45 @@ extension StructClassActorBootcamp {
         print("Struct4: ", struct4.title)
         struct4.updateTitle(newTitle: "Title2")
         print("Struct4: ", struct4.title)
+    }
+}
+
+class MyClass {
+    var title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+    
+    func updateTitle(newTitle: String) {
+        title = newTitle
+    }
+}
+
+actor MyActor {
+    var title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+    
+    func updateTitle(newTitle: String) {
+        title = newTitle
+    }
+}
+
+extension StructClassActorBootcamp {
+    private func classTest2() {
+        print("classTest2")
+        
+        let class1 = MyClass(title: "Title1")
+        print("Class1: ", class1.title)
+        class1.title = "Title2"
+        print("Class1: ", class1.title)
+        
+        let class2 = MyClass(title: "Title1")
+        print("Class2: ", class2.title)
+        class2.updateTitle(newTitle: "Title2")
+        print("Class2: ", class2.title)
     }
 }
