@@ -15,16 +15,92 @@
  - When you assign or pass value type a new copy of data is created
  
  REFERENCY TYPES:
+ - Class, Function, Actor
+ - Stored in the Heap
+ - Slower, but synchronized
+ - Not Thread safe (by default)
+ - When you assign or pass reference type a new reference to original instance will be created (pointer)
+ 
+ --------------------
+ 
+ Stack:
+ - Stores Value types
+ - Variables allocated on the stack are stored directly to the memory, and access to this memory is very fast
+ - Each thread has it's own stack!
+ 
+ HEAP:
+ - Stores Reference types
+ - Shared across threads!
+ 
+ ____________________
+ 
+ STRUCT:
+ - Based on VALUES
+ - Can be mutated
+ - Stored in the Stack!
+ 
+ CLASS:
+ - Based on REFERENCES (INSTANCES)
+ - Stored in the Heap!
+ - Inherit from other classes         // It's common interview question but in swiftUI Do we really use this?
+ 
+ ACTOR:
+ - Same as Class, but thread safe!
+ 
+ _____________________
+ 
+ Structs: Data Models, Views
+ Classes: ViewModels
+ Actors: Shared 'Manager' and 'Data store'
+ 
  
  */
 
 import SwiftUI
 
+
+actor StructClassActorBootcampManager {
+    func getDataFromDatabase() {
+        
+    }
+}
+
+class StructClassActorBootcampViewModel: ObservableObject {
+    @Published var title: String = ""
+    
+    init() {
+        print("ViewModel INIT")
+    }
+}
+
 struct StructClassActorBootcamp: View {
+    
+    @StateObject private var viewModel = StructClassActorBootcampViewModel()
+    let isActive: Bool
+    
+    init(isActive: Bool) {
+        self.isActive = isActive
+        print("View INIT")
+    }
+    
     var body: some View {
         Text("Hello, World!")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea()
+            .background(isActive ? Color.red : Color.blue)
             .onAppear {
-                runTest()
+//                runTest()
+            }
+    }
+}
+
+struct StructClassActorBootcampHomeView: View {
+    @State private var isActive: Bool = false
+    
+    var body: some View {
+        StructClassActorBootcamp(isActive: isActive)
+            .onTapGesture {
+                isActive.toggle()
             }
     }
 }
@@ -103,7 +179,7 @@ extension StructClassActorBootcamp {
 
 struct StructClassActorBootcamp_Previews: PreviewProvider {
     static var previews: some View {
-        StructClassActorBootcamp()
+        StructClassActorBootcamp(isActive: true)
     }
 }
 
