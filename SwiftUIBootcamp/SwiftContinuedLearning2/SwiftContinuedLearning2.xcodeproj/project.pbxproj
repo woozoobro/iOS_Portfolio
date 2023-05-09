@@ -12,6 +12,8 @@
 		9D9CDF022A0895D3001EB0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9CDF012A0895D3001EB0DD /* Assets.xcassets */; };
 		9D9CDF052A0895D3001EB0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9CDF042A0895D3001EB0DD /* Preview Assets.xcassets */; };
 		9D9CDF0C2A089608001EB0DD /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CDF0B2A089608001EB0DD /* LocalNotificationBootcamp.swift */; };
+		9DF038982A0910980094059F /* HashableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF038972A0910980094059F /* HashableBootcamp.swift */; };
+		9DF0389A2A0912610094059F /* ArraysBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF038992A0912610094059F /* ArraysBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9D9CDF012A0895D3001EB0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D9CDF042A0895D3001EB0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D9CDF0B2A089608001EB0DD /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
+		9DF038972A0910980094059F /* HashableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableBootcamp.swift; sourceTree = "<group>"; };
+		9DF038992A0912610094059F /* ArraysBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				9D9CDEFD2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift */,
 				9D9CDEFF2A0895D2001EB0DD /* ContentView.swift */,
 				9D9CDF0B2A089608001EB0DD /* LocalNotificationBootcamp.swift */,
+				9DF038972A0910980094059F /* HashableBootcamp.swift */,
+				9DF038992A0912610094059F /* ArraysBootcamp.swift */,
 				9D9CDF012A0895D3001EB0DD /* Assets.xcassets */,
 				9D9CDF032A0895D3001EB0DD /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				9D9CDF002A0895D2001EB0DD /* ContentView.swift in Sources */,
 				9D9CDEFE2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift in Sources */,
+				9DF0389A2A0912610094059F /* ArraysBootcamp.swift in Sources */,
+				9DF038982A0910980094059F /* HashableBootcamp.swift in Sources */,
 				9D9CDF0C2A089608001EB0DD /* LocalNotificationBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
