@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D15D0602A0A74CA00D3601E /* DownloadWithEscapingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15D05F2A0A74CA00D3601E /* DownloadWithEscapingBootcamp.swift */; };
+		9D15D0622A0A79D100D3601E /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15D0612A0A79D100D3601E /* DownloadWithCombine.swift */; };
 		9D9CDEFE2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CDEFD2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift */; };
 		9D9CDF002A0895D2001EB0DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CDEFF2A0895D2001EB0DD /* ContentView.swift */; };
 		9D9CDF022A0895D3001EB0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9CDF012A0895D3001EB0DD /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D15D05F2A0A74CA00D3601E /* DownloadWithEscapingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingBootcamp.swift; sourceTree = "<group>"; };
+		9D15D0612A0A79D100D3601E /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		9D9CDEFA2A0895D2001EB0DD /* SwiftContinuedLearning2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftContinuedLearning2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9CDEFD2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftContinuedLearning2App.swift; sourceTree = "<group>"; };
 		9D9CDEFF2A0895D2001EB0DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				9D9CDF0B2A089608001EB0DD /* LocalNotificationBootcamp.swift */,
 				9DF038972A0910980094059F /* HashableBootcamp.swift */,
 				9DF038992A0912610094059F /* ArraysBootcamp.swift */,
+				9D15D05F2A0A74CA00D3601E /* DownloadWithEscapingBootcamp.swift */,
+				9D15D0612A0A79D100D3601E /* DownloadWithCombine.swift */,
 				9D9CDF012A0895D3001EB0DD /* Assets.xcassets */,
 				9D9CDF032A0895D3001EB0DD /* Preview Content */,
 			);
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D9CDF002A0895D2001EB0DD /* ContentView.swift in Sources */,
+				9D15D0622A0A79D100D3601E /* DownloadWithCombine.swift in Sources */,
 				9D9CDEFE2A0895D2001EB0DD /* SwiftContinuedLearning2App.swift in Sources */,
+				9D15D0602A0A74CA00D3601E /* DownloadWithEscapingBootcamp.swift in Sources */,
 				9DF0389A2A0912610094059F /* ArraysBootcamp.swift in Sources */,
 				9DF038982A0910980094059F /* HashableBootcamp.swift in Sources */,
 				9D9CDF0C2A089608001EB0DD /* LocalNotificationBootcamp.swift in Sources */,

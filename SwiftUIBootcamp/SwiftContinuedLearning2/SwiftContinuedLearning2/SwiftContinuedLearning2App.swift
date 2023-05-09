@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftContinuedLearning2App: App {
     var body: some Scene {
         WindowGroup {
-            LocalNotificationBootcamp()
+            DownloadWithCombine()
         }
     }
 }
