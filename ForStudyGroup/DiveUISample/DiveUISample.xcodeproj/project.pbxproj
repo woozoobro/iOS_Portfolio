@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D16A9A42A0C80C70027DA34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A32A0C80C70027DA34 /* Card.swift */; };
+		9D16A9A62A0C816B0027DA34 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A52A0C816B0027DA34 /* Expense.swift */; };
+		9D16A9A82A0C83A50027DA34 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A72A0C83A50027DA34 /* Home.swift */; };
+		9D16A9AB2A0C998B0027DA34 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */; };
 		9DF58F9E2A0B5B52007BAE1D /* DiveUISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */; };
 		9DF58FA02A0B5B52007BAE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */; };
 		9DF58FA22A0B5B53007BAE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF58FA12A0B5B53007BAE1D /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D16A9A32A0C80C70027DA34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9D16A9A52A0C816B0027DA34 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		9D16A9A72A0C83A50027DA34 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		9DF58F9A2A0B5B52007BAE1D /* DiveUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiveUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveUISampleApp.swift; sourceTree = "<group>"; };
 		9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D16A9A02A0C80A80027DA34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9A32A0C80C70027DA34 /* Card.swift */,
+				9D16A9A52A0C816B0027DA34 /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D16A9A22A0C80B20027DA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9A72A0C83A50027DA34 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D16A9A92A0C99710027DA34 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9DF58F912A0B5B52007BAE1D = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +86,9 @@
 			children = (
 				9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */,
 				9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */,
+				9D16A9A92A0C99710027DA34 /* Helpers */,
+				9D16A9A22A0C80B20027DA34 /* View */,
+				9D16A9A02A0C80A80027DA34 /* Model */,
 				9DF58FA12A0B5B53007BAE1D /* Assets.xcassets */,
 				9DF58FA32A0B5B53007BAE1D /* Preview Content */,
 			);
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D16A9A62A0C816B0027DA34 /* Expense.swift in Sources */,
+				9D16A9AB2A0C998B0027DA34 /* OffsetReader.swift in Sources */,
 				9DF58FA02A0B5B52007BAE1D /* ContentView.swift in Sources */,
+				9D16A9A82A0C83A50027DA34 /* Home.swift in Sources */,
+				9D16A9A42A0C80C70027DA34 /* Card.swift in Sources */,
 				9DF58F9E2A0B5B52007BAE1D /* DiveUISampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

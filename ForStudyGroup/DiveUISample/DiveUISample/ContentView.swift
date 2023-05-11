@@ -9,18 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("dating_login")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.accentColor)
-                .frame(width: 310, height: 420)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
+        GeometryReader {
+            let size = $0.size
+            let safeArea = $0.safeAreaInsets
             
+            ScrollViewReader { proxy in
+                Home(proxy: proxy, size: size, safeArea: safeArea)
+            }
+            .preferredColorScheme(.light)
+            .ignoresSafeArea()
         }
-        .padding()
     }
 }
 
