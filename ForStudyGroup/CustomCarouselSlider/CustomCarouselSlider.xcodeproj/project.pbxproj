@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D16A9A42A0C80C70027DA34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A32A0C80C70027DA34 /* Card.swift */; };
-		9D16A9A62A0C816B0027DA34 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A52A0C816B0027DA34 /* Expense.swift */; };
-		9D16A9A82A0C83A50027DA34 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9A72A0C83A50027DA34 /* Home.swift */; };
-		9D16A9AB2A0C998B0027DA34 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */; };
-		9D16A9B12A0CB99F0027DA34 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9B02A0CB99F0027DA34 /* DragGestureView.swift */; };
-		9DF58F9E2A0B5B52007BAE1D /* DiveUISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */; };
-		9DF58FA02A0B5B52007BAE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */; };
-		9DF58FA22A0B5B53007BAE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF58FA12A0B5B53007BAE1D /* Assets.xcassets */; };
-		9DF58FA52A0B5B53007BAE1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF58FA42A0B5B53007BAE1D /* Preview Assets.xcassets */; };
+		9D16A9BF2A0CD46E0027DA34 /* CustomCarouselSliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9BE2A0CD46E0027DA34 /* CustomCarouselSliderApp.swift */; };
+		9D16A9C12A0CD46E0027DA34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9C02A0CD46E0027DA34 /* ContentView.swift */; };
+		9D16A9C32A0CD46F0027DA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D16A9C22A0CD46F0027DA34 /* Assets.xcassets */; };
+		9D16A9C62A0CD46F0027DA34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D16A9C52A0CD46F0027DA34 /* Preview Assets.xcassets */; };
+		9D16A9D02A0CD4AE0027DA34 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9CF2A0CD4AE0027DA34 /* Home.swift */; };
+		9D16A9D22A0CD5860027DA34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9D12A0CD5860027DA34 /* Card.swift */; };
+		9D16A9D42A0CD5B50027DA34 /* CarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9D32A0CD5B50027DA34 /* CarouselViewModel.swift */; };
+		9D16A9D62A0CE2B10027DA34 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9D52A0CE2B10027DA34 /* CardView.swift */; };
+		9D16A9D82A0CE62B0027DA34 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A9D72A0CE62B0027DA34 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D16A9A32A0C80C70027DA34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		9D16A9A52A0C816B0027DA34 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
-		9D16A9A72A0C83A50027DA34 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
-		9D16A9B02A0CB99F0027DA34 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
-		9DF58F9A2A0B5B52007BAE1D /* DiveUISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiveUISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveUISampleApp.swift; sourceTree = "<group>"; };
-		9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9DF58FA12A0B5B53007BAE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9DF58FA42A0B5B53007BAE1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D16A9BB2A0CD46E0027DA34 /* CustomCarouselSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCarouselSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D16A9BE2A0CD46E0027DA34 /* CustomCarouselSliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselSliderApp.swift; sourceTree = "<group>"; };
+		9D16A9C02A0CD46E0027DA34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D16A9C22A0CD46F0027DA34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D16A9C52A0CD46F0027DA34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D16A9CF2A0CD4AE0027DA34 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9D16A9D12A0CD5860027DA34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9D16A9D32A0CD5B50027DA34 /* CarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModel.swift; sourceTree = "<group>"; };
+		9D16A9D52A0CE2B10027DA34 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9D16A9D72A0CE62B0027DA34 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DF58F972A0B5B52007BAE1D /* Frameworks */ = {
+		9D16A9B82A0CD46E0027DA34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,106 +42,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D16A9A02A0C80A80027DA34 /* Model */ = {
+		9D16A9B22A0CD46E0027DA34 = {
 			isa = PBXGroup;
 			children = (
-				9D16A9A32A0C80C70027DA34 /* Card.swift */,
-				9D16A9A52A0C816B0027DA34 /* Expense.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9D16A9A22A0C80B20027DA34 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9D16A9A72A0C83A50027DA34 /* Home.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9D16A9A92A0C99710027DA34 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				9D16A9AA2A0C998B0027DA34 /* OffsetReader.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		9DF58F912A0B5B52007BAE1D = {
-			isa = PBXGroup;
-			children = (
-				9DF58F9C2A0B5B52007BAE1D /* DiveUISample */,
-				9DF58F9B2A0B5B52007BAE1D /* Products */,
+				9D16A9BD2A0CD46E0027DA34 /* CustomCarouselSlider */,
+				9D16A9BC2A0CD46E0027DA34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DF58F9B2A0B5B52007BAE1D /* Products */ = {
+		9D16A9BC2A0CD46E0027DA34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DF58F9A2A0B5B52007BAE1D /* DiveUISample.app */,
+				9D16A9BB2A0CD46E0027DA34 /* CustomCarouselSlider.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DF58F9C2A0B5B52007BAE1D /* DiveUISample */ = {
+		9D16A9BD2A0CD46E0027DA34 /* CustomCarouselSlider */ = {
 			isa = PBXGroup;
 			children = (
-				9DF58F9D2A0B5B52007BAE1D /* DiveUISampleApp.swift */,
-				9DF58F9F2A0B5B52007BAE1D /* ContentView.swift */,
-				9D16A9B02A0CB99F0027DA34 /* DragGestureView.swift */,
-				9D16A9A92A0C99710027DA34 /* Helpers */,
-				9D16A9A22A0C80B20027DA34 /* View */,
-				9D16A9A02A0C80A80027DA34 /* Model */,
-				9DF58FA12A0B5B53007BAE1D /* Assets.xcassets */,
-				9DF58FA32A0B5B53007BAE1D /* Preview Content */,
+				9D16A9BE2A0CD46E0027DA34 /* CustomCarouselSliderApp.swift */,
+				9D16A9C02A0CD46E0027DA34 /* ContentView.swift */,
+				9D16A9CE2A0CD4A20027DA34 /* ViewModel */,
+				9D16A9CD2A0CD49A0027DA34 /* Model */,
+				9D16A9CC2A0CD4970027DA34 /* View */,
+				9D16A9C22A0CD46F0027DA34 /* Assets.xcassets */,
+				9D16A9C42A0CD46F0027DA34 /* Preview Content */,
 			);
-			path = DiveUISample;
+			path = CustomCarouselSlider;
 			sourceTree = "<group>";
 		};
-		9DF58FA32A0B5B53007BAE1D /* Preview Content */ = {
+		9D16A9C42A0CD46F0027DA34 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9DF58FA42A0B5B53007BAE1D /* Preview Assets.xcassets */,
+				9D16A9C52A0CD46F0027DA34 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D16A9CC2A0CD4970027DA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9CF2A0CD4AE0027DA34 /* Home.swift */,
+				9D16A9D52A0CE2B10027DA34 /* CardView.swift */,
+				9D16A9D72A0CE62B0027DA34 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D16A9CD2A0CD49A0027DA34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9D12A0CD5860027DA34 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D16A9CE2A0CD4A20027DA34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D16A9D32A0CD5B50027DA34 /* CarouselViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DF58F992A0B5B52007BAE1D /* DiveUISample */ = {
+		9D16A9BA2A0CD46E0027DA34 /* CustomCarouselSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF58FA82A0B5B53007BAE1D /* Build configuration list for PBXNativeTarget "DiveUISample" */;
+			buildConfigurationList = 9D16A9C92A0CD46F0027DA34 /* Build configuration list for PBXNativeTarget "CustomCarouselSlider" */;
 			buildPhases = (
-				9DF58F962A0B5B52007BAE1D /* Sources */,
-				9DF58F972A0B5B52007BAE1D /* Frameworks */,
-				9DF58F982A0B5B52007BAE1D /* Resources */,
+				9D16A9B72A0CD46E0027DA34 /* Sources */,
+				9D16A9B82A0CD46E0027DA34 /* Frameworks */,
+				9D16A9B92A0CD46E0027DA34 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DiveUISample;
-			productName = DiveUISample;
-			productReference = 9DF58F9A2A0B5B52007BAE1D /* DiveUISample.app */;
+			name = CustomCarouselSlider;
+			productName = CustomCarouselSlider;
+			productReference = 9D16A9BB2A0CD46E0027DA34 /* CustomCarouselSlider.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DF58F922A0B5B52007BAE1D /* Project object */ = {
+		9D16A9B32A0CD46E0027DA34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					9DF58F992A0B5B52007BAE1D = {
+					9D16A9BA2A0CD46E0027DA34 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 9DF58F952A0B5B52007BAE1D /* Build configuration list for PBXProject "DiveUISample" */;
+			buildConfigurationList = 9D16A9B62A0CD46E0027DA34 /* Build configuration list for PBXProject "CustomCarouselSlider" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,47 +149,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DF58F912A0B5B52007BAE1D;
-			productRefGroup = 9DF58F9B2A0B5B52007BAE1D /* Products */;
+			mainGroup = 9D16A9B22A0CD46E0027DA34;
+			productRefGroup = 9D16A9BC2A0CD46E0027DA34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DF58F992A0B5B52007BAE1D /* DiveUISample */,
+				9D16A9BA2A0CD46E0027DA34 /* CustomCarouselSlider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DF58F982A0B5B52007BAE1D /* Resources */ = {
+		9D16A9B92A0CD46E0027DA34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF58FA52A0B5B53007BAE1D /* Preview Assets.xcassets in Resources */,
-				9DF58FA22A0B5B53007BAE1D /* Assets.xcassets in Resources */,
+				9D16A9C62A0CD46F0027DA34 /* Preview Assets.xcassets in Resources */,
+				9D16A9C32A0CD46F0027DA34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DF58F962A0B5B52007BAE1D /* Sources */ = {
+		9D16A9B72A0CD46E0027DA34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D16A9A62A0C816B0027DA34 /* Expense.swift in Sources */,
-				9D16A9AB2A0C998B0027DA34 /* OffsetReader.swift in Sources */,
-				9DF58FA02A0B5B52007BAE1D /* ContentView.swift in Sources */,
-				9D16A9B12A0CB99F0027DA34 /* DragGestureView.swift in Sources */,
-				9D16A9A82A0C83A50027DA34 /* Home.swift in Sources */,
-				9D16A9A42A0C80C70027DA34 /* Card.swift in Sources */,
-				9DF58F9E2A0B5B52007BAE1D /* DiveUISampleApp.swift in Sources */,
+				9D16A9C12A0CD46E0027DA34 /* ContentView.swift in Sources */,
+				9D16A9D02A0CD4AE0027DA34 /* Home.swift in Sources */,
+				9D16A9BF2A0CD46E0027DA34 /* CustomCarouselSliderApp.swift in Sources */,
+				9D16A9D82A0CE62B0027DA34 /* DetailView.swift in Sources */,
+				9D16A9D42A0CD5B50027DA34 /* CarouselViewModel.swift in Sources */,
+				9D16A9D62A0CE2B10027DA34 /* CardView.swift in Sources */,
+				9D16A9D22A0CD5860027DA34 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9DF58FA62A0B5B53007BAE1D /* Debug */ = {
+		9D16A9C72A0CD46F0027DA34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		9DF58FA72A0B5B53007BAE1D /* Release */ = {
+		9D16A9C82A0CD46F0027DA34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,14 +303,14 @@
 			};
 			name = Release;
 		};
-		9DF58FA92A0B5B53007BAE1D /* Debug */ = {
+		9D16A9CA2A0CD46F0027DA34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DiveUISample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomCarouselSlider/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DiveUISample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CustomCarouselSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,14 +332,14 @@
 			};
 			name = Debug;
 		};
-		9DF58FAA2A0B5B53007BAE1D /* Release */ = {
+		9D16A9CB2A0CD46F0027DA34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DiveUISample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomCarouselSlider/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -353,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.DiveUISample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.woozoobro.CustomCarouselSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,25 +364,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DF58F952A0B5B52007BAE1D /* Build configuration list for PBXProject "DiveUISample" */ = {
+		9D16A9B62A0CD46E0027DA34 /* Build configuration list for PBXProject "CustomCarouselSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DF58FA62A0B5B53007BAE1D /* Debug */,
-				9DF58FA72A0B5B53007BAE1D /* Release */,
+				9D16A9C72A0CD46F0027DA34 /* Debug */,
+				9D16A9C82A0CD46F0027DA34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF58FA82A0B5B53007BAE1D /* Build configuration list for PBXNativeTarget "DiveUISample" */ = {
+		9D16A9C92A0CD46F0027DA34 /* Build configuration list for PBXNativeTarget "CustomCarouselSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DF58FA92A0B5B53007BAE1D /* Debug */,
-				9DF58FAA2A0B5B53007BAE1D /* Release */,
+				9D16A9CA2A0CD46F0027DA34 /* Debug */,
+				9D16A9CB2A0CD46F0027DA34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DF58F922A0B5B52007BAE1D /* Project object */;
+	rootObject = 9D16A9B32A0CD46E0027DA34 /* Project object */;
 }

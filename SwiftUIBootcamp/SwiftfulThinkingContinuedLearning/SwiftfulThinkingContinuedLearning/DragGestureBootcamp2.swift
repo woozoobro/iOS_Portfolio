@@ -145,7 +145,7 @@ struct MySignUpView: View {
                 .background(Color.black.cornerRadius(10))
             Spacer()
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: 300)
         .background(Color.white)
         .cornerRadius(30)
     }

@@ -56,8 +56,13 @@ struct Home: View {
                         }
                     }
                     .tabViewStyle(.page(indexDisplayMode: .never))
+                    .background {
+                        RoundedRectangle(cornerRadius: 40, style: .continuous)
+                            .fill(Color.blue.gradient)
+                    }
                 }
                 .frame(height: pageHeight)
+                Text("\(offset)")
             }
             .padding(.top, safeArea.top + 15)
             .padding(.bottom, safeArea.bottom + 15)
