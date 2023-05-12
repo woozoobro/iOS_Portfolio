@@ -8,7 +8,7 @@
 import SwiftUI
 
 // width
-var width = UIScreen.main.bounds.width
+var height = UIScreen.main.bounds.height
 
 struct Home: View {
     @EnvironmentObject var model: CarouselViewModel
@@ -36,16 +36,16 @@ struct Home: View {
                 // Carousel
                 ZStack {
                     ForEach(model.cards.indices.reversed(), id: \.self) { index in
-                        HStack {
+                        VStack {
                             CardView(card: model.cards[index], animation: animation)
                                 .frame(width: getCardWidth(index: index), height: getCardHeight(index: index))
-                                .offset(x: getCardOffset(index: index))
-                                .rotationEffect(.init(degrees: getCardRotation(index: index)))
+                                .offset(y: getCardOffset(index: index) + model.cards[index].offset)
+                                //.rotationEffect(.init(degrees: getCardRotation(index: index)))
                             Spacer(minLength: 0)
                         }
                         .frame(height: 400)
                         .contentShape(Rectangle())
-                        .offset(x: model.cards[index].offset)
+                        .offset(y: model.cards[index].offset)
                         .gesture(
                             DragGesture(minimumDistance: 0)
                                 .onChanged { value in
@@ -94,17 +94,23 @@ struct Home: View {
     
     func onChanged(value: DragGesture.Value, index: Int) {
         // Only Left Swipe
-        if value.translation.width < 0 {
-            model.cards[index].offset = value.translation.width
+        if value.translation.height < 0 {
+            model.cards[index].offset = value.translation.height
         }
         
     }
     
     func onEnd(value: DragGesture.Value, index: Int) {
         withAnimation(.spring()) {
-            if -value.translation.width > width / 3 {
-                model.cards[index].offset = -width
+            if -value.translation.height > height / 10 {
+                model.cards[index].offset = -height
                 model.swipedCard += 1
+            } else if value.translation.height > height / 10 {
+                // Bring back the previous card if swiped card is greater than 0
+                if model.swipedCard > 0 {
+                    model.swipedCard -= 1
+                    model.cards[model.swipedCard].offset = 0
+                }
             } else {
                 model.cards[index].offset = 0
             }
@@ -112,13 +118,13 @@ struct Home: View {
     }
     
     // Getting Rotation When Card is being Swiped...
-    func getCardRotation(index: Int) -> Double {
-        let boxWidth = Double(width / 3)
-        let offset = Double(model.cards[index].offset)
-        let angle: Double = 4
-        
-        return (offset / boxWidth) * angle
-    }
+//    func getCardRotation(index: Int) -> Double {
+//        let boxWidth = Double(height / 3)
+//        let offset = Double(model.cards[index].offset)
+//        let angle: Double = 4
+//
+//        return (offset / boxWidth) * angle
+//    }
     
     // Getting Width And Height For Card...
     func getCardHeight(index: Int) -> CGFloat {
@@ -137,7 +143,7 @@ struct Home: View {
     
     // Getting Offset...
     func getCardOffset(index: Int) -> CGFloat {
-        return index - model.swipedCard <= 2 ? CGFloat(index - model.swipedCard) * 30 : 60
+        return CGFloat(index - model.swipedCard) * 30
     }
 }
 
