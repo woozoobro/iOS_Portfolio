@@ -43,7 +43,16 @@ struct ContentView: View {
                             }
                         }
                 )
-                        
+            ParticleEmitterView(isDragging: $isDragging)
+                .frame(width: cardWidth, height: cardHeight)
+                .offset(cardOffset)
+                .offset(y: cardOffset.height)
+                .rotation3DEffect(
+                    Angle(degrees: cardOffset != .zero ? 30 : 0),
+                    axis: (x: -cardOffset.height, y: cardOffset.width, z: 0.0)
+                )
+                .allowsHitTesting(false) // Add this line
+                .blendMode(.screen)
         }
     }
 }
@@ -119,19 +128,6 @@ struct ContentView_Previews: PreviewProvider {
 
 //MARK: - EmitterSwiftUIView
 
-/*
- //Inside ZStack of ContentView
- ParticleEmitterView(isDragging: $isDragging)
-     .frame(width: cardWidth, height: cardHeight)
-     .offset(cardOffset)
-     .offset(y: cardOffset.height)
-     .rotation3DEffect(
-         Angle(degrees: cardOffset != .zero ? 30 : 0),
-         axis: (x: -cardOffset.height, y: cardOffset.width, z: 0.0)
-     )
-     .allowsHitTesting(false) // Add this line
-     .blendMode(.screen)
- 
 struct ParticleEmitterView: UIViewRepresentable {
     @Binding var isDragging: Bool
 
@@ -212,4 +208,4 @@ struct ParticleEmitterView: UIViewRepresentable {
         return emitterCell
     }
 }
-*/
+

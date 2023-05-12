@@ -22,9 +22,36 @@ import UIKit
  - if the block ends in anything other than -xxx or -xx reformat to a block of two like xx-xx (not obvious)
  
  */
+
 func solution(_ S : String) -> String {
     // do your work here
-    return ""
+    var noSpace = S.replacingOccurrences(of: " ", with: "")
+    var noSpaceNoDash = noSpace.replacingOccurrences(of: "-", with: "")
+    
+    var count = 1
+    var result = ""
+    
+    for c in noSpaceNoDash {
+        result.append(c)
+        if count % 3 == 0 {
+            result.append("-")
+        }
+        count += 1
+    }
+    
+    if result.last == "-" {
+        result.removeLast()
+    }
+    
+    // *-x -> -*x
+    var chars = Array(result)
+    let secondLastPtr = chars.count - 2
+    if chars[secondLastPtr] == "-" {
+        chars[secondLastPtr] = chars[secondLastPtr - 1]
+        chars[secondLastPtr - 1] = "-"
+    }
+    
+    return String(chars)
 }
 
 solution("123456789")           // 123-456-789
