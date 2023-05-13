@@ -1,0 +1,49 @@
+//
+//  PlayView.swift
+//  YoutubeMusicPlayBar
+//
+//  Created by 우주형 on 2023/05/13.
+//
+
+import SwiftUI
+
+struct PlayView: View {
+    var namespace: Namespace.ID
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            RoundedRectangle(cornerRadius: 18)
+                .matchedGeometryEffect(id: "cover", in: namespace)
+                .frame(width: 320, height: 320)
+            
+            Text("Put Your Records On")
+                .font(.title)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity)
+                .matchedGeometryEffect(id: "title", in: namespace)
+            
+            HStack {
+                Image(systemName: "play.fill")
+                    .matchedGeometryEffect(id: "play", in: namespace)
+                Image(systemName: "forward.end.fill")
+                    .matchedGeometryEffect(id: "next", in: namespace)
+            }
+            .font(.title)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background {
+            RoundedRectangle(cornerRadius: 18)
+                .fill(Color.blue.opacity(0.6))
+                .matchedGeometryEffect(id: "background", in: namespace)
+        }
+        .foregroundColor(.white)
+        .ignoresSafeArea()
+    }
+}
+
+struct PlayView_Previews: PreviewProvider {
+    @Namespace static var namespace: Namespace.ID
+    static var previews: some View {
+        PlayView(namespace: namespace)
+    }
+}
