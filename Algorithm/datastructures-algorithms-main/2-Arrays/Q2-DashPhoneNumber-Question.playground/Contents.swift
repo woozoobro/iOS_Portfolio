@@ -28,7 +28,7 @@ func solution(_ S : String) -> String {
     var noSpace = S.replacingOccurrences(of: " ", with: "")
     var noSpaceNoDash = noSpace.replacingOccurrences(of: "-", with: "")
     
-    var count = 1
+    var count = -2
     var result = ""
     
     for c in noSpaceNoDash {
@@ -40,13 +40,13 @@ func solution(_ S : String) -> String {
     }
     
     if result.last == "-" {
-        result.removeLast()
+        result = String(result.dropLast())
     }
     
-    // *-x -> -*x
     var chars = Array(result)
     let secondLastPtr = chars.count - 2
     if chars[secondLastPtr] == "-" {
+        // *-x -> -*x
         chars[secondLastPtr] = chars[secondLastPtr - 1]
         chars[secondLastPtr - 1] = "-"
     }
