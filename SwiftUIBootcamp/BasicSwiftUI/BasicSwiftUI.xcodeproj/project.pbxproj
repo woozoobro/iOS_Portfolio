@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0AE3EF2A30906E00BF6B91 /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AE3EE2A30906E00BF6B91 /* NavigationStackBootcamp.swift */; };
 		9D1A99872975FFB7004E04C3 /* ContextMenuBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A99862975FFB7004E04C3 /* ContextMenuBootcamp.swift */; };
 		9D1A9989297602AD004E04C3 /* TextFieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A9988297602AD004E04C3 /* TextFieldBootcamp.swift */; };
 		9D1A998B29761515004E04C3 /* TextEditorBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A998A29761515004E04C3 /* TextEditorBootcamp.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D0AE3EE2A30906E00BF6B91 /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		9D1A99862975FFB7004E04C3 /* ContextMenuBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuBootcamp.swift; sourceTree = "<group>"; };
 		9D1A9988297602AD004E04C3 /* TextFieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBootcamp.swift; sourceTree = "<group>"; };
 		9D1A998A29761515004E04C3 /* TextEditorBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorBootcamp.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				9DA8500029EA5F8600CB63B7 /* AsyncImageBootcamp.swift */,
 				9D30B0C8297E0201001481DC /* BackgroundMaterialsBootcamp.swift */,
 				9D2712CA29EFEC340083A48E /* TextSelectionBootcamp.swift */,
+				9D0AE3EE2A30906E00BF6B91 /* NavigationStackBootcamp.swift */,
 				9DBB8D112972B21700C6C2D8 /* Assets.xcassets */,
 				9DBB8D132972B21700C6C2D8 /* Preview Content */,
 			);
@@ -317,6 +320,7 @@
 				9DB8604829744DDD00992D59 /* ButtonsBootcamp.swift in Sources */,
 				9DB860502974612600992D59 /* BindingBootcamp.swift in Sources */,
 				9D1A99A7297710A7004E04C3 /* ModelBootcamp.swift in Sources */,
+				9D0AE3EF2A30906E00BF6B91 /* NavigationStackBootcamp.swift in Sources */,
 				9DB8603A2973EFB600992D59 /* PaddingAndSpacerBootcamp.swift in Sources */,
 				9DB8605A2974B37300992D59 /* TransitionBootcamp.swift in Sources */,
 				9DB8607C2975408600992D59 /* PopoverBootcamp.swift in Sources */,
