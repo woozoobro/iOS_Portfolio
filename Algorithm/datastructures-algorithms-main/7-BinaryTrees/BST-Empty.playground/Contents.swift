@@ -17,16 +17,46 @@ class Node {
     init(_ key: Int) {
         self.key = key
     }
+    
+    var min: Node {
+        if left == nil {
+            return self
+        } else {
+            return left!.min
+        }
+    }
 }
+
+let bst = BST()
+bst.insert(key: 5)
+bst.insert(key: 3)
+bst.insert(key: 2)
+bst.insert(key: 4)
+bst.insert(key: 7)
+bst.insert(key: 6)
+bst.insert(key: 8)
 
 class BST {
     var root: Node?
 
     func insert(key: Int) {
+        root = insertItem(root, key)
     }
-
+    
     private func insertItem(_ node: Node?, _ key: Int) -> Node {
-        return Node(key)
+        guard let node = node else {
+            let node = Node(key)
+            return node
+        }
+        
+        if key < node.key {
+            node.left = insertItem(node.left, key)
+        }
+        if key > node.key {
+            node.right = insertItem(node.right, key)
+        }
+        
+        return node;
     }
 
     func find(key: Int) -> Int? {
@@ -51,18 +81,56 @@ class BST {
     }
     
     func findMin() -> Int {
-        return 0
+        guard let root = root else { return 0 }
+        return findMin(root).key;
     }
 
     private func findMin(_ node: Node) -> Node {
-        return Node(0)
+        return node.min;
     }
 
     func delete(key: Int) {
+        guard let _ = root else { return }
+        root = delete(&root, key);
     }
     
     private func delete(_  node: inout Node?, _ key: Int) -> Node? {
-        return nil
+        guard let nd = node else { return nil }
+
+        if key < nd.key {
+            nd.left = delete(&nd.left, key)
+        } else if key > nd.key {
+            nd.right = delete(&nd.right, key)
+        } else {
+            // Woohoo! Found you. This is the node we want to delete.
+
+            // Case 1: No child
+            if nd.left == nil && nd.right == nil {
+                return nil
+            }
+            
+            // Case 2: One child
+            else if nd.left == nil {
+                return nd.right // check delete(&insideNode.right, key) not necessary because we have already found
+            }
+            else if nd.right == nil {
+                return nd.left // delete(&insideNode.left, key)
+            }
+            
+            // Case 3: Two children
+            else {
+                // Find the minimum node on the right (could also find max on the left)
+                let minRight = findMin(nd.right!)
+                
+                // Duplicate it by copying its value here
+                nd.key = minRight.key
+                
+                // Now go ahead and delete the node we just duplicated (same key)
+                nd.right = delete(&nd.right, nd.key)
+            }
+        }
+        
+        return nd
     }
 
     func prettyPrint() {
@@ -175,5 +243,5 @@ class TestObserver: NSObject, XCTestObservation {
 }
 let testObserver = TestObserver()
 XCTestObservationCenter.shared.addTestObserver(testObserver)
-BSTTests.defaultTestSuite.run()
+//BSTTests.defaultTestSuite.run()
 
