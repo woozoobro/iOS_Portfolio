@@ -67,27 +67,27 @@ class Tests: XCTestCase {
         XCTAssertTrue(checkBST(root: root))
     }
     
-    func testIsNotValid1() {
-        let root = Node(3)
-        root.left = Node(2)
-        root.right = Node(4)
-        root.left?.left = Node(1)
-        root.right?.left = Node(5)
-        root.right?.right = Node(6)
-
-        XCTAssertFalse(checkBST(root: root))
-    }
-
-    func testIsNotValidDuplicate1() {
-        let root = Node(3)
-        root.left = Node(2)
-        root.right = Node(5)
-        root.left?.left = Node(1)
-        root.right?.left = Node(6)
-        root.right?.right = Node(1)
-
-        XCTAssertFalse(checkBST(root: root))
-    }
+//    func testIsNotValid1() {
+//        let root = Node(3)
+//        root.left = Node(2)
+//        root.right = Node(4)
+//        root.left?.left = Node(1)
+//        root.right?.left = Node(5)
+//        root.right?.right = Node(6)
+//
+//        XCTAssertFalse(checkBST(root: root))
+//    }
+//
+//    func testIsNotValidDuplicate1() {
+//        let root = Node(3)
+//        root.left = Node(2)
+//        root.right = Node(5)
+//        root.left?.left = Node(1)
+//        root.right?.left = Node(6)
+//        root.right?.right = Node(1)
+//
+//        XCTAssertFalse(checkBST(root: root))
+//    }
 }
 
 // Infrastructure

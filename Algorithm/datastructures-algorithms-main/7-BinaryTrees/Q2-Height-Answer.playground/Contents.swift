@@ -18,6 +18,7 @@ import XCTest
                   /    \
                 10      14
  */
+
 class Node {
     var data: Int = 0
     var left: Node?
