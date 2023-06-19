@@ -10,6 +10,7 @@
 		9D8BCB152A3A2E3300B7A03B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BCB142A3A2E3300B7A03B /* GoogleSignIn */; };
 		9D8BCB172A3A2E3300B7A03B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BCB162A3A2E3300B7A03B /* GoogleSignInSwift */; };
 		9D8BCB1B2A3A317200B7A03B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BCB1A2A3A317200B7A03B /* Utilities.swift */; };
+		9DB4F4B42A3DE2D600E9E06D /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */; };
 		9DF95B252A3B68F700932F46 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF95B242A3B68F700932F46 /* SignInGoogleHelper.swift */; };
 		9DFCC1912A3599CE001999D5 /* FirebaseAgainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */; };
 		9DFCC1932A3599CE001999D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCC1922A3599CE001999D5 /* ContentView.swift */; };
@@ -29,6 +30,8 @@
 /* Begin PBXFileReference section */
 		9D8BCB182A3A2EB900B7A03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9D8BCB1A2A3A317200B7A03B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9DB4F4B22A3DD60300E9E06D /* FirebaseAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseAgain.entitlements; sourceTree = "<group>"; };
+		9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		9DF95B242A3B68F700932F46 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		9DFCC18D2A3599CE001999D5 /* FirebaseAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAgainApp.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		9DFCC18F2A3599CE001999D5 /* FirebaseAgain */ = {
 			isa = PBXGroup;
 			children = (
+				9DB4F4B22A3DD60300E9E06D /* FirebaseAgain.entitlements */,
 				9D8BCB182A3A2EB900B7A03B /* Info.plist */,
 				9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */,
 				9DFCC1922A3599CE001999D5 /* ContentView.swift */,
@@ -122,6 +126,7 @@
 				9DFCC1AD2A35A7D2001999D5 /* AuthenticationManager.swift */,
 				9DFCC1AF2A35AC47001999D5 /* RootView.swift */,
 				9DFCC1B12A35AEB3001999D5 /* SettingsView.swift */,
+				9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */,
 				9DF95B242A3B68F700932F46 /* SignInGoogleHelper.swift */,
 			);
 			path = Authentication;
@@ -217,6 +222,7 @@
 				9DFCC1AA2A35A539001999D5 /* AuthenticationView.swift in Sources */,
 				9DFCC1AE2A35A7D2001999D5 /* AuthenticationManager.swift in Sources */,
 				9D8BCB1B2A3A317200B7A03B /* Utilities.swift in Sources */,
+				9DB4F4B42A3DE2D600E9E06D /* SignInAppleHelper.swift in Sources */,
 				9DFCC1AC2A35A66D001999D5 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseAgain/FirebaseAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseAgain/Preview Content\"";
@@ -373,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseAgain/FirebaseAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseAgain/Preview Content\"";

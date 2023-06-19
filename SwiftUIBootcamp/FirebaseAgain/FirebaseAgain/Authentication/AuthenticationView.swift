@@ -10,7 +10,7 @@ import GoogleSignIn
 import GoogleSignInSwift
 
 @MainActor
-final class AuthenticationViewModel: ObservableObject {
+final class AuthenticationViewModel: ObservableObject {                
     
     func signInGoogle() async throws {
         let helper = SignInWithGoogleHelper()
@@ -18,7 +18,17 @@ final class AuthenticationViewModel: ObservableObject {
         try await AuthenticationManager.shared.signInWithGoogle(tokens: tokens)
     }
     
+    func signInApple() async throws {
+        let tokens = try await SignInWithAppleHelper.shared.startSignInWithAppleFlow()
+        try await AuthenticationManager.shared.signInWithApple(tokens: tokens)
+    }
+    
+    func signInAnonymous() async throws {
+        try await AuthenticationManager.shared.signInAnonymous()
+    }
+    
 }
+
 
 struct AuthenticationView: View {
     @StateObject private var viewModel = AuthenticationViewModel()
@@ -27,6 +37,25 @@ struct AuthenticationView: View {
     
     var body: some View {
         VStack {
+            
+            Button {
+                Task {
+                    do {
+                        try await viewModel.signInAnonymous()
+                        showSignInView = false
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Sign In Anonymously")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(.orange).cornerRadius(10)
+            }
+            
             NavigationLink {
                 SignInEmailView(showSignInView: $showSignInView)
             } label: {
@@ -47,8 +76,23 @@ struct AuthenticationView: View {
                         print(error)
                     }
                 }
-                
             }
+            
+            Button {
+                Task {
+                    do {
+                        try await viewModel.signInApple()
+                        showSignInView = false
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                SignInWithAppleButtonViewRepresentable(type: .default, style: .black)
+                    .allowsHitTesting(false)
+            }
+            .frame(height: 55)
+
             
             Spacer()
         }

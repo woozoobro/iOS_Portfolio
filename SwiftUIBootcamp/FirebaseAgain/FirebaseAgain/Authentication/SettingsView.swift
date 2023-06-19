@@ -11,6 +11,7 @@ import SwiftUI
 final class SettingsViewModel: ObservableObject {
     
     @Published var authProviders: [AuthProviderOption] = []
+    @Published var authUser: AuthDataResultModel? = nil
     
     func loadAuthProviders() {
         if let provider = try? AuthenticationManager.shared.getProviders() {
@@ -18,8 +19,16 @@ final class SettingsViewModel: ObservableObject {
         }
     }
     
+    func loadAuthUser() {
+        self.authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
+    }
+    
     func signOut() throws {
         try AuthenticationManager.shared.signOut()
+    }
+    
+    func deleteAccount() async throws {
+        try await AuthenticationManager.shared.delete()
     }
     
     func resetPassword() async throws {
@@ -40,6 +49,25 @@ final class SettingsViewModel: ObservableObject {
         let password = "hello123"
         try await AuthenticationManager.shared.updatePassword(password: password)
     }
+    
+    func linkGoogleAccount() async throws {
+        let helper = SignInWithGoogleHelper()
+        let tokens = try await helper.signIn()
+        self.authUser = try await AuthenticationManager.shared.linkGoogle(tokens: tokens)
+    }
+    
+    func linkAppleAccount() async throws {
+        let tokens = try await SignInWithAppleHelper.shared.startSignInWithAppleFlow()
+        self.authUser = try await AuthenticationManager.shared.linkApple(tokens: tokens)
+    }
+    
+    func linkEmailAccount() async throws {
+        let email = "hello123@gmail.com"
+        let password = "Hello123!"
+                
+        self.authUser = try await AuthenticationManager.shared.linkEmail(email: email, password: password)
+    }
+    
 }
 
 struct SettingsView: View {
@@ -58,12 +86,30 @@ struct SettingsView: View {
                 }
             }
             
+            Button(role: .destructive) {
+                Task {
+                    do {
+                        try await viewModel.deleteAccount()
+                        showSignInView = true
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Delete account")
+            }
+            
             if viewModel.authProviders.contains(.email) {
                 emailSection
+            }
+            
+            if viewModel.authUser?.isAnonymous == true {
+                anonymousSection
             }
         }
         .onAppear {
             viewModel.loadAuthProviders()
+            viewModel.loadAuthUser()
         }
     }
 }
@@ -111,6 +157,45 @@ extension SettingsView {
             }
         } header: {
             Text("Email functions")
+        }
+    }
+    
+    private var anonymousSection: some View {
+        Section {
+            Button("Link Google Account") {
+                Task {
+                    do {
+                        try await viewModel.linkGoogleAccount()
+                        print("Google Linked")
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+            
+            Button("Link Apple Account") {
+                Task {
+                    do {
+                        try await viewModel.linkAppleAccount()
+                        print("Apple Linked")
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+            
+            Button("Link Eamil Account") {
+                Task {
+                    do {
+                        try await viewModel.linkEmailAccount()
+                        print("Email Linked")
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+        } header: {
+            Text("Create account")
         }
     }
 }
