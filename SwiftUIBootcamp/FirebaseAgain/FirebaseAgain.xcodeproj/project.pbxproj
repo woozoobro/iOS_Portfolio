@@ -22,6 +22,9 @@
 		9D95D1C22A471E8400C8DE92 /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95D1C12A471E8400C8DE92 /* ProductsManager.swift */; };
 		9D95D1C52A47D86B00C8DE92 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95D1C42A47D86A00C8DE92 /* ProductCellView.swift */; };
 		9DB4F4B42A3DE2D600E9E06D /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */; };
+		9DF26B8A2A49D56F00AC74D8 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF26B892A49D56F00AC74D8 /* TabbarView.swift */; };
+		9DF26B8D2A49D68F00AC74D8 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF26B8C2A49D68F00AC74D8 /* FavoriteView.swift */; };
+		9DF26B8F2A49E80800AC74D8 /* ProductCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF26B8E2A49E80800AC74D8 /* ProductCellViewBuilder.swift */; };
 		9DF95B252A3B68F700932F46 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF95B242A3B68F700932F46 /* SignInGoogleHelper.swift */; };
 		9DFCC1912A3599CE001999D5 /* FirebaseAgainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */; };
 		9DFCC1932A3599CE001999D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCC1922A3599CE001999D5 /* ContentView.swift */; };
@@ -52,6 +55,9 @@
 		9D95D1C42A47D86A00C8DE92 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		9DB4F4B22A3DD60300E9E06D /* FirebaseAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseAgain.entitlements; sourceTree = "<group>"; };
 		9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
+		9DF26B892A49D56F00AC74D8 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		9DF26B8C2A49D68F00AC74D8 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		9DF26B8E2A49E80800AC74D8 /* ProductCellViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewBuilder.swift; sourceTree = "<group>"; };
 		9DF95B242A3B68F700932F46 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		9DFCC18D2A3599CE001999D5 /* FirebaseAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAgainApp.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				9DFCC1AF2A35AC47001999D5 /* RootView.swift */,
+				9DF26B8B2A49D68000AC74D8 /* Favorites */,
+				9DF26B882A49D56300AC74D8 /* Tabbar */,
 				9D95D1BE2A471CB300C8DE92 /* Products */,
 				9D14CDCA2A4475E900F96B25 /* Authentication */,
 				9D14CDD02A44767B00F96B25 /* Profile */,
@@ -164,8 +172,25 @@
 			isa = PBXGroup;
 			children = (
 				9D95D1C42A47D86A00C8DE92 /* ProductCellView.swift */,
+				9DF26B8E2A49E80800AC74D8 /* ProductCellViewBuilder.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		9DF26B882A49D56300AC74D8 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				9DF26B892A49D56F00AC74D8 /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		9DF26B8B2A49D68000AC74D8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				9DF26B8C2A49D68F00AC74D8 /* FavoriteView.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		9DFCC1842A3599CE001999D5 = {
@@ -328,8 +353,11 @@
 				9D8BCB1B2A3A317200B7A03B /* Utilities.swift in Sources */,
 				9D95D1C02A471CBD00C8DE92 /* ProductsView.swift in Sources */,
 				9D14CDC92A4475C800F96B25 /* SettingsViewModel.swift in Sources */,
+				9DF26B8D2A49D68F00AC74D8 /* FavoriteView.swift in Sources */,
 				9DB4F4B42A3DE2D600E9E06D /* SignInAppleHelper.swift in Sources */,
+				9DF26B8F2A49E80800AC74D8 /* ProductCellViewBuilder.swift in Sources */,
 				9D14CDD22A44768C00F96B25 /* ProfileView.swift in Sources */,
+				9DF26B8A2A49D56F00AC74D8 /* TabbarView.swift in Sources */,
 				9DFCC1AC2A35A66D001999D5 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
