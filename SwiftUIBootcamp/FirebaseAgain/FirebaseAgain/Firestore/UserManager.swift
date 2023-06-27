@@ -224,6 +224,19 @@ final class UserManager {
         try await userFavoriteProductCollection(userId: userId).getDocuments(as: UserFavoriteProduct.self)
     }
     
+    func addListenerForAllUserFavoriteProducts(userId: String) {
+        userFavoriteProductCollection(userId: userId).addSnapshotListener { querySnapshot, error in
+            guard let documents = querySnapshot?.documents else {
+                print("No documents")
+                return
+            }
+            
+            let products: [UserFavoriteProduct] = documents.compactMap { documentSnapshot in
+                return try? documentSnapshot.data(as: UserFavoriteProduct.self)
+            }
+        }
+    }
+    
 }
 
 struct UserFavoriteProduct: Codable {
