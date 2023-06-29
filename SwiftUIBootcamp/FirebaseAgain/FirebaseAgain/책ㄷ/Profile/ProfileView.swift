@@ -21,7 +21,7 @@ final class ProfileViewModel: ObservableObject {
         guard let user else { return }
         let currentValue = user.isPremium ?? false
         Task {
-            try await UserManager.shared.updateUserPremiumStatus(userId: user.userId,isPremium: !currentValue)
+            try await UserManager.shared.updateUserPremiumStatus(userId: user.userId, isPremium: !currentValue)
             self.user = try await UserManager.shared.getUser(userId: user.userId)
         }
     }

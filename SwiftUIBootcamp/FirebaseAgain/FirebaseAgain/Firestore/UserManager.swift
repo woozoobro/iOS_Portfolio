@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import Combine
 
 struct Movie: Codable {
     let id: String
@@ -123,6 +124,8 @@ final class UserManager {
         return decoder
     }()
     
+    private var userFavoriteProductListener: ListenerRegistration? = nil
+    
     func createNewUser(user:DBUser) async throws {
         try userDocument(userId: user.userId).setData(from: user, merge: false)
     }
@@ -224,19 +227,58 @@ final class UserManager {
         try await userFavoriteProductCollection(userId: userId).getDocuments(as: UserFavoriteProduct.self)
     }
     
-    func addListenerForAllUserFavoriteProducts(userId: String) {
-        userFavoriteProductCollection(userId: userId).addSnapshotListener { querySnapshot, error in
+    func addListenerForAllUserFavoriteProducts(userId: String, completion: @escaping (_ products: [UserFavoriteProduct]) -> Void) {
+        self.userFavoriteProductListener = userFavoriteProductCollection(userId: userId).addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
                 print("No documents")
                 return
             }
+                        
+            let products: [UserFavoriteProduct] = documents.compactMap { try? $0.data(as: UserFavoriteProduct.self)}
+            completion(products)
             
-            let products: [UserFavoriteProduct] = documents.compactMap { documentSnapshot in
-                return try? documentSnapshot.data(as: UserFavoriteProduct.self)
+            querySnapshot?.documentChanges.forEach { diff in
+                if (diff.type == .added) {
+                    print("New products: \(diff.document.data())")
+                }
+                
+                if (diff.type == .modified) {
+                    print("Modified products: \(diff.document.data())")
+                }
+                
+                if (diff.type == .removed) {
+                    print("Removed products: \(diff.document.data())")
+                }
             }
         }
     }
     
+//    func addListenerForAllUserFavoriteProducts(userId: String) -> AnyPublisher<[UserFavoriteProduct], Error> {
+//        let publisher = PassthroughSubject<[UserFavoriteProduct], Error>()
+//        self.userFavoriteProductListener = userFavoriteProductCollection(userId: userId).addSnapshotListener { querySnapshot, error in
+//            guard let documents = querySnapshot?.documents else {
+//                print("No documents")
+//                return
+//            }
+//
+//            let products: [UserFavoriteProduct] = documents.compactMap { try? $0.data(as: UserFavoriteProduct.self)}
+//            publisher.send(products)
+//        }
+//
+//        return publisher.eraseToAnyPublisher()
+//    }
+    
+    func addListenerForAllUserFavoriteProducts(userId: String) -> AnyPublisher<[UserFavoriteProduct], Error> {
+        let (publisher, listener) = userFavoriteProductCollection(userId: userId)
+            .addSnapshotListener(as: UserFavoriteProduct.self)
+        self.userFavoriteProductListener = listener
+        return publisher
+    }
+    
+    func removeListenerForAllUserFavoriteProducts() {
+        self.userFavoriteProductListener?.remove()
+    }
+
 }
 
 struct UserFavoriteProduct: Codable {
