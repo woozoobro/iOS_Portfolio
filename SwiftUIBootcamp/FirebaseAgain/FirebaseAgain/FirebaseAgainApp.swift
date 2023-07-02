@@ -14,7 +14,8 @@ struct FirebaseAgainApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RootView()
+//            RootView()
+            CrashView()
         }
     }
 }
