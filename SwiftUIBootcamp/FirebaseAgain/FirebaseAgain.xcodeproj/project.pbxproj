@@ -21,6 +21,8 @@
 		9D95D1C02A471CBD00C8DE92 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95D1BF2A471CBD00C8DE92 /* ProductsView.swift */; };
 		9D95D1C22A471E8400C8DE92 /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95D1C12A471E8400C8DE92 /* ProductsManager.swift */; };
 		9D95D1C52A47D86B00C8DE92 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D95D1C42A47D86A00C8DE92 /* ProductCellView.swift */; };
+		9DAC806B2A55C0BE00397E26 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAC806A2A55C0BD00397E26 /* AdSupport.framework */; };
+		9DAC806D2A55C0D400397E26 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC806C2A55C0D400397E26 /* AnalyticsView.swift */; };
 		9DB4F4B42A3DE2D600E9E06D /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */; };
 		9DC059DA2A53232300C6F17F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC059D92A53232300C6F17F /* FirebasePerformance */; };
 		9DC059DD2A53236C00C6F17F /* CrashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC059DC2A53236C00C6F17F /* CrashManager.swift */; };
@@ -65,6 +67,8 @@
 		9D95D1BF2A471CBD00C8DE92 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		9D95D1C12A471E8400C8DE92 /* ProductsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsManager.swift; sourceTree = "<group>"; };
 		9D95D1C42A47D86A00C8DE92 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		9DAC806A2A55C0BD00397E26 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9DAC806C2A55C0D400397E26 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		9DB4F4B22A3DD60300E9E06D /* FirebaseAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseAgain.entitlements; sourceTree = "<group>"; };
 		9DB4F4B32A3DE2D600E9E06D /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		9DC059DC2A53236C00C6F17F /* CrashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashManager.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				9D14CDC52A44752300F96B25 /* FirebaseFirestoreSwift in Frameworks */,
 				9DFCC1A72A35A4C2001999D5 /* FirebaseAuth in Frameworks */,
 				9DC93C302A4FD6C70018D5B5 /* FirebaseStorage in Frameworks */,
+				9DAC806B2A55C0BE00397E26 /* AdSupport.framework in Frameworks */,
 				9DC93C372A5110FC0018D5B5 /* FirebaseCrashlytics in Frameworks */,
 				9DFCC1A22A359E08001999D5 /* FirebaseAnalytics in Frameworks */,
 				9D14CDC32A44752300F96B25 /* FirebaseFirestore in Frameworks */,
@@ -203,6 +208,14 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		9DAC80692A55C06500397E26 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9DAC806C2A55C0D400397E26 /* AnalyticsView.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		9DC059DB2A53233000C6F17F /* Performance */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +306,7 @@
 				9D8BCB182A3A2EB900B7A03B /* Info.plist */,
 				9DFCC1902A3599CE001999D5 /* FirebaseAgainApp.swift */,
 				9DFCC1922A3599CE001999D5 /* ContentView.swift */,
+				9DAC80692A55C06500397E26 /* Analytics */,
 				9DC059DB2A53233000C6F17F /* Performance */,
 				9DC93C532A5129360018D5B5 /* Crashlytics */,
 				9DEB404F2A4C7B5F0068A72C /* Components */,
@@ -320,6 +334,7 @@
 		9DFCC1A52A35A4C2001999D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DAC806A2A55C0BD00397E26 /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -461,6 +476,7 @@
 				9DF95B252A3B68F700932F46 /* SignInGoogleHelper.swift in Sources */,
 				9DFCC1AA2A35A539001999D5 /* AuthenticationView.swift in Sources */,
 				9DC059DF2A5323B100C6F17F /* PerformanceView.swift in Sources */,
+				9DAC806D2A55C0D400397E26 /* AnalyticsView.swift in Sources */,
 				9DFCC1AE2A35A7D2001999D5 /* AuthenticationManager.swift in Sources */,
 				9D95D1BD2A471C1900C8DE92 /* ProductsDatabase.swift in Sources */,
 				9D8BCB1B2A3A317200B7A03B /* Utilities.swift in Sources */,
