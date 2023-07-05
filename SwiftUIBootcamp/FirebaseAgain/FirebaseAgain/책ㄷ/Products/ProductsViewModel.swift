@@ -59,8 +59,9 @@ final class ProductsViewModel: ObservableObject {
     }
     
     func getProducts() {
+        print("Getting More Products")
         Task {
-            let (newProducts, lastDocument) = try await ProductsManager.shared.getAllProducts(priceDescending: selectedFilter?.priceDescending, forCategory: selectedCategory?.categoryKey, count: 10, lastDocument: self.lastDocument)
+            let (newProducts, lastDocument) = try await ProductsManager.shared.getAllProducts(priceDescending: selectedFilter?.priceDescending, forCategory: selectedCategory?.categoryKey, count: 6, lastDocument: self.lastDocument)
             self.products.append(contentsOf: newProducts)
             
             if let lastDocument {

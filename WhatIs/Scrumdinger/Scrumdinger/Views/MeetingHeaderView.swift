@@ -17,7 +17,7 @@ struct MeetingHeaderView: View {
     }
     
     private var progress: Double {
-        guard totalSeconds > 0 else { return 1}
+        guard totalSeconds > 0 else { return 1 }
         return Double(secondsElasped) / Double(totalSeconds)
     }
     private var minutesRemaining: Int {
