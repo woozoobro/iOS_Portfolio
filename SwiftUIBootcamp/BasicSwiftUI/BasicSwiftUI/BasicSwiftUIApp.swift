@@ -13,7 +13,7 @@ struct BasicSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ToolbarBootcamp()
+                ContentView(fruit: "안녕하세요")
             }
         }
     }
