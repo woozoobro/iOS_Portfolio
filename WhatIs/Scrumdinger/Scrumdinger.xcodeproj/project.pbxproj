@@ -32,6 +32,7 @@
 		9DA7D6342A5C2E93009DAC14 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6332A5C2E93009DAC14 /* SpeakerArc.swift */; };
 		9DA7D63A2A5D794E009DAC14 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6392A5D794E009DAC14 /* SpeechRecognizer.swift */; };
 		9DA7D63C2A5D7964009DAC14 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D63B2A5D7964009DAC14 /* ScrumStore.swift */; };
+		9DA7D63E2A5D8519009DAC14 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D63D2A5D8519009DAC14 /* HistoryView.swift */; };
 		9DC93C572A51895D0018D5B5 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93C562A51895D0018D5B5 /* NewScrumSheet.swift */; };
 		9DC93C592A518D4C0018D5B5 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC93C582A518D4C0018D5B5 /* History.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		9DA7D6332A5C2E93009DAC14 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		9DA7D6392A5D794E009DAC14 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		9DA7D63B2A5D7964009DAC14 /* ScrumStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrumStore.swift; path = ../../../../../../Downloads/TranscribingSpeechToText/StartingProject/Scrumdinger/Models/ScrumStore.swift; sourceTree = "<group>"; };
+		9DA7D63D2A5D8519009DAC14 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		9DC93C562A51895D0018D5B5 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		9DC93C582A518D4C0018D5B5 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				9D14CDD62A44EEFE00F96B25 /* DetailView.swift */,
 				9D95D1BA2A468AEB00C8DE92 /* DetailEditView.swift */,
 				9D607C392A435DE500B75452 /* MeetingView.swift */,
+				9DA7D63D2A5D8519009DAC14 /* HistoryView.swift */,
 				9DA7D6332A5C2E93009DAC14 /* SpeakerArc.swift */,
 				9D95D1D62A480D3A00C8DE92 /* MeetingFooterView.swift */,
 				9D95D1D42A48062200C8DE92 /* MeetingHeaderView.swift */,
@@ -238,6 +241,7 @@
 				9DA7D6342A5C2E93009DAC14 /* SpeakerArc.swift in Sources */,
 				9D90ED5E2A5B0D4000C618FD /* ErrorView.swift in Sources */,
 				9D14CDD72A44EEFE00F96B25 /* DetailView.swift in Sources */,
+				9DA7D63E2A5D8519009DAC14 /* HistoryView.swift in Sources */,
 				9DA7D6322A5C2CDB009DAC14 /* MeetingTimerView.swift in Sources */,
 				9D95D1CD2A48025C00C8DE92 /* AVPlayer+Ding.swift in Sources */,
 				9D95D1D72A480D3A00C8DE92 /* MeetingFooterView.swift in Sources */,
@@ -386,6 +390,8 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "오디오를 녹음할 수 있어요.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "미팅의 텍스트 트랜스크립션을 볼 수 있습니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,6 +421,8 @@
 				DEVELOPMENT_TEAM = ZDJ95T6M99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "오디오를 녹음할 수 있어요.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "미팅의 텍스트 트랜스크립션을 볼 수 있습니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

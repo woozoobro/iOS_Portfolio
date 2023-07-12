@@ -13,7 +13,7 @@ struct BasicSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView(fruit: "안녕하세요")
+                ContentView()
             }
         }
     }
