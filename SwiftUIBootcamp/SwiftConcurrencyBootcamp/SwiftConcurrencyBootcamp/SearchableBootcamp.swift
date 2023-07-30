@@ -35,6 +35,30 @@ final class SearchableViewModel: ObservableObject {
     @Published private(set) var allRestaurants: [Restaurant] = []
     @Published private(set) var filteredRestaurants: [Restaurant] = []
     @Published var searchText: String = ""
+    @Published var searchScope: SearchScopeOption = .all
+    @Published private(set) var allSearchScopes: [SearchScopeOption] = []
+    
+    var isSearching: Bool {
+        !searchText.isEmpty
+    }
+    
+    var showSearchSuggestions: Bool {
+        searchText.count < 5
+    }
+    
+    enum SearchScopeOption: Hashable {
+        case all
+        case cuisine(option: CuisineOption)
+        
+        var title: String {
+            switch self {
+                case .all:
+                    return "All"
+                case .cuisine(option: let option):
+                    return option.rawValue.capitalized
+            }
+        }
+    }
     
     let manager = RestaurantManager()
     private var cancellables = Set<AnyCancellable>()
@@ -43,37 +67,98 @@ final class SearchableViewModel: ObservableObject {
         addSubscribers()
     }
     
-    private func addSubscribers() {
-        $searchText
-            .debounce(for: 0.3, scheduler: DispatchQueue.main)
-            .sink { [weak self] searchText in
-                self?.filterRestaurants(searchText: searchText)
-            }
-            .store(in: &cancellables)
-    }
+private func addSubscribers() {
+    $searchText
+        .combineLatest($searchScope)
+        .debounce(for: 0.3, scheduler: DispatchQueue.main)
+        .sink { [weak self] (searchText, searchScope) in
+            self?.filterRestaurants(searchText: searchText, searchScope: searchScope)
+        }
+        .store(in: &cancellables)
+}
     
-    private func filterRestaurants(searchText: String) {
+    private func filterRestaurants(searchText: String, searchScope: SearchScopeOption) {
         guard !searchText.isEmpty else {
             filteredRestaurants = []
+            self.searchScope = .all
             return
         }
         
+        // Filter on search scope
+        var restaurantsInScope = allRestaurants
+        switch searchScope {
+            case .all:
+                break
+            case .cuisine(option: let option):
+                restaurantsInScope = allRestaurants.filter { $0.cuisine == option }
+        }
+        
+        // Filter on search text
         let search = searchText.lowercased()
-        filteredRestaurants = allRestaurants.filter({ restaurant in
+        filteredRestaurants = restaurantsInScope.filter({ restaurant in
             let titleContainsSearch = restaurant.title.lowercased().contains(search)
             let cuisineContainsSearch = restaurant.cuisine.rawValue.lowercased().contains(search)
             return titleContainsSearch || cuisineContainsSearch
         })
-        
     }
     
     func loadRestaurants() async {
         do {
             allRestaurants = try await manager.getAllRestaurants()
+            
+            let allCuisines = Set(allRestaurants.map { $0.cuisine })
+            allSearchScopes = [.all] + allCuisines.map { SearchScopeOption.cuisine(option: $0) }
         } catch {
             print(error)
         }
     }
+    
+    func getSearchSuggestions() -> [String] {
+        guard showSearchSuggestions else {
+            return []
+        }
+        var suggestions: [String] = []
+        let search = searchText.lowercased()
+        
+        if search.contains("pa") {
+            suggestions.append("Pasta")
+        }
+        
+        if search.contains("su") {
+            suggestions.append("Sush")
+        }
+        
+        if search.contains("bu") {
+            suggestions.append("Burger")
+        }
+        
+        suggestions.append("Market")
+        suggestions.append("Grocery")
+        
+        suggestions.append(CuisineOption.italian.rawValue.capitalized)
+        suggestions.append(CuisineOption.japanese.rawValue.capitalized)
+        suggestions.append(CuisineOption.american.rawValue.capitalized)
+        return suggestions
+    }
+    
+    func getRestaurantSuggestions() -> [Restaurant] {
+        guard showSearchSuggestions else {
+            return []
+        }
+        var suggestions: [Restaurant] = []
+        let search = searchText.lowercased()
+        
+        if search.contains("ita") {
+            suggestions.append(contentsOf: allRestaurants.filter({ $0.cuisine == .italian}))
+        }
+        
+        if search.contains("jap") {
+            suggestions.append(contentsOf: allRestaurants.filter({ $0.cuisine == .japanese}))
+        }
+        
+        return suggestions
+    }
+    
 }
 
 struct SearchableBootcamp: View {
@@ -81,16 +166,41 @@ struct SearchableBootcamp: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                ForEach(viewModel.allRestaurants) { restaurant in
-                    restaurantRow(restaurant: restaurant)
+                ForEach(viewModel.isSearching ? viewModel.filteredRestaurants : viewModel.allRestaurants) { restaurant in
+                    NavigationLink(value: restaurant) {
+                        restaurantRow(restaurant: restaurant)
+                    }
                 }
             }
             .padding()
+            
+//            Text("ViewModel is searching: \(viewModel.isSearching.description)")
+//            SearchChildView()
         }
         .searchable(text: $viewModel.searchText, placement: .automatic, prompt: Text("Search restaurants..."))
+        .searchScopes($viewModel.searchScope, scopes: {
+            ForEach(viewModel.allSearchScopes, id: \.self) { scope in
+                Text(scope.title)
+                    .tag(scope)
+            }
+        })
+        .searchSuggestions({
+            ForEach(viewModel.getSearchSuggestions(), id: \.self) { suggestion in
+                Text(suggestion)
+                    .searchCompletion(suggestion)
+            }
+            ForEach(viewModel.getRestaurantSuggestions(), id: \.self) { suggestion in
+                NavigationLink(value: suggestion) {
+                    Text(suggestion.title)
+                }
+            }
+        })
         .navigationTitle("Restaurants")
         .task {
             await viewModel.loadRestaurants()
+        }
+        .navigationDestination(for: Restaurant.self) { restaurant in
+            Text(restaurant.title.uppercased())
         }
     }
     
@@ -98,12 +208,22 @@ struct SearchableBootcamp: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(restaurant.title)
                 .font(.headline)
+                .foregroundColor(.green)
             Text(restaurant.cuisine.rawValue.capitalized)
                 .font(.caption)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.black.opacity(0.05))
+        .tint(.primary)
+    }
+}
+
+struct SearchChildView: View {
+    @Environment(\.isSearching) private var isSearching
+    
+    var body: some View {
+        Text("Child View is searching: \(isSearching.description)")
     }
 }
 

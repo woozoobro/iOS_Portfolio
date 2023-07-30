@@ -18,5 +18,3 @@ struct ErrorWrapper: Identifiable {
         self.guidance = guidance
     }
 }
-
-

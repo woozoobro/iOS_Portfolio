@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D00A6062A64354D00B32F46 /* PhotoPickerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A6052A64354D00B32F46 /* PhotoPickerBootcamp.swift */; };
 		9D28A17929F5F8B500D6EE91 /* TaskGroupBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D28A17829F5F8B500D6EE91 /* TaskGroupBootcamp.swift */; };
 		9D3B435C29FEACC500D5F205 /* CheckedContinuationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B435B29FEACC500D5F205 /* CheckedContinuationBootcamp.swift */; };
 		9D52AA6D2A5DA1F200EFAAE4 /* RefreshableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52AA6C2A5DA1F200EFAAE4 /* RefreshableBootcamp.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D00A6052A64354D00B32F46 /* PhotoPickerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerBootcamp.swift; sourceTree = "<group>"; };
 		9D28A17829F5F8B500D6EE91 /* TaskGroupBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupBootcamp.swift; sourceTree = "<group>"; };
 		9D3B435B29FEACC500D5F205 /* CheckedContinuationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedContinuationBootcamp.swift; sourceTree = "<group>"; };
 		9D52AA6C2A5DA1F200EFAAE4 /* RefreshableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableBootcamp.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				9DB1D9FD2A06C69B00059481 /* AsyncPublisherBootcamp.swift */,
 				9D52AA6C2A5DA1F200EFAAE4 /* RefreshableBootcamp.swift */,
 				9D74E71F2A5EF87B0093A930 /* SearchableBootcamp.swift */,
+				9D00A6052A64354D00B32F46 /* PhotoPickerBootcamp.swift */,
 				9DA84FF429EA4BC800CB63B7 /* Assets.xcassets */,
 				9DA84FF629EA4BC800CB63B7 /* Preview Content */,
 			);
@@ -197,6 +200,7 @@
 				9DB1D9FE2A06C69B00059481 /* AsyncPublisherBootcamp.swift in Sources */,
 				9D52AA6D2A5DA1F200EFAAE4 /* RefreshableBootcamp.swift in Sources */,
 				9DA84FF129EA4BC700CB63B7 /* SwiftConcurrencyBootcampApp.swift in Sources */,
+				9D00A6062A64354D00B32F46 /* PhotoPickerBootcamp.swift in Sources */,
 				9DEDB9CC29F0C5A400AA37F3 /* AsyncLetBootcamp.swift in Sources */,
 				9D28A17929F5F8B500D6EE91 /* TaskGroupBootcamp.swift in Sources */,
 			);

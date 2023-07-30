@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D00A6262A651E0F00B32F46 /* WhatIsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A6252A651E0F00B32F46 /* WhatIsState.swift */; };
+		9D00A6282A65282600B32F46 /* ExtractSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A6272A65282600B32F46 /* ExtractSubView.swift */; };
+		9D00A62A2A652AA000B32F46 /* BindingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A6292A652AA000B32F46 /* BindingTestView.swift */; };
+		9D00A62C2A652CC500B32F46 /* HowToUseBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A62B2A652CC500B32F46 /* HowToUseBinding.swift */; };
+		9D00A62E2A6530D800B32F46 /* StructVsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00A62D2A6530D800B32F46 /* StructVsClass.swift */; };
+		9D0CC3A42A70308E0067BBB2 /* DoTryCatchThrowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CC3A32A70308E0067BBB2 /* DoTryCatchThrowsView.swift */; };
+		9D702AFF2A684FC8005B4F61 /* TestAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D702AFE2A684FC8005B4F61 /* TestAnimationView.swift */; };
+		9D7BE1BA2A6F617600D124AF /* ReferenceTypeStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BE1B92A6F617600D124AF /* ReferenceTypeStateView.swift */; };
+		9DA327552A70A7050031EEE6 /* ConcurrencyBible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA327542A70A7050031EEE6 /* ConcurrencyBible.swift */; };
+		9DB1A68E2A6E300A00E4D60D /* WhatIsNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1A68D2A6E300A00E4D60D /* WhatIsNavigationView.swift */; };
+		9DF8A3652A6A34A700002722 /* TransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8A3642A6A34A700002722 /* TransitionBootcamp.swift */; };
+		9DF8A3672A6A367D00002722 /* SheetsAndFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8A3662A6A367D00002722 /* SheetsAndFull.swift */; };
+		9DF8A3692A6A39E100002722 /* What'sTheDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8A3682A6A39E100002722 /* What'sTheDifference.swift */; };
 		9DFBA6AB2A5ED5CC005347E0 /* WooZooSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA6AA2A5ED5CC005347E0 /* WooZooSwiftUIApp.swift */; };
 		9DFBA6AD2A5ED5CC005347E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBA6AC2A5ED5CC005347E0 /* ContentView.swift */; };
 		9DFBA6AF2A5ED5CD005347E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFBA6AE2A5ED5CD005347E0 /* Assets.xcassets */; };
@@ -16,6 +29,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D00A6252A651E0F00B32F46 /* WhatIsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsState.swift; sourceTree = "<group>"; };
+		9D00A6272A65282600B32F46 /* ExtractSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractSubView.swift; sourceTree = "<group>"; };
+		9D00A6292A652AA000B32F46 /* BindingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTestView.swift; sourceTree = "<group>"; };
+		9D00A62B2A652CC500B32F46 /* HowToUseBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseBinding.swift; sourceTree = "<group>"; };
+		9D00A62D2A6530D800B32F46 /* StructVsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVsClass.swift; sourceTree = "<group>"; };
+		9D0CC3A32A70308E0067BBB2 /* DoTryCatchThrowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatchThrowsView.swift; sourceTree = "<group>"; };
+		9D702AFE2A684FC8005B4F61 /* TestAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAnimationView.swift; sourceTree = "<group>"; };
+		9D7BE1B92A6F617600D124AF /* ReferenceTypeStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTypeStateView.swift; sourceTree = "<group>"; };
+		9DA327542A70A7050031EEE6 /* ConcurrencyBible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyBible.swift; sourceTree = "<group>"; };
+		9DB1A68D2A6E300A00E4D60D /* WhatIsNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsNavigationView.swift; sourceTree = "<group>"; };
+		9DF8A3642A6A34A700002722 /* TransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBootcamp.swift; sourceTree = "<group>"; };
+		9DF8A3662A6A367D00002722 /* SheetsAndFull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsAndFull.swift; sourceTree = "<group>"; };
+		9DF8A3682A6A39E100002722 /* What'sTheDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "What'sTheDifference.swift"; sourceTree = "<group>"; };
 		9DFBA6A72A5ED5CC005347E0 /* WooZooSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooZooSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFBA6AA2A5ED5CC005347E0 /* WooZooSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooZooSwiftUIApp.swift; sourceTree = "<group>"; };
 		9DFBA6AC2A5ED5CC005347E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +85,19 @@
 				9DFBA6AC2A5ED5CC005347E0 /* ContentView.swift */,
 				9DFBA6B82A5ED618005347E0 /* CustomButtonView.swift */,
 				9DFBA6BA2A5EE65B005347E0 /* ForEachTestView.swift */,
+				9D00A6252A651E0F00B32F46 /* WhatIsState.swift */,
+				9D00A6272A65282600B32F46 /* ExtractSubView.swift */,
+				9D00A6292A652AA000B32F46 /* BindingTestView.swift */,
+				9D00A62D2A6530D800B32F46 /* StructVsClass.swift */,
+				9D702AFE2A684FC8005B4F61 /* TestAnimationView.swift */,
+				9DF8A3642A6A34A700002722 /* TransitionBootcamp.swift */,
+				9DF8A3662A6A367D00002722 /* SheetsAndFull.swift */,
+				9DF8A3682A6A39E100002722 /* What'sTheDifference.swift */,
+				9DB1A68D2A6E300A00E4D60D /* WhatIsNavigationView.swift */,
+				9D7BE1B92A6F617600D124AF /* ReferenceTypeStateView.swift */,
+				9D0CC3A32A70308E0067BBB2 /* DoTryCatchThrowsView.swift */,
+				9DA327542A70A7050031EEE6 /* ConcurrencyBible.swift */,
+				9D00A62B2A652CC500B32F46 /* HowToUseBinding.swift */,
 				9DFBA6AE2A5ED5CD005347E0 /* Assets.xcassets */,
 				9DFBA6B02A5ED5CD005347E0 /* Preview Content */,
 			);
@@ -143,10 +182,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB1A68E2A6E300A00E4D60D /* WhatIsNavigationView.swift in Sources */,
+				9DF8A3672A6A367D00002722 /* SheetsAndFull.swift in Sources */,
 				9DFBA6B92A5ED618005347E0 /* CustomButtonView.swift in Sources */,
+				9DF8A3652A6A34A700002722 /* TransitionBootcamp.swift in Sources */,
+				9D00A62E2A6530D800B32F46 /* StructVsClass.swift in Sources */,
+				9D00A62C2A652CC500B32F46 /* HowToUseBinding.swift in Sources */,
 				9DFBA6AD2A5ED5CC005347E0 /* ContentView.swift in Sources */,
+				9DA327552A70A7050031EEE6 /* ConcurrencyBible.swift in Sources */,
 				9DFBA6AB2A5ED5CC005347E0 /* WooZooSwiftUIApp.swift in Sources */,
+				9D00A62A2A652AA000B32F46 /* BindingTestView.swift in Sources */,
+				9D00A6282A65282600B32F46 /* ExtractSubView.swift in Sources */,
 				9DFBA6BB2A5EE65B005347E0 /* ForEachTestView.swift in Sources */,
+				9D7BE1BA2A6F617600D124AF /* ReferenceTypeStateView.swift in Sources */,
+				9D0CC3A42A70308E0067BBB2 /* DoTryCatchThrowsView.swift in Sources */,
+				9D00A6262A651E0F00B32F46 /* WhatIsState.swift in Sources */,
+				9DF8A3692A6A39E100002722 /* What'sTheDifference.swift in Sources */,
+				9D702AFF2A684FC8005B4F61 /* TestAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

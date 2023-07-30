@@ -7,31 +7,71 @@
 
 import SwiftUI
 
-struct Fruit: Hashable {
+struct Card: Hashable {
     let name: String
-    let count: Int
+    let hour: Int
+    let content: String
 }
 
-extension Fruit {
-    static var lists: [Fruit] = [
-        Fruit(name: "apple", count: 100),
-        Fruit(name: "banana", count: 50),
-        Fruit(name: "melon", count: 1),
-        Fruit(name: "mandarin", count: 2),
+extension Card {
+    static let cardlist = [
+        Card(name: "Steve", hour: 8, content: "초과근무중"),
+        Card(name: "Kyle", hour: 7, content: "금요일이니 칼퇴"),
+        Card(name: "Thomas", hour: 7, content: "나도 칼퇴")
     ]
 }
 
 struct ForEachTestView: View {
-    let fruits = Fruit.lists
+    @State var color: Color = .blue
     
     var body: some View {
-        VStack {
-            ForEach(fruits, id: \.self) { fruit in
-                Text(fruit.name) + Text("\(fruit.count)개 있음")
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(Card.cardlist, id: \.self) { card in
+                    PostCellView(name: card.name, hour: card.hour, content: card.content)
+                }
             }
+            .padding()
         }
     }
 }
+
+struct PostCellView: View {
+    let name: String
+    let hour: Int
+    let content: String
+    
+    var body: some View {
+        HStack(alignment: .top) {
+            Circle()
+                .frame(width: 30, height: 30)
+            
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(name)
+                        .font(.body)
+                        .bold()
+                    
+                    Text("\(hour)시간")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                }
+                
+                Text(content)
+                    .font(.callout)
+                    .multilineTextAlignment(.leading)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background {
+            Color.white.cornerRadius(20)
+                .shadow(color: Color.gray.opacity(0.5), radius: 3, x: 0, y: 3)
+        }
+    }
+}
+
+
 
 struct ForEachTestView_Previews: PreviewProvider {
     static var previews: some View {
