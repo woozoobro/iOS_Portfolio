@@ -15,7 +15,6 @@ class ListViewModel: ObservableObject {
         }
     }
     
-    
     let itemsKey = "items_list"
     
     init() {
@@ -44,9 +43,20 @@ class ListViewModel: ObservableObject {
     }
     
     func updateItem(item: ItemModel) {
-        if let index = items.firstIndex(where: { $0.id == item.id}) {
-            items[index] = item.updateCompletion()
+        if let index = items.firstIndex(where: { $0.id == item.id }) {
+//            items[index] = item.updateCompletion()
+            var oldItem = item
+            oldItem.isCompleted = !item.isCompleted
+            items[index] = oldItem
         }
+        
+//        let index = items.firstIndex(where: { $0.id == item.id })
+            
+        
+        
+//        let index = items.firstIndex(where: { (oldItem, something) -> Bool in
+//            return oldItem.id == item.id })
+        
     }
     
     func saveItem() {
